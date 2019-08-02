@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SimplePie_Copyright" namespace="" name="SimplePie_Copyright" abstract="false" final="false" start="54" end="124">
+  <file path="../project/vendor/simplepie/simplepie/library/SimplePie" file="Copyright.php" realpath="C:/xampp/htdocs/bac3/project/vendor/simplepie/simplepie/library/SimplePie/Copyright.php" size="3318" time="2019-06-14T21:21:47+02:00" unixtime="1560540107" sha1="20899d63e29bdefd2e79501b0a76d1923de98465" relative="vendor/simplepie/simplepie/library/SimplePie/Copyright.php"/>
+  <docblock>
+    <description compact="Manages `&lt;media:copyright&gt;` copyright tags as defined in Media RSS">Used by <see xmlns="http://xml.phpdox.net/src" value="SimplePie_Enclosure::get_copyright()"/>This class can be overloaded with <see xmlns="http://xml.phpdox.net/src" value="SimplePie::set_copyright_class()"/></description>
+    <package value="SimplePie"/>
+    <subpackage value="API"/>
+  </docblock>
+  <member name="url" visibility="public" static="false" line="62">
+    <docblock>
+      <description compact="Copyright URL"/>
+      <var type="string"/>
+      <see value="get_url()"/>
+    </docblock>
+  </member>
+  <member name="label" visibility="public" static="false" line="70">
+    <docblock>
+      <description compact="Attribution"/>
+      <var type="string"/>
+      <see value="get_attribution()"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="78" end="82" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor, used to input the data">For documentation on all the parameters, see the corresponding
+properties and their accessors</description>
+    </docblock>
+    <parameter name="url" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="label" byreference="false" type="{unknown}" default="NULL"/>
+  </constructor>
+  <method name="__toString" start="89" end="93" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="String-ified version"/>
+      <return type="string"/>
+    </docblock>
+    <inline>
+      <comment value="There is no $this-&gt;data here" line="91"/>
+    </inline>
+  </method>
+  <method name="get_url" start="100" end="108" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the copyright URL"/>
+      <return description="URL to copyright information" type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_attribution" start="115" end="123" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the attribution text"/>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+</class>

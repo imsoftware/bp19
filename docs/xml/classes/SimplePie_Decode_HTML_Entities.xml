@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SimplePie_Decode_HTML_Entities" namespace="" name="SimplePie_Decode_HTML_Entities" abstract="false" final="false" start="53" end="610">
+  <file path="../project/vendor/simplepie/simplepie/library/SimplePie/Decode/HTML" file="Entities.php" realpath="C:/xampp/htdocs/bac3/project/vendor/simplepie/simplepie/library/SimplePie/Decode/HTML/Entities.php" size="17256" time="2019-06-14T21:21:47+02:00" unixtime="1560540107" sha1="c7f36c5f6f02c59d1c086f08f1716244fb8e12d0" relative="vendor/simplepie/simplepie/library/SimplePie/Decode/HTML/Entities.php"/>
+  <docblock>
+    <description compact="Decode HTML Entities">This implements HTML5 as of revision 967 (2007-06-28)</description>
+    <deprecated value="Use DOMDocument instead!"/>
+    <package value="SimplePie"/>
+  </docblock>
+  <member name="data" default="''" type="string" visibility="public" static="false" line="61">
+    <docblock>
+      <description compact="Data to be parsed"/>
+      <access value="private"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="consumed" default="''" type="string" visibility="public" static="false" line="69">
+    <docblock>
+      <description compact="Currently consumed bytes"/>
+      <access value="private"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="position" default="0" type="integer" visibility="public" static="false" line="77">
+    <docblock>
+      <description compact="Position of the current byte being parsed"/>
+      <access value="private"/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="85" end="88" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Create an instance of the class with the input data"/>
+      <access value="public"/>
+      <param description="Input data" type="string" variable="$data"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </constructor>
+  <method name="parse" start="96" end="105" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Parse the input data"/>
+      <access value="public"/>
+      <return description="Output data" type="string"/>
+    </docblock>
+  </method>
+  <method name="consume" start="113" end="122" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Consume the next byte"/>
+      <access value="private"/>
+      <return description="The next byte, or false, if there is no more data" type="mixed"/>
+    </docblock>
+  </method>
+  <method name="consume_range" start="131" end="142" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Consume a range of characters"/>
+      <access value="private"/>
+      <param description="Characters to consume" type="string" variable="$chars"/>
+      <return description="A series of characters that match the range, or false" type="mixed"/>
+    </docblock>
+    <parameter name="chars" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="unconsume" start="149" end="153" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Unconsume one byte"/>
+      <access value="private"/>
+    </docblock>
+  </method>
+  <method name="entity" start="160" end="609" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Decode an entity"/>
+      <access value="private"/>
+    </docblock>
+  </method>
+</class>

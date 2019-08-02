@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Net_IDNA_php4" namespace="" name="Net_IDNA_php4" abstract="false" final="false" start="945" end="967">
+  <file path="../project/vendor/simplepie/simplepie/idn" file="idna_convert.class.php" realpath="C:/xampp/htdocs/bac3/project/vendor/simplepie/simplepie/idn/idna_convert.class.php" size="38310" time="2019-06-14T21:21:47+02:00" unixtime="1560540107" sha1="61dedc3a051f5f1f202264cb114b41c2db0e3cef" relative="vendor/simplepie/simplepie/idn/idna_convert.class.php"/>
+  <docblock>
+    <description compact="Adapter class for aligning the API of idna_convert with that of Net_IDNA"/>
+    <author value="Matthias Sommerfeld &lt;mso@phlylabs.de&gt;"/>
+  </docblock>
+  <extends full="idna_convert" namespace="" name="idna_convert"/>
+  <method name="setParams" start="963" end="966" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Sets a new option value. Available options and values: [encoding - Use either UTF-8, UCS4 as array or UCS4 as string as input ('utf8' for UTF-8,         'ucs4_string' and 'ucs4_array' respectively for UCS4); The output is always UTF-8] [overlong - Unicode does not allow unnecessarily long encodings of chars,             to allow this, set this parameter to true, else to false;             default is false.] [strict - true: strict mode, good for registration purposes - Causes errors           on failures; false: loose mode, ideal for &quot;wildlife&quot; applications           by silently ignoring errors and returning the original input instead"/>
+      <param description="Parameter to set (string: single parameter; array of Parameter =&gt; Value pairs)" type="mixed"/>
+      <param description="Value to use (if parameter 1 is a string)" type="string"/>
+      <return description="true on success, false otherwise" type="boolean"/>
+      <access value="public"/>
+    </docblock>
+    <parameter name="option" byreference="false" type="{unknown}"/>
+    <parameter name="param" byreference="false" type="boolean" default="false"/>
+  </method>
+  <parent full="idna_convert" namespace="" name="idna_convert">
+    <member name="NP" default="" type="array" visibility="public" static="false" line="63">
+      <docblock>
+        <description compact="Holds all relevant mapping tables, loaded from a seperate file on construct See RFC3454 for details"/>
+        <var type="array"/>
+        <access value="private"/>
+      </docblock>
+    </member>
+    <member name="_punycode_prefix" default="'xn--'" type="string" visibility="public" static="false" line="66"/>
+    <member name="_invalid_ucs" default="0x80000000" type="integer" visibility="public" static="false" line="67"/>
+    <member name="_max_ucs" default="0x10FFFF" type="integer" visibility="public" static="false" line="68"/>
+    <member name="_base" default="36" type="integer" visibility="public" static="false" line="69"/>
+    <member name="_tmin" default="1" type="integer" visibility="public" static="false" line="70"/>
+    <member name="_tmax" default="26" type="integer" visibility="public" static="false" line="71"/>
+    <member name="_skew" default="38" type="integer" visibility="public" static="false" line="72"/>
+    <member name="_damp" default="700" type="integer" visibility="public" static="false" line="73"/>
+    <member name="_initial_bias" default="72" type="integer" visibility="public" static="false" line="74"/>
+    <member name="_initial_n" default="0x80" type="integer" visibility="public" static="false" line="75"/>
+    <member name="_sbase" default="0xAC00" type="integer" visibility="public" static="false" line="76"/>
+    <member name="_lbase" default="0x1100" type="integer" visibility="public" static="false" line="77"/>
+    <member name="_vbase" default="0x1161" type="integer" visibility="public" static="false" line="78"/>
+    <member name="_tbase" default="0x11A7" type="integer" visibility="public" static="false" line="79"/>
+    <member name="_lcount" default="19" type="integer" visibility="public" static="false" line="80"/>
+    <member name="_vcount" default="21" type="integer" visibility="public" static="false" line="81"/>
+    <member name="_tcount" default="28" type="integer" visibility="public" static="false" line="82"/>
+    <member name="_ncount" default="588" type="integer" visibility="public" static="false" line="83"/>
+    <member name="_scount" default="11172" type="integer" visibility="public" static="false" line="84"/>
+    <member name="_error" default="false" type="boolean" visibility="public" static="false" line="85"/>
+    <member name="_api_encoding" default="'utf8'" type="string" visibility="public" static="false" line="89"/>
+    <member name="_allow_overlong" default="false" type="boolean" visibility="public" static="false" line="90"/>
+    <member name="_strict_mode" default="false" type="boolean" visibility="public" static="false" line="91"/>
+    <constructor name="__construct" start="94" end="107" abstract="false" final="false" static="false" visibility="public">
+      <parameter name="options" byreference="false" type="boolean" default="false"/>
+      <inline>
+        <comment value="If parameters are given, pass these to the respective method" line="102"/>
+      </inline>
+    </constructor>
+    <method name="set_parameter" start="125" end="156" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Sets a new option value. Available options and values: [encoding - Use either UTF-8, UCS4 as array or UCS4 as string as input ('utf8' for UTF-8,         'ucs4_string' and 'ucs4_array' respectively for UCS4); The output is always UTF-8] [overlong - Unicode does not allow unnecessarily long encodings of chars,             to allow this, set this parameter to true, else to false;             default is false.] [strict - true: strict mode, good for registration purposes - Causes errors           on failures; false: loose mode, ideal for &quot;wildlife&quot; applications           by silently ignoring errors and returning the original input instead"/>
+        <param description="Parameter to set (string: single parameter; array of Parameter =&gt; Value pairs)" type="mixed"/>
+        <param description="Value to use (if parameter 1 is a string)" type="string"/>
+        <return description="true on success, false otherwise" type="boolean"/>
+        <access value="public"/>
+      </docblock>
+      <parameter name="option" byreference="false" type="{unknown}"/>
+      <parameter name="value" byreference="false" type="boolean" default="false"/>
+    </method>
+    <method name="decode" start="165" end="258" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Decode a given ACE domain name"/>
+        <param description="Domain name (ACE string)" type="string">[@param    string   Desired output encoding, see <link xmlns="http://xml.phpdox.net/src" value="set_parameter"/>]
+</param>
+        <return description="Decoded Domain name (UTF-8 or UCS-4)" type="string"/>
+        <access value="public"/>
+      </docblock>
+      <parameter name="input" byreference="false" type="{unknown}"/>
+      <parameter name="one_time_encoding" byreference="false" type="boolean" default="false"/>
+      <inline>
+        <comment value="Optionally set" line="167"/>
+        <comment value="Make sure to drop any newline characters around" line="179"/>
+        <comment value="Negotiate input and try to determine, whether it is a plain string," line="182"/>
+        <comment value="an email address or something like a complete URL" line="183"/>
+        <comment value="The output is UTF-8 by default, other output formats need conversion here" line="242"/>
+        <comment value="If one time encoding is given, use this, else the objects property" line="243"/>
+      </inline>
+    </method>
+    <method name="encode" start="267" end="343" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Encode a given UTF-8 domain name"/>
+        <param description="Domain name (UTF-8 or UCS-4)" type="string">[@param    string   Desired input encoding, see <link xmlns="http://xml.phpdox.net/src" value="set_parameter"/>]
+</param>
+        <return description="Encoded Domain name (ACE string)" type="string"/>
+        <access value="public"/>
+      </docblock>
+      <parameter name="decoded" byreference="false" type="{unknown}"/>
+      <parameter name="one_time_encoding" byreference="false" type="boolean" default="false"/>
+      <inline>
+        <comment value="Forcing conversion of input to UCS4 array" line="269"/>
+        <comment value="If one time encoding is given, use this, else the objects property" line="270"/>
+        <comment value="No input, no output, what else did you expect?" line="284"/>
+        <comment value="Anchors for iteration" line="287"/>
+        <comment value="Output string" line="289"/>
+        <comment value="Catch the rest of the string" line="325"/>
+      </inline>
+    </method>
+    <method name="get_last_error" start="351" end="354" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Use this method to get the last error ocurred"/>
+        <param type="object">
+          <type full="void" namespace="" name="void"/>
+        </param>
+        <return description="The last error, that occured" type="string"/>
+        <access value="public"/>
+      </docblock>
+    </method>
+    <method name="_decode" start="360" end="413" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="The actual decoding algorithm"/>
+        <access value="private"/>
+      </docblock>
+      <parameter name="encoded" byreference="false" type="{unknown}"/>
+      <inline>
+        <comment value="We do need to find the Punycode prefix" line="362"/>
+        <comment value="If nothing left after removing the prefix, it is hopeless" line="368"/>
+        <comment value="Find last occurence of the delimiter" line="373"/>
+        <comment value="Wandering through the strings; init" line="385"/>
+      </inline>
+    </method>
+    <method name="_encode" start="419" end="511" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="The actual encoding algorithm"/>
+        <access value="private"/>
+      </docblock>
+      <parameter name="decoded" byreference="false" type="{unknown}"/>
+      <inline>
+        <comment value="We cannot encode a domain name containing the Punycode prefix" line="421"/>
+        <comment value="We will not try to encode strings consisting of basic code points only" line="430"/>
+        <comment value="Do NAMEPREP" line="443"/>
+        <comment value="NAMEPREP failed" line="445"/>
+        <comment value="Empty array" line="448"/>
+        <comment value="How many chars have been consumed" line="450"/>
+        <comment value="Copy all basic code points to output" line="453"/>
+        <comment value="All codepoints were basic ones" line="463"/>
+        <comment value="Start with the prefix; copy it to output" line="465"/>
+        <comment value="If we have basic code points in output, add an hyphen to the end" line="468"/>
+        <comment value="Now find and encode all non-basic code points" line="471"/>
+      </inline>
+    </method>
+    <method name="_adapt" start="517" end="525" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Adapt the bias according to the current code point and position"/>
+        <access value="private"/>
+      </docblock>
+      <parameter name="delta" byreference="false" type="{unknown}"/>
+      <parameter name="npoints" byreference="false" type="{unknown}"/>
+      <parameter name="is_first" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="_encode_digit" start="531" end="534" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Encoding a certain digit"/>
+        <access value="private"/>
+      </docblock>
+      <parameter name="d" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="_decode_digit" start="540" end="544" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Decode a certain digit"/>
+        <access value="private"/>
+      </docblock>
+      <parameter name="cp" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="_error" start="550" end="553" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Internal error handling method"/>
+        <access value="private"/>
+      </docblock>
+      <parameter name="error" byreference="false" type="string" default="''"/>
+    </method>
+    <method name="_nameprep" start="561" end="636" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Do Nameprep according to RFC3491 and RFC3454"/>
+        <param description="Unicode Characters" type="array"/>
+        <return description="Unicode Characters, Nameprep'd" type="string"/>
+        <access value="private"/>
+      </docblock>
+      <parameter name="input" byreference="false" type="{unknown}"/>
+      <inline>
+        <comment value="Mapping" line="566"/>
+        <comment value="Walking through the input array, performing the required steps on each of" line="567"/>
+        <comment value="the input chars and putting the result into the output array" line="568"/>
+        <comment value="While mapping required chars we apply the cannonical ordering" line="569"/>
+        <comment value="Before applying any Combining, try to rearrange any Hangul syllables" line="600"/>
+        <comment value="Combine code points" line="603"/>
+      </inline>
+    </method>
+    <method name="_hangul_decompose" start="645" end="657" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Decomposes a Hangul syllable (see http://www.unicode.org/unicode/reports/tr15/#Hangul"/>
+        <param description="32bit UCS4 code point" type="integer"/>
+        <return description="Either Hangul Syllable decomposed or original 32bit value as one value array" type="array"/>
+        <access value="private"/>
+      </docblock>
+      <parameter name="char" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="_hangul_compose" start="665" end="699" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Ccomposes a Hangul syllable (see http://www.unicode.org/unicode/reports/tr15/#Hangul"/>
+        <param description="Decomposed UCS4 sequence" type="array"/>
+        <return description="UCS4 sequence with syllables composed" type="array"/>
+        <access value="private"/>
+      </docblock>
+      <parameter name="input" byreference="false" type="{unknown}"/>
+      <inline>
+        <comment value="copy first char from input to output" line="671"/>
+      </inline>
+    </method>
+    <method name="_get_combining_class" start="707" end="710" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Returns the combining class of a certain wide char"/>
+        <param description="Wide char to check (32bit integer)" type="integer"/>
+        <return description="Combining class if found, else 0" type="integer"/>
+        <access value="private"/>
+      </docblock>
+      <parameter name="char" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="_apply_cannonical_ordering" start="718" end="743" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Apllies the cannonical ordering of a decomposed UCS4 sequence"/>
+        <param description="Decomposed UCS4 sequence" type="array"/>
+        <return description="Ordered USC4 sequence" type="array"/>
+        <access value="private"/>
+      </docblock>
+      <parameter name="input" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="_combine" start="751" end="769" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Do composition of a sequence of starter and non-starter"/>
+        <param description="UCS4 Decomposed sequence" type="array"/>
+        <return description="Ordered USC4 sequence" type="array"/>
+        <access value="private"/>
+      </docblock>
+      <parameter name="input" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="_utf8_to_ucs4" start="788" end="858" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="This converts an UTF-8 encoded string to its UCS-4 representation By talking about UCS-4 &quot;strings&quot; we mean arrays of 32bit integers representing each of the &quot;chars&quot;. This is due to PHP not being able to handle strings with bit depth different from 8. This apllies to the reverse method _ucs4_to_utf8(), too.">The following UTF-8 encodings are supported:
+bytes bits  representation
+1        7  0xxxxxxx
+2       11  110xxxxx 10xxxxxx
+3       16  1110xxxx 10xxxxxx 10xxxxxx
+4       21  11110xxx 10xxxxxx 10xxxxxx 10xxxxxx
+5       26  111110xx 10xxxxxx 10xxxxxx 10xxxxxx 10xxxxxx
+6       31  1111110x 10xxxxxx 10xxxxxx 10xxxxxx 10xxxxxx 10xxxxxx
+Each x represents a bit that can be used to store character data.
+The five and six byte sequences are part of Annex D of ISO/IEC 10646-1:2000</description>
+        <access value="private"/>
+      </docblock>
+      <parameter name="input" byreference="false" type="{unknown}"/>
+      <inline>
+        <comment value="for" line="856"/>
+      </inline>
+    </method>
+    <method name="_ucs4_to_utf8" start="865" end="895" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Convert UCS-4 string into UTF-8 string See _utf8_to_ucs4() for details"/>
+        <access value="private"/>
+      </docblock>
+      <parameter name="input" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="_ucs4_to_ucs4_string" start="902" end="911" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Convert UCS-4 array into UCS-4 string"/>
+        <access value="private"/>
+      </docblock>
+      <parameter name="input" byreference="false" type="{unknown}"/>
+      <inline>
+        <comment value="Take array values and split output to 4 bytes per value" line="905"/>
+        <comment value="The bit mask is 255, which reads &amp;11111111" line="906"/>
+      </inline>
+    </method>
+    <method name="_ucs4_string_to_ucs4" start="918" end="938" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Convert UCS-4 strin into UCS-4 garray"/>
+        <access value="private"/>
+      </docblock>
+      <parameter name="input" byreference="false" type="{unknown}"/>
+      <inline>
+        <comment value="Input length must be dividable by 4" line="922"/>
+        <comment value="Empty input - return empty output" line="927"/>
+      </inline>
+    </method>
+  </parent>
+</class>

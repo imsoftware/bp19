@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SimplePie_Sanitize" namespace="" name="SimplePie_Sanitize" abstract="false" final="false" start="53" end="591">
+  <file path="../project/vendor/simplepie/simplepie/library/SimplePie" file="Sanitize.php" realpath="C:/xampp/htdocs/bac3/project/vendor/simplepie/simplepie/library/SimplePie/Sanitize.php" size="16457" time="2019-06-14T21:21:47+02:00" unixtime="1560540107" sha1="0267b29619d0463e338f5401aca5642b8e93889b" relative="vendor/simplepie/simplepie/library/SimplePie/Sanitize.php"/>
+  <docblock>
+    <description compact="Used for data cleanup and post-processing">This class can be overloaded with <see xmlns="http://xml.phpdox.net/src" value="SimplePie::set_sanitize_class()"/></description>
+    <package value="SimplePie"/>
+    <todo value="Move to using an actual HTML parser (this will allow tags to be properly stripped, and to switch between HTML and XHTML), this will also make it easier to shorten a string while preserving HTML tags"/>
+  </docblock>
+  <member name="base" visibility="public" static="false" line="56"/>
+  <member name="remove_div" default="true" type="boolean" visibility="public" static="false" line="59"/>
+  <member name="image_handler" default="''" type="string" visibility="public" static="false" line="60"/>
+  <member name="strip_htmltags" default="" type="array" visibility="public" static="false" line="61"/>
+  <member name="encode_instead_of_strip" default="false" type="boolean" visibility="public" static="false" line="62"/>
+  <member name="strip_attributes" default="" type="array" visibility="public" static="false" line="63"/>
+  <member name="add_attributes" default="" type="array" visibility="public" static="false" line="64"/>
+  <member name="strip_comments" default="false" type="boolean" visibility="public" static="false" line="65"/>
+  <member name="output_encoding" default="'UTF-8'" type="string" visibility="public" static="false" line="66"/>
+  <member name="enable_cache" default="true" type="boolean" visibility="public" static="false" line="67"/>
+  <member name="cache_location" default="'./cache'" type="string" visibility="public" static="false" line="68"/>
+  <member name="cache_name_function" default="'md5'" type="string" visibility="public" static="false" line="69"/>
+  <member name="timeout" default="10" type="integer" visibility="public" static="false" line="70"/>
+  <member name="useragent" default="''" type="string" visibility="public" static="false" line="71"/>
+  <member name="force_fsockopen" default="false" type="boolean" visibility="public" static="false" line="72"/>
+  <member name="replace_url_attributes" default="NULL" visibility="public" static="false" line="73"/>
+  <constructor name="__construct" start="75" end="79" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="Set defaults" line="77"/>
+    </inline>
+  </constructor>
+  <method name="remove_div" start="81" end="84" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="enable" byreference="false" type="boolean" default="true"/>
+  </method>
+  <method name="set_image_handler" start="86" end="96" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="page" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="set_registry" start="98" end="101" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="registry" byreference="false" type="object">
+      <type full="SimplePie_Registry" namespace="" name="SimplePie_Registry"/>
+    </parameter>
+  </method>
+  <method name="pass_cache_data" start="103" end="119" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="enable_cache" byreference="false" type="boolean" default="true"/>
+    <parameter name="cache_location" byreference="false" type="string" default="'./cache'"/>
+    <parameter name="cache_name_function" byreference="false" type="string" default="'md5'"/>
+    <parameter name="cache_class" byreference="false" type="string" default="'SimplePie_Cache'"/>
+  </method>
+  <method name="pass_file_data" start="121" end="137" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="file_class" byreference="false" type="string" default="'SimplePie_File'"/>
+    <parameter name="timeout" byreference="false" type="integer" default="10"/>
+    <parameter name="useragent" byreference="false" type="string" default="''"/>
+    <parameter name="force_fsockopen" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="strip_htmltags" start="139" end="156" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="tags" byreference="false" type="array" default=""/>
+  </method>
+  <method name="encode_instead_of_strip" start="158" end="161" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="encode" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="strip_attributes" start="163" end="180" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="attribs" byreference="false" type="array" default=""/>
+  </method>
+  <method name="add_attributes" start="182" end="199" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="attribs" byreference="false" type="array" default=""/>
+  </method>
+  <method name="strip_comments" start="201" end="204" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="strip" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="set_output_encoding" start="206" end="209" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="encoding" byreference="false" type="string" default="'UTF-8'"/>
+  </method>
+  <method name="set_url_replacements" start="222" end="242" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set element/attribute key/value pairs of HTML attributes containing URLs that need to be resolved relative to the feed">Defaults to |a|@href, |area|@href, |blockquote|@cite, |del|@cite,
+|form|@action, |img|@longdesc, |img|@src, |input|@src, |ins|@cite,
+|q|@cite</description>
+      <since value="1.0"/>
+      <param description="Element/attribute key/value pairs, null for default" type="object" variable="$element_attribute">
+        <type full="array|null" namespace="" name="array|null"/>
+      </param>
+    </docblock>
+    <parameter name="element_attribute" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+  <method name="sanitize" start="244" end="408" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="type" byreference="false" type="{unknown}"/>
+    <parameter name="base" byreference="false" type="string" default="''"/>
+  </method>
+  <method name="preprocess" start="410" end="432" abstract="false" final="false" static="false" visibility="protected">
+    <parameter name="html" byreference="false" type="{unknown}"/>
+    <parameter name="type" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="replace_urls" start="434" end="459" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="document" byreference="false" type="{unknown}"/>
+    <parameter name="tag" byreference="false" type="{unknown}"/>
+    <parameter name="attributes" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="do_strip_htmltags" start="461" end="484" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="match" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="strip_tag" start="486" end="568" abstract="false" final="false" static="false" visibility="protected">
+    <parameter name="tag" byreference="false" type="{unknown}"/>
+    <parameter name="document" byreference="false" type="{unknown}"/>
+    <parameter name="xpath" byreference="false" type="{unknown}"/>
+    <parameter name="type" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="strip_attr" start="570" end="578" abstract="false" final="false" static="false" visibility="protected">
+    <parameter name="attrib" byreference="false" type="{unknown}"/>
+    <parameter name="xpath" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="add_attr" start="580" end="590" abstract="false" final="false" static="false" visibility="protected">
+    <parameter name="tag" byreference="false" type="{unknown}"/>
+    <parameter name="valuePairs" byreference="false" type="{unknown}"/>
+    <parameter name="document" byreference="false" type="{unknown}"/>
+  </method>
+</class>

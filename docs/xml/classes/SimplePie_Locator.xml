@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SimplePie_Locator" namespace="" name="SimplePie_Locator" abstract="false" final="false" start="52" end="424">
+  <file path="../project/vendor/simplepie/simplepie/library/SimplePie" file="Locator.php" realpath="C:/xampp/htdocs/bac3/project/vendor/simplepie/simplepie/library/SimplePie/Locator.php" size="13088" time="2019-06-14T21:21:47+02:00" unixtime="1560540107" sha1="8277b09fb6da7e06da79cc5dbda0071b7b2f2f47" relative="vendor/simplepie/simplepie/library/SimplePie/Locator.php"/>
+  <docblock>
+    <description compact="Used for feed auto-discovery">This class can be overloaded with <see xmlns="http://xml.phpdox.net/src" value="SimplePie::set_locator_class()"/></description>
+    <package value="SimplePie"/>
+  </docblock>
+  <member name="useragent" visibility="public" static="false" line="54"/>
+  <member name="timeout" visibility="public" static="false" line="55"/>
+  <member name="file" visibility="public" static="false" line="56"/>
+  <member name="local" default="" type="array" visibility="public" static="false" line="57"/>
+  <member name="elsewhere" default="" type="array" visibility="public" static="false" line="58"/>
+  <member name="cached_entities" default="" type="array" visibility="public" static="false" line="59"/>
+  <member name="http_base" visibility="public" static="false" line="60"/>
+  <member name="base" visibility="public" static="false" line="61"/>
+  <member name="base_location" default="0" type="integer" visibility="public" static="false" line="62"/>
+  <member name="checked_feeds" default="0" type="integer" visibility="public" static="false" line="63"/>
+  <member name="max_checked_feeds" default="10" type="integer" visibility="public" static="false" line="64"/>
+  <member name="force_fsockopen" default="false" type="boolean" visibility="public" static="false" line="65"/>
+  <member name="curl_options" default="" type="array" visibility="public" static="false" line="66"/>
+  <member name="registry" visibility="protected" static="false" line="67"/>
+  <constructor name="__construct" start="69" end="90" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="file" byreference="false" type="object">
+      <type full="SimplePie_File" namespace="" name="SimplePie_File"/>
+    </parameter>
+    <parameter name="timeout" byreference="false" type="integer" default="10"/>
+    <parameter name="useragent" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="max_checked_feeds" byreference="false" type="integer" default="10"/>
+    <parameter name="force_fsockopen" byreference="false" type="boolean" default="false"/>
+    <parameter name="curl_options" byreference="false" type="array" default=""/>
+  </constructor>
+  <method name="set_registry" start="92" end="95" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="registry" byreference="false" type="object">
+      <type full="SimplePie_Registry" namespace="" name="SimplePie_Registry"/>
+    </parameter>
+  </method>
+  <method name="find" start="97" end="146" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="type" byreference="false" type="{unknown}" default="" constant="SIMPLEPIE_LOCATOR_ALL"/>
+    <parameter name="working" byreference="true" type="{unknown}"/>
+  </method>
+  <method name="is_feed" start="148" end="172" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="file" byreference="false" type="{unknown}"/>
+    <parameter name="check_html" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="get_base" start="174" end="197" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="autodiscovery" start="199" end="213" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="search_elements_by_tag" start="215" end="264" abstract="false" final="false" static="false" visibility="protected">
+    <parameter name="name" byreference="false" type="{unknown}"/>
+    <parameter name="done" byreference="true" type="{unknown}"/>
+    <parameter name="feeds" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="get_links" start="266" end="315" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="get_rel_link" start="317" end="366" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="rel" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="extension" start="368" end="395" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="array" byreference="true" type="{unknown}"/>
+  </method>
+  <method name="body" start="397" end="423" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="array" byreference="true" type="{unknown}"/>
+  </method>
+</class>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - SimplePie::get_feed_tags</title>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../../classes.xhtml#"/>
+          </li>
+          <li class="separator">
+            <a title="SimplePie" href="../../classes/SimplePie.xhtml">SimplePie</a>
+          </li>
+          <li class="separator">get_feed_tags</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#parameter">Parameter</a>
+          </li>
+          <li>
+            <a href="#return">Return</a>
+          </li>
+          <li>
+            <a href="../../source/vendor/simplepie/simplepie/library/SimplePie.php.xhtml#line1978">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1><small>SimplePie::</small>get_feed_tags</h1>
+        <h4>Get data for an feed-level element</h4>
+        <p>This method allows you to get access to ANY element/attribute that is a
+sub-element of the opening feed tag.
+
+The return value is an indexed array of elements matching the given
+namespace and tag name. Each element has `attribs`, `data` and `child`
+subkeys. For `attribs` and `child`, these contain namespace subkeys.
+`attribs` then has one level of associative name =&gt; value data (where
+`value` is a string) after the namespace. `child` has tag-indexed keys
+after the namespace, each member of which is an indexed array matching
+this same format.
+
+For example:
+&lt;pre&gt;
+// This is probably a bad example because we already support
+// &lt;media:content&gt; natively, but it shows you how to parse through
+// the nodes.
+$group = $item-&gt;get_item_tags(SIMPLEPIE_NAMESPACE_MEDIARSS, 'group');
+$content = $group[0]['child'][SIMPLEPIE_NAMESPACE_MEDIARSS]['content'];
+$file = $content[0]['attribs']['']['url'];
+echo $file;
+&lt;/pre&gt;</p>
+        <ul/>
+        <h2 id="signature">Signature</h2>
+        <div class="styled synopsis">
+          <code>public function get_feed_tags(string
+        $namespace,
+            string
+        $tag )
+            </code>
+        </div>
+        <h2 id="parameterlist">Parameters</h2>
+        <dl class="styled">
+          <dt><code>$namespace</code>
+                —
+                string</dt>
+          <dd>The URL of the XML namespace of the elements you're trying to access</dd>
+          <dt><code>$tag</code>
+                —
+                string</dt>
+          <dd>Tag name</dd>
+        </dl>
+        <h2 id="return">Returns</h2>
+        <dl class="styled">
+          <dt>array</dt>
+          <dd/>
+        </dl>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0-dev - Copyright (C) 2010 - 2019 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="simple_html_dom" namespace="" name="simple_html_dom" abstract="false" final="false" start="1381" end="2346">
+  <file path="../project/simplehtmldom_1_9" file="simple_html_dom.php" realpath="C:/xampp/htdocs/bac3/project/simplehtmldom_1_9/simple_html_dom.php" size="59066" time="2019-06-05T16:05:46+02:00" unixtime="1559743546" sha1="40ae1f41cd53cfdeb2bfde0f7f70767542fbaa64" relative="simplehtmldom_1_9/simple_html_dom.php"/>
+  <member name="root" default="NULL" visibility="public" static="false" line="1383"/>
+  <member name="nodes" default="" type="array" visibility="public" static="false" line="1384"/>
+  <member name="callback" default="NULL" visibility="public" static="false" line="1385"/>
+  <member name="lowercase" default="false" type="boolean" visibility="public" static="false" line="1386"/>
+  <member name="original_size" visibility="public" static="false" line="1387"/>
+  <member name="size" visibility="public" static="false" line="1388"/>
+  <member name="pos" visibility="protected" static="false" line="1390"/>
+  <member name="doc" visibility="protected" static="false" line="1391"/>
+  <member name="char" visibility="protected" static="false" line="1392"/>
+  <member name="cursor" visibility="protected" static="false" line="1394"/>
+  <member name="parent" visibility="protected" static="false" line="1395"/>
+  <member name="noise" default="" type="array" visibility="protected" static="false" line="1396"/>
+  <member name="token_blank" default="&quot; \t\r\n&quot;" type="string" visibility="protected" static="false" line="1397"/>
+  <member name="token_equal" default="' =/&gt;'" type="string" visibility="protected" static="false" line="1398"/>
+  <member name="token_slash" default="&quot; /&gt;\r\n\t&quot;" type="string" visibility="protected" static="false" line="1399"/>
+  <member name="token_attr" default="' &gt;'" type="string" visibility="protected" static="false" line="1400"/>
+  <member name="_charset" default="''" type="string" visibility="public" static="false" line="1402"/>
+  <member name="_target_charset" default="''" type="string" visibility="public" static="false" line="1403"/>
+  <member name="default_br_text" default="''" type="string" visibility="protected" static="false" line="1405"/>
+  <member name="default_span_text" default="''" type="string" visibility="public" static="false" line="1407"/>
+  <member name="self_closing_tags" default="" type="array" visibility="protected" static="false" line="1409"/>
+  <member name="block_tags" default="" type="array" visibility="protected" static="false" line="1425"/>
+  <member name="optional_closing_tags" default="" type="array" visibility="protected" static="false" line="1433"/>
+  <constructor name="__construct" start="1453" end="1484" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="str" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="lowercase" byreference="false" type="boolean" default="true"/>
+    <parameter name="forceTagsClosed" byreference="false" type="boolean" default="true"/>
+    <parameter name="target_charset" byreference="false" type="{unknown}" default="" constant="DEFAULT_TARGET_CHARSET"/>
+    <parameter name="stripRN" byreference="false" type="boolean" default="true"/>
+    <parameter name="defaultBRText" byreference="false" type="{unknown}" default="" constant="DEFAULT_BR_TEXT"/>
+    <parameter name="defaultSpanText" byreference="false" type="{unknown}" default="" constant="DEFAULT_SPAN_TEXT"/>
+    <parameter name="options" byreference="false" type="integer" default="0"/>
+    <inline>
+      <comment value="Forcing tags to be closed implies that we don't trust the html, but" line="1477"/>
+      <comment value="it can lead to parsing errors if we SHOULD trust the html." line="1478"/>
+    </inline>
+  </constructor>
+  <destructor name="__destruct" start="1486" end="1489" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="load" start="1491" end="1543" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="str" byreference="false" type="{unknown}"/>
+    <parameter name="lowercase" byreference="false" type="boolean" default="true"/>
+    <parameter name="stripRN" byreference="false" type="boolean" default="true"/>
+    <parameter name="defaultBRText" byreference="false" type="{unknown}" default="" constant="DEFAULT_BR_TEXT"/>
+    <parameter name="defaultSpanText" byreference="false" type="{unknown}" default="" constant="DEFAULT_SPAN_TEXT"/>
+    <parameter name="options" byreference="false" type="integer" default="0"/>
+    <inline>
+      <comment value="prepare" line="1501"/>
+      <comment value="Per sourceforge http://sourceforge.net/tracker/?func=detail&amp;aid=2949097&amp;group_id=218559&amp;atid=1044037" line="1504"/>
+      <comment value="Script tags removal now preceeds style tag removal." line="1505"/>
+      <comment value="strip out &lt;script&gt; tags" line="1506"/>
+      <comment value="strip out the \r \n's if we are told to." line="1510"/>
+      <comment value="strip out cdata" line="1519"/>
+      <comment value="strip out comments" line="1521"/>
+      <comment value="strip out &lt;style&gt; tags" line="1523"/>
+      <comment value="strip out preformatted tags" line="1526"/>
+      <comment value="strip out server side scripts" line="1528"/>
+      <comment value="parsing" line="1535"/>
+      <comment value="end" line="1537"/>
+      <comment value="make load function chainable" line="1541"/>
+    </inline>
+  </method>
+  <method name="load_file" start="1545" end="1554" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="set_callback" start="1556" end="1559" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="function_name" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="remove_callback" start="1561" end="1564" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="save" start="1566" end="1571" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="filepath" byreference="false" type="string" default="''"/>
+  </method>
+  <method name="find" start="1573" end="1576" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="selector" byreference="false" type="{unknown}"/>
+    <parameter name="idx" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="lowercase" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="clear" start="1578" end="1609" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="This add next line is documented in the sourceforge repository." line="1587"/>
+      <comment value="2977248 as a fix for ongoing memory leaks that occur even with the" line="1588"/>
+      <comment value="use of clear." line="1589"/>
+    </inline>
+  </method>
+  <method name="dump" start="1611" end="1614" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="show_attr" byreference="false" type="boolean" default="true"/>
+  </method>
+  <method name="prepare" start="1616" end="1639" abstract="false" final="false" static="false" visibility="protected">
+    <parameter name="str" byreference="false" type="{unknown}"/>
+    <parameter name="lowercase" byreference="false" type="boolean" default="true"/>
+    <parameter name="defaultBRText" byreference="false" type="{unknown}" default="" constant="DEFAULT_BR_TEXT"/>
+    <parameter name="defaultSpanText" byreference="false" type="{unknown}" default="" constant="DEFAULT_SPAN_TEXT"/>
+    <inline>
+      <comment value="original size of the html" line="1625"/>
+    </inline>
+  </method>
+  <method name="parse" start="1641" end="1660" abstract="false" final="false" static="false" visibility="protected"/>
+  <method name="parse_charset" start="1662" end="1798" abstract="false" final="false" static="false" visibility="protected">
+    <inline>
+      <comment value="Since CP1252 is a superset, if we get one of it's subsets, we want" line="1780"/>
+      <comment value="it instead." line="1781"/>
+    </inline>
+  </method>
+  <method name="read_tag" start="1800" end="2076" abstract="false" final="false" static="false" visibility="protected">
+    <inline>
+      <comment value="Set end position if no further tags found" line="1802"/>
+      <comment value="next" line="1809"/>
+      <comment value="end tag" line="1811"/>
+      <comment value="start tag" line="1900"/>
+      <comment value="Get tag name" line="1904"/>
+      <comment value="doctype, cdata &amp; comments..." line="1907"/>
+      <comment value="&lt;!DOCTYPE html&gt;" line="1908"/>
+      <comment value="&lt;![CDATA[ ... ]]&gt;" line="1909"/>
+      <comment value="&lt;!-- Comment --&gt;" line="1910"/>
+      <comment value="The start tag cannot contain another start tag, if so add as text" line="1929"/>
+      <comment value="i.e. &quot;&lt;&lt;html&gt;&quot;" line="1930"/>
+      <comment value="Handle invalid tag names (i.e. &quot;&lt;html#doc&gt;&quot;)" line="1939"/>
+      <comment value="begin tag, add new node" line="1956"/>
+      <comment value="handle optional closing tags" line="1961"/>
+      <comment value="prevent infinity loop" line="1971"/>
+      <comment value="[0] Space between tag and first attribute" line="1973"/>
+      <comment value="attributes" line="1976"/>
+      <comment value="go until the tag ended" line="2050"/>
+      <comment value="handle empty tags (i.e. &quot;&lt;div/&gt;&quot;)" line="2055"/>
+      <comment value="next" line="2066"/>
+      <comment value="If it's a BR tag, we need to set it's text to the default text." line="2068"/>
+      <comment value="This way when we see it in plaintext, we can generate formatting that the user wants." line="2069"/>
+      <comment value="since a br tag never has sub nodes, this works well." line="2070"/>
+    </inline>
+  </method>
+  <method name="parse_attr" start="2078" end="2120" abstract="false" final="false" static="false" visibility="protected">
+    <parameter name="node" byreference="false" type="{unknown}"/>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+    <parameter name="space" byreference="true" type="{unknown}"/>
+    <inline>
+      <comment value="PaperG: Attributes should not have \r or \n in them, that counts as" line="2105"/>
+      <comment value="html whitespace." line="2106"/>
+      <comment value="PaperG: If this is a &quot;class&quot; selector, lets get rid of the preceeding" line="2110"/>
+      <comment value="and trailing space since some people leave it in the multi class case." line="2111"/>
+    </inline>
+  </method>
+  <method name="link_nodes" start="2122" end="2129" abstract="false" final="false" static="false" visibility="protected">
+    <parameter name="node" byreference="true" type="{unknown}"/>
+    <parameter name="is_child" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="as_text_node" start="2131" end="2139" abstract="false" final="false" static="false" visibility="protected">
+    <parameter name="tag" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="next" line="2137"/>
+    </inline>
+  </method>
+  <method name="skip" start="2141" end="2145" abstract="false" final="false" static="false" visibility="protected">
+    <parameter name="chars" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="next" line="2144"/>
+    </inline>
+  </method>
+  <method name="copy_skip" start="2147" end="2155" abstract="false" final="false" static="false" visibility="protected">
+    <parameter name="chars" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="next" line="2152"/>
+    </inline>
+  </method>
+  <method name="copy_until" start="2157" end="2164" abstract="false" final="false" static="false" visibility="protected">
+    <parameter name="chars" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="next" line="2162"/>
+    </inline>
+  </method>
+  <method name="copy_until_char" start="2166" end="2183" abstract="false" final="false" static="false" visibility="protected">
+    <parameter name="char" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="remove_noise" start="2185" end="2215" abstract="false" final="false" static="false" visibility="protected">
+    <parameter name="pattern" byreference="false" type="{unknown}"/>
+    <parameter name="remove_tag" byreference="false" type="boolean" default="false"/>
+    <inline>
+      <comment value="reset the length of content" line="2209"/>
+    </inline>
+  </method>
+  <method name="restore_noise" start="2217" end="2261" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="text" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="search_noise" start="2263" end="2273" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="text" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="__toString" start="2275" end="2278" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="__get" start="2280" end="2294" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="name" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="childNodes" start="2296" end="2299" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="idx" byreference="false" type="integer" default="1"/>
+  </method>
+  <method name="firstChild" start="2301" end="2304" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="lastChild" start="2306" end="2309" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="createElement" start="2311" end="2314" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="name" byreference="false" type="{unknown}"/>
+    <parameter name="value" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+  <method name="createTextNode" start="2316" end="2319" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="value" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getElementById" start="2321" end="2324" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getElementsById" start="2326" end="2329" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="id" byreference="false" type="{unknown}"/>
+    <parameter name="idx" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+  <method name="getElementByTagName" start="2331" end="2334" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="name" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getElementsByTagName" start="2336" end="2339" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="name" byreference="false" type="{unknown}"/>
+    <parameter name="idx" byreference="false" type="integer" default="1"/>
+  </method>
+  <method name="loadFile" start="2341" end="2345" abstract="false" final="false" static="false" visibility="public"/>
+</class>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - SimplePie_HTTP_Parser</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">SimplePie_HTTP_Parser</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/vendor/simplepie/simplepie/library/SimplePie/HTTP/Parser.php.xhtml#line51">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>\</small>SimplePie_HTTP_Parser</h1>
+        <h4>HTTP Response Parser</h4>
+        <p/>
+        <ul/>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class SimplePie_HTTP_Parser
+            {<br/><ul class="none"><li>// members</li><li>public float <a href="#members">$http_version</a> =
+                        0.0;
+                    </li><li>public integer <a href="#members">$status_code</a> =
+                        0;
+                    </li><li>public string <a href="#members">$reason</a> =
+                        '';
+                    </li><li>public array <a href="#members">$headers</a> =
+                        ;
+                    </li><li>public string <a href="#members">$body</a> =
+                        '';
+                    </li><li>protected string <a href="#members">$state</a> =
+                        'http_version';
+                    </li><li>protected string <a href="#members">$data</a> =
+                        '';
+                    </li><li>protected integer <a href="#members">$data_length</a> =
+                        0;
+                    </li><li>protected integer <a href="#members">$position</a> =
+                        0;
+                    </li><li>protected string <a href="#members">$name</a> =
+                        '';
+                    </li><li>protected string <a href="#members">$value</a> =
+                        '';
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/__construct.xhtml">__construct</a>()
+                    </li><li>public bool <a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/parse.xhtml">parse</a>()
+                    </li><li>protected bool <a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/has_data.xhtml">has_data</a>()
+                    </li><li>protected bool <a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/is_linear_whitespace.xhtml">is_linear_whitespace</a>()
+                    </li><li>protected void <a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/http_version.xhtml">http_version</a>()
+                    </li><li>protected void <a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/status.xhtml">status</a>()
+                    </li><li>protected void <a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/reason.xhtml">reason</a>()
+                    </li><li>protected void <a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/new_line.xhtml">new_line</a>()
+                    </li><li>protected void <a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/name.xhtml">name</a>()
+                    </li><li>protected void <a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/linear_whitespace.xhtml">linear_whitespace</a>()
+                    </li><li>protected void <a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/value.xhtml">value</a>()
+                    </li><li>protected void <a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/value_char.xhtml">value_char</a>()
+                    </li><li>protected void <a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/quote.xhtml">quote</a>()
+                    </li><li>protected void <a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/quote_char.xhtml">quote_char</a>()
+                    </li><li>protected void <a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/quote_escaped.xhtml">quote_escaped</a>()
+                    </li><li>protected void <a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/body.xhtml">body</a>()
+                    </li><li>protected void <a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/chunked.xhtml">chunked</a>()
+                    </li><li>public static string <a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/prepareHeaders.xhtml">prepareHeaders</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>protected</h4>
+          <ul class="members">
+            <li id="data"><strong>$data</strong>
+                —
+                string<br/><span class="indent">Input data</span></li>
+            <li id="data_length"><strong>$data_length</strong>
+                —
+                int<br/><span class="indent">Input data length (to avoid calling strlen() everytime this is needed)</span></li>
+            <li id="name"><strong>$name</strong>
+                —
+                string<br/><span class="indent">Name of the hedaer currently being parsed</span></li>
+            <li id="position"><strong>$position</strong>
+                —
+                int<br/><span class="indent">Current position of the pointer</span></li>
+            <li id="state"><strong>$state</strong>
+                —
+                string<br/><span class="indent">Current state of the state machine</span></li>
+            <li id="value"><strong>$value</strong>
+                —
+                string<br/><span class="indent">Value of the hedaer currently being parsed</span></li>
+          </ul>
+          <h4>public</h4>
+          <ul class="members">
+            <li id="body"><strong>$body</strong>
+                —
+                string<br/><span class="indent">Body of the response</span></li>
+            <li id="headers"><strong>$headers</strong>
+                —
+                array<br/><span class="indent">Key/value pairs of the headers</span></li>
+            <li id="http_version"><strong>$http_version</strong>
+                —
+                float<br/><span class="indent">HTTP Version</span></li>
+            <li id="reason"><strong>$reason</strong>
+                —
+                string<br/><span class="indent">Reason phrase</span></li>
+            <li id="status_code"><strong>$status_code</strong>
+                —
+                int<br/><span class="indent">Status code</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>protected</h4>
+          <ul>
+            <li id="body"><a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/body.xhtml">body()</a>
+                — Parse the body</li>
+            <li id="chunked"><a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/chunked.xhtml">chunked()</a>
+                — Parsed a "Transfer-Encoding: chunked" body</li>
+            <li id="has_data"><a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/has_data.xhtml">has_data()</a>
+                — Check whether there is data beyond the pointer</li>
+            <li id="http_version"><a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/http_version.xhtml">http_version()</a>
+                — Parse the HTTP version</li>
+            <li id="is_linear_whitespace"><a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/is_linear_whitespace.xhtml">is_linear_whitespace()</a>
+                — See if the next character is LWS</li>
+            <li id="linear_whitespace"><a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/linear_whitespace.xhtml">linear_whitespace()</a>
+                — Parse LWS, replacing consecutive LWS characters with a single space</li>
+            <li id="name"><a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/name.xhtml">name()</a>
+                — Parse a header name</li>
+            <li id="new_line"><a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/new_line.xhtml">new_line()</a>
+                — Deal with a new line, shifting data around as needed</li>
+            <li id="quote"><a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/quote.xhtml">quote()</a>
+                — See what state to move to while within quoted header values</li>
+            <li id="quote_char"><a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/quote_char.xhtml">quote_char()</a>
+                — Parse a header value while within quotes</li>
+            <li id="quote_escaped"><a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/quote_escaped.xhtml">quote_escaped()</a>
+                — Parse an escaped character within quotes</li>
+            <li id="reason"><a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/reason.xhtml">reason()</a>
+                — Parse the reason phrase</li>
+            <li id="status"><a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/status.xhtml">status()</a>
+                — Parse the status code</li>
+            <li id="value"><a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/value.xhtml">value()</a>
+                — See what state to move to while within non-quoted header values</li>
+            <li id="value_char"><a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/value_char.xhtml">value_char()</a>
+                — Parse a header value while outside quotes</li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/__construct.xhtml">__construct()</a>
+                — Create an instance of the class with the input data</li>
+            <li id="parse"><a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/parse.xhtml">parse()</a>
+                — Parse the input data</li>
+            <li id="prepareHeaders"><a title="SimplePie_HTTP_Parser" href="../classes/SimplePie_HTTP_Parser/prepareHeaders.xhtml">prepareHeaders()</a>
+                — Prepare headers (take care of proxies headers)</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0-dev - Copyright (C) 2010 - 2019 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

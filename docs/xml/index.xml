@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<index xmlns="http://xml.phpdox.net/src" basedir="C:/xampp/htdocs/bac3/project">
+  <namespace name="">
+    
+    <class name="simple_html_dom_node" src="simplehtmldom_1_9/simple_html_dom.php" xml="classes/simple_html_dom_node.xml"/>
+    <class name="simple_html_dom" src="simplehtmldom_1_9/simple_html_dom.php" xml="classes/simple_html_dom.xml"/>
+    <class name="SentimentTest" src="vendor/aheissenberger/sentimentanalyser/tests/SentimentTest.php" description="Corresponding Class to test YourClass class" xml="classes/SentimentTest.xml"/>
+    <class name="ComposerAutoloaderInit180d64ee6d8ac16603ea71aba6abbc72" src="vendor/composer/autoload_real.php" xml="classes/ComposerAutoloaderInit180d64ee6d8ac16603ea71aba6abbc72.xml"/>
+    <class name="SimplePie_Autoloader" src="vendor/simplepie/simplepie/autoloader.php" description="Autoloader class" xml="classes/SimplePie_Autoloader.xml"/>
+    <class name="idna_convert" src="vendor/simplepie/simplepie/idn/idna_convert.class.php" description="Encode/decode Internationalized Domain Names." xml="classes/idna_convert.xml"/>
+    <class name="Net_IDNA_php4" src="vendor/simplepie/simplepie/idn/idna_convert.class.php" description="Adapter class for aligning the API of idna_convert with that of Net_IDNA" xml="classes/Net_IDNA_php4.xml"/>
+    <class name="SimplePie_Author" src="vendor/simplepie/simplepie/library/SimplePie/Author.php" description="Manages all author-related data" xml="classes/SimplePie_Author.xml"/>
+    <interface name="SimplePie_Cache_Base" src="vendor/simplepie/simplepie/library/SimplePie/Cache/Base.php" description="Base for cache objects" xml="interfaces/SimplePie_Cache_Base.xml"/>
+    <class name="SimplePie_Cache_DB" src="vendor/simplepie/simplepie/library/SimplePie/Cache/DB.php" description="Base class for database-based caches" xml="classes/SimplePie_Cache_DB.xml"/>
+    <class name="SimplePie_Cache_File" src="vendor/simplepie/simplepie/library/SimplePie/Cache/File.php" description="Caches data to the filesystem" xml="classes/SimplePie_Cache_File.xml"/>
+    <class name="SimplePie_Cache_Memcache" src="vendor/simplepie/simplepie/library/SimplePie/Cache/Memcache.php" description="Caches data to memcache" xml="classes/SimplePie_Cache_Memcache.xml"/>
+    <class name="SimplePie_Cache_Memcached" src="vendor/simplepie/simplepie/library/SimplePie/Cache/Memcached.php" description="Caches data to memcached" xml="classes/SimplePie_Cache_Memcached.xml"/>
+    <class name="SimplePie_Cache_MySQL" src="vendor/simplepie/simplepie/library/SimplePie/Cache/MySQL.php" description="Caches data to a MySQL database" xml="classes/SimplePie_Cache_MySQL.xml"/>
+    <class name="SimplePie_Cache_Redis" src="vendor/simplepie/simplepie/library/SimplePie/Cache/Redis.php" description="Caches data to redis" xml="classes/SimplePie_Cache_Redis.xml"/>
+    <class name="SimplePie_Cache" src="vendor/simplepie/simplepie/library/SimplePie/Cache.php" description="Used to create cache objects" xml="classes/SimplePie_Cache.xml"/>
+    <class name="SimplePie_Caption" src="vendor/simplepie/simplepie/library/SimplePie/Caption.php" description="Handles `&lt;media:text&gt;` captions as defined in Media RSS." xml="classes/SimplePie_Caption.xml"/>
+    <class name="SimplePie_Category" src="vendor/simplepie/simplepie/library/SimplePie/Category.php" description="Manages all category-related data" xml="classes/SimplePie_Category.xml"/>
+    <class name="SimplePie_Content_Type_Sniffer" src="vendor/simplepie/simplepie/library/SimplePie/Content/Type/Sniffer.php" description="Content-type sniffing" xml="classes/SimplePie_Content_Type_Sniffer.xml"/>
+    <class name="SimplePie_Copyright" src="vendor/simplepie/simplepie/library/SimplePie/Copyright.php" description="Manages `&lt;media:copyright&gt;` copyright tags as defined in Media RSS" xml="classes/SimplePie_Copyright.xml"/>
+    <class name="SimplePie_Core" src="vendor/simplepie/simplepie/library/SimplePie/Core.php" description="SimplePie class." xml="classes/SimplePie_Core.xml"/>
+    <class name="SimplePie_Credit" src="vendor/simplepie/simplepie/library/SimplePie/Credit.php" description="Handles `&lt;media:credit&gt;` as defined in Media RSS" xml="classes/SimplePie_Credit.xml"/>
+    <class name="SimplePie_Decode_HTML_Entities" src="vendor/simplepie/simplepie/library/SimplePie/Decode/HTML/Entities.php" description="Decode HTML Entities" xml="classes/SimplePie_Decode_HTML_Entities.xml"/>
+    <class name="SimplePie_Enclosure" src="vendor/simplepie/simplepie/library/SimplePie/Enclosure.php" description="Handles everything related to enclosures (including Media RSS and iTunes RSS)" xml="classes/SimplePie_Enclosure.xml"/>
+    <class name="SimplePie_Exception" src="vendor/simplepie/simplepie/library/SimplePie/Exception.php" description="General SimplePie exception class" xml="classes/SimplePie_Exception.xml"/>
+    <class name="SimplePie_File" src="vendor/simplepie/simplepie/library/SimplePie/File.php" description="Used for fetching remote files and reading local files" xml="classes/SimplePie_File.xml"/>
+    <class name="SimplePie_gzdecode" src="vendor/simplepie/simplepie/library/SimplePie/gzdecode.php" description="Decode 'gzip' encoded HTTP data" xml="classes/SimplePie_gzdecode.xml"/>
+    <class name="SimplePie_HTTP_Parser" src="vendor/simplepie/simplepie/library/SimplePie/HTTP/Parser.php" description="HTTP Response Parser" xml="classes/SimplePie_HTTP_Parser.xml"/>
+    <class name="SimplePie_IRI" src="vendor/simplepie/simplepie/library/SimplePie/IRI.php" description="IRI parser/serialiser/normaliser" xml="classes/SimplePie_IRI.xml"/>
+    <class name="SimplePie_Item" src="vendor/simplepie/simplepie/library/SimplePie/Item.php" description="Manages all item-related data" xml="classes/SimplePie_Item.xml"/>
+    <class name="SimplePie_Locator" src="vendor/simplepie/simplepie/library/SimplePie/Locator.php" description="Used for feed auto-discovery" xml="classes/SimplePie_Locator.xml"/>
+    <class name="SimplePie_Misc" src="vendor/simplepie/simplepie/library/SimplePie/Misc.php" description="Miscellanous utilities" xml="classes/SimplePie_Misc.xml"/>
+    <class name="SimplePie_Net_IPv6" src="vendor/simplepie/simplepie/library/SimplePie/Net/IPv6.php" description="Class to validate and to work with IPv6 addresses." xml="classes/SimplePie_Net_IPv6.xml"/>
+    <class name="SimplePie_Parse_Date" src="vendor/simplepie/simplepie/library/SimplePie/Parse/Date.php" description="Date Parser" xml="classes/SimplePie_Parse_Date.xml"/>
+    <class name="SimplePie_Parser" src="vendor/simplepie/simplepie/library/SimplePie/Parser.php" description="Parses XML into something sane" xml="classes/SimplePie_Parser.xml"/>
+    <class name="SimplePie_Rating" src="vendor/simplepie/simplepie/library/SimplePie/Rating.php" description="Handles `&lt;media:rating&gt;` or `&lt;itunes:explicit&gt;` tags as defined in Media RSS and iTunes RSS respectively" xml="classes/SimplePie_Rating.xml"/>
+    <class name="SimplePie_Registry" src="vendor/simplepie/simplepie/library/SimplePie/Registry.php" description="Handles creating objects and calling methods" xml="classes/SimplePie_Registry.xml"/>
+    <class name="SimplePie_Restriction" src="vendor/simplepie/simplepie/library/SimplePie/Restriction.php" description="Handles `&lt;media:restriction&gt;` as defined in Media RSS" xml="classes/SimplePie_Restriction.xml"/>
+    <class name="SimplePie_Sanitize" src="vendor/simplepie/simplepie/library/SimplePie/Sanitize.php" description="Used for data cleanup and post-processing" xml="classes/SimplePie_Sanitize.xml"/>
+    <class name="SimplePie_Source" src="vendor/simplepie/simplepie/library/SimplePie/Source.php" description="Handles `&lt;atom:source&gt;`" xml="classes/SimplePie_Source.xml"/>
+    <class name="SimplePie_XML_Declaration_Parser" src="vendor/simplepie/simplepie/library/SimplePie/XML/Declaration/Parser.php" description="Parses the XML Declaration" xml="classes/SimplePie_XML_Declaration_Parser.xml"/>
+    <class name="SimplePie" src="vendor/simplepie/simplepie/library/SimplePie.php" description="SimplePie" xml="classes/SimplePie.xml"/>
+    <class name="Exception" xml="classes/Exception.xml"/>
+  <class name="BacLib" src="baclib.php" description="bac3 My lib &lt;3" xml="classes/BacLib.xml"/></namespace>
+  <namespace name="aheissenberger\sentimentanalyser">
+    <class name="Sentiment" src="vendor/aheissenberger/sentimentanalyser/src/Sentiment.php" description="German Sentiment analysis library for PHP" xml="classes/aheissenberger_sentimentanalyser_Sentiment.xml"/>
+  </namespace>
+  <namespace name="Composer\Autoload">
+    <class name="ComposerStaticInit180d64ee6d8ac16603ea71aba6abbc72" src="vendor/composer/autoload_static.php" xml="classes/Composer_Autoload_ComposerStaticInit180d64ee6d8ac16603ea71aba6abbc72.xml"/>
+    <class name="ClassLoader" src="vendor/composer/ClassLoader.php" description="ClassLoader implements a PSR-0, PSR-4 and classmap class loader." xml="classes/Composer_Autoload_ClassLoader.xml"/>
+  </namespace>
+</index>

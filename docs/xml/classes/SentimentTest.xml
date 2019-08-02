@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SentimentTest" namespace="" name="SentimentTest" abstract="false" final="false" start="11" end="69">
+  <file path="../project/vendor/aheissenberger/sentimentanalyser/tests" file="SentimentTest.php" realpath="C:/xampp/htdocs/bac3/project/vendor/aheissenberger/sentimentanalyser/tests/SentimentTest.php" size="2497" time="2019-06-14T21:21:28+02:00" unixtime="1560540088" sha1="492ba0374be09fe51189c2e14b765a422ec5c1b0" relative="vendor/aheissenberger/sentimentanalyser/tests/SentimentTest.php"/>
+  <docblock>
+    <description compact="Corresponding Class to test YourClass class">For each class in your library, there should be a corresponding Unit-Test for it
+ Unit-Tests should be as much as possible independent from other test going on.
+
+ @author yourname</description>
+  </docblock>
+  <extends full="PHPUnit_Framework_TestCase" namespace="" name="PHPUnit_Framework_TestCase" unresolved="true"/>
+  <method name="testIsThereAnySyntaxError" start="20" end="24" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Just check if the YourClass has no syntax error">This is just a simple check to make sure your library has no syntax error. This helps you troubleshoot
+any typo before you even use this library in a real project.</description>
+    </docblock>
+  </method>
+  <method name="testLongText" start="33" end="37" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Just check if the YourClass has no syntax error">This is just a simple check to make sure your library has no syntax error. This helps you troubleshoot
+any typo before you even use this library in a real project.</description>
+    </docblock>
+  </method>
+  <method name="testNegativHauptwort" start="45" end="49" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Just check if the YourClass has no syntax error">This is just a simple check to make sure your library has no syntax error. This helps you troubleshoot
+any typo before you even use this library in a real project.</description>
+    </docblock>
+  </method>
+  <method name="testNegativAbwandlung" start="51" end="55" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="testIstHauptwort" start="57" end="61" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="testKeinHauptwort" start="63" end="67" abstract="false" final="false" static="false" visibility="public"/>
+</class>

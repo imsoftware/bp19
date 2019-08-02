@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - SimplePie_Cache_MySQL</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">SimplePie_Cache_MySQL</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#hierarchy">Hierarchy</a>
+          </li>
+          <li>
+            <a href="#constants">Constants</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/vendor/simplepie/simplepie/library/SimplePie/Cache/MySQL.php.xhtml#line56">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>\</small>SimplePie_Cache_MySQL</h1>
+        <h4>Caches data to a MySQL database</h4>
+        <p>Registered for URLs with the "mysql" protocol<br/><br/>For example, `mysql://root:password@localhost:3306/mydb?prefix=sp_` will<br/>connect to the `mydb` database on `localhost` on port 3306, with the user<br/>`root` and the password `password`. All tables will be prefixed with `sp_`</p>
+        <ul/>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class SimplePie_Cache_MySQL
+                extends <a title="SimplePie_Cache_DB" href="../classes/SimplePie_Cache_DB.xhtml">SimplePie_Cache_DB</a>
+            {<br/><ul class="none"><li>// members</li><li>protected <span title="PDO">PDO</span> <a href="#members">$mysql</a>;
+                    </li><li>protected  <a href="#members">$options</a>;
+                    </li><li>protected  <a href="#members">$id</a>;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="SimplePie_Cache_MySQL" href="../classes/SimplePie_Cache_MySQL/__construct.xhtml">__construct</a>()
+                    </li><li>public bool <a title="SimplePie_Cache_MySQL" href="../classes/SimplePie_Cache_MySQL/save.xhtml">save</a>()
+                    </li><li>public array <a title="SimplePie_Cache_MySQL" href="../classes/SimplePie_Cache_MySQL/load.xhtml">load</a>()
+                    </li><li>public int <a title="SimplePie_Cache_MySQL" href="../classes/SimplePie_Cache_MySQL/mtime.xhtml">mtime</a>()
+                    </li><li>public bool <a title="SimplePie_Cache_MySQL" href="../classes/SimplePie_Cache_MySQL/touch.xhtml">touch</a>()
+                    </li><li>public bool <a title="SimplePie_Cache_MySQL" href="../classes/SimplePie_Cache_MySQL/unlink.xhtml">unlink</a>()
+                    </li></ul><ul class="none"><li>// Inherited methods from <span title="SimplePie_Cache_DB">SimplePie_Cache_DB</span></li><li>protected static array <a title="SimplePie_Cache_DB" href="../classes/SimplePie_Cache_DB/prepare_simplepie_object_for_cache.xhtml">prepare_simplepie_object_for_cache</a>()
+                        </li></ul>
+
+            }<br/></div>
+        <h2 id="hierarchy">Hierarchy</h2>
+        <div class="styled">
+          <h4>Extends</h4>
+          <ul>
+            <li>
+              <a title="SimplePie_Cache_DB" href="../classes/SimplePie_Cache_DB.xhtml">SimplePie_Cache_DB</a>
+            </li>
+          </ul>
+        </div>
+        <h2 id="constants">Constants</h2>
+        <table class="styled">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="TYPE_FEED">TYPE_FEED</td>
+              <td>'spc'</td>
+            </tr>
+            <tr>
+              <td id="TYPE_IMAGE">TYPE_IMAGE</td>
+              <td>'spi'</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>protected</h4>
+          <ul class="members">
+            <li id="id"><strong>$id</strong>
+                —
+                string<br/><span class="indent">Cache ID</span></li>
+            <li id="mysql"><strong>$mysql</strong>
+                —
+                <a title="PDO" href="../classes/PDO.xhtml">PDO</a><br/><span class="indent">PDO instance</span></li>
+            <li id="options"><strong>$options</strong>
+                —
+                array<br/><span class="indent">Options</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="SimplePie_Cache_MySQL" href="../classes/SimplePie_Cache_MySQL/__construct.xhtml">__construct()</a>
+                — Create a new cache object</li>
+            <li id="load"><a title="SimplePie_Cache_MySQL" href="../classes/SimplePie_Cache_MySQL/load.xhtml">load()</a>
+                — Retrieve the data saved to the cache</li>
+            <li id="mtime"><a title="SimplePie_Cache_MySQL" href="../classes/SimplePie_Cache_MySQL/mtime.xhtml">mtime()</a>
+                — Retrieve the last modified time for the cache</li>
+            <li id="save"><a title="SimplePie_Cache_MySQL" href="../classes/SimplePie_Cache_MySQL/save.xhtml">save()</a>
+                — Save data to the cache</li>
+            <li id="touch"><a title="SimplePie_Cache_MySQL" href="../classes/SimplePie_Cache_MySQL/touch.xhtml">touch()</a>
+                — Set the last modified time to the current time</li>
+            <li id="unlink"><a title="SimplePie_Cache_MySQL" href="../classes/SimplePie_Cache_MySQL/unlink.xhtml">unlink()</a>
+                — Remove the cache</li>
+          </ul>
+          <h3>Inherited from <a title="SimplePie_Cache_DB" href="../classes/SimplePie_Cache_DB.xhtml">SimplePie_Cache_DB</a></h3>
+          <h4>protected</h4>
+          <ul>
+            <li id="prepare_simplepie_object_for_cache"><a title="SimplePie_Cache_DB" href="../classes/SimplePie_Cache_DB/prepare_simplepie_object_for_cache.xhtml">prepare_simplepie_object_for_cache()</a>
+                — Helper for database conversion</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0-dev - Copyright (C) 2010 - 2019 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

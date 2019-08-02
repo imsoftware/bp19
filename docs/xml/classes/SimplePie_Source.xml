@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SimplePie_Source" namespace="" name="SimplePie_Source" abstract="false" final="false" start="54" end="577">
+  <file path="../project/vendor/simplepie/simplepie/library/SimplePie" file="Source.php" realpath="C:/xampp/htdocs/bac3/project/vendor/simplepie/simplepie/library/SimplePie/Source.php" size="20280" time="2019-06-14T21:21:47+02:00" unixtime="1560540107" sha1="6d477c1cae2d8c1612aefbbf3efa05b07a1c01da" relative="vendor/simplepie/simplepie/library/SimplePie/Source.php"/>
+  <docblock>
+    <description compact="Handles `&lt;atom:source&gt;`">Used by <see xmlns="http://xml.phpdox.net/src" value="SimplePie_Item::get_source()"/>This class can be overloaded with <see xmlns="http://xml.phpdox.net/src" value="SimplePie::set_source_class()"/></description>
+    <package value="SimplePie"/>
+    <subpackage value="API"/>
+  </docblock>
+  <member name="item" visibility="public" static="false" line="56"/>
+  <member name="data" default="" type="array" visibility="public" static="false" line="57"/>
+  <member name="registry" visibility="protected" static="false" line="58"/>
+  <constructor name="__construct" start="60" end="64" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="item" byreference="false" type="{unknown}"/>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </constructor>
+  <method name="set_registry" start="66" end="69" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="registry" byreference="false" type="object">
+      <type full="SimplePie_Registry" namespace="" name="SimplePie_Registry"/>
+    </parameter>
+  </method>
+  <method name="__toString" start="71" end="74" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="get_source_tags" start="76" end="84" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="namespace" byreference="false" type="{unknown}"/>
+    <parameter name="tag" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="get_base" start="86" end="89" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="element" byreference="false" type="array" default=""/>
+  </method>
+  <method name="sanitize" start="91" end="94" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="type" byreference="false" type="{unknown}"/>
+    <parameter name="base" byreference="false" type="string" default="''"/>
+  </method>
+  <method name="get_item" start="96" end="99" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="get_title" start="101" end="133" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="get_category" start="135" end="144" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="key" byreference="false" type="integer" default="0"/>
+  </method>
+  <method name="get_categories" start="146" end="199" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="get_author" start="201" end="210" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="key" byreference="false" type="integer" default="0"/>
+  </method>
+  <method name="get_authors" start="212" end="278" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="get_contributor" start="280" end="289" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="key" byreference="false" type="integer" default="0"/>
+  </method>
+  <method name="get_contributors" start="291" end="345" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="get_link" start="347" end="356" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="key" byreference="false" type="integer" default="0"/>
+    <parameter name="rel" byreference="false" type="string" default="'alternate'"/>
+  </method>
+  <method name="get_permalink" start="361" end="364" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Added for parity between the parent-level and the item/entry-level."/>
+    </docblock>
+  </method>
+  <method name="get_links" start="366" end="436" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="rel" byreference="false" type="string" default="'alternate'"/>
+  </method>
+  <method name="get_description" start="438" end="478" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="get_copyright" start="480" end="504" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="get_language" start="506" end="526" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="get_latitude" start="528" end="540" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="get_longitude" start="542" end="558" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="get_image_url" start="560" end="576" abstract="false" final="false" static="false" visibility="public"/>
+</class>

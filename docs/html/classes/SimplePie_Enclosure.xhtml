@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - SimplePie_Enclosure</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">SimplePie_Enclosure</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#tasks">Tasks</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/vendor/simplepie/simplepie/library/SimplePie/Enclosure.php.xhtml#line54">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>\</small>SimplePie_Enclosure</h1>
+        <h4>Handles everything related to enclosures (including Media RSS and iTunes RSS)</h4>
+        <p>Used by  and This class can be overloaded with </p>
+        <ul/>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class SimplePie_Enclosure
+            {<br/><ul class="none"><li>// members</li><li>public  <a href="#members">$bitrate</a>;
+                    </li><li>public  <a href="#members">$captions</a>;
+                    </li><li>public  <a href="#members">$categories</a>;
+                    </li><li>public  <a href="#members">$channels</a>;
+                    </li><li>public <span title="SimplePie_Copyright">SimplePie_Copyright</span> <a href="#members">$copyright</a>;
+                    </li><li>public  <a href="#members">$credits</a>;
+                    </li><li>public  <a href="#members">$description</a>;
+                    </li><li>public  <a href="#members">$duration</a>;
+                    </li><li>public  <a href="#members">$expression</a>;
+                    </li><li>public  <a href="#members">$framerate</a>;
+                    </li><li>public  <a href="#members">$handler</a>;
+                    </li><li>public  <a href="#members">$hashes</a>;
+                    </li><li>public  <a href="#members">$height</a>;
+                    </li><li>public  <a href="#members">$javascript</a>;
+                    </li><li>public  <a href="#members">$keywords</a>;
+                    </li><li>public  <a href="#members">$lang</a>;
+                    </li><li>public  <a href="#members">$length</a>;
+                    </li><li>public  <a href="#members">$link</a>;
+                    </li><li>public  <a href="#members">$medium</a>;
+                    </li><li>public  <a href="#members">$player</a>;
+                    </li><li>public  <a href="#members">$ratings</a>;
+                    </li><li>public  <a href="#members">$restrictions</a>;
+                    </li><li>public  <a href="#members">$samplingrate</a>;
+                    </li><li>public  <a href="#members">$thumbnails</a>;
+                    </li><li>public  <a href="#members">$title</a>;
+                    </li><li>public  <a href="#members">$type</a>;
+                    </li><li>public  <a href="#members">$width</a>;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/__construct.xhtml">__construct</a>()
+                    </li><li>public string <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/__toString.xhtml">__toString</a>()
+                    </li><li>public string|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_bitrate.xhtml">get_bitrate</a>()
+                    </li><li>public SimplePie_Caption|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_caption.xhtml">get_caption</a>()
+                    </li><li>public array|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_captions.xhtml">get_captions</a>()
+                    </li><li>public SimplePie_Category|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_category.xhtml">get_category</a>()
+                    </li><li>public array|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_categories.xhtml">get_categories</a>()
+                    </li><li>public int|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_channels.xhtml">get_channels</a>()
+                    </li><li>public SimplePie_Copyright|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_copyright.xhtml">get_copyright</a>()
+                    </li><li>public SimplePie_Credit|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_credit.xhtml">get_credit</a>()
+                    </li><li>public array|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_credits.xhtml">get_credits</a>()
+                    </li><li>public string|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_description.xhtml">get_description</a>()
+                    </li><li>public string|int|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_duration.xhtml">get_duration</a>()
+                    </li><li>public string <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_expression.xhtml">get_expression</a>()
+                    </li><li>public string|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_extension.xhtml">get_extension</a>()
+                    </li><li>public string|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_framerate.xhtml">get_framerate</a>()
+                    </li><li>public string|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_handler.xhtml">get_handler</a>()
+                    </li><li>public string|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_hash.xhtml">get_hash</a>()
+                    </li><li>public array|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_hashes.xhtml">get_hashes</a>()
+                    </li><li>public string|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_height.xhtml">get_height</a>()
+                    </li><li>public string|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_language.xhtml">get_language</a>()
+                    </li><li>public string|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_keyword.xhtml">get_keyword</a>()
+                    </li><li>public array|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_keywords.xhtml">get_keywords</a>()
+                    </li><li>public float <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_length.xhtml">get_length</a>()
+                    </li><li>public string|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_link.xhtml">get_link</a>()
+                    </li><li>public string|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_medium.xhtml">get_medium</a>()
+                    </li><li>public string|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_player.xhtml">get_player</a>()
+                    </li><li>public SimplePie_Rating|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_rating.xhtml">get_rating</a>()
+                    </li><li>public array|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_ratings.xhtml">get_ratings</a>()
+                    </li><li>public SimplePie_Restriction|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_restriction.xhtml">get_restriction</a>()
+                    </li><li>public array|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_restrictions.xhtml">get_restrictions</a>()
+                    </li><li>public string|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_sampling_rate.xhtml">get_sampling_rate</a>()
+                    </li><li>public float|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_size.xhtml">get_size</a>()
+                    </li><li>public string|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_thumbnail.xhtml">get_thumbnail</a>()
+                    </li><li>public array|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_thumbnails.xhtml">get_thumbnails</a>()
+                    </li><li>public string|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_title.xhtml">get_title</a>()
+                    </li><li>public string|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_type.xhtml">get_type</a>()
+                    </li><li>public string|null <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_width.xhtml">get_width</a>()
+                    </li><li>public string <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/native_embed.xhtml">native_embed</a>()
+                    </li><li>public string <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/embed.xhtml">embed</a>()
+                    </li><li>public string <a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_real_type.xhtml">get_real_type</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="tasks">Tasks</h2>
+        <table class="styled">
+          <thead>
+            <tr>
+              <th style="width:3em;">Line</th>
+              <th>Task</th>
+            </tr>
+          </thead>
+          <tr>
+            <td class="nummeric">899+</td>
+            <td>If the dimensions for media:content are defined, use them when width/height are set to 'auto'.</td>
+          </tr>
+        </table>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>public</h4>
+          <ul class="members">
+            <li id="bitrate"><strong>$bitrate</strong>
+                —
+                string</li>
+            <li id="captions"><strong>$captions</strong>
+                —
+                array</li>
+            <li id="categories"><strong>$categories</strong>
+                —
+                array</li>
+            <li id="channels"><strong>$channels</strong>
+                —
+                int</li>
+            <li id="copyright"><strong>$copyright</strong>
+                —
+                <a title="SimplePie_Copyright" href="../classes/SimplePie_Copyright.xhtml">SimplePie_Copyright</a></li>
+            <li id="credits"><strong>$credits</strong>
+                —
+                array</li>
+            <li id="description"><strong>$description</strong>
+                —
+                string</li>
+            <li id="duration"><strong>$duration</strong>
+                —
+                int</li>
+            <li id="expression"><strong>$expression</strong>
+                —
+                string</li>
+            <li id="framerate"><strong>$framerate</strong>
+                —
+                string</li>
+            <li id="handler"><strong>$handler</strong>
+                —
+                string</li>
+            <li id="hashes"><strong>$hashes</strong>
+                —
+                array</li>
+            <li id="height"><strong>$height</strong>
+                —
+                string</li>
+            <li id="javascript"><strong>$javascript</strong>
+                —
+                null</li>
+            <li id="keywords"><strong>$keywords</strong>
+                —
+                array</li>
+            <li id="lang"><strong>$lang</strong>
+                —
+                string</li>
+            <li id="length"><strong>$length</strong>
+                —
+                string</li>
+            <li id="link"><strong>$link</strong>
+                —
+                string</li>
+            <li id="medium"><strong>$medium</strong>
+                —
+                string</li>
+            <li id="player"><strong>$player</strong>
+                —
+                string</li>
+            <li id="ratings"><strong>$ratings</strong>
+                —
+                array</li>
+            <li id="restrictions"><strong>$restrictions</strong>
+                —
+                array</li>
+            <li id="samplingrate"><strong>$samplingrate</strong>
+                —
+                string</li>
+            <li id="thumbnails"><strong>$thumbnails</strong>
+                —
+                array</li>
+            <li id="title"><strong>$title</strong>
+                —
+                string</li>
+            <li id="type"><strong>$type</strong>
+                —
+                string</li>
+            <li id="width"><strong>$width</strong>
+                —
+                string</li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/__construct.xhtml">__construct()</a>
+                — Constructor, used to input the data</li>
+            <li id="__toString"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/__toString.xhtml">__toString()</a>
+                — String-ified version</li>
+            <li id="embed"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/embed.xhtml">embed()</a>
+                — Embed the enclosure using Javascript</li>
+            <li id="get_bitrate"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_bitrate.xhtml">get_bitrate()</a>
+                — Get the bitrate</li>
+            <li id="get_caption"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_caption.xhtml">get_caption()</a>
+                — Get a single caption</li>
+            <li id="get_captions"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_captions.xhtml">get_captions()</a>
+                — Get all captions</li>
+            <li id="get_categories"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_categories.xhtml">get_categories()</a>
+                — Get all categories</li>
+            <li id="get_category"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_category.xhtml">get_category()</a>
+                — Get a single category</li>
+            <li id="get_channels"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_channels.xhtml">get_channels()</a>
+                — Get the number of audio channels</li>
+            <li id="get_copyright"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_copyright.xhtml">get_copyright()</a>
+                — Get the copyright information</li>
+            <li id="get_credit"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_credit.xhtml">get_credit()</a>
+                — Get a single credit</li>
+            <li id="get_credits"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_credits.xhtml">get_credits()</a>
+                — Get all credits</li>
+            <li id="get_description"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_description.xhtml">get_description()</a>
+                — Get the description of the enclosure</li>
+            <li id="get_duration"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_duration.xhtml">get_duration()</a>
+                — Get the duration of the enclosure</li>
+            <li id="get_expression"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_expression.xhtml">get_expression()</a>
+                — Get the expression</li>
+            <li id="get_extension"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_extension.xhtml">get_extension()</a>
+                — Get the file extension</li>
+            <li id="get_framerate"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_framerate.xhtml">get_framerate()</a>
+                — Get the framerate (in frames-per-second)</li>
+            <li id="get_handler"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_handler.xhtml">get_handler()</a>
+                — Get the preferred handler</li>
+            <li id="get_hash"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_hash.xhtml">get_hash()</a>
+                — Get a single hash</li>
+            <li id="get_hashes"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_hashes.xhtml">get_hashes()</a>
+                — Get all credits</li>
+            <li id="get_height"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_height.xhtml">get_height()</a>
+                — Get the height</li>
+            <li id="get_keyword"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_keyword.xhtml">get_keyword()</a>
+                — Get a single keyword</li>
+            <li id="get_keywords"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_keywords.xhtml">get_keywords()</a>
+                — Get all keywords</li>
+            <li id="get_language"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_language.xhtml">get_language()</a>
+                — Get the language</li>
+            <li id="get_length"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_length.xhtml">get_length()</a>
+                — Get length</li>
+            <li id="get_link"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_link.xhtml">get_link()</a>
+                — Get the URL</li>
+            <li id="get_medium"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_medium.xhtml">get_medium()</a>
+                — Get the medium</li>
+            <li id="get_player"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_player.xhtml">get_player()</a>
+                — Get the player URL</li>
+            <li id="get_rating"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_rating.xhtml">get_rating()</a>
+                — Get a single rating</li>
+            <li id="get_ratings"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_ratings.xhtml">get_ratings()</a>
+                — Get all ratings</li>
+            <li id="get_real_type"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_real_type.xhtml">get_real_type()</a>
+                — Get the real media type</li>
+            <li id="get_restriction"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_restriction.xhtml">get_restriction()</a>
+                — Get a single restriction</li>
+            <li id="get_restrictions"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_restrictions.xhtml">get_restrictions()</a>
+                — Get all restrictions</li>
+            <li id="get_sampling_rate"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_sampling_rate.xhtml">get_sampling_rate()</a>
+                — Get the sampling rate (in kHz)</li>
+            <li id="get_size"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_size.xhtml">get_size()</a>
+                — Get the file size (in MiB)</li>
+            <li id="get_thumbnail"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_thumbnail.xhtml">get_thumbnail()</a>
+                — Get a single thumbnail</li>
+            <li id="get_thumbnails"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_thumbnails.xhtml">get_thumbnails()</a>
+                — Get all thumbnails</li>
+            <li id="get_title"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_title.xhtml">get_title()</a>
+                — Get the title</li>
+            <li id="get_type"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_type.xhtml">get_type()</a>
+                — Get mimetype of the enclosure</li>
+            <li id="get_width"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/get_width.xhtml">get_width()</a>
+                — Get the width</li>
+            <li id="native_embed"><a title="SimplePie_Enclosure" href="../classes/SimplePie_Enclosure/native_embed.xhtml">native_embed()</a>
+                — Embed the enclosure using `&lt;embed&gt;`</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0-dev - Copyright (C) 2010 - 2019 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

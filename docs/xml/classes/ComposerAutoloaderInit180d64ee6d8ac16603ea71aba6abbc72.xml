@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="ComposerAutoloaderInit180d64ee6d8ac16603ea71aba6abbc72" namespace="" name="ComposerAutoloaderInit180d64ee6d8ac16603ea71aba6abbc72" abstract="false" final="false" start="5" end="52">
+  <file path="../project/vendor/composer" file="autoload_real.php" realpath="C:/xampp/htdocs/bac3/project/vendor/composer/autoload_real.php" size="1762" time="2019-06-14T21:21:48+02:00" unixtime="1560540108" sha1="331a479bcf0ee9c1951055052000a3c458f90b9d" relative="vendor/composer/autoload_real.php"/>
+  <member name="loader" visibility="private" static="true" line="7"/>
+  <method name="loadClassLoader" start="9" end="14" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="class" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getLoader" start="16" end="51" abstract="false" final="false" static="true" visibility="public"/>
+</class>

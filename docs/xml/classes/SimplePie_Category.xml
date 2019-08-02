@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SimplePie_Category" namespace="" name="SimplePie_Category" abstract="false" final="false" start="54" end="162">
+  <file path="../project/vendor/simplepie/simplepie/library/SimplePie" file="Category.php" realpath="C:/xampp/htdocs/bac3/project/vendor/simplepie/simplepie/library/SimplePie/Category.php" size="3959" time="2019-06-14T21:21:47+02:00" unixtime="1560540107" sha1="e8d687f1bb4679984862143893b8936420907fbe" relative="vendor/simplepie/simplepie/library/SimplePie/Category.php"/>
+  <docblock>
+    <description compact="Manages all category-related data">Used by <see xmlns="http://xml.phpdox.net/src" value="SimplePie_Item::get_category()"/> and <see xmlns="http://xml.phpdox.net/src" value="SimplePie_Item::get_categories()"/>This class can be overloaded with <see xmlns="http://xml.phpdox.net/src" value="SimplePie::set_category_class()"/></description>
+    <package value="SimplePie"/>
+    <subpackage value="API"/>
+  </docblock>
+  <member name="term" visibility="public" static="false" line="62">
+    <docblock>
+      <description compact="Category identifier"/>
+      <var type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </var>
+      <see value="get_term"/>
+    </docblock>
+  </member>
+  <member name="scheme" visibility="public" static="false" line="70">
+    <docblock>
+      <description compact="Categorization scheme identifier"/>
+      <var type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </var>
+      <see value="get_scheme()"/>
+    </docblock>
+  </member>
+  <member name="label" visibility="public" static="false" line="78">
+    <docblock>
+      <description compact="Human readable label"/>
+      <var type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </var>
+      <see value="get_label()"/>
+    </docblock>
+  </member>
+  <member name="type" visibility="public" static="false" line="89">
+    <docblock>
+      <description compact="Category type">category for &lt;category&gt;
+subject for &lt;dc:subject&gt;</description>
+      <var type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </var>
+      <see value="get_type()"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="99" end="105" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor, used to input the data"/>
+      <param type="object" variable="$term">
+        <type full="string|null" namespace="" name="string|null"/>
+      </param>
+      <param type="object" variable="$scheme">
+        <type full="string|null" namespace="" name="string|null"/>
+      </param>
+      <param type="object" variable="$label">
+        <type full="string|null" namespace="" name="string|null"/>
+      </param>
+      <param type="object" variable="$type">
+        <type full="string|null" namespace="" name="string|null"/>
+      </param>
+    </docblock>
+    <parameter name="term" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="scheme" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="label" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="type" byreference="false" type="{unknown}" default="NULL"/>
+  </constructor>
+  <method name="__toString" start="112" end="116" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="String-ified version"/>
+      <return type="string"/>
+    </docblock>
+    <inline>
+      <comment value="There is no $this-&gt;data here" line="114"/>
+    </inline>
+  </method>
+  <method name="get_term" start="123" end="126" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the category identifier"/>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_scheme" start="133" end="136" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the categorization scheme identifier"/>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_label" start="144" end="151" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the human readable label"/>
+      <param type="object" variable="$strict">
+        <type full="bool" namespace="" name="bool"/>
+      </param>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+    <parameter name="strict" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="get_type" start="158" end="161" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the category type"/>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+</class>

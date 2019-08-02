@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - Net_IDNA_php4</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">Net_IDNA_php4</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#hierarchy">Hierarchy</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/vendor/simplepie/simplepie/idn/idna_convert.class.php.xhtml#line945">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>\</small>Net_IDNA_php4</h1>
+        <h4>Adapter class for aligning the API of idna_convert with that of Net_IDNA</h4>
+        <p/>
+        <ul>
+          <li>Author: Matthias Sommerfeld &lt;mso@phlylabs.de&gt;</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class Net_IDNA_php4
+                extends <a title="idna_convert" href="../classes/idna_convert.xhtml">idna_convert</a>
+            {<br/><ul class="none"><li>// Inherited members from <span title="idna_convert">idna_convert</span></li><li>public array <a href="#members">$NP</a>;
+                        </li><li>public string <a href="#members">$_punycode_prefix</a>;
+                        </li><li>public integer <a href="#members">$_invalid_ucs</a>;
+                        </li><li>public integer <a href="#members">$_max_ucs</a>;
+                        </li><li>public integer <a href="#members">$_base</a>;
+                        </li><li>public integer <a href="#members">$_tmin</a>;
+                        </li><li>public integer <a href="#members">$_tmax</a>;
+                        </li><li>public integer <a href="#members">$_skew</a>;
+                        </li><li>public integer <a href="#members">$_damp</a>;
+                        </li><li>public integer <a href="#members">$_initial_bias</a>;
+                        </li><li>public integer <a href="#members">$_initial_n</a>;
+                        </li><li>public integer <a href="#members">$_sbase</a>;
+                        </li><li>public integer <a href="#members">$_lbase</a>;
+                        </li><li>public integer <a href="#members">$_vbase</a>;
+                        </li><li>public integer <a href="#members">$_tbase</a>;
+                        </li><li>public integer <a href="#members">$_lcount</a>;
+                        </li><li>public integer <a href="#members">$_vcount</a>;
+                        </li><li>public integer <a href="#members">$_tcount</a>;
+                        </li><li>public integer <a href="#members">$_ncount</a>;
+                        </li><li>public integer <a href="#members">$_scount</a>;
+                        </li><li>public boolean <a href="#members">$_error</a>;
+                        </li><li>public string <a href="#members">$_api_encoding</a>;
+                        </li><li>public boolean <a href="#members">$_allow_overlong</a>;
+                        </li><li>public boolean <a href="#members">$_strict_mode</a>;
+                        </li></ul><ul class="none"><li>// methods</li><li>public boolean <a title="Net_IDNA_php4" href="../classes/Net_IDNA_php4/setParams.xhtml">setParams</a>()
+                    </li></ul><ul class="none"><li>// Inherited methods from <span title="idna_convert">idna_convert</span></li><li>public void <a title="idna_convert" href="../classes/idna_convert/__construct.xhtml">__construct</a>()
+                        </li><li>public boolean <a title="idna_convert" href="../classes/idna_convert/set_parameter.xhtml">set_parameter</a>()
+                        </li><li>public string <a title="idna_convert" href="../classes/idna_convert/decode.xhtml">decode</a>()
+                        </li><li>public string <a title="idna_convert" href="../classes/idna_convert/encode.xhtml">encode</a>()
+                        </li><li>public string <a title="idna_convert" href="../classes/idna_convert/get_last_error.xhtml">get_last_error</a>()
+                        </li><li>public void <a title="idna_convert" href="../classes/idna_convert/_decode.xhtml">_decode</a>()
+                        </li><li>public void <a title="idna_convert" href="../classes/idna_convert/_encode.xhtml">_encode</a>()
+                        </li><li>public void <a title="idna_convert" href="../classes/idna_convert/_adapt.xhtml">_adapt</a>()
+                        </li><li>public void <a title="idna_convert" href="../classes/idna_convert/_encode_digit.xhtml">_encode_digit</a>()
+                        </li><li>public void <a title="idna_convert" href="../classes/idna_convert/_decode_digit.xhtml">_decode_digit</a>()
+                        </li><li>public void <a title="idna_convert" href="../classes/idna_convert/_error.xhtml">_error</a>()
+                        </li><li>public string <a title="idna_convert" href="../classes/idna_convert/_nameprep.xhtml">_nameprep</a>()
+                        </li><li>public array <a title="idna_convert" href="../classes/idna_convert/_hangul_decompose.xhtml">_hangul_decompose</a>()
+                        </li><li>public array <a title="idna_convert" href="../classes/idna_convert/_hangul_compose.xhtml">_hangul_compose</a>()
+                        </li><li>public integer <a title="idna_convert" href="../classes/idna_convert/_get_combining_class.xhtml">_get_combining_class</a>()
+                        </li><li>public array <a title="idna_convert" href="../classes/idna_convert/_apply_cannonical_ordering.xhtml">_apply_cannonical_ordering</a>()
+                        </li><li>public array <a title="idna_convert" href="../classes/idna_convert/_combine.xhtml">_combine</a>()
+                        </li><li>public void <a title="idna_convert" href="../classes/idna_convert/_utf8_to_ucs4.xhtml">_utf8_to_ucs4</a>()
+                        </li><li>public void <a title="idna_convert" href="../classes/idna_convert/_ucs4_to_utf8.xhtml">_ucs4_to_utf8</a>()
+                        </li><li>public void <a title="idna_convert" href="../classes/idna_convert/_ucs4_to_ucs4_string.xhtml">_ucs4_to_ucs4_string</a>()
+                        </li><li>public void <a title="idna_convert" href="../classes/idna_convert/_ucs4_string_to_ucs4.xhtml">_ucs4_string_to_ucs4</a>()
+                        </li></ul>
+
+            }<br/></div>
+        <h2 id="hierarchy">Hierarchy</h2>
+        <div class="styled">
+          <h4>Extends</h4>
+          <ul>
+            <li>
+              <a title="idna_convert" href="../classes/idna_convert.xhtml">idna_convert</a>
+            </li>
+          </ul>
+        </div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>public</h4>
+          <ul class="members">
+            <li id="NP"><strong>$NP</strong>
+                —
+                array<br/><span class="indent">Holds all relevant mapping tables, loaded from a seperate file on construct See RFC3454 for details</span></li>
+            <li id="_allow_overlong">
+              <strong>$_allow_overlong</strong>
+            </li>
+            <li id="_api_encoding">
+              <strong>$_api_encoding</strong>
+            </li>
+            <li id="_base">
+              <strong>$_base</strong>
+            </li>
+            <li id="_damp">
+              <strong>$_damp</strong>
+            </li>
+            <li id="_error">
+              <strong>$_error</strong>
+            </li>
+            <li id="_initial_bias">
+              <strong>$_initial_bias</strong>
+            </li>
+            <li id="_initial_n">
+              <strong>$_initial_n</strong>
+            </li>
+            <li id="_invalid_ucs">
+              <strong>$_invalid_ucs</strong>
+            </li>
+            <li id="_lbase">
+              <strong>$_lbase</strong>
+            </li>
+            <li id="_lcount">
+              <strong>$_lcount</strong>
+            </li>
+            <li id="_max_ucs">
+              <strong>$_max_ucs</strong>
+            </li>
+            <li id="_ncount">
+              <strong>$_ncount</strong>
+            </li>
+            <li id="_punycode_prefix">
+              <strong>$_punycode_prefix</strong>
+            </li>
+            <li id="_sbase">
+              <strong>$_sbase</strong>
+            </li>
+            <li id="_scount">
+              <strong>$_scount</strong>
+            </li>
+            <li id="_skew">
+              <strong>$_skew</strong>
+            </li>
+            <li id="_strict_mode">
+              <strong>$_strict_mode</strong>
+            </li>
+            <li id="_tbase">
+              <strong>$_tbase</strong>
+            </li>
+            <li id="_tcount">
+              <strong>$_tcount</strong>
+            </li>
+            <li id="_tmax">
+              <strong>$_tmax</strong>
+            </li>
+            <li id="_tmin">
+              <strong>$_tmin</strong>
+            </li>
+            <li id="_vbase">
+              <strong>$_vbase</strong>
+            </li>
+            <li id="_vcount">
+              <strong>$_vcount</strong>
+            </li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>public</h4>
+          <ul>
+            <li id="setParams"><a title="Net_IDNA_php4" href="../classes/Net_IDNA_php4/setParams.xhtml">setParams()</a>
+                — Sets a new option value. Available options and values: [encoding - Use either UTF-8, UCS4 as array or UCS4 as string as input ('utf8' for UTF-8,         'ucs4_string' and 'ucs4_array' respectively for UCS4); The output is always UTF-8] [overlong - Unicode does not allow unnecessarily long encodings of chars,             to allow this, set this parameter to true, else to false;             default is false.] [strict - true: strict mode, good for registration purposes - Causes errors           on failures; false: loose mode, ideal for "wildlife" applications           by silently ignoring errors and returning the original input instead</li>
+          </ul>
+          <h3>Inherited from <a title="idna_convert" href="../classes/idna_convert.xhtml">idna_convert</a></h3>
+          <h4>public</h4>
+          <ul>
+            <li id="_adapt"><a title="idna_convert" href="../classes/idna_convert/_adapt.xhtml">_adapt()</a>
+                — Adapt the bias according to the current code point and position</li>
+            <li id="_apply_cannonical_ordering"><a title="idna_convert" href="../classes/idna_convert/_apply_cannonical_ordering.xhtml">_apply_cannonical_ordering()</a>
+                — Apllies the cannonical ordering of a decomposed UCS4 sequence</li>
+            <li id="_combine"><a title="idna_convert" href="../classes/idna_convert/_combine.xhtml">_combine()</a>
+                — Do composition of a sequence of starter and non-starter</li>
+            <li id="_decode"><a title="idna_convert" href="../classes/idna_convert/_decode.xhtml">_decode()</a>
+                — The actual decoding algorithm</li>
+            <li id="_decode_digit"><a title="idna_convert" href="../classes/idna_convert/_decode_digit.xhtml">_decode_digit()</a>
+                — Decode a certain digit</li>
+            <li id="_encode"><a title="idna_convert" href="../classes/idna_convert/_encode.xhtml">_encode()</a>
+                — The actual encoding algorithm</li>
+            <li id="_encode_digit"><a title="idna_convert" href="../classes/idna_convert/_encode_digit.xhtml">_encode_digit()</a>
+                — Encoding a certain digit</li>
+            <li id="_error"><a title="idna_convert" href="../classes/idna_convert/_error.xhtml">_error()</a>
+                — Internal error handling method</li>
+            <li id="_get_combining_class"><a title="idna_convert" href="../classes/idna_convert/_get_combining_class.xhtml">_get_combining_class()</a>
+                — Returns the combining class of a certain wide char</li>
+            <li id="_hangul_compose"><a title="idna_convert" href="../classes/idna_convert/_hangul_compose.xhtml">_hangul_compose()</a>
+                — Ccomposes a Hangul syllable (see http://www.unicode.org/unicode/reports/tr15/#Hangul</li>
+            <li id="_hangul_decompose"><a title="idna_convert" href="../classes/idna_convert/_hangul_decompose.xhtml">_hangul_decompose()</a>
+                — Decomposes a Hangul syllable (see http://www.unicode.org/unicode/reports/tr15/#Hangul</li>
+            <li id="_nameprep"><a title="idna_convert" href="../classes/idna_convert/_nameprep.xhtml">_nameprep()</a>
+                — Do Nameprep according to RFC3491 and RFC3454</li>
+            <li id="_ucs4_string_to_ucs4"><a title="idna_convert" href="../classes/idna_convert/_ucs4_string_to_ucs4.xhtml">_ucs4_string_to_ucs4()</a>
+                — Convert UCS-4 strin into UCS-4 garray</li>
+            <li id="_ucs4_to_ucs4_string"><a title="idna_convert" href="../classes/idna_convert/_ucs4_to_ucs4_string.xhtml">_ucs4_to_ucs4_string()</a>
+                — Convert UCS-4 array into UCS-4 string</li>
+            <li id="_ucs4_to_utf8"><a title="idna_convert" href="../classes/idna_convert/_ucs4_to_utf8.xhtml">_ucs4_to_utf8()</a>
+                — Convert UCS-4 string into UTF-8 string See _utf8_to_ucs4() for details</li>
+            <li id="_utf8_to_ucs4"><a title="idna_convert" href="../classes/idna_convert/_utf8_to_ucs4.xhtml">_utf8_to_ucs4()</a>
+                — This converts an UTF-8 encoded string to its UCS-4 representation By talking about UCS-4 "strings" we mean arrays of 32bit integers representing each of the "chars". This is due to PHP not being able to handle strings with bit depth different from 8. This apllies to the reverse method _ucs4_to_utf8(), too.</li>
+            <li id="decode"><a title="idna_convert" href="../classes/idna_convert/decode.xhtml">decode()</a>
+                — Decode a given ACE domain name</li>
+            <li id="encode"><a title="idna_convert" href="../classes/idna_convert/encode.xhtml">encode()</a>
+                — Encode a given UTF-8 domain name</li>
+            <li id="get_last_error"><a title="idna_convert" href="../classes/idna_convert/get_last_error.xhtml">get_last_error()</a>
+                — Use this method to get the last error ocurred</li>
+            <li id="set_parameter"><a title="idna_convert" href="../classes/idna_convert/set_parameter.xhtml">set_parameter()</a>
+                — Sets a new option value. Available options and values: [encoding - Use either UTF-8, UCS4 as array or UCS4 as string as input ('utf8' for UTF-8,         'ucs4_string' and 'ucs4_array' respectively for UCS4); The output is always UTF-8] [overlong - Unicode does not allow unnecessarily long encodings of chars,             to allow this, set this parameter to true, else to false;             default is false.] [strict - true: strict mode, good for registration purposes - Causes errors           on failures; false: loose mode, ideal for "wildlife" applications           by silently ignoring errors and returning the original input instead</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0-dev - Copyright (C) 2010 - 2019 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SimplePie_Net_IPv6" namespace="" name="SimplePie_Net_IPv6" abstract="false" final="false" start="58" end="269">
+  <file path="../project/vendor/simplepie/simplepie/library/SimplePie/Net" file="IPv6.php" realpath="C:/xampp/htdocs/bac3/project/vendor/simplepie/simplepie/library/SimplePie/Net/IPv6.php" size="7513" time="2019-06-14T21:21:47+02:00" unixtime="1560540107" sha1="3c8abfa4c8c58bacd97721e0e926f6e909c87565" relative="vendor/simplepie/simplepie/library/SimplePie/Net/IPv6.php"/>
+  <docblock>
+    <description compact="Class to validate and to work with IPv6 addresses."/>
+    <package value="SimplePie"/>
+    <subpackage value="HTTP"/>
+    <copyright value="2003-2005 The PHP Group"/>
+    <license name="http://www.opensource.org/licenses/bsd-license.php"/>
+    <link value="http://pear.php.net/package/Net_IPv6"/>
+    <author value="Alexander Merz &lt;alexander.merz@web.de&gt;"/>
+    <author value="elfrink at introweb dot nl"/>
+    <author value="Josh Peck &lt;jmp at joshpeck dot org&gt;"/>
+    <author value="Geoffrey Sneddon &lt;geoffers@gmail.com&gt;"/>
+  </docblock>
+  <method name="uncompress" start="78" end="130" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Uncompresses an IPv6 address">RFC 4291 allows you to compress concecutive zero pieces in an address to
+'::'. This method expects a valid IPv6 address and expands the '::' to
+the required number of zero pieces.
+
+Example:  FF01::101   -&gt;  FF01:0:0:0:0:0:0:101
+          ::1         -&gt;  0:0:0:0:0:0:0:1</description>
+      <author value="Alexander Merz &lt;alexander.merz@web.de&gt;"/>
+      <author value="elfrink at introweb dot nl"/>
+      <author value="Josh Peck &lt;jmp at joshpeck dot org&gt;"/>
+      <copyright value="2003-2005 The PHP Group"/>
+      <license name="http://www.opensource.org/licenses/bsd-license.php"/>
+      <param description="An IPv6 address" type="string" variable="$ip"/>
+      <return description="The uncompressed IPv6 address" type="string"/>
+    </docblock>
+    <parameter name="ip" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="compress" start="146" end="178" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Compresses an IPv6 address">RFC 4291 allows you to compress concecutive zero pieces in an address to
+'::'. This method expects a valid IPv6 address and compresses consecutive
+zero pieces to '::'.
+
+Example:  FF01:0:0:0:0:0:0:101   -&gt;  FF01::101
+          0:0:0:0:0:0:0:1        -&gt;  ::1</description>
+      <see value="uncompress()"/>
+      <param description="An IPv6 address" type="string" variable="$ip"/>
+      <return description="The compressed IPv6 address" type="string"/>
+    </docblock>
+    <parameter name="ip" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="Prepare the IP to be compressed" line="148"/>
+      <comment value="Replace all leading zeros" line="152"/>
+      <comment value="Find bunches of zeros" line="155"/>
+    </inline>
+  </method>
+  <method name="split_v6_v4" start="192" end="203" abstract="false" final="false" static="true" visibility="private">
+    <docblock>
+      <description compact="Splits an IPv6 address into the IPv6 and IPv4 representation parts">RFC 4291 allows you to represent the last two parts of an IPv6 address
+using the standard IPv4 representation
+
+Example:  0:0:0:0:0:0:13.1.68.3
+          0:0:0:0:0:FFFF:129.144.52.38</description>
+      <param description="An IPv6 address" type="string" variable="$ip"/>
+      <return description="[0] contains the IPv6 represented part, and [1] the IPv4 represented part" type="array"/>
+    </docblock>
+    <parameter name="ip" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="check_ipv6" start="213" end="254" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Checks an IPv6 address">Checks if the given IP is a valid IPv6 address</description>
+      <param description="An IPv6 address" type="string" variable="$ip"/>
+      <return description="true if $ip is a valid IPv6 address" type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="ip" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="checkIPv6" start="265" end="268" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Checks if the given IP is a valid IPv6 address"/>
+      <codecoverageignore/>
+      <deprecated value="Use {@see SimplePie_Net_IPv6::check_ipv6()} instead"/>
+      <see value="check_ipv6"/>
+      <param description="An IPv6 address" type="string" variable="$ip"/>
+      <return description="true if $ip is a valid IPv6 address" type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="ip" byreference="false" type="{unknown}"/>
+  </method>
+</class>

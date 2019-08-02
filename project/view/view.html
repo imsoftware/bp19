@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>OpenBallot View</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit-core.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="js/Chart.bundle.min.js"></script>
+    <script src="js/chartjs-plugin-colorschemes.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="multichart.js"></script>
+</head>
+<body id="view" class="uk-background-blend-overlay">
+
+    <!-- Nav -->
+    <nav id="navbar" class="uk-navbar-container uk-navbar-transparent" uk-navbar="mode: click; dropbar: true; dropbar-mode: push;">
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li class="uk-active"><a title="OpenBallot.de Frontpage" href="./"><img id="logo" src="img/openballot.png" alt="OpenBallot Logo"></a></li>
+                <li><a title="New Search" href="./"><span class="uk-icon uk-margin-small-right" uk-icon="icon: search"></span>New Search</a></li>
+                <!-- <li><a href="./"><span class="uk-icon uk-margin-small-right" uk-icon="icon: settings"></span>Custom Search</a></li> -->
+                <li>
+                    <a title="Predefined Dashboards" href="#dashboards"><span class="uk-icon uk-margin-small-right" uk-icon="icon: thumbnails"></span>Dashboards</a>
+                </li>
+                <li>
+                    <a title="Random Search" href="view.html?topic=banane&start=2010-01-01"><span class="uk-icon uk-margin-small-right" uk-icon="icon: bolt"></span>Random</a>
+                </li>
+            </ul>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li><a href="#modal-sections" uk-toggle>
+                    <span class="uk-icon uk-margin-small-right" uk-icon="icon: question"></span>FAQ</a>
+                </li>
+                <li><a href="about.html">
+                    <span class="uk-icon uk-margin-small-right" uk-icon="icon: info"></span>About</a>
+                </li>
+                <li>
+                    <a href="about.html#contact"><span class="uk-icon uk-margin-small-right" uk-icon="icon: mail"></span>Contact</a>
+                </li>
+                <li>
+                    <a href="about.html#dev"><span class="uk-icon uk-margin-small-right" uk-icon="icon: code"></span>Dev</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Container -->
+    <div id="container" class="uk-padding-small" uk-grid></div>
+
+    <div class="uk-divider uk-margin-large"></div>
+
+    <!-- Dashboards -->
+    <div id="dashboards" class="uk-padding uk-background-default uk-text-small">
+        <h2>Dashboards</h2>
+        <hr>
+        <div class="uk-grid uk-child-width-1-2@m" uk-grid>
+            <div class="uk-width-1-4">
+                <h3 class="uk-divider">Suggestions and events</h3>
+                <p>Timerange: 3 month before election.</p>
+                <ul id="events" class="uk-list uk-list-divider">
+                </ul>
+            </div>
+            <div class="uk-width-expand">
+                <h3>Elections</h3>
+                <p>Timerange: 1 month before election.</p>
+                <div class="uk-grid uk-child-width-1-2@m" >
+                    <div class="uk-width-1-3">
+                        <h4>Countries and unions</h4>
+                        <ul id="elections" class="uk-list uk-list-divider">
+                        </ul>
+                    </div>
+                    <div class="uk-width-expand">
+                        <h4>Federal States of Germany</h4>
+                        <div class="uk-grid uk-child-width-1-2@m" >
+                            <div>
+                                <h5>Since 2014</h5>
+                                <ul id="ele2015more" class="uk-list uk-list-divider">
+                                </ul>
+                            </div>
+                            <div>
+                                <h5>Till 2013</h5>
+                                <ul id="ele2015less" class="uk-list uk-list-divider">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="uk-text-small uk-text-muted uk-text-center uk-padding uk-background-default">
+        Marius Müller <a href="http://xn--mariusmller-zhb.de">mariusmüller.de</a> - 
+        h_da - 
+        <a class="uk-text-muted"  href="../LICENSE" target="_blank" rel="noopener noreferrer">Licenses</a> - 
+        <a class="uk-text-muted"  href="about.html">Imprint</a> -
+        Photo 
+        <a class="uk-text-muted" target="_blank" href="https://commons.wikimedia.org/wiki/File:European_Parliament_Strasbourg_Hemicycle_-_Diliff.jpg">David Iliff</a>,  
+        <a class="uk-text-muted" target="_blank" href="https://creativecommons.org/licenses/by-sa/3.0/deed.en" target="_blank">CC BY-SA 3</a>
+    </footer>
+
+    <!-- Modals -->
+    <div id="modal-sections" uk-modal>
+            <div class="uk-modal-dialog">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-modal-header">
+                    <h2 class="uk-modal-title">OpenBallot FAQ</h2>
+                </div>
+                    <dl class="uk-description-list uk-description-list-divider">
+                        <dt>Nach einem neuem Thema suchen</dt>
+                        <dd><a href="index.html">New Search</a></dd>
+                        <dt>Zeitraum einstellen</dt>
+                        <dd><a href="index.html">New Search</a> <span uk-icon="icon: arrow-right"></span> More options</dd>
+                        <dt>Mehrere Themen</dt>
+                        <dd>Nach mehreren Themen kann mit Trennung durch Komma(ta) <code>,</code> gesucht werden. Leerzeichen werden ignoriert.</dd>
+                        <dt>Informationen über die Daten</dt>
+                        <dd>About <span uk-icon="icon: arrow-right"></span> <a href="about.html#stats">Statistiken</a></dd>
+                    </dl>
+                    <hr>
+                    <a href="about.html#faq"><span class="uk-icon uk-margin-small-right" uk-icon="icon: question"></span>Alle Fragen und Antworten</a>
+                    <hr>
+                    <a href="about.html"><span class="uk-icon uk-margin-small-right" uk-icon="icon: info"></span>Mehr Informationen über OpenBallot</a>
+                    <hr>
+                    <a title="Github" href="https://github.com/imsoftware/bp19"><span class="uk-icon uk-margin-small-right" uk-icon="icon: github-alt"></span>GitHub Sourcecode</a>
+                    <hr>
+                    <a title="Postman API Documentation" href="https://documenter.getpostman.com/view/8028167/SVSRG67r?version=latest" target="_blank" rel="noopener noreferrer"><span class="uk-icon uk-margin-small-right" uk-icon="icon: code"></span>Postman API Documentation</a>
+                    <hr>
+                    <a href="mailto:marius.b.mueller@stud.h-da.de"><span class="uk-icon uk-margin-small-right" uk-icon="icon: mail"></span>Contact</a>
+                </div>
+                <div class="uk-modal-footer uk-text-right">
+                    <button class="uk-button uk-modal-close" type="button">Close</button>
+                </div>
+            </div>
+        </div>
+
+    <!-- Scripts -->
+    <script>
+        // performance monitor
+        var t0 = performance.now();
+        
+        // static vars
+        let urlslug = '../api/?save=1&';
+        let urlslugview = 'view.html?';
+        let urlslugsingle = '../api/single.php?';
+        let urlslugexport = '../api/export/';
+        let topicsarray = ['cdu', 'spd', 'afd', 'fdp', 'grüne', 'linke'];
+
+        // start calls
+        let url = [];
+        let data;
+        var urlParams = new URLSearchParams(window.location.search);
+        let topics = [];
+        let hidetotal = true;
+
+        // request dashboards
+        let request = new XMLHttpRequest();
+        request.open('GET', 'dashboards.json', true);
+        request.onload = function() {
+            if (request.status == 200) {
+                data = JSON.parse(request.responseText);
+                // exiting stuff
+                defineTopics();
+                topics.forEach(writeUrl);
+                topics.forEach(getUrlParams);
+                topics.forEach(addTopicDiv);
+                topics.forEach(xmlHr);
+                Object.keys(data['dashboards']).forEach(parseUrls);
+            } else {
+                alert('Error 500 JSON');
+            }
+        };
+        request.onerror = function() {
+            alert('Error 500 JSON Connection');
+        };
+        request.send();
+    </script>
+
+</body>
+</html>

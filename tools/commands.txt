@@ -1,0 +1,10 @@
+# git 
+
+git fetch --all
+git reset --hard origin/master
+
+# mysql
+
+mysqldump -u root bac3 > bac3-date.sql
+
+mysql -u root < bac3-date.sql

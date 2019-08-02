@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SimplePie_Author" namespace="" name="SimplePie_Author" abstract="false" final="false" start="54" end="149">
+  <file path="../project/vendor/simplepie/simplepie/library/SimplePie" file="Author.php" realpath="C:/xampp/htdocs/bac3/project/vendor/simplepie/simplepie/library/SimplePie/Author.php" size="3528" time="2019-06-14T21:21:47+02:00" unixtime="1560540107" sha1="a37c24b9d743627fe107fadc8b190cd60f05646d" relative="vendor/simplepie/simplepie/library/SimplePie/Author.php"/>
+  <docblock>
+    <description compact="Manages all author-related data">Used by <see xmlns="http://xml.phpdox.net/src" value="SimplePie_Item::get_author()"/> and <see xmlns="http://xml.phpdox.net/src" value="SimplePie::get_authors()"/>This class can be overloaded with <see xmlns="http://xml.phpdox.net/src" value="SimplePie::set_author_class()"/></description>
+    <package value="SimplePie"/>
+    <subpackage value="API"/>
+  </docblock>
+  <member name="name" visibility="public" static="false" line="62">
+    <docblock>
+      <description compact="Author's name"/>
+      <var type="string"/>
+      <see value="get_name()"/>
+    </docblock>
+  </member>
+  <member name="link" visibility="public" static="false" line="70">
+    <docblock>
+      <description compact="Author's link"/>
+      <var type="string"/>
+      <see value="get_link()"/>
+    </docblock>
+  </member>
+  <member name="email" visibility="public" static="false" line="78">
+    <docblock>
+      <description compact="Author's email address"/>
+      <var type="string"/>
+      <see value="get_email()"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="87" end="92" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor, used to input the data"/>
+      <param type="string" variable="$name"/>
+      <param type="string" variable="$link"/>
+      <param type="string" variable="$email"/>
+    </docblock>
+    <parameter name="name" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="link" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="email" byreference="false" type="{unknown}" default="NULL"/>
+  </constructor>
+  <method name="__toString" start="99" end="103" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="String-ified version"/>
+      <return type="string"/>
+    </docblock>
+    <inline>
+      <comment value="There is no $this-&gt;data here" line="101"/>
+    </inline>
+  </method>
+  <method name="get_name" start="110" end="118" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Author's name"/>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_link" start="125" end="133" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Author's link"/>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_email" start="140" end="148" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Author's email address"/>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+</class>

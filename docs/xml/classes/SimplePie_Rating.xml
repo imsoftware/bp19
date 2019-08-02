@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SimplePie_Rating" namespace="" name="SimplePie_Rating" abstract="false" final="false" start="54" end="124">
+  <file path="../project/vendor/simplepie/simplepie/library/SimplePie" file="Rating.php" realpath="C:/xampp/htdocs/bac3/project/vendor/simplepie/simplepie/library/SimplePie/Rating.php" size="3403" time="2019-06-14T21:21:47+02:00" unixtime="1560540107" sha1="d84202588107729521c8ed79bbac2ce70be6b26d" relative="vendor/simplepie/simplepie/library/SimplePie/Rating.php"/>
+  <docblock>
+    <description compact="Handles `&lt;media:rating&gt;` or `&lt;itunes:explicit&gt;` tags as defined in Media RSS and iTunes RSS respectively">Used by <see xmlns="http://xml.phpdox.net/src" value="SimplePie_Enclosure::get_rating()"/> and <see xmlns="http://xml.phpdox.net/src" value="SimplePie_Enclosure::get_ratings()"/>This class can be overloaded with <see xmlns="http://xml.phpdox.net/src" value="SimplePie::set_rating_class()"/></description>
+    <package value="SimplePie"/>
+    <subpackage value="API"/>
+  </docblock>
+  <member name="scheme" visibility="public" static="false" line="62">
+    <docblock>
+      <description compact="Rating scheme"/>
+      <var type="string"/>
+      <see value="get_scheme()"/>
+    </docblock>
+  </member>
+  <member name="value" visibility="public" static="false" line="70">
+    <docblock>
+      <description compact="Rating value"/>
+      <var type="string"/>
+      <see value="get_value()"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="78" end="82" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor, used to input the data">For documentation on all the parameters, see the corresponding
+properties and their accessors</description>
+    </docblock>
+    <parameter name="scheme" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="value" byreference="false" type="{unknown}" default="NULL"/>
+  </constructor>
+  <method name="__toString" start="89" end="93" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="String-ified version"/>
+      <return type="string"/>
+    </docblock>
+    <inline>
+      <comment value="There is no $this-&gt;data here" line="91"/>
+    </inline>
+  </method>
+  <method name="get_scheme" start="100" end="108" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the organizational scheme for the rating"/>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_value" start="115" end="123" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the value of the rating"/>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+</class>

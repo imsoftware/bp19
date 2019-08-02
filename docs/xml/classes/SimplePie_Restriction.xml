@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SimplePie_Restriction" namespace="" name="SimplePie_Restriction" abstract="false" final="false" start="54" end="148">
+  <file path="../project/vendor/simplepie/simplepie/library/SimplePie" file="Restriction.php" realpath="C:/xampp/htdocs/bac3/project/vendor/simplepie/simplepie/library/SimplePie/Restriction.php" size="3737" time="2019-06-14T21:21:47+02:00" unixtime="1560540107" sha1="996bd6fc3b0442ef118c6e7d66bd629f707a2969" relative="vendor/simplepie/simplepie/library/SimplePie/Restriction.php"/>
+  <docblock>
+    <description compact="Handles `&lt;media:restriction&gt;` as defined in Media RSS">Used by <see xmlns="http://xml.phpdox.net/src" value="SimplePie_Enclosure::get_restriction()"/> and <see xmlns="http://xml.phpdox.net/src" value="SimplePie_Enclosure::get_restrictions()"/>This class can be overloaded with <see xmlns="http://xml.phpdox.net/src" value="SimplePie::set_restriction_class()"/></description>
+    <package value="SimplePie"/>
+    <subpackage value="API"/>
+  </docblock>
+  <member name="relationship" visibility="public" static="false" line="62">
+    <docblock>
+      <description compact="Relationship ('allow'/'deny')"/>
+      <var type="string"/>
+      <see value="get_relationship()"/>
+    </docblock>
+  </member>
+  <member name="type" visibility="public" static="false" line="70">
+    <docblock>
+      <description compact="Type of restriction"/>
+      <var type="string"/>
+      <see value="get_type()"/>
+    </docblock>
+  </member>
+  <member name="value" visibility="public" static="false" line="78">
+    <docblock>
+      <description compact="Restricted values"/>
+      <var type="string"/>
+      <see value="get_value()"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="86" end="91" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor, used to input the data">For documentation on all the parameters, see the corresponding
+properties and their accessors</description>
+    </docblock>
+    <parameter name="relationship" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="type" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="value" byreference="false" type="{unknown}" default="NULL"/>
+  </constructor>
+  <method name="__toString" start="98" end="102" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="String-ified version"/>
+      <return type="string"/>
+    </docblock>
+    <inline>
+      <comment value="There is no $this-&gt;data here" line="100"/>
+    </inline>
+  </method>
+  <method name="get_relationship" start="109" end="117" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the relationship"/>
+      <return description="Either 'allow' or 'deny'" type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_type" start="124" end="132" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the type"/>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_value" start="139" end="147" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the list of restricted things"/>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+</class>

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SimplePie_IRI" namespace="" name="SimplePie_IRI" abstract="false" final="false" start="55" end="1236">
+  <file path="../project/vendor/simplepie/simplepie/library/SimplePie" file="IRI.php" realpath="C:/xampp/htdocs/bac3/project/vendor/simplepie/simplepie/library/SimplePie/IRI.php" size="28714" time="2019-06-14T21:21:47+02:00" unixtime="1560540107" sha1="9ca9e14b9ac74f6f654741bb8df23ffed1a945e7" relative="vendor/simplepie/simplepie/library/SimplePie/IRI.php"/>
+  <docblock>
+    <description compact="IRI parser/serialiser/normaliser"/>
+    <package value="SimplePie"/>
+    <subpackage value="HTTP"/>
+    <author value="Geoffrey Sneddon"/>
+    <author value="Steve Minutillo"/>
+    <author value="Ryan McCue"/>
+    <copyright value="2007-2012 Geoffrey Sneddon, Steve Minutillo, Ryan McCue"/>
+    <license name="http://www.opensource.org/licenses/bsd-license.php"/>
+  </docblock>
+  <member name="scheme" default="NULL" visibility="protected" static="false" line="62">
+    <docblock>
+      <description compact="Scheme"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="iuserinfo" default="NULL" visibility="protected" static="false" line="69">
+    <docblock>
+      <description compact="User Information"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="ihost" default="NULL" visibility="protected" static="false" line="76">
+    <docblock>
+      <description compact="ihost"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="port" default="NULL" visibility="protected" static="false" line="83">
+    <docblock>
+      <description compact="Port"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="ipath" default="''" type="string" visibility="protected" static="false" line="90">
+    <docblock>
+      <description compact="ipath"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="iquery" default="NULL" visibility="protected" static="false" line="97">
+    <docblock>
+      <description compact="iquery"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="ifragment" default="NULL" visibility="protected" static="false" line="104">
+    <docblock>
+      <description compact="ifragment"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="normalization" default="" type="array" visibility="protected" static="false" line="112">
+    <docblock>
+      <description compact="Normalization database">Each key is the scheme, each value is an array with each key as the IRI
+part and value as the default value for that part.</description>
+    </docblock>
+  </member>
+  <method name="__toString" start="137" end="140" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Return the entire IRI when you try and read the object as a string"/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <method name="__set" start="148" end="165" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Overload __set() to provide access via properties"/>
+      <param description="Property name" type="string" variable="$name"/>
+      <param description="Property value" type="mixed" variable="$value"/>
+    </docblock>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="__get" start="173" end="216" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Overload __get() to provide access via properties"/>
+      <param description="Property name" type="string" variable="$name"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="isset() returns false for null, we don't want to do that" line="175"/>
+      <comment value="Also why we use array_key_exists below instead of isset()" line="176"/>
+    </inline>
+  </method>
+  <method name="__isset" start="224" end="227" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Overload __isset() to provide access via properties"/>
+      <param description="Property name" type="string" variable="$name"/>
+      <return type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="__unset" start="234" end="240" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Overload __unset() to provide access via properties"/>
+      <param description="Property name" type="string" variable="$name"/>
+    </docblock>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+  </method>
+  <constructor name="__construct" start="247" end="250" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Create a new IRI object, from a specified string"/>
+      <param type="string" variable="$iri"/>
+    </docblock>
+    <parameter name="iri" byreference="false" type="{unknown}" default="NULL"/>
+  </constructor>
+  <destructor name="__destruct" start="255" end="259" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Clean up"/>
+    </docblock>
+  </destructor>
+  <method name="absolutize" start="270" end="353" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Create a new IRI object by resolving a relative IRI">Returns false if $base is not absolute, otherwise an IRI.</description>
+      <param description="(Absolute) Base IRI" type="object" variable="$base">
+        <type full="IRI|string" namespace="" name="IRI|string"/>
+      </param>
+      <param description="Relative IRI" type="object" variable="$relative">
+        <type full="IRI|string" namespace="" name="IRI|string"/>
+      </param>
+      <return type="object">
+        <type full="IRI|false" namespace="" name="IRI|false"/>
+      </return>
+    </docblock>
+    <parameter name="base" byreference="false" type="{unknown}"/>
+    <parameter name="relative" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="parse_iri" start="361" end="391" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Parse an IRI into scheme/authority/path/query/fragment segments"/>
+      <param type="string" variable="$iri"/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="iri" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="This can occur when a paragraph is accidentally parsed as a URI" line="389"/>
+    </inline>
+  </method>
+  <method name="remove_dot_segments" start="399" end="451" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Remove dot segments from a path"/>
+      <param type="string" variable="$input"/>
+      <return type="string"/>
+    </docblock>
+    <parameter name="input" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="replace_invalid_with_pct_encoding" start="462" end="587" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Replace invalid character with percent encoding"/>
+      <param description="Input string" type="string" variable="$string"/>
+      <param description="Valid characters not in iunreserved or" type="string" variable="$extra_chars">iprivate (this is ASCII-only)</param>
+      <param description="Allow iprivate" type="object" variable="$iprivate">
+        <type full="bool" namespace="" name="bool"/>
+      </param>
+      <return type="string"/>
+    </docblock>
+    <parameter name="string" byreference="false" type="{unknown}"/>
+    <parameter name="extra_chars" byreference="false" type="{unknown}"/>
+    <parameter name="iprivate" byreference="false" type="boolean" default="false"/>
+    <inline>
+      <comment value="Normalize as many pct-encoded sections as possible" line="464"/>
+      <comment value="Replace invalid percent characters" line="467"/>
+      <comment value="Add unreserved and % to $extra_chars (the latter is safe because all" line="470"/>
+      <comment value="pct-encoded sections are now valid)." line="471"/>
+      <comment value="Now replace any bytes that aren't allowed with their pct-encoded versions" line="474"/>
+    </inline>
+  </method>
+  <method name="remove_iunreserved_percent_encoded" start="598" end="728" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Callback function for preg_replace_callback.">Removes sequences of percent encoded bytes that represent UTF-8
+encoded characters in iunreserved</description>
+      <param description="PCRE match" type="array" variable="$match"/>
+      <return description="Replacement" type="string"/>
+    </docblock>
+    <parameter name="match" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="As we just have valid percent encoded sequences we can just explode" line="600"/>
+      <comment value="and ignore the first member of the returned array (an empty string)." line="601"/>
+      <comment value="Initialize the new string (this is what will be returned) and that" line="604"/>
+      <comment value="there are no bytes remaining in the current sequence (unsurprising" line="605"/>
+      <comment value="at the first byte!)." line="606"/>
+      <comment value="Loop over each and every byte, and set $value to its value" line="610"/>
+      <comment value="If we have any bytes left over they are invalid (i.e., we are" line="717"/>
+      <comment value="mid-way through a multi-byte sequence)" line="718"/>
+    </inline>
+  </method>
+  <method name="scheme_normalization" start="730" end="756" abstract="false" final="false" static="false" visibility="protected"/>
+  <method name="is_valid" start="764" end="782" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Check if the object represents a valid IRI. This needs to be done on each call as some things change depending on another part of the IRI."/>
+      <return type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+    <inline>
+      <comment value="Relative urls cannot have a colon in the first path segment (and the" line="774"/>
+      <comment value="slashes themselves are not included so skip the first character)." line="775"/>
+    </inline>
+  </method>
+  <method name="set_iri" start="791" end="842" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the entire IRI. Returns true on success, false on failure (if there are any invalid characters)."/>
+      <param type="string" variable="$iri"/>
+      <return type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="iri" byreference="false" type="{unknown}"/>
+    <parameter name="clear_cache" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="set_scheme" start="851" end="867" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the scheme. Returns true on success, false on failure (if there are any invalid characters)."/>
+      <param type="string" variable="$scheme"/>
+      <return type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="scheme" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="set_authority" start="876" end="937" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the authority. Returns true on success, false on failure (if there are any invalid characters)."/>
+      <param type="string" variable="$authority"/>
+      <return type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="authority" byreference="false" type="{unknown}"/>
+    <parameter name="clear_cache" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="set_userinfo" start="945" end="958" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the iuserinfo."/>
+      <param type="string" variable="$iuserinfo"/>
+      <return type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="iuserinfo" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="set_host" start="967" end="1014" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the ihost. Returns true on success, false on failure (if there are any invalid characters)."/>
+      <param type="string" variable="$ihost"/>
+      <return type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="ihost" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="set_port" start="1023" end="1039" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the port. Returns true on success, false on failure (if there are any invalid characters)."/>
+      <param type="string" variable="$port"/>
+      <return type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="port" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="set_path" start="1047" end="1077" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the ipath."/>
+      <param type="string" variable="$ipath"/>
+      <return type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="ipath" byreference="false" type="{unknown}"/>
+    <parameter name="clear_cache" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="set_query" start="1085" end="1097" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the iquery."/>
+      <param type="string" variable="$iquery"/>
+      <return type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="iquery" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="set_fragment" start="1105" end="1117" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the ifragment."/>
+      <param type="string" variable="$ifragment"/>
+      <return type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="ifragment" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="to_uri" start="1124" end="1142" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Convert an IRI to a URI (or parts thereof)"/>
+      <return type="string"/>
+    </docblock>
+    <parameter name="string" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="get_iri" start="1149" end="1183" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the complete IRI"/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <method name="get_uri" start="1190" end="1193" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the complete URI"/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <method name="get_iauthority" start="1200" end="1221" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Get the complete iauthority"/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <method name="get_authority" start="1228" end="1235" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Get the complete authority"/>
+      <return type="string"/>
+    </docblock>
+  </method>
+</class>

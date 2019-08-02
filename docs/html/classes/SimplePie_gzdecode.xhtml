@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - SimplePie_gzdecode</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">SimplePie_gzdecode</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/vendor/simplepie/simplepie/library/SimplePie/gzdecode.php.xhtml#line52">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>\</small>SimplePie_gzdecode</h1>
+        <h4>Decode 'gzip' encoded HTTP data</h4>
+        <p/>
+        <ul/>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class SimplePie_gzdecode
+            {<br/><ul class="none"><li>// members</li><li>public  <a href="#members">$compressed_data</a>;
+                    </li><li>public  <a href="#members">$compressed_size</a>;
+                    </li><li>public integer <a href="#members">$min_compressed_size</a> =
+                        18;
+                    </li><li>public integer <a href="#members">$position</a> =
+                        0;
+                    </li><li>public  <a href="#members">$flags</a>;
+                    </li><li>public  <a href="#members">$data</a>;
+                    </li><li>public  <a href="#members">$MTIME</a>;
+                    </li><li>public  <a href="#members">$XFL</a>;
+                    </li><li>public  <a href="#members">$OS</a>;
+                    </li><li>public  <a href="#members">$SI1</a>;
+                    </li><li>public  <a href="#members">$SI2</a>;
+                    </li><li>public  <a href="#members">$extra_field</a>;
+                    </li><li>public  <a href="#members">$filename</a>;
+                    </li><li>public  <a href="#members">$comment</a>;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="SimplePie_gzdecode" href="../classes/SimplePie_gzdecode/__set.xhtml">__set</a>()
+                    </li><li>public void <a title="SimplePie_gzdecode" href="../classes/SimplePie_gzdecode/__construct.xhtml">__construct</a>()
+                    </li><li>public bool <a title="SimplePie_gzdecode" href="../classes/SimplePie_gzdecode/parse.xhtml">parse</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>public</h4>
+          <ul class="members">
+            <li id="MTIME"><strong>$MTIME</strong>
+                —
+                int<br/><span class="indent">Modified time</span></li>
+            <li id="OS"><strong>$OS</strong>
+                —
+                int<br/><span class="indent">Operating System</span></li>
+            <li id="SI1"><strong>$SI1</strong>
+                —
+                string<br/><span class="indent">Subfield ID 1</span></li>
+            <li id="SI2"><strong>$SI2</strong>
+                —
+                string<br/><span class="indent">Subfield ID 2</span></li>
+            <li id="XFL"><strong>$XFL</strong>
+                —
+                int<br/><span class="indent">Extra Flags</span></li>
+            <li id="comment"><strong>$comment</strong>
+                —
+                string<br/><span class="indent">Human readable comment</span></li>
+            <li id="compressed_data"><strong>$compressed_data</strong>
+                —
+                string<br/><span class="indent">Compressed data</span></li>
+            <li id="compressed_size"><strong>$compressed_size</strong>
+                —
+                int<br/><span class="indent">Size of compressed data</span></li>
+            <li id="data"><strong>$data</strong>
+                —
+                string<br/><span class="indent">Uncompressed data</span></li>
+            <li id="extra_field"><strong>$extra_field</strong>
+                —
+                string<br/><span class="indent">Extra field content</span></li>
+            <li id="filename"><strong>$filename</strong>
+                —
+                string<br/><span class="indent">Original filename</span></li>
+            <li id="flags"><strong>$flags</strong>
+                —
+                int<br/><span class="indent">Flags (FLG)</span></li>
+            <li id="min_compressed_size"><strong>$min_compressed_size</strong>
+                —
+                int<br/><span class="indent">Minimum size of a valid gzip string</span></li>
+            <li id="position"><strong>$position</strong>
+                —
+                int<br/><span class="indent">Current position of pointer</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="SimplePie_gzdecode" href="../classes/SimplePie_gzdecode/__construct.xhtml">__construct()</a>
+                — Set the compressed string and related properties</li>
+            <li id="__set"><a title="SimplePie_gzdecode" href="../classes/SimplePie_gzdecode/__set.xhtml">__set()</a>
+                — Don't allow anything to be set</li>
+            <li id="parse"><a title="SimplePie_gzdecode" href="../classes/SimplePie_gzdecode/parse.xhtml">parse()</a>
+                — Decode the GZIP stream</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0-dev - Copyright (C) 2010 - 2019 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

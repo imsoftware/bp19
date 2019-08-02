@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface xmlns="http://xml.phpdox.net/src" full="SimplePie_Cache_Base" namespace="" name="SimplePie_Cache_Base" abstract="false" final="false" start="53" end="113">
+  <file path="../project/vendor/simplepie/simplepie/library/SimplePie/Cache" file="Base.php" realpath="C:/xampp/htdocs/bac3/project/vendor/simplepie/simplepie/library/SimplePie/Cache/Base.php" size="3434" time="2019-06-14T21:21:47+02:00" unixtime="1560540107" sha1="a3b36c02459d6aeb4a4e82d7b0516234b726a138" relative="vendor/simplepie/simplepie/library/SimplePie/Cache/Base.php"/>
+  <docblock>
+    <description compact="Base for cache objects">Classes to be used with <see xmlns="http://xml.phpdox.net/src" value="SimplePie_Cache::register()"/> are expected
+to implement this interface.
+</description>
+    <package value="SimplePie"/>
+    <subpackage value="Caching"/>
+  </docblock>
+  <constant type="{unknown}" name="TYPE_FEED" value="'spc'">
+    <docblock>
+      <description compact="Feed cache type"/>
+      <var type="string"/>
+    </docblock>
+  </constant>
+  <constant type="{unknown}" name="TYPE_IMAGE" value="'spi'">
+    <docblock>
+      <description compact="Image cache type"/>
+      <var type="string"/>
+    </docblock>
+  </constant>
+  <constructor name="__construct" start="76" end="76" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Create a new cache object"/>
+      <param description="Location string (from SimplePie::$cache_location)" type="string" variable="$location"/>
+      <param description="Unique ID for the cache" type="string" variable="$name"/>
+      <param description="Either TYPE_FEED for SimplePie data, or TYPE_IMAGE for image data" type="string" variable="$type"/>
+    </docblock>
+    <parameter name="location" byreference="false" type="{unknown}"/>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+    <parameter name="type" byreference="false" type="{unknown}"/>
+  </constructor>
+  <method name="save" start="84" end="84" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Save data to the cache"/>
+      <param description="Data to store in the cache. If passed a SimplePie object, only cache the $data property" type="object" variable="$data">
+        <type full="array|SimplePie" namespace="" name="array|SimplePie"/>
+      </param>
+      <return description="Successfulness" type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="load" start="91" end="91" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Retrieve the data saved to the cache"/>
+      <return description="Data for SimplePie::$data" type="array"/>
+    </docblock>
+  </method>
+  <method name="mtime" start="98" end="98" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Retrieve the last modified time for the cache"/>
+      <return description="Timestamp" type="int"/>
+    </docblock>
+  </method>
+  <method name="touch" start="105" end="105" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the last modified time to the current time"/>
+      <return description="Success status" type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="unlink" start="112" end="112" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Remove the cache"/>
+      <return description="Success status" type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+  </method>
+  <implementors>
+    <class full="SimplePie_Cache_DB" namespace="" name="SimplePie_Cache_DB"/>
+    <class full="SimplePie_Cache_File" namespace="" name="SimplePie_Cache_File"/>
+    <class full="SimplePie_Cache_Memcache" namespace="" name="SimplePie_Cache_Memcache"/>
+    <class full="SimplePie_Cache_Memcached" namespace="" name="SimplePie_Cache_Memcached"/>
+    <class full="SimplePie_Cache_MySQL" namespace="" name="SimplePie_Cache_MySQL"/>
+    <class full="SimplePie_Cache_Redis" namespace="" name="SimplePie_Cache_Redis"/>
+  </implementors>
+</interface>

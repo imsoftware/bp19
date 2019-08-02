@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - SimplePie_Item</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">SimplePie_Item</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#tasks">Tasks</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/vendor/simplepie/simplepie/library/SimplePie/Item.php.xhtml#line55">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>\</small>SimplePie_Item</h1>
+        <h4>Manages all item-related data</h4>
+        <p>Used by  and This class can be overloaded with </p>
+        <ul/>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class SimplePie_Item
+            {<br/><ul class="none"><li>// members</li><li>public <span title="SimplePie">SimplePie</span> <a href="#members">$feed</a>;
+                    </li><li>public array <a href="#members">$data</a> =
+                        ;
+                    </li><li>protected <span title="SimplePie_Registry">SimplePie_Registry</span> <a href="#members">$registry</a>;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="SimplePie_Item" href="../classes/SimplePie_Item/__construct.xhtml">__construct</a>()
+                    </li><li>public void <a title="SimplePie_Item" href="../classes/SimplePie_Item/set_registry.xhtml">set_registry</a>()
+                    </li><li>public string <a title="SimplePie_Item" href="../classes/SimplePie_Item/__toString.xhtml">__toString</a>()
+                    </li><li>public void <a title="SimplePie_Item" href="../classes/SimplePie_Item/__destruct.xhtml">__destruct</a>()
+                    </li><li>public array <a title="SimplePie_Item" href="../classes/SimplePie_Item/get_item_tags.xhtml">get_item_tags</a>()
+                    </li><li>public string <a title="SimplePie_Item" href="../classes/SimplePie_Item/get_base.xhtml">get_base</a>()
+                    </li><li>public string <a title="SimplePie_Item" href="../classes/SimplePie_Item/sanitize.xhtml">sanitize</a>()
+                    </li><li>public SimplePie <a title="SimplePie_Item" href="../classes/SimplePie_Item/get_feed.xhtml">get_feed</a>()
+                    </li><li>public string|null <a title="SimplePie_Item" href="../classes/SimplePie_Item/get_id.xhtml">get_id</a>()
+                    </li><li>public string|null <a title="SimplePie_Item" href="../classes/SimplePie_Item/get_title.xhtml">get_title</a>()
+                    </li><li>public string|null <a title="SimplePie_Item" href="../classes/SimplePie_Item/get_description.xhtml">get_description</a>()
+                    </li><li>public string|null <a title="SimplePie_Item" href="../classes/SimplePie_Item/get_content.xhtml">get_content</a>()
+                    </li><li>public array|null <a title="SimplePie_Item" href="../classes/SimplePie_Item/get_thumbnail.xhtml">get_thumbnail</a>()
+                    </li><li>public SimplePie_Category|null <a title="SimplePie_Item" href="../classes/SimplePie_Item/get_category.xhtml">get_category</a>()
+                    </li><li>public array <a title="SimplePie_Item" href="../classes/SimplePie_Item/get_categories.xhtml">get_categories</a>()
+                    </li><li>public SimplePie_Author|null <a title="SimplePie_Item" href="../classes/SimplePie_Item/get_author.xhtml">get_author</a>()
+                    </li><li>public SimplePie_Author|null <a title="SimplePie_Item" href="../classes/SimplePie_Item/get_contributor.xhtml">get_contributor</a>()
+                    </li><li>public array <a title="SimplePie_Item" href="../classes/SimplePie_Item/get_contributors.xhtml">get_contributors</a>()
+                    </li><li>public array <a title="SimplePie_Item" href="../classes/SimplePie_Item/get_authors.xhtml">get_authors</a>()
+                    </li><li>public string <a title="SimplePie_Item" href="../classes/SimplePie_Item/get_copyright.xhtml">get_copyright</a>()
+                    </li><li>public int|string|null <a title="SimplePie_Item" href="../classes/SimplePie_Item/get_date.xhtml">get_date</a>()
+                    </li><li>public int|string|null <a title="SimplePie_Item" href="../classes/SimplePie_Item/get_updated_date.xhtml">get_updated_date</a>()
+                    </li><li>public int|string|null <a title="SimplePie_Item" href="../classes/SimplePie_Item/get_local_date.xhtml">get_local_date</a>()
+                    </li><li>public int|string|null <a title="SimplePie_Item" href="../classes/SimplePie_Item/get_gmdate.xhtml">get_gmdate</a>()
+                    </li><li>public int|string|null <a title="SimplePie_Item" href="../classes/SimplePie_Item/get_updated_gmdate.xhtml">get_updated_gmdate</a>()
+                    </li><li>public string|null <a title="SimplePie_Item" href="../classes/SimplePie_Item/get_permalink.xhtml">get_permalink</a>()
+                    </li><li>public string|null <a title="SimplePie_Item" href="../classes/SimplePie_Item/get_link.xhtml">get_link</a>()
+                    </li><li>public array|null <a title="SimplePie_Item" href="../classes/SimplePie_Item/get_links.xhtml">get_links</a>()
+                    </li><li>public SimplePie_Enclosure|null <a title="SimplePie_Item" href="../classes/SimplePie_Item/get_enclosure.xhtml">get_enclosure</a>()
+                    </li><li>public array <a title="SimplePie_Item" href="../classes/SimplePie_Item/get_enclosures.xhtml">get_enclosures</a>()
+                    </li><li>public string|null <a title="SimplePie_Item" href="../classes/SimplePie_Item/get_latitude.xhtml">get_latitude</a>()
+                    </li><li>public string|null <a title="SimplePie_Item" href="../classes/SimplePie_Item/get_longitude.xhtml">get_longitude</a>()
+                    </li><li>public SimplePie_Source|null <a title="SimplePie_Item" href="../classes/SimplePie_Item/get_source.xhtml">get_source</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="tasks">Tasks</h2>
+        <table class="styled">
+          <thead>
+            <tr>
+              <th style="width:3em;">Line</th>
+              <th>Task</th>
+            </tr>
+          </thead>
+          <tr>
+            <td class="nummeric">1060+</td>
+            <td>Add ability to prefer one type of content over another (in a media group).</td>
+          </tr>
+          <tr>
+            <td class="nummeric">1085+</td>
+            <td>Add support for end-user defined sorting of enclosures by type/handler (so we can prefer the faster-loading FLV over MP4).</td>
+          </tr>
+          <tr>
+            <td class="nummeric">1085+</td>
+            <td>If an element exists at a level, but its value is empty, we should fall back to the value from the parent (if it exists).</td>
+          </tr>
+        </table>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>protected</h4>
+          <ul class="members">
+            <li id="registry"><strong>$registry</strong>
+                —
+                <a title="SimplePie_Registry" href="../classes/SimplePie_Registry.xhtml">SimplePie_Registry</a><br/><span class="indent">Registry object</span></li>
+          </ul>
+          <h4>public</h4>
+          <ul class="members">
+            <li id="data"><strong>$data</strong>
+                —
+                array<br/><span class="indent">Raw data</span></li>
+            <li id="feed"><strong>$feed</strong>
+                —
+                <a title="SimplePie" href="../classes/SimplePie.xhtml">SimplePie</a><br/><span class="indent">Parent feed</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="SimplePie_Item" href="../classes/SimplePie_Item/__construct.xhtml">__construct()</a>
+                — Create a new item object</li>
+            <li id="__destruct"><a title="SimplePie_Item" href="../classes/SimplePie_Item/__destruct.xhtml">__destruct()</a>
+                — Remove items that link back to this before destroying this object</li>
+            <li id="__toString"><a title="SimplePie_Item" href="../classes/SimplePie_Item/__toString.xhtml">__toString()</a>
+                — Get a string representation of the item</li>
+            <li id="get_author"><a title="SimplePie_Item" href="../classes/SimplePie_Item/get_author.xhtml">get_author()</a>
+                — Get an author for the item</li>
+            <li id="get_authors"><a title="SimplePie_Item" href="../classes/SimplePie_Item/get_authors.xhtml">get_authors()</a>
+                — Get all authors for the item</li>
+            <li id="get_base"><a title="SimplePie_Item" href="../classes/SimplePie_Item/get_base.xhtml">get_base()</a>
+                — Get the base URL value from the parent feed</li>
+            <li id="get_categories"><a title="SimplePie_Item" href="../classes/SimplePie_Item/get_categories.xhtml">get_categories()</a>
+                — Get all categories for the item</li>
+            <li id="get_category"><a title="SimplePie_Item" href="../classes/SimplePie_Item/get_category.xhtml">get_category()</a>
+                — Get a category for the item</li>
+            <li id="get_content"><a title="SimplePie_Item" href="../classes/SimplePie_Item/get_content.xhtml">get_content()</a>
+                — Get the content for the item</li>
+            <li id="get_contributor"><a title="SimplePie_Item" href="../classes/SimplePie_Item/get_contributor.xhtml">get_contributor()</a>
+                — Get a contributor for the item</li>
+            <li id="get_contributors"><a title="SimplePie_Item" href="../classes/SimplePie_Item/get_contributors.xhtml">get_contributors()</a>
+                — Get all contributors for the item</li>
+            <li id="get_copyright"><a title="SimplePie_Item" href="../classes/SimplePie_Item/get_copyright.xhtml">get_copyright()</a>
+                — Get the copyright info for the item</li>
+            <li id="get_date"><a title="SimplePie_Item" href="../classes/SimplePie_Item/get_date.xhtml">get_date()</a>
+                — Get the posting date/time for the item</li>
+            <li id="get_description"><a title="SimplePie_Item" href="../classes/SimplePie_Item/get_description.xhtml">get_description()</a>
+                — Get the content for the item</li>
+            <li id="get_enclosure"><a title="SimplePie_Item" href="../classes/SimplePie_Item/get_enclosure.xhtml">get_enclosure()</a>
+                — Get an enclosure from the item</li>
+            <li id="get_enclosures"><a title="SimplePie_Item" href="../classes/SimplePie_Item/get_enclosures.xhtml">get_enclosures()</a>
+                — Get all available enclosures (podcasts, etc.)</li>
+            <li id="get_feed"><a title="SimplePie_Item" href="../classes/SimplePie_Item/get_feed.xhtml">get_feed()</a>
+                — Get the parent feed</li>
+            <li id="get_gmdate"><a title="SimplePie_Item" href="../classes/SimplePie_Item/get_gmdate.xhtml">get_gmdate()</a>
+                — Get the posting date/time for the item (UTC time)</li>
+            <li id="get_id"><a title="SimplePie_Item" href="../classes/SimplePie_Item/get_id.xhtml">get_id()</a>
+                — Get the unique identifier for the item</li>
+            <li id="get_item_tags"><a title="SimplePie_Item" href="../classes/SimplePie_Item/get_item_tags.xhtml">get_item_tags()</a>
+                — Get data for an item-level element</li>
+            <li id="get_latitude"><a title="SimplePie_Item" href="../classes/SimplePie_Item/get_latitude.xhtml">get_latitude()</a>
+                — Get the latitude coordinates for the item</li>
+            <li id="get_link"><a title="SimplePie_Item" href="../classes/SimplePie_Item/get_link.xhtml">get_link()</a>
+                — Get a single link for the item</li>
+            <li id="get_links"><a title="SimplePie_Item" href="../classes/SimplePie_Item/get_links.xhtml">get_links()</a>
+                — Get all links for the item</li>
+            <li id="get_local_date"><a title="SimplePie_Item" href="../classes/SimplePie_Item/get_local_date.xhtml">get_local_date()</a>
+                — Get the localized posting date/time for the item</li>
+            <li id="get_longitude"><a title="SimplePie_Item" href="../classes/SimplePie_Item/get_longitude.xhtml">get_longitude()</a>
+                — Get the longitude coordinates for the item</li>
+            <li id="get_permalink"><a title="SimplePie_Item" href="../classes/SimplePie_Item/get_permalink.xhtml">get_permalink()</a>
+                — Get the permalink for the item</li>
+            <li id="get_source"><a title="SimplePie_Item" href="../classes/SimplePie_Item/get_source.xhtml">get_source()</a>
+                — Get the `&lt;atom:source&gt;` for the item</li>
+            <li id="get_thumbnail"><a title="SimplePie_Item" href="../classes/SimplePie_Item/get_thumbnail.xhtml">get_thumbnail()</a>
+                — Get the media:thumbnail of the item</li>
+            <li id="get_title"><a title="SimplePie_Item" href="../classes/SimplePie_Item/get_title.xhtml">get_title()</a>
+                — Get the title of the item</li>
+            <li id="get_updated_date"><a title="SimplePie_Item" href="../classes/SimplePie_Item/get_updated_date.xhtml">get_updated_date()</a>
+                — Get the update date/time for the item</li>
+            <li id="get_updated_gmdate"><a title="SimplePie_Item" href="../classes/SimplePie_Item/get_updated_gmdate.xhtml">get_updated_gmdate()</a>
+                — Get the update date/time for the item (UTC time)</li>
+            <li id="sanitize"><a title="SimplePie_Item" href="../classes/SimplePie_Item/sanitize.xhtml">sanitize()</a>
+                — Sanitize feed data</li>
+            <li id="set_registry"><a title="SimplePie_Item" href="../classes/SimplePie_Item/set_registry.xhtml">set_registry()</a>
+                — Set the registry handler</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0-dev - Copyright (C) 2010 - 2019 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

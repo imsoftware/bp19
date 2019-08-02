@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SimplePie_File" namespace="" name="SimplePie_File" abstract="false" final="false" start="55" end="305">
+  <file path="../project/vendor/simplepie/simplepie/library/SimplePie" file="File.php" realpath="C:/xampp/htdocs/bac3/project/vendor/simplepie/simplepie/library/SimplePie/File.php" size="10282" time="2019-06-14T21:21:47+02:00" unixtime="1560540107" sha1="34e3ec753b5db841882b7d07d63970d3b8fb3ee6" relative="vendor/simplepie/simplepie/library/SimplePie/File.php"/>
+  <docblock>
+    <description compact="Used for fetching remote files and reading local files">Supports HTTP 1.0 via cURL or fsockopen, with spotty HTTP 1.1 support
+This class can be overloaded with <see xmlns="http://xml.phpdox.net/src" value="SimplePie::set_file_class()"/></description>
+    <package value="SimplePie"/>
+    <subpackage value="HTTP"/>
+    <todo value="Move to properly supporting RFC2616 (HTTP/1.1)"/>
+  </docblock>
+  <member name="url" visibility="public" static="false" line="57"/>
+  <member name="useragent" visibility="public" static="false" line="58"/>
+  <member name="success" default="true" type="boolean" visibility="public" static="false" line="59"/>
+  <member name="headers" default="" type="array" visibility="public" static="false" line="60"/>
+  <member name="body" visibility="public" static="false" line="61"/>
+  <member name="status_code" visibility="public" static="false" line="62"/>
+  <member name="redirects" default="0" type="integer" visibility="public" static="false" line="63"/>
+  <member name="error" visibility="public" static="false" line="64"/>
+  <member name="method" default="" type="{unknown}" constant="SIMPLEPIE_FILE_SOURCE_NONE" visibility="public" static="false" line="65"/>
+  <member name="permanent_url" visibility="public" static="false" line="66"/>
+  <constructor name="__construct" start="68" end="304" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="url" byreference="false" type="{unknown}"/>
+    <parameter name="timeout" byreference="false" type="integer" default="10"/>
+    <parameter name="redirects" byreference="false" type="integer" default="5"/>
+    <parameter name="headers" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="useragent" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="force_fsockopen" byreference="false" type="boolean" default="false"/>
+    <parameter name="curl_options" byreference="false" type="array" default=""/>
+  </constructor>
+</class>

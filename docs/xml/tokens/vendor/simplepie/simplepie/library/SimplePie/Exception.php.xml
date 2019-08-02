@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="../project/vendor/simplepie/simplepie/library/SimplePie" file="Exception.php" realpath="C:/xampp/htdocs/bac3/project/vendor/simplepie/simplepie/library/SimplePie/Exception.php" size="2167" time="2019-06-14T21:21:47+02:00" unixtime="1560540107" sha1="aadbd2bd6db6531b5d94b4c3d43b173f2dc81d53" relative="vendor/simplepie/simplepie/library/SimplePie/Exception.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="3">
+    <token name="T_DOC_COMMENT"> * SimplePie</token>
+  </line>
+  <line no="4">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="5">
+    <token name="T_DOC_COMMENT"> * A PHP-Based RSS and Atom Feed Framework.</token>
+  </line>
+  <line no="6">
+    <token name="T_DOC_COMMENT"> * Takes the hard work out of managing a complete RSS/Atom solution.</token>
+  </line>
+  <line no="7">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="8">
+    <token name="T_DOC_COMMENT"> * Copyright (c) 2004-2016, Ryan Parman, Geoffrey Sneddon, Ryan McCue, and contributors</token>
+  </line>
+  <line no="9">
+    <token name="T_DOC_COMMENT"> * All rights reserved.</token>
+  </line>
+  <line no="10">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="11">
+    <token name="T_DOC_COMMENT"> * Redistribution and use in source and binary forms, with or without modification, are</token>
+  </line>
+  <line no="12">
+    <token name="T_DOC_COMMENT"> * permitted provided that the following conditions are met:</token>
+  </line>
+  <line no="13">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="14">
+    <token name="T_DOC_COMMENT"> * 	* Redistributions of source code must retain the above copyright notice, this list of</token>
+  </line>
+  <line no="15">
+    <token name="T_DOC_COMMENT"> * 	  conditions and the following disclaimer.</token>
+  </line>
+  <line no="16">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="17">
+    <token name="T_DOC_COMMENT"> * 	* Redistributions in binary form must reproduce the above copyright notice, this list</token>
+  </line>
+  <line no="18">
+    <token name="T_DOC_COMMENT"> * 	  of conditions and the following disclaimer in the documentation and/or other materials</token>
+  </line>
+  <line no="19">
+    <token name="T_DOC_COMMENT"> * 	  provided with the distribution.</token>
+  </line>
+  <line no="20">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="21">
+    <token name="T_DOC_COMMENT"> * 	* Neither the name of the SimplePie Team nor the names of its contributors may be used</token>
+  </line>
+  <line no="22">
+    <token name="T_DOC_COMMENT"> * 	  to endorse or promote products derived from this software without specific prior</token>
+  </line>
+  <line no="23">
+    <token name="T_DOC_COMMENT"> * 	  written permission.</token>
+  </line>
+  <line no="24">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="25">
+    <token name="T_DOC_COMMENT"> * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS</token>
+  </line>
+  <line no="26">
+    <token name="T_DOC_COMMENT"> * OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY</token>
+  </line>
+  <line no="27">
+    <token name="T_DOC_COMMENT"> * AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDERS</token>
+  </line>
+  <line no="28">
+    <token name="T_DOC_COMMENT"> * AND CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR</token>
+  </line>
+  <line no="29">
+    <token name="T_DOC_COMMENT"> * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR</token>
+  </line>
+  <line no="30">
+    <token name="T_DOC_COMMENT"> * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY</token>
+  </line>
+  <line no="31">
+    <token name="T_DOC_COMMENT"> * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR</token>
+  </line>
+  <line no="32">
+    <token name="T_DOC_COMMENT"> * OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</token>
+  </line>
+  <line no="33">
+    <token name="T_DOC_COMMENT"> * POSSIBILITY OF SUCH DAMAGE.</token>
+  </line>
+  <line no="34">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="35">
+    <token name="T_DOC_COMMENT"> * @package SimplePie</token>
+  </line>
+  <line no="36">
+    <token name="T_DOC_COMMENT"> * @copyright 2004-2016 Ryan Parman, Geoffrey Sneddon, Ryan McCue</token>
+  </line>
+  <line no="37">
+    <token name="T_DOC_COMMENT"> * @author Ryan Parman</token>
+  </line>
+  <line no="38">
+    <token name="T_DOC_COMMENT"> * @author Geoffrey Sneddon</token>
+  </line>
+  <line no="39">
+    <token name="T_DOC_COMMENT"> * @author Ryan McCue</token>
+  </line>
+  <line no="40">
+    <token name="T_DOC_COMMENT"> * @link http://simplepie.org/ SimplePie</token>
+  </line>
+  <line no="41">
+    <token name="T_DOC_COMMENT"> * @license http://www.opensource.org/licenses/bsd-license.php BSD License</token>
+  </line>
+  <line no="42">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="43"/>
+  <line no="44">
+    <token name="T_DOC_COMMENT">/**</token>
+  </line>
+  <line no="45">
+    <token name="T_DOC_COMMENT"> * General SimplePie exception class</token>
+  </line>
+  <line no="46">
+    <token name="T_DOC_COMMENT"> *</token>
+  </line>
+  <line no="47">
+    <token name="T_DOC_COMMENT"> * @package SimplePie</token>
+  </line>
+  <line no="48">
+    <token name="T_DOC_COMMENT"> */</token>
+  </line>
+  <line no="49">
+    <token name="T_CLASS">class</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">SimplePie_Exception</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_EXTENDS">extends</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">Exception</token>
+  </line>
+  <line no="50">
+    <token name="T_PHPDOX_OPEN_CURLY">{</token>
+  </line>
+  <line no="51">
+    <token name="T_PHPDOX_CLOSE_CURLY">}</token>
+  </line>
+</source>

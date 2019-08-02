@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SimplePie_Enclosure" namespace="" name="SimplePie_Enclosure" abstract="false" final="false" start="54" end="1304">
+  <file path="../project/vendor/simplepie/simplepie/library/SimplePie" file="Enclosure.php" realpath="C:/xampp/htdocs/bac3/project/vendor/simplepie/simplepie/library/SimplePie/Enclosure.php" size="26906" time="2019-06-14T21:21:47+02:00" unixtime="1560540107" sha1="e7ebebbbfbde2169a373bc8444c909df5a010ec1" relative="vendor/simplepie/simplepie/library/SimplePie/Enclosure.php"/>
+  <docblock>
+    <description compact="Handles everything related to enclosures (including Media RSS and iTunes RSS)">Used by <see xmlns="http://xml.phpdox.net/src" value="SimplePie_Item::get_enclosure()"/> and <see xmlns="http://xml.phpdox.net/src" value="SimplePie_Item::get_enclosures()"/>This class can be overloaded with <see xmlns="http://xml.phpdox.net/src" value="SimplePie::set_enclosure_class()"/></description>
+    <package value="SimplePie"/>
+    <subpackage value="API"/>
+  </docblock>
+  <member name="bitrate" visibility="public" static="false" line="60">
+    <docblock>
+      <description/>
+      <var type="string"/>
+      <see value="get_bitrate()"/>
+    </docblock>
+  </member>
+  <member name="captions" visibility="public" static="false" line="66">
+    <docblock>
+      <description/>
+      <var type="array"/>
+      <see value="get_captions()"/>
+    </docblock>
+  </member>
+  <member name="categories" visibility="public" static="false" line="72">
+    <docblock>
+      <description/>
+      <var type="array"/>
+      <see value="get_categories()"/>
+    </docblock>
+  </member>
+  <member name="channels" visibility="public" static="false" line="78">
+    <docblock>
+      <description/>
+      <var type="int"/>
+      <see value="get_channels()"/>
+    </docblock>
+  </member>
+  <member name="copyright" visibility="public" static="false" line="84">
+    <docblock>
+      <description/>
+      <var type="object">
+        <type full="SimplePie_Copyright" namespace="" name="SimplePie_Copyright"/>
+      </var>
+      <see value="get_copyright()"/>
+    </docblock>
+  </member>
+  <member name="credits" visibility="public" static="false" line="90">
+    <docblock>
+      <description/>
+      <var type="array"/>
+      <see value="get_credits()"/>
+    </docblock>
+  </member>
+  <member name="description" visibility="public" static="false" line="96">
+    <docblock>
+      <description/>
+      <var type="string"/>
+      <see value="get_description()"/>
+    </docblock>
+  </member>
+  <member name="duration" visibility="public" static="false" line="102">
+    <docblock>
+      <description/>
+      <var type="int"/>
+      <see value="get_duration()"/>
+    </docblock>
+  </member>
+  <member name="expression" visibility="public" static="false" line="108">
+    <docblock>
+      <description/>
+      <var type="string"/>
+      <see value="get_expression()"/>
+    </docblock>
+  </member>
+  <member name="framerate" visibility="public" static="false" line="114">
+    <docblock>
+      <description/>
+      <var type="string"/>
+      <see value="get_framerate()"/>
+    </docblock>
+  </member>
+  <member name="handler" visibility="public" static="false" line="120">
+    <docblock>
+      <description/>
+      <var type="string"/>
+      <see value="get_handler()"/>
+    </docblock>
+  </member>
+  <member name="hashes" visibility="public" static="false" line="126">
+    <docblock>
+      <description/>
+      <var type="array"/>
+      <see value="get_hashes()"/>
+    </docblock>
+  </member>
+  <member name="height" visibility="public" static="false" line="132">
+    <docblock>
+      <description/>
+      <var type="string"/>
+      <see value="get_height()"/>
+    </docblock>
+  </member>
+  <member name="javascript" visibility="public" static="false" line="138">
+    <docblock>
+      <description/>
+      <deprecated/>
+      <var type="null"/>
+    </docblock>
+  </member>
+  <member name="keywords" visibility="public" static="false" line="144">
+    <docblock>
+      <description/>
+      <var type="array"/>
+      <see value="get_keywords()"/>
+    </docblock>
+  </member>
+  <member name="lang" visibility="public" static="false" line="150">
+    <docblock>
+      <description/>
+      <var type="string"/>
+      <see value="get_language()"/>
+    </docblock>
+  </member>
+  <member name="length" visibility="public" static="false" line="156">
+    <docblock>
+      <description/>
+      <var type="string"/>
+      <see value="get_length()"/>
+    </docblock>
+  </member>
+  <member name="link" visibility="public" static="false" line="162">
+    <docblock>
+      <description/>
+      <var type="string"/>
+      <see value="get_link()"/>
+    </docblock>
+  </member>
+  <member name="medium" visibility="public" static="false" line="168">
+    <docblock>
+      <description/>
+      <var type="string"/>
+      <see value="get_medium()"/>
+    </docblock>
+  </member>
+  <member name="player" visibility="public" static="false" line="174">
+    <docblock>
+      <description/>
+      <var type="string"/>
+      <see value="get_player()"/>
+    </docblock>
+  </member>
+  <member name="ratings" visibility="public" static="false" line="180">
+    <docblock>
+      <description/>
+      <var type="array"/>
+      <see value="get_ratings()"/>
+    </docblock>
+  </member>
+  <member name="restrictions" visibility="public" static="false" line="186">
+    <docblock>
+      <description/>
+      <var type="array"/>
+      <see value="get_restrictions()"/>
+    </docblock>
+  </member>
+  <member name="samplingrate" visibility="public" static="false" line="192">
+    <docblock>
+      <description/>
+      <var type="string"/>
+      <see value="get_sampling_rate()"/>
+    </docblock>
+  </member>
+  <member name="thumbnails" visibility="public" static="false" line="198">
+    <docblock>
+      <description/>
+      <var type="array"/>
+      <see value="get_thumbnails()"/>
+    </docblock>
+  </member>
+  <member name="title" visibility="public" static="false" line="204">
+    <docblock>
+      <description/>
+      <var type="string"/>
+      <see value="get_title()"/>
+    </docblock>
+  </member>
+  <member name="type" visibility="public" static="false" line="210">
+    <docblock>
+      <description/>
+      <var type="string"/>
+      <see value="get_type()"/>
+    </docblock>
+  </member>
+  <member name="width" visibility="public" static="false" line="216">
+    <docblock>
+      <description/>
+      <var type="string"/>
+      <see value="get_width()"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="226" end="261" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor, used to input the data">For documentation on all the parameters, see the corresponding
+properties and their accessors</description>
+      <uses value="idna_convert If available, this will convert an IDN"/>
+    </docblock>
+    <parameter name="link" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="type" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="length" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="javascript" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="bitrate" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="captions" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="categories" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="channels" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="copyright" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="credits" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="description" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="duration" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="expression" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="framerate" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="hashes" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="height" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="keywords" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="lang" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="medium" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="player" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="ratings" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="restrictions" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="samplingrate" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="thumbnails" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="title" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="width" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="Needs to load last" line="260"/>
+    </inline>
+  </constructor>
+  <method name="__toString" start="268" end="272" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="String-ified version"/>
+      <return type="string"/>
+    </docblock>
+    <inline>
+      <comment value="There is no $this-&gt;data here" line="270"/>
+    </inline>
+  </method>
+  <method name="get_bitrate" start="279" end="287" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the bitrate"/>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_caption" start="295" end="304" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get a single caption"/>
+      <param type="int" variable="$key"/>
+      <return type="object">
+        <type full="SimplePie_Caption|null" namespace="" name="SimplePie_Caption|null"/>
+      </return>
+    </docblock>
+    <parameter name="key" byreference="false" type="integer" default="0"/>
+  </method>
+  <method name="get_captions" start="311" end="319" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get all captions"/>
+      <return description="Array of {@see SimplePie_Caption} objects" type="object">
+        <type full="array|null" namespace="" name="array|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_category" start="327" end="336" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get a single category"/>
+      <param type="int" variable="$key"/>
+      <return type="object">
+        <type full="SimplePie_Category|null" namespace="" name="SimplePie_Category|null"/>
+      </return>
+    </docblock>
+    <parameter name="key" byreference="false" type="integer" default="0"/>
+  </method>
+  <method name="get_categories" start="343" end="351" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get all categories"/>
+      <return description="Array of {@see SimplePie_Category} objects" type="object">
+        <type full="array|null" namespace="" name="array|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_channels" start="358" end="366" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the number of audio channels"/>
+      <return type="object">
+        <type full="int|null" namespace="" name="int|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_copyright" start="373" end="381" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the copyright information"/>
+      <return type="object">
+        <type full="SimplePie_Copyright|null" namespace="" name="SimplePie_Copyright|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_credit" start="389" end="398" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get a single credit"/>
+      <param type="int" variable="$key"/>
+      <return type="object">
+        <type full="SimplePie_Credit|null" namespace="" name="SimplePie_Credit|null"/>
+      </return>
+    </docblock>
+    <parameter name="key" byreference="false" type="integer" default="0"/>
+  </method>
+  <method name="get_credits" start="405" end="413" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get all credits"/>
+      <return description="Array of {@see SimplePie_Credit} objects" type="object">
+        <type full="array|null" namespace="" name="array|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_description" start="420" end="428" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the description of the enclosure"/>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_duration" start="436" end="450" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the duration of the enclosure"/>
+      <param description="Convert seconds into hh:mm:ss" type="object" variable="$convert">
+        <type full="bool" namespace="" name="bool"/>
+      </param>
+      <return description="'hh:mm:ss' string if `$convert` was specified, otherwise integer (or null if none found)" type="object">
+        <type full="string|int|null" namespace="" name="string|int|null"/>
+      </return>
+    </docblock>
+    <parameter name="convert" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="get_expression" start="457" end="465" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the expression"/>
+      <return description="Probably one of 'sample', 'full', 'nonstop', 'clip'. Defaults to 'full'" type="string"/>
+    </docblock>
+  </method>
+  <method name="get_extension" start="472" end="483" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the file extension"/>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_framerate" start="490" end="498" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the framerate (in frames-per-second)"/>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_handler" start="505" end="508" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the preferred handler"/>
+      <return description="One of 'flash', 'fmedia', 'quicktime', 'wmedia', 'mp3'" type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_hash" start="517" end="526" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get a single hash"/>
+      <link value="http://www.rssboard.org/media-rss#media-hash"/>
+      <param type="int" variable="$key"/>
+      <return description="Hash as per `media:hash`, prefixed with &quot;$algo:&quot;" type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+    <parameter name="key" byreference="false" type="integer" default="0"/>
+  </method>
+  <method name="get_hashes" start="533" end="541" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get all credits"/>
+      <return description="Array of strings, see {@see get_hash()}" type="object">
+        <type full="array|null" namespace="" name="array|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_height" start="548" end="556" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the height"/>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_language" start="564" end="572" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the language"/>
+      <link value="http://tools.ietf.org/html/rfc3066"/>
+      <return description="Language code as per RFC 3066" type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_keyword" start="580" end="589" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get a single keyword"/>
+      <param type="int" variable="$key"/>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+    <parameter name="key" byreference="false" type="integer" default="0"/>
+  </method>
+  <method name="get_keywords" start="596" end="604" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get all keywords"/>
+      <return description="Array of strings" type="object">
+        <type full="array|null" namespace="" name="array|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_length" start="611" end="619" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get length"/>
+      <return description="Length in bytes" type="float"/>
+    </docblock>
+  </method>
+  <method name="get_link" start="626" end="634" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the URL"/>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_medium" start="642" end="650" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the medium"/>
+      <link value="http://www.rssboard.org/media-rss#media-content"/>
+      <return description="Should be one of 'image', 'audio', 'video', 'document', 'executable'" type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_player" start="658" end="666" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the player URL">Typically the same as <see xmlns="http://xml.phpdox.net/src" value="get_permalink()"/></description>
+      <return description="Player URL" type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_rating" start="674" end="683" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get a single rating"/>
+      <param type="int" variable="$key"/>
+      <return type="object">
+        <type full="SimplePie_Rating|null" namespace="" name="SimplePie_Rating|null"/>
+      </return>
+    </docblock>
+    <parameter name="key" byreference="false" type="integer" default="0"/>
+  </method>
+  <method name="get_ratings" start="690" end="698" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get all ratings"/>
+      <return description="Array of {@see SimplePie_Rating} objects" type="object">
+        <type full="array|null" namespace="" name="array|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_restriction" start="706" end="715" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get a single restriction"/>
+      <param type="int" variable="$key"/>
+      <return type="object">
+        <type full="SimplePie_Restriction|null" namespace="" name="SimplePie_Restriction|null"/>
+      </return>
+    </docblock>
+    <parameter name="key" byreference="false" type="integer" default="0"/>
+  </method>
+  <method name="get_restrictions" start="722" end="730" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get all restrictions"/>
+      <return description="Array of {@see SimplePie_Restriction} objects" type="object">
+        <type full="array|null" namespace="" name="array|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_sampling_rate" start="737" end="745" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the sampling rate (in kHz)"/>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_size" start="752" end="761" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the file size (in MiB)"/>
+      <return description="File size in mebibytes (1048 bytes)" type="object">
+        <type full="float|null" namespace="" name="float|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_thumbnail" start="769" end="778" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get a single thumbnail"/>
+      <param type="int" variable="$key"/>
+      <return description="Thumbnail URL" type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+    <parameter name="key" byreference="false" type="integer" default="0"/>
+  </method>
+  <method name="get_thumbnails" start="785" end="793" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get all thumbnails"/>
+      <return description="Array of thumbnail URLs" type="object">
+        <type full="array|null" namespace="" name="array|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_title" start="800" end="808" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the title"/>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_type" start="816" end="824" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get mimetype of the enclosure"/>
+      <see value="get_real_type()"/>
+      <return description="MIME type" type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_width" start="831" end="839" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the width"/>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="native_embed" start="849" end="852" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Embed the enclosure using `&lt;embed&gt;`"/>
+      <deprecated value="Use the second parameter to {@see embed} instead"/>
+      <param description="See first paramter to {@see embed}" type="object" variable="$options">
+        <type full="array|string" namespace="" name="array|string"/>
+      </param>
+      <return description="HTML string to output" type="string"/>
+    </docblock>
+    <parameter name="options" byreference="false" type="string" default="''"/>
+  </method>
+  <method name="embed" start="899" end="1121" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Embed the enclosure using Javascript">`$options` is an array or comma-separated key:value string, with the
+following properties:
+
+- `alt` (string): Alternate content for when an end-user does not have
+   the appropriate handler installed or when a file type is
+   unsupported. Can be any text or HTML. Defaults to blank.
+- `altclass` (string): If a file type is unsupported, the end-user will
+   see the alt text (above) linked directly to the content. That link
+   will have this value as its class name. Defaults to blank.
+- `audio` (string): This is an image that should be used as a
+   placeholder for audio files before they're loaded (QuickTime-only).
+   Can be any relative or absolute URL. Defaults to blank.
+- `bgcolor` (string): The background color for the media, if not
+   already transparent. Defaults to `#ffffff`.
+- `height` (integer): The height of the embedded media. Accepts any
+   numeric pixel value (such as `360`) or `auto`. Defaults to `auto`,
+   and it is recommended that you use this default.
+- `loop` (boolean): Do you want the media to loop when it's done?
+   Defaults to `false`.
+- `mediaplayer` (string): The location of the included
+   `mediaplayer.swf` file. This allows for the playback of Flash Video
+   (`.flv`) files, and is the default handler for non-Odeo MP3's.
+   Defaults to blank.
+- `video` (string): This is an image that should be used as a
+   placeholder for video files before they're loaded (QuickTime-only).
+   Can be any relative or absolute URL. Defaults to blank.
+- `width` (integer): The width of the embedded media. Accepts any
+   numeric pixel value (such as `480`) or `auto`. Defaults to `auto`,
+   and it is recommended that you use this default.
+- `widescreen` (boolean): Is the enclosure widescreen or standard?
+   This applies only to video enclosures, and will automatically resize
+   the content appropriately.  Defaults to `false`, implying 4:3 mode.
+
+Note: Non-widescreen (4:3) mode with `width` and `height` set to `auto`
+will default to 480x360 video resolution.  Widescreen (16:9) mode with
+`width` and `height` set to `auto` will default to 480x270 video resolution.</description>
+      <todo value="If the dimensions for media:content are defined, use them when width/height are set to 'auto'."/>
+      <param description="Comma-separated key:value list, or array" type="object" variable="$options">
+        <type full="array|string" namespace="" name="array|string"/>
+      </param>
+      <param description="Use `&lt;embed&gt;`" type="object" variable="$native">
+        <type full="bool" namespace="" name="bool"/>
+      </param>
+      <return description="HTML string to output" type="string"/>
+    </docblock>
+    <parameter name="options" byreference="false" type="string" default="''"/>
+    <parameter name="native" byreference="false" type="boolean" default="false"/>
+    <inline>
+      <comment value="Set up defaults" line="901"/>
+      <comment value="Process options and reassign values as necessary" line="915"/>
+      <comment value="Process values for 'auto'" line="979"/>
+      <comment value="Set proper placeholder value" line="1041"/>
+      <comment value="Flash" line="1053"/>
+    </inline>
+  </method>
+  <method name="get_real_type" start="1134" end="1303" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the real media type">Often, feeds lie to us, necessitating a bit of deeper inspection. This
+converts types to their canonical representations based on the file
+extension</description>
+      <see value="get_type()"/>
+      <param description="Internal use only, use {@see get_handler()} instead" type="object" variable="$find_handler">
+        <type full="bool" namespace="" name="bool"/>
+      </param>
+      <return description="MIME type" type="string"/>
+    </docblock>
+    <parameter name="find_handler" byreference="false" type="boolean" default="false"/>
+    <inline>
+      <comment value="Mime-types by handler." line="1136"/>
+      <comment value="Flash" line="1137"/>
+      <comment value="Flash Media Player" line="1138"/>
+      <comment value="QuickTime" line="1139"/>
+      <comment value="Windows Media" line="1140"/>
+      <comment value="MP3" line="1141"/>
+      <comment value="If we encounter an unsupported mime-type, check the file extension and guess intelligently." line="1152"/>
+    </inline>
+  </method>
+</class>

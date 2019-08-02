@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SimplePie_Content_Type_Sniffer" namespace="" name="SimplePie_Content_Type_Sniffer" abstract="false" final="false" start="59" end="318">
+  <file path="../project/vendor/simplepie/simplepie/library/SimplePie/Content/Type" file="Sniffer.php" realpath="C:/xampp/htdocs/bac3/project/vendor/simplepie/simplepie/library/SimplePie/Content/Type/Sniffer.php" size="8031" time="2019-06-14T21:21:47+02:00" unixtime="1560540107" sha1="243b44adf6cf9098e99033701afce2d04aa7d694" relative="vendor/simplepie/simplepie/library/SimplePie/Content/Type/Sniffer.php"/>
+  <docblock>
+    <description compact="Content-type sniffing">Based on the rules in http://tools.ietf.org/html/draft-abarth-mime-sniff-06
+This is used since we can't always trust Content-Type headers, and is based
+upon the HTML5 parsing rules.
+This class can be overloaded with <see xmlns="http://xml.phpdox.net/src" value="SimplePie::set_content_type_sniffer_class()"/></description>
+    <package value="SimplePie"/>
+    <subpackage value="HTTP"/>
+  </docblock>
+  <member name="file" visibility="public" static="false" line="66">
+    <docblock>
+      <description compact="File object"/>
+      <var type="object">
+        <type full="SimplePie_File" namespace="" name="SimplePie_File"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="73" end="76" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Create an instance of the class with the input file"/>
+      <param description="Input file" type="object" variable="$file">
+        <type full="SimplePie_Content_Type_Sniffer" namespace="" name="SimplePie_Content_Type_Sniffer"/>
+      </param>
+    </docblock>
+    <parameter name="file" byreference="false" type="{unknown}"/>
+  </constructor>
+  <method name="get_type" start="83" end="135" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the Content-Type of the specified file"/>
+      <return description="Actual Content-Type" type="string"/>
+    </docblock>
+  </method>
+  <method name="text_or_binary" start="142" end="157" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Sniff text or binary"/>
+      <return description="Actual Content-Type" type="string"/>
+    </docblock>
+  </method>
+  <method name="unknown" start="164" end="204" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Sniff unknown"/>
+      <return description="Actual Content-Type" type="string"/>
+    </docblock>
+  </method>
+  <method name="image" start="211" end="236" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Sniff images"/>
+      <return description="Actual Content-Type" type="string"/>
+    </docblock>
+  </method>
+  <method name="feed_or_html" start="243" end="317" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Sniff HTML"/>
+      <return description="Actual Content-Type" type="string"/>
+    </docblock>
+  </method>
+</class>

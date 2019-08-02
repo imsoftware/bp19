@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SimplePie_Cache_DB" namespace="" name="SimplePie_Cache_DB" abstract="true" final="false" start="50" end="136">
+  <file path="../project/vendor/simplepie/simplepie/library/SimplePie/Cache" file="DB.php" realpath="C:/xampp/htdocs/bac3/project/vendor/simplepie/simplepie/library/SimplePie/Cache/DB.php" size="4708" time="2019-06-14T21:21:47+02:00" unixtime="1560540107" sha1="341d63e9949fd6b9acc4736367be06aea0b682ac" relative="vendor/simplepie/simplepie/library/SimplePie/Cache/DB.php"/>
+  <docblock>
+    <description compact="Base class for database-based caches"/>
+    <package value="SimplePie"/>
+    <subpackage value="Caching"/>
+  </docblock>
+  <implements full="SimplePie_Cache_Base" namespace="" name="SimplePie_Cache_Base"/>
+  <method name="prepare_simplepie_object_for_cache" start="60" end="135" abstract="false" final="false" static="true" visibility="protected">
+    <docblock>
+      <description compact="Helper for database conversion">Converts a given <see xmlns="http://xml.phpdox.net/src" value="SimplePie"/> object into data to be stored
+</description>
+      <param type="object" variable="$data">
+        <type full="SimplePie" namespace="" name="SimplePie"/>
+      </param>
+      <return description="First item is the serialized data for storage, second item is the unique ID for this item" type="array"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </method>
+  <interface full="SimplePie_Cache_Base" namespace="" name="SimplePie_Cache_Base">
+    <constant type="{unknown}" name="TYPE_FEED" value="'spc'">
+      <docblock>
+        <description compact="Feed cache type"/>
+        <var type="string"/>
+      </docblock>
+    </constant>
+    <constant type="{unknown}" name="TYPE_IMAGE" value="'spi'">
+      <docblock>
+        <description compact="Image cache type"/>
+        <var type="string"/>
+      </docblock>
+    </constant>
+    <constructor name="__construct" start="76" end="76" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Create a new cache object"/>
+        <param description="Location string (from SimplePie::$cache_location)" type="string" variable="$location"/>
+        <param description="Unique ID for the cache" type="string" variable="$name"/>
+        <param description="Either TYPE_FEED for SimplePie data, or TYPE_IMAGE for image data" type="string" variable="$type"/>
+      </docblock>
+      <parameter name="location" byreference="false" type="{unknown}"/>
+      <parameter name="name" byreference="false" type="{unknown}"/>
+      <parameter name="type" byreference="false" type="{unknown}"/>
+    </constructor>
+    <method name="save" start="84" end="84" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Save data to the cache"/>
+        <param description="Data to store in the cache. If passed a SimplePie object, only cache the $data property" type="object" variable="$data">
+          <type full="array|SimplePie" namespace="" name="array|SimplePie"/>
+        </param>
+        <return description="Successfulness" type="object">
+          <type full="bool" namespace="" name="bool"/>
+        </return>
+      </docblock>
+      <parameter name="data" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="load" start="91" end="91" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Retrieve the data saved to the cache"/>
+        <return description="Data for SimplePie::$data" type="array"/>
+      </docblock>
+    </method>
+    <method name="mtime" start="98" end="98" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Retrieve the last modified time for the cache"/>
+        <return description="Timestamp" type="int"/>
+      </docblock>
+    </method>
+    <method name="touch" start="105" end="105" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Set the last modified time to the current time"/>
+        <return description="Success status" type="object">
+          <type full="bool" namespace="" name="bool"/>
+        </return>
+      </docblock>
+    </method>
+    <method name="unlink" start="112" end="112" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Remove the cache"/>
+        <return description="Success status" type="object">
+          <type full="bool" namespace="" name="bool"/>
+        </return>
+      </docblock>
+    </method>
+  </interface>
+  <extenders>
+    <extender full="SimplePie_Cache_MySQL" namespace="" name="SimplePie_Cache_MySQL"/>
+  </extenders>
+</class>

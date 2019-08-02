@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="../project/view" file="index.php" realpath="C:/xampp/htdocs/bac3/project/view/index.php" size="1614" time="2019-07-01T19:20:06+02:00" unixtime="1562001606" sha1="8a25edde9eb606be866122ab0340a315502c7783" relative="view/index.php"/>
+  <line no="1">
+    <token name="T_INLINE_HTML">&lt;!DOCTYPE html&gt;</token>
+  </line>
+  <line no="2">
+    <token name="T_INLINE_HTML">&lt;html&gt;</token>
+  </line>
+  <line no="3">
+    <token name="T_INLINE_HTML">&lt;head&gt;</token>
+  </line>
+  <line no="4">
+    <token name="T_INLINE_HTML">    &lt;title&gt;OOOO&lt;/title&gt;</token>
+  </line>
+  <line no="5">
+    <token name="T_INLINE_HTML">    &lt;meta charset="utf-8"&gt;</token>
+  </line>
+  <line no="6">
+    <token name="T_INLINE_HTML">    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</token>
+  </line>
+  <line no="7">
+    <token name="T_INLINE_HTML">    &lt;link rel="stylesheet" href="css/uikit.min.css" /&gt;</token>
+  </line>
+  <line no="8">
+    <token name="T_INLINE_HTML">    &lt;script src="js/uikit.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="9">
+    <token name="T_INLINE_HTML">    &lt;script src="js/uikit-icons.min.js"&gt;&lt;/script&gt;</token>
+  </line>
+  <line no="10">
+    <token name="T_INLINE_HTML">&lt;/head&gt;</token>
+  </line>
+  <line no="11">
+    <token name="T_INLINE_HTML">&lt;body class="login uk-cover-container uk-background-secondary uk-flex uk-flex-center uk-flex-middle uk-height-viewport uk-overflow-hidden uk-light" data-uk-height-viewport&gt;</token>
+  </line>
+  <line no="12">
+    <token name="T_INLINE_HTML">    &lt;div class="uk-position-bottom-center uk-position-small uk-visible@m uk-position-z-index"&gt;</token>
+  </line>
+  <line no="13">
+    <token name="T_INLINE_HTML">        &lt;span class="uk-text-small uk-text-muted"&gt;&#xA9; Marius M&#xFC;ller - &lt;a href="https://mariusm&#xFC;ller.de"&gt;mariusm&#xFC;ller.de&lt;/a&gt;</token>
+  </line>
+  <line no="14">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="15">
+    <token name="T_INLINE_HTML">    &lt;div class="uk-width-medium uk-padding-small uk-position-z-index" uk-scrollspy="cls: uk-animation-fade"&gt;</token>
+  </line>
+  <line no="16">
+    <token name="T_INLINE_HTML">        &lt;form class="toggle-class" action="view.php" method="GET"&gt;</token>
+  </line>
+  <line no="17">
+    <token name="T_INLINE_HTML">            &lt;fieldset class="uk-fieldset"&gt;</token>
+  </line>
+  <line no="18">
+    <token name="T_INLINE_HTML">                &lt;div class="uk-margin-small"&gt;</token>
+  </line>
+  <line no="19">
+    <token name="T_INLINE_HTML">                    &lt;div class="uk-inline uk-width-1-1"&gt;</token>
+  </line>
+  <line no="20">
+    <token name="T_INLINE_HTML">                        &lt;span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: search"&gt;&lt;/span&gt;</token>
+  </line>
+  <line no="21">
+    <token name="T_INLINE_HTML">                        &lt;input class="uk-input uk-border-pill" required placeholder="Your topic. One word." type="text" name="topic"&gt;</token>
+  </line>
+  <line no="22">
+    <token name="T_INLINE_HTML">                    &lt;/div&gt;</token>
+  </line>
+  <line no="23">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="24">
+    <token name="T_INLINE_HTML">                &lt;div class="uk-margin-bottom"&gt;</token>
+  </line>
+  <line no="25">
+    <token name="T_INLINE_HTML">                    &lt;button type="submit" class="uk-button uk-button-primary uk-border-pill uk-width-1-1"&gt;Enter&lt;/button&gt;</token>
+  </line>
+  <line no="26">
+    <token name="T_INLINE_HTML">                &lt;/div&gt;</token>
+  </line>
+  <line no="27">
+    <token name="T_INLINE_HTML">            &lt;/fieldset&gt;</token>
+  </line>
+  <line no="28">
+    <token name="T_INLINE_HTML">        &lt;/form&gt;</token>
+  </line>
+  <line no="29">
+    <token name="T_INLINE_HTML">    &lt;/div&gt;</token>
+  </line>
+  <line no="30">
+    <token name="T_INLINE_HTML">&lt;/body&gt;</token>
+  </line>
+  <line no="31">
+    <token name="T_INLINE_HTML">&lt;/html&gt;</token>
+  </line>
+</source>

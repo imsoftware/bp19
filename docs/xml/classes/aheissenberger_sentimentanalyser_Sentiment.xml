@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="aheissenberger\sentimentanalyser\Sentiment" namespace="aheissenberger\sentimentanalyser" name="Sentiment" abstract="false" final="false" start="10" end="79">
+  <file path="../project/vendor/aheissenberger/sentimentanalyser/src" file="Sentiment.php" realpath="C:/xampp/htdocs/bac3/project/vendor/aheissenberger/sentimentanalyser/src/Sentiment.php" size="2528" time="2019-06-14T21:21:28+02:00" unixtime="1560540088" sha1="8b7c78fcd5b1dfd5d5f7c328e19f61ca19b8b1a6" relative="vendor/aheissenberger/sentimentanalyser/src/Sentiment.php"/>
+  <docblock>
+    <description compact="German Sentiment analysis library for PHP">@author Andreas Heissenberger</description>
+  </docblock>
+  <member name="m_SampleProperty" default="''" type="string" visibility="private" static="false" line="13">
+    <docblock>
+      <var description="$m_SampleProperty define here what this variable is for, do this for every instance variable" type="string"/>
+    </docblock>
+  </member>
+  <member name="tokenize" default="'tokenizer'" type="string" visibility="private" static="false" line="16">
+    <docblock>
+      <var description="$tokenize reference to the used tokenizer" type="object">
+        <type full="aheissenberger\sentimentanalyser\function" namespace="aheissenberger\sentimentanalyser" name="function"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="dict" default="" type="array" visibility="private" static="false" line="18">
+    <docblock>
+      <var description="$dict reference to sentimental dictionary" type="array"/>
+    </docblock>
+  </member>
+  <member name="negate" default="''" type="string" visibility="private" static="false" line="20">
+    <docblock>
+      <var description="$negate a regex with strings which negeate the following word" type="string"/>
+    </docblock>
+  </member>
+  <member name="sentiment_dics" default="" type="array" visibility="private" static="false" line="22">
+    <docblock>
+      <var description="$sentiment_dics a mapping to the dictionaries for different languages" type="array"/>
+    </docblock>
+  </member>
+  <method name="tokenizer" start="24" end="26" abstract="false" final="false" static="false" visibility="private">
+    <parameter name="el" byreference="false" type="{unknown}"/>
+  </method>
+  <constructor name="__construct" start="37" end="50" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="create a sentiment parser"/>
+      <param description="an ISO code for the language - e.g. &quot;de&quot;: german" type="string" variable="$lang"/>
+      <param description="overide the default settings for tokenize, negate" type="array" variable="$options"/>
+      <return description="- the sentimental value for the text" type="object">
+        <type full="aheissenberger\sentimentanalyser\Float" namespace="aheissenberger\sentimentanalyser" name="Float"/>
+      </return>
+    </docblock>
+    <parameter name="lang" byreference="false" type="string" default="'de'"/>
+    <parameter name="options" byreference="false" type="array" default=""/>
+  </constructor>
+  <method name="analyse" start="60" end="78" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Sentiment analysis on Text in german"/>
+      <param description="A string with the text to be analysed" type="string" variable="$str"/>
+      <return description="- the sentimental value for the text" type="object">
+        <type full="aheissenberger\sentimentanalyser\Float" namespace="aheissenberger\sentimentanalyser" name="Float"/>
+      </return>
+    </docblock>
+    <parameter name="str" byreference="false" type="{unknown}"/>
+  </method>
+</class>

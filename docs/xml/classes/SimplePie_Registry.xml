@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SimplePie_Registry" namespace="" name="SimplePie_Registry" abstract="false" final="false" start="51" end="224">
+  <file path="../project/vendor/simplepie/simplepie/library/SimplePie" file="Registry.php" realpath="C:/xampp/htdocs/bac3/project/vendor/simplepie/simplepie/library/SimplePie/Registry.php" size="5975" time="2019-06-14T21:21:47+02:00" unixtime="1560540107" sha1="f6d495a85fa376e24cce74f1ead2acfc20350986" relative="vendor/simplepie/simplepie/library/SimplePie/Registry.php"/>
+  <docblock>
+    <description compact="Handles creating objects and calling methods">Access this via <see xmlns="http://xml.phpdox.net/src" value="SimplePie::get_registry()"/></description>
+    <package value="SimplePie"/>
+  </docblock>
+  <member name="default" default="" type="array" visibility="protected" static="false" line="60">
+    <docblock>
+      <description compact="Default class mapping">Overriding classes *must* subclass these.</description>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="classes" default="" type="array" visibility="protected" static="false" line="88">
+    <docblock>
+      <description compact="Class mapping"/>
+      <see value="register()"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="legacy" default="" type="array" visibility="protected" static="false" line="96">
+    <docblock>
+      <description compact="Legacy classes"/>
+      <see value="register()"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="103" end="103" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor">No-op</description>
+    </docblock>
+  </constructor>
+  <method name="register" start="113" end="128" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Register a class"/>
+      <param description="See {@see $default} for names" type="string" variable="$type"/>
+      <param description="Class name, must subclass the corresponding default" type="string" variable="$class"/>
+      <param description="Whether to enable legacy support for this class" type="object" variable="$legacy">
+        <type full="bool" namespace="" name="bool"/>
+      </param>
+      <return description="Successfulness" type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="type" byreference="false" type="{unknown}"/>
+    <parameter name="class" byreference="false" type="{unknown}"/>
+    <parameter name="legacy" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="get_class" start="138" end="150" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the class registered for a type">Where possible, use <see xmlns="http://xml.phpdox.net/src" value="create()"/> or <see xmlns="http://xml.phpdox.net/src" value="call()"/> instead
+</description>
+      <param type="string" variable="$type"/>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+    <parameter name="type" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="create" start="159" end="191" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Create a new instance of a given type"/>
+      <param type="string" variable="$type"/>
+      <param description="Parameters to pass to the constructor" type="array" variable="$parameters"/>
+      <return description="Instance of class" type="object"/>
+    </docblock>
+    <parameter name="type" byreference="false" type="{unknown}"/>
+    <parameter name="parameters" byreference="false" type="array" default=""/>
+  </method>
+  <method name="call" start="201" end="223" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Call a static method for a type"/>
+      <param type="string" variable="$type"/>
+      <param type="string" variable="$method"/>
+      <param type="array" variable="$parameters"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="type" byreference="false" type="{unknown}"/>
+    <parameter name="method" byreference="false" type="{unknown}"/>
+    <parameter name="parameters" byreference="false" type="array" default=""/>
+  </method>
+</class>

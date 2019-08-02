@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - SimplePie_IRI</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">SimplePie_IRI</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/vendor/simplepie/simplepie/library/SimplePie/IRI.php.xhtml#line55">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>\</small>SimplePie_IRI</h1>
+        <h4>IRI parser/serialiser/normaliser</h4>
+        <p/>
+        <ul>
+          <li>Author: Geoffrey Sneddon</li>
+          <li>Copyright: 2007-2012 Geoffrey Sneddon, Steve Minutillo, Ryan McCue</li>
+          <li>License: http://www.opensource.org/licenses/bsd-license.php</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class SimplePie_IRI
+            {<br/><ul class="none"><li>// members</li><li>protected  <a href="#members">$scheme</a> =
+                        NULL;
+                    </li><li>protected  <a href="#members">$iuserinfo</a> =
+                        NULL;
+                    </li><li>protected  <a href="#members">$ihost</a> =
+                        NULL;
+                    </li><li>protected  <a href="#members">$port</a> =
+                        NULL;
+                    </li><li>protected string <a href="#members">$ipath</a> =
+                        '';
+                    </li><li>protected  <a href="#members">$iquery</a> =
+                        NULL;
+                    </li><li>protected  <a href="#members">$ifragment</a> =
+                        NULL;
+                    </li><li>protected array <a href="#members">$normalization</a> =
+                        ;
+                    </li></ul><ul class="none"><li>// methods</li><li>public string <a title="SimplePie_IRI" href="../classes/SimplePie_IRI/__toString.xhtml">__toString</a>()
+                    </li><li>public void <a title="SimplePie_IRI" href="../classes/SimplePie_IRI/__set.xhtml">__set</a>()
+                    </li><li>public mixed <a title="SimplePie_IRI" href="../classes/SimplePie_IRI/__get.xhtml">__get</a>()
+                    </li><li>public bool <a title="SimplePie_IRI" href="../classes/SimplePie_IRI/__isset.xhtml">__isset</a>()
+                    </li><li>public void <a title="SimplePie_IRI" href="../classes/SimplePie_IRI/__unset.xhtml">__unset</a>()
+                    </li><li>public void <a title="SimplePie_IRI" href="../classes/SimplePie_IRI/__construct.xhtml">__construct</a>()
+                    </li><li>public void <a title="SimplePie_IRI" href="../classes/SimplePie_IRI/__destruct.xhtml">__destruct</a>()
+                    </li><li>public static IRI|false <a title="SimplePie_IRI" href="../classes/SimplePie_IRI/absolutize.xhtml">absolutize</a>()
+                    </li><li>protected array <a title="SimplePie_IRI" href="../classes/SimplePie_IRI/parse_iri.xhtml">parse_iri</a>()
+                    </li><li>protected string <a title="SimplePie_IRI" href="../classes/SimplePie_IRI/remove_dot_segments.xhtml">remove_dot_segments</a>()
+                    </li><li>protected string <a title="SimplePie_IRI" href="../classes/SimplePie_IRI/replace_invalid_with_pct_encoding.xhtml">replace_invalid_with_pct_encoding</a>()
+                    </li><li>protected string <a title="SimplePie_IRI" href="../classes/SimplePie_IRI/remove_iunreserved_percent_encoded.xhtml">remove_iunreserved_percent_encoded</a>()
+                    </li><li>protected void <a title="SimplePie_IRI" href="../classes/SimplePie_IRI/scheme_normalization.xhtml">scheme_normalization</a>()
+                    </li><li>public bool <a title="SimplePie_IRI" href="../classes/SimplePie_IRI/is_valid.xhtml">is_valid</a>()
+                    </li><li>public bool <a title="SimplePie_IRI" href="../classes/SimplePie_IRI/set_iri.xhtml">set_iri</a>()
+                    </li><li>public bool <a title="SimplePie_IRI" href="../classes/SimplePie_IRI/set_scheme.xhtml">set_scheme</a>()
+                    </li><li>public bool <a title="SimplePie_IRI" href="../classes/SimplePie_IRI/set_authority.xhtml">set_authority</a>()
+                    </li><li>public bool <a title="SimplePie_IRI" href="../classes/SimplePie_IRI/set_userinfo.xhtml">set_userinfo</a>()
+                    </li><li>public bool <a title="SimplePie_IRI" href="../classes/SimplePie_IRI/set_host.xhtml">set_host</a>()
+                    </li><li>public bool <a title="SimplePie_IRI" href="../classes/SimplePie_IRI/set_port.xhtml">set_port</a>()
+                    </li><li>public bool <a title="SimplePie_IRI" href="../classes/SimplePie_IRI/set_path.xhtml">set_path</a>()
+                    </li><li>public bool <a title="SimplePie_IRI" href="../classes/SimplePie_IRI/set_query.xhtml">set_query</a>()
+                    </li><li>public bool <a title="SimplePie_IRI" href="../classes/SimplePie_IRI/set_fragment.xhtml">set_fragment</a>()
+                    </li><li>public string <a title="SimplePie_IRI" href="../classes/SimplePie_IRI/to_uri.xhtml">to_uri</a>()
+                    </li><li>public string <a title="SimplePie_IRI" href="../classes/SimplePie_IRI/get_iri.xhtml">get_iri</a>()
+                    </li><li>public string <a title="SimplePie_IRI" href="../classes/SimplePie_IRI/get_uri.xhtml">get_uri</a>()
+                    </li><li>protected string <a title="SimplePie_IRI" href="../classes/SimplePie_IRI/get_iauthority.xhtml">get_iauthority</a>()
+                    </li><li>protected string <a title="SimplePie_IRI" href="../classes/SimplePie_IRI/get_authority.xhtml">get_authority</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>protected</h4>
+          <ul class="members">
+            <li id="ifragment"><strong>$ifragment</strong>
+                —
+                string<br/><span class="indent">ifragment</span></li>
+            <li id="ihost"><strong>$ihost</strong>
+                —
+                string<br/><span class="indent">ihost</span></li>
+            <li id="ipath"><strong>$ipath</strong>
+                —
+                string<br/><span class="indent">ipath</span></li>
+            <li id="iquery"><strong>$iquery</strong>
+                —
+                string<br/><span class="indent">iquery</span></li>
+            <li id="iuserinfo"><strong>$iuserinfo</strong>
+                —
+                string<br/><span class="indent">User Information</span></li>
+            <li id="normalization">
+              <strong>$normalization</strong>
+              <br/>
+              <span class="indent">Normalization database</span>
+            </li>
+            <li id="port"><strong>$port</strong>
+                —
+                string<br/><span class="indent">Port</span></li>
+            <li id="scheme"><strong>$scheme</strong>
+                —
+                string<br/><span class="indent">Scheme</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>protected</h4>
+          <ul>
+            <li id="get_authority"><a title="SimplePie_IRI" href="../classes/SimplePie_IRI/get_authority.xhtml">get_authority()</a>
+                — Get the complete authority</li>
+            <li id="get_iauthority"><a title="SimplePie_IRI" href="../classes/SimplePie_IRI/get_iauthority.xhtml">get_iauthority()</a>
+                — Get the complete iauthority</li>
+            <li id="parse_iri"><a title="SimplePie_IRI" href="../classes/SimplePie_IRI/parse_iri.xhtml">parse_iri()</a>
+                — Parse an IRI into scheme/authority/path/query/fragment segments</li>
+            <li id="remove_dot_segments"><a title="SimplePie_IRI" href="../classes/SimplePie_IRI/remove_dot_segments.xhtml">remove_dot_segments()</a>
+                — Remove dot segments from a path</li>
+            <li id="remove_iunreserved_percent_encoded"><a title="SimplePie_IRI" href="../classes/SimplePie_IRI/remove_iunreserved_percent_encoded.xhtml">remove_iunreserved_percent_encoded()</a>
+                — Callback function for preg_replace_callback.</li>
+            <li id="replace_invalid_with_pct_encoding"><a title="SimplePie_IRI" href="../classes/SimplePie_IRI/replace_invalid_with_pct_encoding.xhtml">replace_invalid_with_pct_encoding()</a>
+                — Replace invalid character with percent encoding</li>
+            <li id="scheme_normalization">
+              <a title="SimplePie_IRI" href="../classes/SimplePie_IRI/scheme_normalization.xhtml">scheme_normalization()</a>
+            </li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="SimplePie_IRI" href="../classes/SimplePie_IRI/__construct.xhtml">__construct()</a>
+                — Create a new IRI object, from a specified string</li>
+            <li id="__destruct"><a title="SimplePie_IRI" href="../classes/SimplePie_IRI/__destruct.xhtml">__destruct()</a>
+                — Clean up</li>
+            <li id="__get"><a title="SimplePie_IRI" href="../classes/SimplePie_IRI/__get.xhtml">__get()</a>
+                — Overload __get() to provide access via properties</li>
+            <li id="__isset"><a title="SimplePie_IRI" href="../classes/SimplePie_IRI/__isset.xhtml">__isset()</a>
+                — Overload __isset() to provide access via properties</li>
+            <li id="__set"><a title="SimplePie_IRI" href="../classes/SimplePie_IRI/__set.xhtml">__set()</a>
+                — Overload __set() to provide access via properties</li>
+            <li id="__toString"><a title="SimplePie_IRI" href="../classes/SimplePie_IRI/__toString.xhtml">__toString()</a>
+                — Return the entire IRI when you try and read the object as a string</li>
+            <li id="__unset"><a title="SimplePie_IRI" href="../classes/SimplePie_IRI/__unset.xhtml">__unset()</a>
+                — Overload __unset() to provide access via properties</li>
+            <li id="absolutize"><a title="SimplePie_IRI" href="../classes/SimplePie_IRI/absolutize.xhtml">absolutize()</a>
+                — Create a new IRI object by resolving a relative IRI</li>
+            <li id="get_iri"><a title="SimplePie_IRI" href="../classes/SimplePie_IRI/get_iri.xhtml">get_iri()</a>
+                — Get the complete IRI</li>
+            <li id="get_uri"><a title="SimplePie_IRI" href="../classes/SimplePie_IRI/get_uri.xhtml">get_uri()</a>
+                — Get the complete URI</li>
+            <li id="is_valid"><a title="SimplePie_IRI" href="../classes/SimplePie_IRI/is_valid.xhtml">is_valid()</a>
+                — Check if the object represents a valid IRI. This needs to be done on each call as some things change depending on another part of the IRI.</li>
+            <li id="set_authority"><a title="SimplePie_IRI" href="../classes/SimplePie_IRI/set_authority.xhtml">set_authority()</a>
+                — Set the authority. Returns true on success, false on failure (if there are any invalid characters).</li>
+            <li id="set_fragment"><a title="SimplePie_IRI" href="../classes/SimplePie_IRI/set_fragment.xhtml">set_fragment()</a>
+                — Set the ifragment.</li>
+            <li id="set_host"><a title="SimplePie_IRI" href="../classes/SimplePie_IRI/set_host.xhtml">set_host()</a>
+                — Set the ihost. Returns true on success, false on failure (if there are any invalid characters).</li>
+            <li id="set_iri"><a title="SimplePie_IRI" href="../classes/SimplePie_IRI/set_iri.xhtml">set_iri()</a>
+                — Set the entire IRI. Returns true on success, false on failure (if there are any invalid characters).</li>
+            <li id="set_path"><a title="SimplePie_IRI" href="../classes/SimplePie_IRI/set_path.xhtml">set_path()</a>
+                — Set the ipath.</li>
+            <li id="set_port"><a title="SimplePie_IRI" href="../classes/SimplePie_IRI/set_port.xhtml">set_port()</a>
+                — Set the port. Returns true on success, false on failure (if there are any invalid characters).</li>
+            <li id="set_query"><a title="SimplePie_IRI" href="../classes/SimplePie_IRI/set_query.xhtml">set_query()</a>
+                — Set the iquery.</li>
+            <li id="set_scheme"><a title="SimplePie_IRI" href="../classes/SimplePie_IRI/set_scheme.xhtml">set_scheme()</a>
+                — Set the scheme. Returns true on success, false on failure (if there are any invalid characters).</li>
+            <li id="set_userinfo"><a title="SimplePie_IRI" href="../classes/SimplePie_IRI/set_userinfo.xhtml">set_userinfo()</a>
+                — Set the iuserinfo.</li>
+            <li id="to_uri"><a title="SimplePie_IRI" href="../classes/SimplePie_IRI/to_uri.xhtml">to_uri()</a>
+                — Convert an IRI to a URI (or parts thereof)</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0-dev - Copyright (C) 2010 - 2019 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

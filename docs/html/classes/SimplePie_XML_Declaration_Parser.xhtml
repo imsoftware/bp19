@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - SimplePie_XML_Declaration_Parser</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">SimplePie_XML_Declaration_Parser</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/vendor/simplepie/simplepie/library/SimplePie/XML/Declaration/Parser.php.xhtml#line51">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>\</small>SimplePie_XML_Declaration_Parser</h1>
+        <h4>Parses the XML Declaration</h4>
+        <p/>
+        <ul/>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class SimplePie_XML_Declaration_Parser
+            {<br/><ul class="none"><li>// members</li><li>public string <a href="#members">$version</a> =
+                        '1.0';
+                    </li><li>public string <a href="#members">$encoding</a> =
+                        'UTF-8';
+                    </li><li>public <span title="bool">bool</span> <a href="#members">$standalone</a> =
+                        false;
+                    </li><li>public string <a href="#members">$state</a> =
+                        'before_version_name';
+                    </li><li>public string <a href="#members">$data</a> =
+                        '';
+                    </li><li>public integer <a href="#members">$data_length</a> =
+                        0;
+                    </li><li>public integer <a href="#members">$position</a> =
+                        0;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="SimplePie_XML_Declaration_Parser" href="../classes/SimplePie_XML_Declaration_Parser/__construct.xhtml">__construct</a>()
+                    </li><li>public bool <a title="SimplePie_XML_Declaration_Parser" href="../classes/SimplePie_XML_Declaration_Parser/parse.xhtml">parse</a>()
+                    </li><li>public bool <a title="SimplePie_XML_Declaration_Parser" href="../classes/SimplePie_XML_Declaration_Parser/has_data.xhtml">has_data</a>()
+                    </li><li>public int <a title="SimplePie_XML_Declaration_Parser" href="../classes/SimplePie_XML_Declaration_Parser/skip_whitespace.xhtml">skip_whitespace</a>()
+                    </li><li>public void <a title="SimplePie_XML_Declaration_Parser" href="../classes/SimplePie_XML_Declaration_Parser/get_value.xhtml">get_value</a>()
+                    </li><li>public void <a title="SimplePie_XML_Declaration_Parser" href="../classes/SimplePie_XML_Declaration_Parser/before_version_name.xhtml">before_version_name</a>()
+                    </li><li>public void <a title="SimplePie_XML_Declaration_Parser" href="../classes/SimplePie_XML_Declaration_Parser/version_name.xhtml">version_name</a>()
+                    </li><li>public void <a title="SimplePie_XML_Declaration_Parser" href="../classes/SimplePie_XML_Declaration_Parser/version_equals.xhtml">version_equals</a>()
+                    </li><li>public void <a title="SimplePie_XML_Declaration_Parser" href="../classes/SimplePie_XML_Declaration_Parser/version_value.xhtml">version_value</a>()
+                    </li><li>public void <a title="SimplePie_XML_Declaration_Parser" href="../classes/SimplePie_XML_Declaration_Parser/encoding_name.xhtml">encoding_name</a>()
+                    </li><li>public void <a title="SimplePie_XML_Declaration_Parser" href="../classes/SimplePie_XML_Declaration_Parser/encoding_equals.xhtml">encoding_equals</a>()
+                    </li><li>public void <a title="SimplePie_XML_Declaration_Parser" href="../classes/SimplePie_XML_Declaration_Parser/encoding_value.xhtml">encoding_value</a>()
+                    </li><li>public void <a title="SimplePie_XML_Declaration_Parser" href="../classes/SimplePie_XML_Declaration_Parser/standalone_name.xhtml">standalone_name</a>()
+                    </li><li>public void <a title="SimplePie_XML_Declaration_Parser" href="../classes/SimplePie_XML_Declaration_Parser/standalone_equals.xhtml">standalone_equals</a>()
+                    </li><li>public void <a title="SimplePie_XML_Declaration_Parser" href="../classes/SimplePie_XML_Declaration_Parser/standalone_value.xhtml">standalone_value</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>public</h4>
+          <ul class="members">
+            <li id="data"><strong>$data</strong>
+                —
+                string<br/><span class="indent">Input data</span></li>
+            <li id="data_length"><strong>$data_length</strong>
+                —
+                int<br/><span class="indent">Input data length (to avoid calling strlen() everytime this is needed)</span></li>
+            <li id="encoding"><strong>$encoding</strong>
+                —
+                string<br/><span class="indent">Encoding</span></li>
+            <li id="position"><strong>$position</strong>
+                —
+                int<br/><span class="indent">Current position of the pointer</span></li>
+            <li id="standalone"><strong>$standalone</strong>
+                —
+                <a title="bool" href="../classes/bool.xhtml">bool</a><br/><span class="indent">Standalone</span></li>
+            <li id="state"><strong>$state</strong>
+                —
+                string<br/><span class="indent">Current state of the state machine</span></li>
+            <li id="version"><strong>$version</strong>
+                —
+                string<br/><span class="indent">XML Version</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="SimplePie_XML_Declaration_Parser" href="../classes/SimplePie_XML_Declaration_Parser/__construct.xhtml">__construct()</a>
+                — Create an instance of the class with the input data</li>
+            <li id="before_version_name">
+              <a title="SimplePie_XML_Declaration_Parser" href="../classes/SimplePie_XML_Declaration_Parser/before_version_name.xhtml">before_version_name()</a>
+            </li>
+            <li id="encoding_equals">
+              <a title="SimplePie_XML_Declaration_Parser" href="../classes/SimplePie_XML_Declaration_Parser/encoding_equals.xhtml">encoding_equals()</a>
+            </li>
+            <li id="encoding_name">
+              <a title="SimplePie_XML_Declaration_Parser" href="../classes/SimplePie_XML_Declaration_Parser/encoding_name.xhtml">encoding_name()</a>
+            </li>
+            <li id="encoding_value">
+              <a title="SimplePie_XML_Declaration_Parser" href="../classes/SimplePie_XML_Declaration_Parser/encoding_value.xhtml">encoding_value()</a>
+            </li>
+            <li id="get_value"><a title="SimplePie_XML_Declaration_Parser" href="../classes/SimplePie_XML_Declaration_Parser/get_value.xhtml">get_value()</a>
+                — Read value</li>
+            <li id="has_data"><a title="SimplePie_XML_Declaration_Parser" href="../classes/SimplePie_XML_Declaration_Parser/has_data.xhtml">has_data()</a>
+                — Check whether there is data beyond the pointer</li>
+            <li id="parse"><a title="SimplePie_XML_Declaration_Parser" href="../classes/SimplePie_XML_Declaration_Parser/parse.xhtml">parse()</a>
+                — Parse the input data</li>
+            <li id="skip_whitespace"><a title="SimplePie_XML_Declaration_Parser" href="../classes/SimplePie_XML_Declaration_Parser/skip_whitespace.xhtml">skip_whitespace()</a>
+                — Advance past any whitespace</li>
+            <li id="standalone_equals">
+              <a title="SimplePie_XML_Declaration_Parser" href="../classes/SimplePie_XML_Declaration_Parser/standalone_equals.xhtml">standalone_equals()</a>
+            </li>
+            <li id="standalone_name">
+              <a title="SimplePie_XML_Declaration_Parser" href="../classes/SimplePie_XML_Declaration_Parser/standalone_name.xhtml">standalone_name()</a>
+            </li>
+            <li id="standalone_value">
+              <a title="SimplePie_XML_Declaration_Parser" href="../classes/SimplePie_XML_Declaration_Parser/standalone_value.xhtml">standalone_value()</a>
+            </li>
+            <li id="version_equals">
+              <a title="SimplePie_XML_Declaration_Parser" href="../classes/SimplePie_XML_Declaration_Parser/version_equals.xhtml">version_equals()</a>
+            </li>
+            <li id="version_name">
+              <a title="SimplePie_XML_Declaration_Parser" href="../classes/SimplePie_XML_Declaration_Parser/version_name.xhtml">version_name()</a>
+            </li>
+            <li id="version_value">
+              <a title="SimplePie_XML_Declaration_Parser" href="../classes/SimplePie_XML_Declaration_Parser/version_value.xhtml">version_value()</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0-dev - Copyright (C) 2010 - 2019 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

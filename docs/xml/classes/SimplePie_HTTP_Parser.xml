@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SimplePie_HTTP_Parser" namespace="" name="SimplePie_HTTP_Parser" abstract="false" final="false" start="51" end="518">
+  <file path="../project/vendor/simplepie/simplepie/library/SimplePie/HTTP" file="Parser.php" realpath="C:/xampp/htdocs/bac3/project/vendor/simplepie/simplepie/library/SimplePie/HTTP/Parser.php" size="11530" time="2019-06-14T21:21:47+02:00" unixtime="1560540107" sha1="793776b5635e559342f263405b7786def780deb5" relative="vendor/simplepie/simplepie/library/SimplePie/HTTP/Parser.php"/>
+  <docblock>
+    <description compact="HTTP Response Parser"/>
+    <package value="SimplePie"/>
+    <subpackage value="HTTP"/>
+  </docblock>
+  <member name="http_version" default="0.0" type="float" visibility="public" static="false" line="58">
+    <docblock>
+      <description compact="HTTP Version"/>
+      <var type="float"/>
+    </docblock>
+  </member>
+  <member name="status_code" default="0" type="integer" visibility="public" static="false" line="65">
+    <docblock>
+      <description compact="Status code"/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="reason" default="''" type="string" visibility="public" static="false" line="72">
+    <docblock>
+      <description compact="Reason phrase"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="headers" default="" type="array" visibility="public" static="false" line="79">
+    <docblock>
+      <description compact="Key/value pairs of the headers"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="body" default="''" type="string" visibility="public" static="false" line="86">
+    <docblock>
+      <description compact="Body of the response"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="state" default="'http_version'" type="string" visibility="protected" static="false" line="93">
+    <docblock>
+      <description compact="Current state of the state machine"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="data" default="''" type="string" visibility="protected" static="false" line="100">
+    <docblock>
+      <description compact="Input data"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="data_length" default="0" type="integer" visibility="protected" static="false" line="107">
+    <docblock>
+      <description compact="Input data length (to avoid calling strlen() everytime this is needed)"/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="position" default="0" type="integer" visibility="protected" static="false" line="114">
+    <docblock>
+      <description compact="Current position of the pointer"/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="name" default="''" type="string" visibility="protected" static="false" line="121">
+    <docblock>
+      <description compact="Name of the hedaer currently being parsed"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="value" default="''" type="string" visibility="protected" static="false" line="128">
+    <docblock>
+      <description compact="Value of the hedaer currently being parsed"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="135" end="139" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Create an instance of the class with the input data"/>
+      <param description="Input data" type="string" variable="$data"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </constructor>
+  <method name="parse" start="146" end="165" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Parse the input data"/>
+      <return description="true on success, false on failure" type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="has_data" start="172" end="175" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Check whether there is data beyond the pointer"/>
+      <return description="true if there is further data, false if not" type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="is_linear_whitespace" start="182" end="189" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="See if the next character is LWS"/>
+      <return description="true if the next character is LWS, false if not" type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="http_version" start="194" end="216" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Parse the HTTP version"/>
+    </docblock>
+  </method>
+  <method name="status" start="221" end="233" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Parse the status code"/>
+    </docblock>
+  </method>
+  <method name="reason" start="238" end="244" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Parse the reason phrase"/>
+    </docblock>
+  </method>
+  <method name="new_line" start="249" end="281" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Deal with a new line, shifting data around as needed"/>
+    </docblock>
+  </method>
+  <method name="name" start="286" end="307" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Parse a header name"/>
+    </docblock>
+  </method>
+  <method name="linear_whitespace" start="312" end="327" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Parse LWS, replacing consecutive LWS characters with a single space"/>
+    </docblock>
+  </method>
+  <method name="value" start="332" end="366" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="See what state to move to while within non-quoted header values"/>
+    </docblock>
+  </method>
+  <method name="value_char" start="371" end="377" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Parse a header value while outside quotes"/>
+    </docblock>
+  </method>
+  <method name="quote" start="382" end="412" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="See what state to move to while within quoted header values"/>
+    </docblock>
+  </method>
+  <method name="quote_char" start="417" end="423" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Parse a header value while within quotes"/>
+    </docblock>
+  </method>
+  <method name="quote_escaped" start="428" end="433" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Parse an escaped character within quotes"/>
+    </docblock>
+  </method>
+  <method name="body" start="438" end="450" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Parse the body"/>
+    </docblock>
+  </method>
+  <method name="chunked" start="455" end="496" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Parsed a &quot;Transfer-Encoding: chunked&quot; body"/>
+    </docblock>
+  </method>
+  <method name="prepareHeaders" start="506" end="517" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Prepare headers (take care of proxies headers)"/>
+      <param description="Raw headers" type="string" variable="$headers"/>
+      <param description="Redirection count. Default to 1." type="integer" variable="$count"/>
+      <return type="string"/>
+    </docblock>
+    <parameter name="headers" byreference="false" type="{unknown}"/>
+    <parameter name="count" byreference="false" type="integer" default="1"/>
+  </method>
+</class>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - SimplePie_Sanitize</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">SimplePie_Sanitize</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#tasks">Tasks</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/vendor/simplepie/simplepie/library/SimplePie/Sanitize.php.xhtml#line53">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>\</small>SimplePie_Sanitize</h1>
+        <h4>Used for data cleanup and post-processing</h4>
+        <p>This class can be overloaded with </p>
+        <ul/>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class SimplePie_Sanitize
+            {<br/><ul class="none"><li>// members</li><li>public  <a href="#members">$base</a>;
+                    </li><li>public boolean <a href="#members">$remove_div</a> =
+                        true;
+                    </li><li>public string <a href="#members">$image_handler</a> =
+                        '';
+                    </li><li>public array <a href="#members">$strip_htmltags</a> =
+                        ;
+                    </li><li>public boolean <a href="#members">$encode_instead_of_strip</a> =
+                        false;
+                    </li><li>public array <a href="#members">$strip_attributes</a> =
+                        ;
+                    </li><li>public array <a href="#members">$add_attributes</a> =
+                        ;
+                    </li><li>public boolean <a href="#members">$strip_comments</a> =
+                        false;
+                    </li><li>public string <a href="#members">$output_encoding</a> =
+                        'UTF-8';
+                    </li><li>public boolean <a href="#members">$enable_cache</a> =
+                        true;
+                    </li><li>public string <a href="#members">$cache_location</a> =
+                        './cache';
+                    </li><li>public string <a href="#members">$cache_name_function</a> =
+                        'md5';
+                    </li><li>public integer <a href="#members">$timeout</a> =
+                        10;
+                    </li><li>public string <a href="#members">$useragent</a> =
+                        '';
+                    </li><li>public boolean <a href="#members">$force_fsockopen</a> =
+                        false;
+                    </li><li>public  <a href="#members">$replace_url_attributes</a> =
+                        NULL;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/__construct.xhtml">__construct</a>()
+                    </li><li>public void <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/remove_div.xhtml">remove_div</a>()
+                    </li><li>public void <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/set_image_handler.xhtml">set_image_handler</a>()
+                    </li><li>public void <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/set_registry.xhtml">set_registry</a>()
+                    </li><li>public void <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/pass_cache_data.xhtml">pass_cache_data</a>()
+                    </li><li>public void <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/pass_file_data.xhtml">pass_file_data</a>()
+                    </li><li>public void <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/strip_htmltags.xhtml">strip_htmltags</a>()
+                    </li><li>public void <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/encode_instead_of_strip.xhtml">encode_instead_of_strip</a>()
+                    </li><li>public void <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/strip_attributes.xhtml">strip_attributes</a>()
+                    </li><li>public void <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/add_attributes.xhtml">add_attributes</a>()
+                    </li><li>public void <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/strip_comments.xhtml">strip_comments</a>()
+                    </li><li>public void <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/set_output_encoding.xhtml">set_output_encoding</a>()
+                    </li><li>public void <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/set_url_replacements.xhtml">set_url_replacements</a>()
+                    </li><li>public void <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/sanitize.xhtml">sanitize</a>()
+                    </li><li>protected void <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/preprocess.xhtml">preprocess</a>()
+                    </li><li>public void <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/replace_urls.xhtml">replace_urls</a>()
+                    </li><li>public void <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/do_strip_htmltags.xhtml">do_strip_htmltags</a>()
+                    </li><li>protected void <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/strip_tag.xhtml">strip_tag</a>()
+                    </li><li>protected void <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/strip_attr.xhtml">strip_attr</a>()
+                    </li><li>protected void <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/add_attr.xhtml">add_attr</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="tasks">Tasks</h2>
+        <table class="styled">
+          <thead>
+            <tr>
+              <th style="width:3em;">Line</th>
+              <th>Task</th>
+            </tr>
+          </thead>
+          <tr>
+            <td class="nummeric">53+</td>
+            <td>Move to using an actual HTML parser (this will allow tags to be properly stripped, and to switch between HTML and XHTML), this will also make it easier to shorten a string while preserving HTML tags</td>
+          </tr>
+        </table>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>public</h4>
+          <ul class="members">
+            <li id="add_attributes">
+              <strong>$add_attributes</strong>
+            </li>
+            <li id="base">
+              <strong>$base</strong>
+            </li>
+            <li id="cache_location">
+              <strong>$cache_location</strong>
+            </li>
+            <li id="cache_name_function">
+              <strong>$cache_name_function</strong>
+            </li>
+            <li id="enable_cache">
+              <strong>$enable_cache</strong>
+            </li>
+            <li id="encode_instead_of_strip">
+              <strong>$encode_instead_of_strip</strong>
+            </li>
+            <li id="force_fsockopen">
+              <strong>$force_fsockopen</strong>
+            </li>
+            <li id="image_handler">
+              <strong>$image_handler</strong>
+            </li>
+            <li id="output_encoding">
+              <strong>$output_encoding</strong>
+            </li>
+            <li id="remove_div">
+              <strong>$remove_div</strong>
+            </li>
+            <li id="replace_url_attributes">
+              <strong>$replace_url_attributes</strong>
+            </li>
+            <li id="strip_attributes">
+              <strong>$strip_attributes</strong>
+            </li>
+            <li id="strip_comments">
+              <strong>$strip_comments</strong>
+            </li>
+            <li id="strip_htmltags">
+              <strong>$strip_htmltags</strong>
+            </li>
+            <li id="timeout">
+              <strong>$timeout</strong>
+            </li>
+            <li id="useragent">
+              <strong>$useragent</strong>
+            </li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>protected</h4>
+          <ul>
+            <li id="add_attr">
+              <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/add_attr.xhtml">add_attr()</a>
+            </li>
+            <li id="preprocess">
+              <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/preprocess.xhtml">preprocess()</a>
+            </li>
+            <li id="strip_attr">
+              <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/strip_attr.xhtml">strip_attr()</a>
+            </li>
+            <li id="strip_tag">
+              <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/strip_tag.xhtml">strip_tag()</a>
+            </li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="__construct">
+              <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/__construct.xhtml">__construct()</a>
+            </li>
+            <li id="add_attributes">
+              <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/add_attributes.xhtml">add_attributes()</a>
+            </li>
+            <li id="do_strip_htmltags">
+              <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/do_strip_htmltags.xhtml">do_strip_htmltags()</a>
+            </li>
+            <li id="encode_instead_of_strip">
+              <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/encode_instead_of_strip.xhtml">encode_instead_of_strip()</a>
+            </li>
+            <li id="pass_cache_data">
+              <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/pass_cache_data.xhtml">pass_cache_data()</a>
+            </li>
+            <li id="pass_file_data">
+              <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/pass_file_data.xhtml">pass_file_data()</a>
+            </li>
+            <li id="remove_div">
+              <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/remove_div.xhtml">remove_div()</a>
+            </li>
+            <li id="replace_urls">
+              <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/replace_urls.xhtml">replace_urls()</a>
+            </li>
+            <li id="sanitize">
+              <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/sanitize.xhtml">sanitize()</a>
+            </li>
+            <li id="set_image_handler">
+              <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/set_image_handler.xhtml">set_image_handler()</a>
+            </li>
+            <li id="set_output_encoding">
+              <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/set_output_encoding.xhtml">set_output_encoding()</a>
+            </li>
+            <li id="set_registry">
+              <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/set_registry.xhtml">set_registry()</a>
+            </li>
+            <li id="set_url_replacements"><a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/set_url_replacements.xhtml">set_url_replacements()</a>
+                — Set element/attribute key/value pairs of HTML attributes containing URLs that need to be resolved relative to the feed</li>
+            <li id="strip_attributes">
+              <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/strip_attributes.xhtml">strip_attributes()</a>
+            </li>
+            <li id="strip_comments">
+              <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/strip_comments.xhtml">strip_comments()</a>
+            </li>
+            <li id="strip_htmltags">
+              <a title="SimplePie_Sanitize" href="../classes/SimplePie_Sanitize/strip_htmltags.xhtml">strip_htmltags()</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0-dev - Copyright (C) 2010 - 2019 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

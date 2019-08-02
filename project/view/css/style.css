@@ -1,0 +1,32 @@
+/* Marius Müller - mariusmüller.de */
+
+#logo {
+    width: 100px;
+}
+#index #logo {
+    width: 240px;
+}
+
+body {
+    background-image: url('../img/bg.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+a, .uk-link {
+    color: #3465a4;
+}
+
+#index #desc {
+    text-align: center;
+}
+
+#index .uk-label {
+    /* text-transform: none; */
+}
+#index .uk-label:hover {
+    background: #3465a4;
+    text-decoration: none;
+}

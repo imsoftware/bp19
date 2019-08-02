@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "bac"
+AuthUserFile C:\xampp\htdocs\bac3\project\.htpasswd
+Require valid-user

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SimplePie_Caption" namespace="" name="SimplePie_Caption" abstract="false" final="false" start="55" end="198">
+  <file path="../project/vendor/simplepie/simplepie/library/SimplePie" file="Caption.php" realpath="C:/xampp/htdocs/bac3/project/vendor/simplepie/simplepie/library/SimplePie/Caption.php" size="4416" time="2019-06-14T21:21:47+02:00" unixtime="1560540107" sha1="57248ba4b866241849b121a9afcb6e7108f619e6" relative="vendor/simplepie/simplepie/library/SimplePie/Caption.php"/>
+  <docblock>
+    <description compact="Handles `&lt;media:text&gt;` captions as defined in Media RSS.">Used by <see xmlns="http://xml.phpdox.net/src" value="SimplePie_Enclosure::get_caption()"/> and <see xmlns="http://xml.phpdox.net/src" value="SimplePie_Enclosure::get_captions()"/>This class can be overloaded with <see xmlns="http://xml.phpdox.net/src" value="SimplePie::set_caption_class()"/></description>
+    <package value="SimplePie"/>
+    <subpackage value="API"/>
+  </docblock>
+  <member name="type" visibility="public" static="false" line="63">
+    <docblock>
+      <description compact="Content type"/>
+      <var type="string"/>
+      <see value="get_type()"/>
+    </docblock>
+  </member>
+  <member name="lang" visibility="public" static="false" line="71">
+    <docblock>
+      <description compact="Language"/>
+      <var type="string"/>
+      <see value="get_language()"/>
+    </docblock>
+  </member>
+  <member name="startTime" visibility="public" static="false" line="79">
+    <docblock>
+      <description compact="Start time"/>
+      <var type="string"/>
+      <see value="get_starttime()"/>
+    </docblock>
+  </member>
+  <member name="endTime" visibility="public" static="false" line="87">
+    <docblock>
+      <description compact="End time"/>
+      <var type="string"/>
+      <see value="get_endtime()"/>
+    </docblock>
+  </member>
+  <member name="text" visibility="public" static="false" line="95">
+    <docblock>
+      <description compact="Caption text"/>
+      <var type="string"/>
+      <see value="get_text()"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="103" end="110" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Constructor, used to input the data">For documentation on all the parameters, see the corresponding
+properties and their accessors</description>
+    </docblock>
+    <parameter name="type" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="lang" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="startTime" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="endTime" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="text" byreference="false" type="{unknown}" default="NULL"/>
+  </constructor>
+  <method name="__toString" start="117" end="121" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="String-ified version"/>
+      <return type="string"/>
+    </docblock>
+    <inline>
+      <comment value="There is no $this-&gt;data here" line="119"/>
+    </inline>
+  </method>
+  <method name="get_endtime" start="128" end="136" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the end time"/>
+      <return description="Time in the format 'hh:mm:ss.SSS'" type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_language" start="144" end="152" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the language"/>
+      <link value="http://tools.ietf.org/html/rfc3066"/>
+      <return description="Language code as per RFC 3066" type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_starttime" start="159" end="167" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the start time"/>
+      <return description="Time in the format 'hh:mm:ss.SSS'" type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_text" start="174" end="182" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the text of the caption"/>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_type" start="189" end="197" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the content type (not MIME type)"/>
+      <return description="Either 'text' or 'html'" type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+</class>

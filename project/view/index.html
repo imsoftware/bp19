@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>OpenBallot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="index" class="uk-cover-container uk-background-secondary uk-flex uk-flex-center uk-flex-middle uk-light uk-overflow-auto" data-uk-height-viewport> 
+<!-- uk-overflow-hidden uk-height-viewport  -->
+<!-- overlay -->
+<div class="uk-position-cover uk-overlay-primary"></div>
+<!-- /overlay -->
+<div class="uk-position-bottom-center uk-position-small uk-position-z-index">
+    <span class="uk-text-small uk-text-muted">
+        <a class="uk-text-muted" href="http://xn--mariusmller-zhb.de">mariusmüller.de</a> - 
+        h_da -
+        Photo 
+        <a class="uk-text-muted" target="_blank" href="https://commons.wikimedia.org/wiki/File:European_Parliament_Strasbourg_Hemicycle_-_Diliff.jpg">David Iliff</a>,  
+        <a class="uk-text-muted" target="_blank" href="https://creativecommons.org/licenses/by-sa/3.0/deed.en" target="_blank">CC BY-SA 3</a>
+    </span>
+</div>
+<div class="uk-width-large uk-padding-small uk-position-z-index" uk-scrollspy="cls: uk-animation-fade">
+    
+    <div class="uk-text-center uk-margin">
+        <img id="logo" src="img/openballot.png" alt="OpenBallot">
+    </div>
+
+    <!-- search -->
+    <form class="toggle-class" action="view.html">
+        <fieldset class="uk-fieldset uk-padding-large uk-padding-remove-vertical">
+            <div class="uk-margin">
+                <p id="desc">
+                    Enter a single word to see how German media covered this topic the last years.<br>
+                    <a href="about.html#faq">FAQ</a> - 
+                    <a href="view.html?topic=Europa2019&start=2019-04-26&end=2019-05-26&unit=D">Example</a>
+                </p>
+                <div class="uk-inline uk-width-1-1">
+                    <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: search"></span>
+                    <input name="topic" class="uk-input uk-border-pill" required placeholder="Your topic. One word." type="text">
+                </div>
+            </div>
+            <div class="uk-margin">
+                <div class="uk-text-center">
+                    <label for="start">Start date (optional)</label>
+                </div>
+                <div class="uk-inline uk-width-1-1">
+                    <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: calendar"></span>
+                    <input name="start" class="uk-input uk-border-pill" placeholder="2018-01-01" type="date">
+                </div>
+            </div>
+            <div class="uk-margin-small uk-text-center">
+                <label for="unit">Split by timeunit</label>
+            </div>
+            <div class="uk-marign">
+                <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                    <label><input class="uk-radio" type="radio" name="unit" value="D"> Day</label>
+                    <label><input class="uk-radio" type="radio" name="unit" value="M"> Week</label>
+                    <label><input class="uk-radio" type="radio" name="unit" value="M" checked> Month</label>
+                    <label><input class="uk-radio" type="radio" name="unit" value="Y"> Year</label>
+                </div>
+            </div>
+            <div class="uk-margin-bottom">
+                <button type="submit" class="uk-button uk-button-primary uk-border-pill uk-width-1-1">Search</button>
+            </div>
+        </fieldset>
+    </form>
+    <!-- /search -->
+
+    <!-- more options -->
+    <form class="toggle-class" action="view.html" hidden>
+        <fieldset class="uk-fieldset">
+            <div class="uk-margin">
+                <div class="uk-inline uk-width-1-1">
+                    <div class="uk-text-center">
+                        <label for="start">Your topic(s). Separate multiple topics by comma.</label>
+                    </div>
+                    <div class="uk-inline uk-width-1-1">
+                        <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: search"></span>
+                        <input name="topic" class="uk-input uk-border-pill" required placeholder="Your topic(s)." type="text">
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="uk-margin">
+                <div class="uk-inline uk-width-1-1">
+                    <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: search"></span>
+                    <input name="topic_b" class="uk-input uk-border-pill" placeholder="Second topic (optional)." type="text">
+                </div>
+            </div>
+            <div class="uk-margin">
+                <div class="uk-inline uk-width-1-1">
+                    <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: search"></span>
+                    <input name="topic_c" class="uk-input uk-border-pill" placeholder="Third topic (optional)." type="text">
+                </div>
+            </div> -->
+            <div class="uk-child-width-expand uk-margin" uk-grid>
+                <div>
+                    <div class="uk-text-center">
+                        <label for="start">Start date (optional)</label>
+                    </div>
+                    <div class="uk-inline uk-width-1-1">
+                        <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: history"></span>
+                        <input name="start" class="uk-input uk-border-pill" placeholder="2018-01-01" type="date">
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-text-center">
+                        <label for="end">End date (optional)</label>
+                    </div>
+                    <div class="uk-inline uk-width-1-1">
+                        <span class="uk-form-icon uk-form-icon-flip" data-uk-icon="icon: future"></span>
+                        <input name="end" class="uk-input uk-border-pill" placeholder="2019-12-31" type="date">
+                    </div>
+                </div>
+            </div>
+            <div class="uk-margin-small uk-text-center">
+                <label for="unit">Split by timeunit</label>
+            </div>
+            <div class="uk-marign">
+                <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                    <label><input class="uk-radio" type="radio" name="unit" value="D"> Day</label>
+                    <label><input class="uk-radio" type="radio" name="unit" value="M"> Week</label>
+                    <label><input class="uk-radio" type="radio" name="unit" value="M" checked> Month</label>
+                    <label><input class="uk-radio" type="radio" name="unit" value="Y"> Year</label>
+                </div>
+            </div>
+            <div class="uk-margin-bottom">
+                <button type="submit" class="uk-button uk-button-primary uk-border-pill uk-width-1-1">Search</button>
+            </div>
+            <div id="overview" class="uk-margin uk-text-center">
+                <p class="uk-margin-remove-bottom">Predefined dashboards</p>
+            </div>
+        </fieldset>
+    </form>
+    <!-- /more options -->
+    
+    <!-- action buttons -->
+    <div>
+        <div class="uk-text-center">
+            <a class="uk-padding-small uk-link-reset uk-text-small toggle-class" data-uk-toggle="target: .toggle-class ;animation: uk-animation-fade">More options</a>
+            <a class="uk-padding-small uk-link-reset uk-text-small toggle-class" data-uk-toggle="target: .toggle-class ;animation: uk-animation-fade" hidden><span data-uk-icon="arrow-left"></span> Less options</a>
+            <div class="uk-margin">&nbsp;</div>
+        </div>
+    </div>
+    <!-- action buttons -->
+</div>
+<script src="js/uikit.min.js"></script>
+<script src="js/uikit-icons.min.js"></script>
+<script>
+let urlslug = 'view.html?';
+let url = [];
+let data;
+let request = new XMLHttpRequest();
+request.open('GET', 'dashboards.json', true);
+request.onload = function() {
+    if (request.status == 200) {
+        data = JSON.parse(request.responseText);
+        // exiting stuff
+        Object.keys(data['dashboards']).forEach(parseUrls);
+    } else {
+       console.log('Error 500 JSON');
+    }
+};
+request.onerror = function() {
+    console.log('Error 500 JSON');
+};
+request.send();
+
+// function parseUrls(item, index) {
+//     let itopic = Object.keys(data['dashboards'])[index];
+//     url[index] = 
+//         urlslug + 'topic=' + 
+//         Object.keys(data['dashboards'])[index] +
+//         data['dashboards'][itopic]['meta'];
+//     // console.log(url[index]);
+//     document.getElementById('overview').innerHTML += 
+//         '<a href="' + url[index] + '" class="uk-label">' + Object.keys(data['dashboards'])[index] + '</a>&nbsp;';
+// }
+
+function parseUrls(item, index) {
+    let itopic = Object.keys(data['dashboards'])[index];
+    url[index] = 
+        urlslug + 'topic=' + 
+        Object.keys(data['dashboards'])[index] +
+        data['dashboards'][itopic]['meta'];
+    // events
+    if (data['dashboards'][itopic]['featured'] == '1') {
+        document.getElementById('overview').innerHTML += 
+            '<a class="uk-label" href="' + url[index] + '">' + itopic + '</a>&nbsp';
+    }
+}
+
+</script>
+</body>
+</html>

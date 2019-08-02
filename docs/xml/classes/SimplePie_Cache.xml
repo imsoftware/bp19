@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SimplePie_Cache" namespace="" name="SimplePie_Cache" abstract="false" final="false" start="54" end="134">
+  <file path="../project/vendor/simplepie/simplepie/library/SimplePie" file="Cache.php" realpath="C:/xampp/htdocs/bac3/project/vendor/simplepie/simplepie/library/SimplePie/Cache.php" size="4370" time="2019-06-14T21:21:47+02:00" unixtime="1560540107" sha1="365e431c5a3d79c82a2853009cb3c833b2092dc6" relative="vendor/simplepie/simplepie/library/SimplePie/Cache.php"/>
+  <docblock>
+    <description compact="Used to create cache objects">This class can be overloaded with <see xmlns="http://xml.phpdox.net/src" value="SimplePie::set_cache_class()"/>,
+although the preferred way is to create your own handler
+via <see xmlns="http://xml.phpdox.net/src" value="register()"/></description>
+    <package value="SimplePie"/>
+    <subpackage value="Caching"/>
+  </docblock>
+  <member name="handlers" default="" type="array" visibility="protected" static="true" line="63">
+    <docblock>
+      <description compact="Cache handler classes">These receive 3 parameters to their constructor, as documented in
+{@see register()}</description>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="73" end="73" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="Don't call the constructor. Please."/>
+    </docblock>
+  </constructor>
+  <method name="get_handler" start="83" end="94" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Create a new SimplePie_Cache object"/>
+      <param description="URL location (scheme is used to determine handler)" type="string" variable="$location"/>
+      <param description="Unique identifier for cache object" type="string" variable="$filename"/>
+      <param description="'spi' or 'spc'" type="string" variable="$extension"/>
+      <return description="Type of object depends on scheme of `$location`" type="object">
+        <type full="SimplePie_Cache_Base" namespace="" name="SimplePie_Cache_Base"/>
+      </return>
+    </docblock>
+    <parameter name="location" byreference="false" type="{unknown}"/>
+    <parameter name="filename" byreference="false" type="{unknown}"/>
+    <parameter name="extension" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="create" start="101" end="105" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Create a new SimplePie_Cache object"/>
+      <deprecated value="Use {@see get_handler} instead"/>
+    </docblock>
+    <parameter name="location" byreference="false" type="{unknown}"/>
+    <parameter name="filename" byreference="false" type="{unknown}"/>
+    <parameter name="extension" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="register" start="113" end="116" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Register a handler"/>
+      <param description="DSN type to register for" type="string" variable="$type"/>
+      <param description="Name of handler class. Must implement SimplePie_Cache_Base" type="string" variable="$class"/>
+    </docblock>
+    <parameter name="type" byreference="false" type="{unknown}"/>
+    <parameter name="class" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="parse_URL" start="124" end="133" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Parse a URL into an array"/>
+      <param type="string" variable="$url"/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="url" byreference="false" type="{unknown}"/>
+  </method>
+</class>

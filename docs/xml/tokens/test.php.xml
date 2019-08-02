@@ -1,0 +1,339 @@
+<?xml version="1.0"?>
+<source xmlns="http://xml.phpdox.net/token">
+  <file xmlns="http://xml.phpdox.net/src" path="../project" file="test.php" realpath="C:/xampp/htdocs/bac3/project/test.php" size="1825" time="2019-07-13T02:29:35+02:00" unixtime="1562977775" sha1="505a119257d28a779ef4f4b07fc02a4c9813a71b" relative="test.php"/>
+  <line no="1">
+    <token name="T_OPEN_TAG">&lt;?php</token>
+  </line>
+  <line no="2">
+    <token name="T_COMMENT">// INI REQ</token>
+  </line>
+  <line no="3">
+    <token name="T_REQUIRE_ONCE">require_once</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DIR">__DIR__</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'/baclib.php'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_COMMENT">// My lib &lt;3</token>
+  </line>
+  <line no="4">
+    <token name="T_REQUIRE_ONCE">require_once</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DIR">__DIR__</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'/config/config.php'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_COMMENT">// Includes config</token>
+  </line>
+  <line no="5">
+    <token name="T_REQUIRE_ONCE">require_once</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DIR">__DIR__</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'/vendor/autoload.php'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_COMMENT">// Includes composer</token>
+  </line>
+  <line no="6">
+    <token name="T_REQUIRE_ONCE">require_once</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DIR">__DIR__</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'/simplehtmldom_1_9/simple_html_dom.php'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_COMMENT">// Includes html scraper</token>
+  </line>
+  <line no="7">
+    <token name="T_REQUIRE_ONCE">require_once</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_DIR">__DIR__</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_DOT">.</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'/mysqli.php'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_COMMENT">// Includes html scraper</token>
+  </line>
+  <line no="8"/>
+  <line no="9">
+    <token name="T_COMMENT">// INI BacLib</token>
+  </line>
+  <line no="10">
+    <token name="T_VARIABLE">$baclib</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_NEW">new</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">BacLib</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="11"/>
+  <line no="12">
+    <token name="T_ECHO">echo</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'&lt;pre&gt;'</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="13"/>
+  <line no="14">
+    <token name="T_COMMENT">// $query =  </token>
+  </line>
+  <line no="15">
+    <token name="T_COMMENT">// '   SELECT</token>
+  </line>
+  <line no="16">
+    <token name="T_COMMENT">//         DATE_FORMAT(a_timestamp, "$thetimeunit") AS date_array,</token>
+  </line>
+  <line no="17">
+    <token name="T_COMMENT">//         COUNT(a_timestamp) AS count_array,</token>
+  </line>
+  <line no="18">
+    <token name="T_COMMENT">//         SUM(a_comb_senti) AS senti,</token>
+  </line>
+  <line no="19">
+    <token name="T_COMMENT">//         a_comb_f</token>
+  </line>
+  <line no="20">
+    <token name="T_COMMENT">//     FROM `$dbtable`</token>
+  </line>
+  <line no="21">
+    <token name="T_COMMENT">//     WHERE a_timestamp BETWEEN "$start 00:00:00" AND "$end 23:59:00"</token>
+  </line>
+  <line no="22">
+    <token name="T_COMMENT">//     $thetotal AND MATCH (a_comb_f) AGAINST ("$sql_topic" IN BOOLEAN MODE)</token>
+  </line>
+  <line no="23">
+    <token name="T_COMMENT">//     GROUP BY date_array</token>
+  </line>
+  <line no="24">
+    <token name="T_COMMENT">//     ORDER BY date_array</token>
+  </line>
+  <line no="25">
+    <token name="T_COMMENT">// ';</token>
+  </line>
+  <line no="26">
+    <token name="T_COMMENT">// 'INSERT INTO bla (blubb, blubber) VALUES (?, ?)';</token>
+  </line>
+  <line no="27"/>
+  <line no="28">
+    <token name="T_COMMENT">// $query =  </token>
+  </line>
+  <line no="29">
+    <token name="T_COMMENT">// '   SELECT</token>
+  </line>
+  <line no="30">
+    <token name="T_COMMENT">//         DATE_FORMAT(a_timestamp, "?") AS date_array,</token>
+  </line>
+  <line no="31">
+    <token name="T_COMMENT">//         COUNT(a_timestamp) AS count_array,</token>
+  </line>
+  <line no="32">
+    <token name="T_COMMENT">//         SUM(a_comb_senti) AS senti,</token>
+  </line>
+  <line no="33">
+    <token name="T_COMMENT">//         a_comb_f</token>
+  </line>
+  <line no="34">
+    <token name="T_COMMENT">//     FROM `$dbtable`</token>
+  </line>
+  <line no="35">
+    <token name="T_COMMENT">//     WHERE a_timestamp BETWEEN "? 00:00:00" AND "? 23:59:00"</token>
+  </line>
+  <line no="36">
+    <token name="T_COMMENT">//     ? AND MATCH (a_comb_f) AGAINST ("?" IN BOOLEAN MODE)</token>
+  </line>
+  <line no="37">
+    <token name="T_COMMENT">//     GROUP BY date_array</token>
+  </line>
+  <line no="38">
+    <token name="T_COMMENT">//     ORDER BY date_array</token>
+  </line>
+  <line no="39">
+    <token name="T_COMMENT">// ';</token>
+  </line>
+  <line no="40"/>
+  <line no="41">
+    <token name="T_VARIABLE">$query</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+  </line>
+  <line no="42">
+    <token name="T_CONSTANT_ENCAPSED_STRING">'</token>
+  </line>
+  <line no="43">
+    <token name="T_CONSTANT_ENCAPSED_STRING">SELECT * FROM `dbs5` </token>
+  </line>
+  <line no="44">
+    <token name="T_CONSTANT_ENCAPSED_STRING">WHERE `db_pid` = ?</token>
+  </line>
+  <line no="45">
+    <token name="T_CONSTANT_ENCAPSED_STRING">'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="46"/>
+  <line no="47">
+    <token name="T_VARIABLE">$stmt</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$conn</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">prepare</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$query</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="48"/>
+  <line no="49">
+    <token name="T_VARIABLE">$stmt</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">bind_param</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'i'</token>
+    <token name="T_PHPDOX_COMMA">,</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$id</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="50">
+    <token name="T_COMMENT">//     'sssss', </token>
+  </line>
+  <line no="51">
+    <token name="T_COMMENT">//     $thetimeunit, </token>
+  </line>
+  <line no="52">
+    <token name="T_COMMENT">//     $start,</token>
+  </line>
+  <line no="53">
+    <token name="T_COMMENT">//     $end,</token>
+  </line>
+  <line no="54">
+    <token name="T_COMMENT">//     $thetotal,</token>
+  </line>
+  <line no="55">
+    <token name="T_COMMENT">//     $sql_topic</token>
+  </line>
+  <line no="56">
+    <token name="T_COMMENT">// );</token>
+  </line>
+  <line no="57"/>
+  <line no="58">
+    <token name="T_VARIABLE">$id</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_LNUMBER">1</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="59"/>
+  <line no="60">
+    <token name="T_STRING">var_dump</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$stmt</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="61"/>
+  <line no="62">
+    <token name="T_VARIABLE">$thetimeunit</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'Y'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="63">
+    <token name="T_VARIABLE">$start</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'2019-01-01'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="64">
+    <token name="T_VARIABLE">$end</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'2019-01-01'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="65">
+    <token name="T_VARIABLE">$thetotal</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'--'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="66">
+    <token name="T_VARIABLE">$sql_topic</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_CONSTANT_ENCAPSED_STRING">'trump'</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="67"/>
+  <line no="68">
+    <token name="T_VARIABLE">$stmt</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_STRING">execute</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="69"/>
+  <line no="70">
+    <token name="T_VARIABLE">$result</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$stmt</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">get_result</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="71">
+    <token name="T_VARIABLE">$result</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_PHPDOX_EQUAL">=</token>
+    <token name="T_WHITESPACE"> </token>
+    <token name="T_VARIABLE">$result</token>
+    <token name="T_OBJECT_OPERATOR">-&gt;</token>
+    <token name="T_STRING">fetch_all</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+  <line no="72"/>
+  <line no="73">
+    <token name="T_STRING">var_dump</token>
+    <token name="T_PHPDOX_OPEN_BRACKET">(</token>
+    <token name="T_VARIABLE">$result</token>
+    <token name="T_PHPDOX_CLOSE_BRACKET">)</token>
+    <token name="T_PHPDOX_SEMICOLON">;</token>
+  </line>
+</source>

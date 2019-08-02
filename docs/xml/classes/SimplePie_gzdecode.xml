@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SimplePie_gzdecode" namespace="" name="SimplePie_gzdecode" abstract="false" final="false" start="52" end="366">
+  <file path="../project/vendor/simplepie/simplepie/library/SimplePie" file="gzdecode.php" realpath="C:/xampp/htdocs/bac3/project/vendor/simplepie/simplepie/library/SimplePie/gzdecode.php" size="8521" time="2019-06-14T21:21:47+02:00" unixtime="1560540107" sha1="d24b531691b4d8537b00e9bfec380e24e9e7162d" relative="vendor/simplepie/simplepie/library/SimplePie/gzdecode.php"/>
+  <docblock>
+    <description compact="Decode 'gzip' encoded HTTP data"/>
+    <package value="SimplePie"/>
+    <subpackage value="HTTP"/>
+    <link value="http://www.gzip.org/format.txt"/>
+  </docblock>
+  <member name="compressed_data" visibility="public" static="false" line="61">
+    <docblock>
+      <description compact="Compressed data"/>
+      <access value="private"/>
+      <var type="string"/>
+      <see value="gzdecode::$data"/>
+    </docblock>
+  </member>
+  <member name="compressed_size" visibility="public" static="false" line="69">
+    <docblock>
+      <description compact="Size of compressed data"/>
+      <access value="private"/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="min_compressed_size" default="18" type="integer" visibility="public" static="false" line="77">
+    <docblock>
+      <description compact="Minimum size of a valid gzip string"/>
+      <access value="private"/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="position" default="0" type="integer" visibility="public" static="false" line="85">
+    <docblock>
+      <description compact="Current position of pointer"/>
+      <access value="private"/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="flags" visibility="public" static="false" line="93">
+    <docblock>
+      <description compact="Flags (FLG)"/>
+      <access value="private"/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="data" visibility="public" static="false" line="102">
+    <docblock>
+      <description compact="Uncompressed data"/>
+      <access value="public"/>
+      <see value="gzdecode::$compressed_data"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="MTIME" visibility="public" static="false" line="110">
+    <docblock>
+      <description compact="Modified time"/>
+      <access value="public"/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="XFL" visibility="public" static="false" line="118">
+    <docblock>
+      <description compact="Extra Flags"/>
+      <access value="public"/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="OS" visibility="public" static="false" line="126">
+    <docblock>
+      <description compact="Operating System"/>
+      <access value="public"/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="SI1" visibility="public" static="false" line="136">
+    <docblock>
+      <description compact="Subfield ID 1"/>
+      <access value="public"/>
+      <see value="gzdecode::$extra_field"/>
+      <see value="gzdecode::$SI2"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="SI2" visibility="public" static="false" line="146">
+    <docblock>
+      <description compact="Subfield ID 2"/>
+      <access value="public"/>
+      <see value="gzdecode::$extra_field"/>
+      <see value="gzdecode::$SI1"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="extra_field" visibility="public" static="false" line="156">
+    <docblock>
+      <description compact="Extra field content"/>
+      <access value="public"/>
+      <see value="gzdecode::$SI1"/>
+      <see value="gzdecode::$SI2"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="filename" visibility="public" static="false" line="164">
+    <docblock>
+      <description compact="Original filename"/>
+      <access value="public"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="comment" visibility="public" static="false" line="172">
+    <docblock>
+      <description compact="Human readable comment"/>
+      <access value="public"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <method name="__set" start="180" end="183" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Don't allow anything to be set"/>
+      <param type="string" variable="$name"/>
+      <param type="mixed" variable="$value"/>
+    </docblock>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+  </method>
+  <constructor name="__construct" start="190" end="194" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the compressed string and related properties"/>
+      <param type="string" variable="$data"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </constructor>
+  <method name="parse" start="201" end="365" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Decode the GZIP stream"/>
+      <return description="Successfulness" type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+  </method>
+</class>

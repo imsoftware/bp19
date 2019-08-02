@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - SimplePie_Parse_Date</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">SimplePie_Parse_Date</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/vendor/simplepie/simplepie/library/SimplePie/Parse/Date.php.xhtml#line51">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>\</small>SimplePie_Parse_Date</h1>
+        <h4>Date Parser</h4>
+        <p/>
+        <ul/>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class SimplePie_Parse_Date
+            {<br/><ul class="none"><li>// members</li><li>public  <a href="#members">$date</a>;
+                    </li><li>public array <a href="#members">$day</a> =
+                        ;
+                    </li><li>public array <a href="#members">$month</a> =
+                        ;
+                    </li><li>public array <a href="#members">$timezone</a> =
+                        ;
+                    </li><li>public  <a href="#members">$day_pcre</a>;
+                    </li><li>public  <a href="#members">$month_pcre</a>;
+                    </li><li>public array <a href="#members">$built_in</a> =
+                        ;
+                    </li><li>public array <a href="#members">$user</a> =
+                        ;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="SimplePie_Parse_Date" href="../classes/SimplePie_Parse_Date/__construct.xhtml">__construct</a>()
+                    </li><li>public static void <a title="SimplePie_Parse_Date" href="../classes/SimplePie_Parse_Date/get.xhtml">get</a>()
+                    </li><li>public int <a title="SimplePie_Parse_Date" href="../classes/SimplePie_Parse_Date/parse.xhtml">parse</a>()
+                    </li><li>public void <a title="SimplePie_Parse_Date" href="../classes/SimplePie_Parse_Date/add_callback.xhtml">add_callback</a>()
+                    </li><li>public int <a title="SimplePie_Parse_Date" href="../classes/SimplePie_Parse_Date/date_w3cdtf.xhtml">date_w3cdtf</a>()
+                    </li><li>public string <a title="SimplePie_Parse_Date" href="../classes/SimplePie_Parse_Date/remove_rfc2822_comments.xhtml">remove_rfc2822_comments</a>()
+                    </li><li>public int <a title="SimplePie_Parse_Date" href="../classes/SimplePie_Parse_Date/date_rfc2822.xhtml">date_rfc2822</a>()
+                    </li><li>public int <a title="SimplePie_Parse_Date" href="../classes/SimplePie_Parse_Date/date_rfc850.xhtml">date_rfc850</a>()
+                    </li><li>public int <a title="SimplePie_Parse_Date" href="../classes/SimplePie_Parse_Date/date_asctime.xhtml">date_asctime</a>()
+                    </li><li>public int <a title="SimplePie_Parse_Date" href="../classes/SimplePie_Parse_Date/date_strtotime.xhtml">date_strtotime</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>public</h4>
+          <ul class="members">
+            <li id="built_in"><strong>$built_in</strong>
+                —
+                array<br/><span class="indent">Array of user-added callback methods</span></li>
+            <li id="date"><strong>$date</strong>
+                —
+                string<br/><span class="indent">Input data</span></li>
+            <li id="day"><strong>$day</strong>
+                —
+                array<br/><span class="indent">List of days, calendar day name =&gt; ordinal day number in the week</span></li>
+            <li id="day_pcre"><strong>$day_pcre</strong>
+                —
+                string<br/><span class="indent">Cached PCRE for SimplePie_Parse_Date::$day</span></li>
+            <li id="month"><strong>$month</strong>
+                —
+                array<br/><span class="indent">List of months, calendar month name =&gt; calendar month number</span></li>
+            <li id="month_pcre"><strong>$month_pcre</strong>
+                —
+                string<br/><span class="indent">Cached PCRE for SimplePie_Parse_Date::$month</span></li>
+            <li id="timezone"><strong>$timezone</strong>
+                —
+                array<br/><span class="indent">List of timezones, abbreviation =&gt; offset from UTC</span></li>
+            <li id="user"><strong>$user</strong>
+                —
+                array<br/><span class="indent">Array of user-added callback methods</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="SimplePie_Parse_Date" href="../classes/SimplePie_Parse_Date/__construct.xhtml">__construct()</a>
+                — Create new SimplePie_Parse_Date object, and set self::day_pcre, self::month_pcre, and self::built_in</li>
+            <li id="add_callback"><a title="SimplePie_Parse_Date" href="../classes/SimplePie_Parse_Date/add_callback.xhtml">add_callback()</a>
+                — Add a callback method to parse a date</li>
+            <li id="date_asctime"><a title="SimplePie_Parse_Date" href="../classes/SimplePie_Parse_Date/date_asctime.xhtml">date_asctime()</a>
+                — Parse C99's asctime()'s date format</li>
+            <li id="date_rfc2822"><a title="SimplePie_Parse_Date" href="../classes/SimplePie_Parse_Date/date_rfc2822.xhtml">date_rfc2822()</a>
+                — Parse RFC2822's date format</li>
+            <li id="date_rfc850"><a title="SimplePie_Parse_Date" href="../classes/SimplePie_Parse_Date/date_rfc850.xhtml">date_rfc850()</a>
+                — Parse RFC850's date format</li>
+            <li id="date_strtotime"><a title="SimplePie_Parse_Date" href="../classes/SimplePie_Parse_Date/date_strtotime.xhtml">date_strtotime()</a>
+                — Parse dates using strtotime()</li>
+            <li id="date_w3cdtf"><a title="SimplePie_Parse_Date" href="../classes/SimplePie_Parse_Date/date_w3cdtf.xhtml">date_w3cdtf()</a>
+                — Parse a superset of W3C-DTF (allows hyphens and colons to be omitted, as well as allowing any of upper or lower case "T", horizontal tabs, or spaces to be used as the time separator (including more than one))</li>
+            <li id="get"><a title="SimplePie_Parse_Date" href="../classes/SimplePie_Parse_Date/get.xhtml">get()</a>
+                — Get the object</li>
+            <li id="parse"><a title="SimplePie_Parse_Date" href="../classes/SimplePie_Parse_Date/parse.xhtml">parse()</a>
+                — Parse a date</li>
+            <li id="remove_rfc2822_comments"><a title="SimplePie_Parse_Date" href="../classes/SimplePie_Parse_Date/remove_rfc2822_comments.xhtml">remove_rfc2822_comments()</a>
+                — Remove RFC822 comments</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0-dev - Copyright (C) 2010 - 2019 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

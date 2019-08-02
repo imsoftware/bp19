@@ -1,0 +1,570 @@
+{
+    "dashboards": {
+        "Europa2019": {
+            "meta":"&start=2019-04-26&end=2019-05-26&unit=D",
+            "topics": [
+                "Europa2019,Europa,EU,Europawahl,Europäiches,Straßburg,Brüssel,EVP,Weber,Timmermans,Kommissionspräsident"
+            ],
+            "type":"election",
+            "date":"2019",
+            "end":"2019-05-26",
+            "featured":"1"
+        },
+        "Bremen2019": {
+            "meta":"&start=2019-04-26&end=2019-05-26&unit=D",
+            "topics": [
+                "Bremen2019,Bremen,Bürgerschaft,Bürgerschaftswahl,Bürgerschaftswahl,Sieling,Meyer,Heder,Schaefer"
+            ],
+            "type":"election-germany",
+            "date":"2019",
+            "end":"2019-05-26",
+            "featured":"1"
+        },
+        "Hessen2018": {
+            "meta":"&start=2018-09-28&end=2018-10-28&unit=D",
+            "topics": [
+                "Hessen2019,Hessen,Landtagswahl,Wiesbaden,bouffier,schäfer,gümbel,hinz,wazir"
+            ],
+            "type":"election-germany",
+            "date":"2018",
+            "end":"2018-10-28",
+            "featured":"1"
+        },
+        "Bayern2018": {
+            "meta":"&start=2018-09-14&end=2018-10-14&unit=D",
+            "topics": [
+                "Bayern2018,Bayern,Landtagswahl,münchen,söder,kohnen,aiwanger,schulze,hartmann"
+            ],
+            "type":"election-germany",
+            "date":"2018",
+            "end":"2018-10-14",
+            "featured":"1"
+        },
+        "Niedersachsen2017": {
+            "meta":"&start=2017-09-15&end=2017-10-15&unit=D",
+            "topics": [
+                "Niedersachsen2017,Niedersachsen,Hannover,Landtagswahl,Althusmann,weil,piel,birkner"
+            ],
+            "type":"election-germany",
+            "date":"2017",
+            "end":"2017-10-15",
+            "featured":"1"
+        },
+        "Deutschland2017": {
+            "meta":"&start=2017-08-24&end=2017-09-24&unit=D",
+            "topics": [
+                "Deutschland2017,Bundestagswahl,Bundestag,Bundesregierung,Berlin,Kanzler,Kanzlerin,Merkel,Schulz"
+            ],
+            "type":"election",
+            "date":"2017",
+            "end":"2017-09-24",
+            "featured":"1"
+        },
+        "Europa2014": {
+            "meta":"&start=2014-04-25&end=2014-05-25&unit=D",
+            "topics": [
+                "Europa2014,Europa,EU,Europawahl,Europäiches,Straßburg,Brüssel,Juncker,Schulz,Verhofstadt"
+            ],
+            "type":"election",
+            "date":"2014",
+            "end":"2014-05-25"
+        },
+        "Deutschland2013": {
+            "meta":"&start=2013-08-22&end=2013-09-22&unit=D",
+            "topics": [
+                "Deutschland2013,Bundestagswahl,Bundestag,Bundesregierung,Kanzler,Kanzlerin,Merkel,Steinbrück "
+            ],
+            "type":"election",
+            "date":"2014",
+            "end":"2013-09-22"
+        },
+        "Saarland2017": {
+            "meta":"&start=2017-02-26&end=2017-03-26&unit=D",
+            "topics": [
+                "Saarland2014,Saarland,Saar,Landtagswahl,Kramp,Karrenbauer,Rehlinger"
+            ],
+            "type":"election-germany",
+            "date":"2017",
+            "end":"2017-03-26"
+        },
+        "SchleswigHolstein2017": {
+            "meta":"&start=2017-04-07&end=2017-05-07&unit=D ",
+            "topics": [
+                "SchleswigHolstein2017,SchleswigHolstein,Schleswig,Holstein,Landtagswahl,Günther,Albig,Heinold,Kubicki,Kiel"
+            ],
+            "type":"election-germany",
+            "date":"2017"
+        },
+        "NordrheinWestfalen2017": {
+            "meta":"&start=2017-04-14&end=2017-05-14&unit=D ",
+            "topics": [
+                "NordrheinWestfalen2017,NordrheinWestfalen,Nordrhein,WestfalenLandtagswahl,Kraft,Laschet,Löhrmann,Lindner,Düsseldorf"
+            ],
+            "type":"election-germany",
+            "date":"2017"
+        },
+        "BadenWürttemberg2016": {
+            "meta":"&start=2016-02-13&end=2016-03-13&unit=D ",
+            "topics": [
+                "BadenWürttemberg2016,Baden,Württemberg,Landtagswahl,Kretschmann,Wolf,Schmid,Schwaben,Ländle,Stuttgart"
+            ],
+            "type":"election-germany",
+            "date":"2016"
+        },
+        "RheinlandPfalz2016": {
+            "meta":"&start=2016-02-13&end=2016-03-13&unit=D ",
+            "topics": [
+                "RheinlandPfalz2016,RheinlandPfalz,Rheinland,Pfalz,Landtagswahl,Dreyer,Klöckner,Mainz"
+            ],
+            "type":"election-germany",
+            "date":"2016"
+        },
+        "SachsenAnhalt2016": {
+            "meta":"&start=2016-02-13&end=2016-03-13&unit=D ",
+            "topics": [
+                "SachsenAnhalt2016,SachsenAnhalt,Anhalt,Magdeburg,Landtagswahl,Haseloff,Gallert,Budde"
+            ],
+            "type":"election-germany",
+            "date":"2016"
+        },
+        "MecklenburgVorpommern2016": {
+            "meta":"&start=2016-08-04&end=2016-09-04&unit=D ",
+            "topics": [
+                "MecklenburgVorpommern2016,MecklenburgVorpommern,Mecklenburg,Vorpommern,Landtagswahl,Schwerin,Sellering,Caffier,Holter,Gajek"
+            ],
+            "type":"election-germany",
+            "date":"2016"
+        },
+        "Berlin2016": {
+            "meta":"&start=2016-08-18&end=2016-09-18&unit=D ",
+            "topics": [
+                "Berlin2016,Berlin,Landtagswahl,Abgeordnetenhaus,Müller,Henkel,Pop,Lederer"
+            ],
+            "type":"election-germany",
+            "date":"2016"
+        },
+        "Hamburg2015": {
+            "meta":"&start=2015-01-15&end=2015-02-15&unit=D ",
+            "topics": [
+                "Hamburg2015,Hamburg,Landtagswahl,Bürgerschaft,Bürgerschaftswahl,scholz,Wersich"
+            ],
+            "type":"election-germany",
+            "date":"2015"
+        },
+        "Bremen2015": {
+            "meta":"&start=2015-04-10&end=2015-05-10&unit=D ",
+            "topics": [
+                "Bremen2015,Bremen,Landtagswahl,Bürgerschaft,Bürgerschaftswahl,Böhrnsen,Lennert,Motschmann"
+            ],
+            "type":"election-germany",
+            "date":"2015"
+        },
+        "Sachsen2014": {
+            "meta":"&start=2014-07-31&end=2014-08-31&unit=D ",
+            "topics": [
+                "Sachsen2014,Sachsen,Landtagswahl,Dresden,Tillisch,Gebhardt,Dulig"
+            ],
+            "type":"election-germany",
+            "date":"2014"
+        },
+        "Brandenburg2014": {
+            "meta":"&start=2014-08-14&end=2014-09-14&unit=D ",
+            "topics": [
+                "Brandenburg2014,Brandenburg,Landtagswahl,Potsdam,Woidke,Schierack,Görke"
+            ],
+            "type":"election-germany",
+            "date":"2014"
+        },
+        "Thüringen2014": {
+            "meta":"&start=2014-08-14&end=2014-09-14&unit=D ",
+            "topics": [
+                "Thüringen2014,Thüringen,Landtagswahl,Erfurt,Lieberknecht,Ramelow,Taubert"
+            ],
+            "type":"election-germany",
+            "date":"2014"
+        },
+        "Niedersachsen2013": {
+            "meta":"&start=2012-12-20&end=2013-01-20&unit=D ",
+            "topics": [
+                "Niedersachsen2013,Niedersachsen,Landtagswahl,Hannover,McAllister,Weil,Birkner"
+            ],
+            "type":"election-germany",
+            "date":"2013"
+        },
+        "Bayern2013": {
+            "meta":"&start=2013-08-15&end=2013-09-15&unit=D ",
+            "topics": [
+                "Bayern2013,Bayern,Landtagswahl,München,CSU,Seehofer,Aiwanger,Ude"
+            ],
+            "type":"election-germany",
+            "date":"2013"
+        },
+        "Hessen2013": {
+            "meta":"&start=2013-08-22&end=2013-09-22&unit=D ",
+            "topics": [
+                "Hessen2013,Hessen,Landtagswahl,Wiesbaden,Bouffier,Schäfer,Gümbel,Dorn,Wazir,Hahn"
+            ],
+            "type":"election-germany",
+            "date":"2013"
+        },
+        "Saarland2012": {
+            "meta":"&start=2012-02-25&end=2012-03-25&unit=D ",
+            "topics": [
+                "Saarland2012,Saarland,Saar,Landtagswahl"
+            ],
+            "type":"election-germany",
+            "date":"2012"
+        },
+        "SchleswigHolstein2012": {
+            "meta":"&start=2012-04-06&end=2012-05-06&unit=D ",
+            "topics": [
+                "SchleswigHolstein2012,SchleswigHolstein,Schleswig,Holstein,Landtagswahl,Kiel"
+            ],
+            "type":"election-germany",
+            "date":"2012"
+        },
+        "NordrheinWestfalen2012": {
+            "meta":"&start=2012-04-13&end=2012-05-13&unit=D ",
+            "topics": [
+                "NordrheinWestfalen2012,NordrheinWestfalen,Nordrhein,Westfalen,Landtagswahl,Düsseldorf"
+            ],
+            "type":"election-germany",
+            "date":"2012"
+        },
+        "Hamburg2011": {
+            "meta":"&start=2011-01-20&end=2011-02-20&unit=D ",
+            "topics": [
+                "Hamburg2011,Hamburg,Landtagswahl,Bürgerschaft"
+            ],
+            "type":"election-germany",
+            "date":"2011"
+        },
+        "SachsenAnhalt2011": {
+            "meta":"&start=2011-02-20&end=2011-03-20&unit=D ",
+            "topics": [
+                "SachsenAnhalt2011,Anhalt,Landtagswahl,Magdeburg"
+            ],
+            "type":"election-germany",
+            "date":"2011"
+        },
+        "BadenWürttemberg2011": {
+            "meta":"&start=2011-02-27&end=2011-03-27&unit=D ",
+            "topics": [
+                "BadenWürttemberg2011,BadenWürttemberg,Baden,Württemberg,Landtagswahl,Stuttgart"
+            ],
+            "type":"election-germany",
+            "date":"2011"
+        },
+        "RheinlandPfalz2011": {
+            "meta":"&start=2011-02-27&end=2011-03-27&unit=D ",
+            "topics": [
+                "RheinlandPfalz2011,RheinlandPfalz,Rheinland,Pfalz,Landtagswahl,Mainz"
+            ],
+            "type":"election-germany",
+            "date":"2011"
+        },
+        "Bremen2011": {
+            "meta":"&start=2011-04-22&end=2011-05-22&unit=D ",
+            "topics": [
+                "Bremen2011,Bremen,Landtagswahl,Bürgerschaft"
+            ],
+            "type":"election-germany",
+            "date":"2011"
+        },
+        "MecklenburgVorpommern2011": {
+            "meta":"&start=2011-08-04&end=2011-09-04&unit=D ",
+            "topics": [
+                "MecklenburgVorpommern2011,MecklenburgVorpommern,Mecklenburg,Vorpommern,Landtagswahl,Schwerin"
+            ],
+            "type":"election-germany",
+            "date":"2011"
+        },
+        "Berlin2011": {
+            "meta":"&start=2011-08-18&end=2011-09-18&unit=D ",
+            "topics": [
+                "Berlin2011,Berlin,Landtagswahl,Abgeordnetenhaus"
+            ],
+            "type":"election-germany",
+            "date":"2011"
+        },
+        "NordrheinWestfalen2010": {
+            "meta":"&start=2010-04-09&end=2010-05-09&unit=D ",
+            "topics": [
+                "NordrheinWestfalen2010,NordrheinWestfalen,Nordrhein,Westfalen,Landtagswahl,Düsseldorf"
+            ],
+            "type":"election-germany",
+            "date":"2010"
+        },
+        "Deutschland2009": {
+            "meta":"&start=2009-08-27&end=2009-09-27&unit=D",
+            "topics": [
+                "Deutschland2009,Bundestagswahl,Bundestag,Bundesregierung,Berlin,Kanzler,Kanzlerin"
+            ],
+            "type":"election",
+            "date":"2009"
+        },
+        "Europa2009": {
+            "meta":"&start=2009-04-07&end=2009-05-07&unit=D",
+            "topics": [
+                "Europa2009,Europa,EU,Europawahl,Europäiches,Straßburg,Brüssel,EVP,Kommissionspräsident"
+            ],
+            "type":"election",
+            "date":"2009"
+        },
+        "Chemnitz2018": {
+            "meta":"&start=2018-08-05&end=2018-11-05&unit=W ",
+            "topics": [
+                "Chemnitz2018,Chemnitz,Hetzjagd,Hetzjagden,Kretschmer,wirsindmehr,Seehofer,Maaßen,Verfassungsschutz"
+            ],
+            "type":"event",
+            "end":"2018-11-05",
+            "rangetype":"3M",
+            "range":"3M"
+        },
+        "Chemnitz2018directrange": {
+            "meta":"&start=2018-08-26&end=2018-11-05&unit=W ",
+            "topics": [
+                "Chemnitz2018directrange,Chemnitz,Hetzjagd,Hetzjagden,Kretschmer,wirsindmehr,Seehofer,Maaßen,Verfassungsschutz"
+            ],
+            "type":"event",
+            "end":"2018-11-05",
+            "start":"2018-08-26",
+            "rangetype":"direct",
+            "range":"71"
+        },
+        "Pegida2014": {
+            "meta":"&start=2014-01-01&end=2016-12-31&unit=W ",
+            "topics": [
+                "Pegida2014,Pegida,Leipzig"
+            ],
+            "type":"event"
+        },
+        "Fukushima2011": {
+            "meta":"&start=2011-01-01&end=2012-12-31&unit=W ",
+            "topics": [
+                "Fukushima2011,Fukushima,Atom,Atomausstieg,GAU,AKW Atomenergie,Moratorium"
+            ],
+            "type":"event"
+        },
+        "Flüchtlinge2015": {
+            "meta":"&start=2015-01-01&end=2017-12-31&unit=M",
+            "topics": [
+                "Flüchtlinge2015,Flüchtlinge,Geflüchtete,Grenze,Zuwanderung"
+            ],
+            "type":"event"
+        },
+        "Urheberrecht2018": {
+            "meta":"&start=2018-01-15&end=2019-04-15&unit=W ",
+            "topics": [
+                "Urheberrecht2019,Urheberrecht,Urheberrechtsreform,Artikel,13,upload,uploadfilter,filter,zensur"
+            ],
+            "type":"event",
+            "end":"2019-04-15",
+            "rangetype":"3M",
+            "range":"3M",
+            "featured":"1"
+        },
+        "Urheberrecht2018directrange": {
+            "meta":"&start=2018-06-20&end=2019-04-15&unit=W ",
+            "topics": [
+                "Urheberrecht2019directrange,Urheberrecht,Urheberrechtsreform,Artikel,13,upload,uploadfilter,filter,zensur"
+            ],
+            "type":"event",
+            "start":"2018-06-20",
+            "end":"2019-04-15",
+            "rangetype":"direct",
+            "range":"299",
+            "featured":"1"
+        },
+        "Ceta2015": {
+            "meta":"&start=2016-12-15&end=2017-02-15&unit=W",
+            "topics": [
+                "Ceta2015,ceta"
+            ],
+            "type":"event",
+            "end":"2017-02-15",
+            "rangetype":"3M",
+            "range":"3M"
+        },
+        "TTIP2016": {
+            "meta":"&start=2016-05-28&end=2016-08-28&unit=W",
+            "topics": [
+                "TTIP2016,TTIP,Freihandelsabkommen,Freihandel"
+            ],
+            "type":"event",
+            "end":"2016-08-28",
+            "rangetype":"3M",
+            "range":"3M"
+        },
+        "TTIP2016directrange": {
+            "meta":"&start=2013-12-21&end=2016-08-28&unit=W",
+            "topics": [
+                "TTIP2016,TTIP,Freihandelsabkommen,Freihandel"
+            ],
+            "type":"event",
+            "start":"2013-12-21",
+            "end":"2016-08-28",
+            "rangetype":"direct",
+            "range":"981"
+        },
+        "Hambacher2018": {
+            "meta":"&start=2018-07-05&end=2018-10-05&unit=W",
+            "topics": [
+                "Hambacher2018,Hambacher,Forst,RWE,Braunkohle,Tagebau"
+            ],
+            "type":"event",
+            "end":"2018-10-05",
+            "rangetype":"3M",
+            "range":"3M",
+            "featured":"1"
+        },
+        "Hambacher2018directrange": {
+            "meta":"&start=2018-04-20&end=2018-10-05&unit=W ",
+            "topics": [
+                "Hambacher2018directrange,Hambacher,Forst,RWE,Braunkohle,Tagebau"
+            ],
+            "type":"event",
+            "start":"2018-04-20",
+            "end":"2018-10-05",
+            "rangetype":"direct",
+            "range":"168",
+            "featured":"1"
+        },
+        "EheFürAlle2017": {
+            "meta":"&start=2017-03-30&end=2017-06-30&unit=W ",
+            "topics": [
+                "EheFürAlle2017,Ehe,Homo,Schwul,Schwule,Lesben,Heirat,heiraten"
+            ],
+            "type":"event",
+            "end":"2017-06-30",
+            "rangetype":"3M",
+            "range":"3M",
+            "featured":"1"
+        },
+        "EheFürAlle2017directrange": {
+            "meta":"&start=2017-06-26&end=2017-06-30&unit=D ",
+            "topics": [
+                "EheFürAlle2017directrange,Ehe,Homo,Schwul,Schwule,Lesben,Heirat,heiraten"
+            ],
+            "type":"event",
+            "start":"2017-06-26",
+            "end":"2017-06-30",
+            "rangetype":"direct",
+            "range":"4",
+            "featured":"1"
+        },
+        "Netzwerkdurchsetzungsgesetz2017": {
+            "meta":"&start=2017-06-01&end=2017-09-01&unit=W ",
+            "topics": [
+                "Netzwerkdurchsetzungsgesetz2017,Netzwerkdurchsetzungsgesetz,NetzDG"
+            ],
+            "type":"event",
+            "end":"2017-09-01",
+            "featured":"1"
+        },
+        "GeordneteRückführungGesetz2018": {
+            "meta":"&start=2019-03-07&end=2019-06-07&unit=W ",
+            "topics": [
+                "GeordneteRückführungGesetz2018,GeordneteRückführungGesetz,Geordnete,Rückführung,Migrationspaket,Einwanderung,Fachkräfte,Asylklageverfahren"
+            ],
+            "type":"event",
+            "end":"2017-09-01",
+            "featured":"1"
+        },
+        "PolizeiaufgabengesetzBayern2018": {
+            "meta":"&start=2018-02-15&end=2018-05-15&unit=W ",
+            "topics": [
+                "PolizeiaufgabengesetzBayern2018,Polizeiaufgabengesetz,PAG,Polizeigesetz,Herrmann"
+            ],
+            "type":"event",
+            "end":"2018-05-18",
+            "rangetype":"3M",
+            "range":"3M",
+            "featured":"1"
+        },
+        "PolizeiaufgabengesetzBayern2018directrange": {
+            "meta":"&start=2018-02-07&end=2018-05-15&unit=W ",
+            "topics": [
+                "PolizeiaufgabengesetzBayern2018directrange,Polizeiaufgabengesetz,PAG,Polizeigesetz,Herrmann"
+            ],
+            "type":"event",
+            "start":"2018-02-07",
+            "end":"2018-05-18",
+            "rangetype":"direct",
+            "range":"97",
+            "featured":"1"
+        },
+        "Atomausstieg2011": {
+            "meta":"&start=2011-02-28&end=2011-05-30&unit=W ",
+            "topics": [
+                "Atomausstieg2011,Atomausstieg,Atom,AKW,Kernkraft,Atommoratorium,Fukushima,GAU,Reaktor"
+            ],
+            "type":"event",
+            "start":"2011-02-28",
+            "end":"2011-05-30",
+            "rangetype":"3M",
+            "range":"3M",
+            "featured":"1"
+        },
+        "Atomausstieg2011directrange": {
+            "meta":"&start=2011-03-11&end=2011-05-30&unit=W ",
+            "topics": [
+                "Atomausstieg2011directrange,Atomausstieg,Atom,AKW,Kernkraft,Atommoratorium,Fukushima,GAU,Reaktor"
+            ],
+            "type":"event",
+            "start":"2011-03-11",
+            "end":"2011-05-30",
+            "rangetype":"direct",
+            "range":"80",
+            "featured":"1"
+        },
+        "Vorratsdatenspeicherung2015": {
+            "meta":"&start=2015-07-16&end=2015-10-16&unit=W ",
+            "topics": [
+                "Vorratsdatenspeicherung2015,Vorratsdatenspeicherung,VDS,Höchstspeicherfrist,Parteikonvent,Speicherfrist,Maas,Justizminister,Überwachung"
+            ],
+            "type":"event",
+            "start":"2015-07-16",
+            "end":"2015-10-16",
+            "rangetype":"3M",
+            "range":"3M",
+            "featured":"1"
+        },
+        "Vorratsdatenspeicherung2015directrange": {
+            "meta":"&start=2015-09-06&end=2015-10-16&unit=W ",
+            "topics": [
+                "Vorratsdatenspeicherung2015directrange,Vorratsdatenspeicherung,VDS,Höchstspeicherfrist,Parteikonvent,Speicherfrist,Maas,Justizminister,Überwachung"
+            ],
+            "type":"event",
+            "start":"2015-09-06",
+            "end":"2015-10-16",
+            "rangetype":"direct",
+            "range":"40",
+            "featured":"1"
+        },
+        "Präimplantationsdiagnostik2011": {
+            "meta":"&start=2011-04-07&end=2011-07-07&unit=W ",
+            "topics": [
+                "Präimplantationsdiagnostik2011,Präimplantationsdiagnostik,PID"
+            ],
+            "type":"event",
+            "start":"2011-04-07",
+            "end":"2011-07-07",
+            "rangetype":"3M",
+            "range":"3M",
+            "featured":"1"
+        },
+        "Präimplantationsdiagnostik2011directrange": {
+            "meta":"&start=2011-04-12&end=2011-07-07&unit=W ",
+            "topics": [
+                "Präimplantationsdiagnostik2011directrange,Präimplantationsdiagnostik,PID"
+            ],
+            "type":"event",
+            "start":"2011-04-12",
+            "end":"2011-07-07",
+            "rangetype":"direct",
+            "range":"86",
+            "featured":"1"
+        }
+    }
+}

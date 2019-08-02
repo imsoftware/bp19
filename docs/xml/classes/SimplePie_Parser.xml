@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SimplePie_Parser" namespace="" name="SimplePie_Parser" abstract="false" final="false" start="53" end="661">
+  <file path="../project/vendor/simplepie/simplepie/library/SimplePie" file="Parser.php" realpath="C:/xampp/htdocs/bac3/project/vendor/simplepie/simplepie/library/SimplePie/Parser.php" size="28577" time="2019-06-14T21:21:47+02:00" unixtime="1560540107" sha1="82a723aa3bb8c87ab03fdd572a733795981c8839" relative="vendor/simplepie/simplepie/library/SimplePie/Parser.php"/>
+  <docblock>
+    <description compact="Parses XML into something sane">This class can be overloaded with <see xmlns="http://xml.phpdox.net/src" value="SimplePie::set_parser_class()"/></description>
+    <package value="SimplePie"/>
+    <subpackage value="Parsing"/>
+  </docblock>
+  <member name="error_code" visibility="public" static="false" line="55"/>
+  <member name="error_string" visibility="public" static="false" line="56"/>
+  <member name="current_line" visibility="public" static="false" line="57"/>
+  <member name="current_column" visibility="public" static="false" line="58"/>
+  <member name="current_byte" visibility="public" static="false" line="59"/>
+  <member name="separator" default="' '" type="string" visibility="public" static="false" line="60"/>
+  <member name="namespace" default="" type="array" visibility="public" static="false" line="61"/>
+  <member name="element" default="" type="array" visibility="public" static="false" line="62"/>
+  <member name="xml_base" default="" type="array" visibility="public" static="false" line="63"/>
+  <member name="xml_base_explicit" default="" type="array" visibility="public" static="false" line="64"/>
+  <member name="xml_lang" default="" type="array" visibility="public" static="false" line="65"/>
+  <member name="data" default="" type="array" visibility="public" static="false" line="66"/>
+  <member name="datas" default="" type="array" visibility="public" static="false" line="67"/>
+  <member name="current_xhtml_construct" default="1" type="integer" visibility="public" static="false" line="68"/>
+  <member name="encoding" visibility="public" static="false" line="69"/>
+  <member name="registry" visibility="protected" static="false" line="70"/>
+  <method name="set_registry" start="72" end="75" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="registry" byreference="false" type="object">
+      <type full="SimplePie_Registry" namespace="" name="SimplePie_Registry"/>
+    </parameter>
+  </method>
+  <method name="parse" start="77" end="245" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="data" byreference="true" type="{unknown}"/>
+    <parameter name="encoding" byreference="false" type="{unknown}"/>
+    <parameter name="url" byreference="false" type="string" default="''"/>
+    <inline>
+      <comment value="Use UTF-8 if we get passed US-ASCII, as every US-ASCII character is a UTF-8 character" line="93"/>
+      <comment value="Strip BOM:" line="103"/>
+      <comment value="UTF-32 Big Endian BOM" line="104"/>
+      <comment value="Create the parser" line="156"/>
+    </inline>
+  </method>
+  <method name="get_error_code" start="247" end="250" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="get_error_string" start="252" end="255" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="get_current_line" start="257" end="260" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="get_current_column" start="262" end="265" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="get_current_byte" start="267" end="270" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="get_data" start="272" end="275" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="tag_open" start="277" end="342" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="parser" byreference="false" type="{unknown}"/>
+    <parameter name="tag" byreference="false" type="{unknown}"/>
+    <parameter name="attributes" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="cdata" start="344" end="354" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="parser" byreference="false" type="{unknown}"/>
+    <parameter name="cdata" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="tag_close" start="356" end="377" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="parser" byreference="false" type="{unknown}"/>
+    <parameter name="tag" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="split_ns" start="379" end="415" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="string" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="parse_hcard" start="417" end="439" abstract="false" final="false" static="false" visibility="private">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="category" byreference="false" type="boolean" default="false"/>
+    <inline>
+      <comment value="Check if h-card is set and pass that information on in the link." line="420"/>
+    </inline>
+  </method>
+  <method name="parse_microformats" start="441" end="654" abstract="false" final="false" static="false" visibility="private">
+    <parameter name="data" byreference="true" type="{unknown}"/>
+    <parameter name="url" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="First look for an h-feed." line="448"/>
+      <comment value="Mimic RSS data format when storing microformats." line="627"/>
+      <comment value="Use the name given for the h-feed, or get the title from the html." line="635"/>
+    </inline>
+  </method>
+  <method name="declare_html_entities" start="656" end="660" abstract="false" final="false" static="false" visibility="private">
+    <inline>
+      <comment value="This is required because the RSS specification says that entity-encoded" line="657"/>
+      <comment value="html is allowed, but the xml specification says they must be declared." line="658"/>
+    </inline>
+  </method>
+</class>

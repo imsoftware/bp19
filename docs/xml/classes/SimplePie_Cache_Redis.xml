@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SimplePie_Cache_Redis" namespace="" name="SimplePie_Cache_Redis" abstract="false" final="false" start="27" end="172">
+  <file path="../project/vendor/simplepie/simplepie/library/SimplePie/Cache" file="Redis.php" realpath="C:/xampp/htdocs/bac3/project/vendor/simplepie/simplepie/library/SimplePie/Cache/Redis.php" size="4063" time="2019-06-14T21:21:47+02:00" unixtime="1560540107" sha1="a691f890c05e6dcefecdda96eb5020d1cf4607c8" relative="vendor/simplepie/simplepie/library/SimplePie/Cache/Redis.php"/>
+  <docblock>
+    <description compact="Caches data to redis">Registered for URLs with the "redis" protocol
+
+For example, `redis://localhost:6379/?timeout=3600&amp;prefix=sp_&amp;dbIndex=0` will
+connect to redis on `localhost` on port 6379. All tables will be
+prefixed with `simple_primary-` and data will expire after 3600 seconds</description>
+    <package value="SimplePie"/>
+    <subpackage value="Caching"/>
+    <uses value="Redis"/>
+  </docblock>
+  <implements full="SimplePie_Cache_Base" namespace="" name="SimplePie_Cache_Base"/>
+  <member name="cache" visibility="protected" static="false" line="33">
+    <docblock>
+      <description compact="Redis instance"/>
+      <var type="object">
+        <type full="\Redis" namespace="" name="Redis"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="options" visibility="protected" static="false" line="40">
+    <docblock>
+      <description compact="Options"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="name" visibility="protected" static="false" line="47">
+    <docblock>
+      <description compact="Cache name"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="data" visibility="protected" static="false" line="54">
+    <docblock>
+      <description compact="Cache Data"/>
+      <var type="object">
+        <type full="type" namespace="" name="type"/>
+      </var>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="63" end="86" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Create a new cache object"/>
+      <param description="Location string (from SimplePie::$cache_location)" type="string" variable="$location"/>
+      <param description="Unique ID for the cache" type="string" variable="$name"/>
+      <param description="Either TYPE_FEED for SimplePie data, or TYPE_IMAGE for image data" type="string" variable="$type"/>
+    </docblock>
+    <parameter name="location" byreference="false" type="{unknown}"/>
+    <parameter name="name" byreference="false" type="{unknown}"/>
+    <parameter name="options" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="$this-&gt;cache = \flow\simple\cache\Redis::getRedisClientInstance();" line="64"/>
+    </inline>
+  </constructor>
+  <method name="setRedisClient" start="91" end="93" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description/>
+      <param type="object" variable="$cache">
+        <type full="\Redis" namespace="" name="Redis"/>
+      </param>
+    </docblock>
+    <parameter name="cache" byreference="false" type="object">
+      <type full="Redis" namespace="" name="Redis"/>
+    </parameter>
+  </method>
+  <method name="save" start="101" end="111" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Save data to the cache"/>
+      <param description="Data to store in the cache. If passed a SimplePie object, only cache the $data property" type="object" variable="$data">
+        <type full="array|SimplePie" namespace="" name="array|SimplePie"/>
+      </param>
+      <return description="Successfulness" type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="load" start="118" end="125" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Retrieve the data saved to the cache"/>
+      <return description="Data for SimplePie::$data" type="array"/>
+    </docblock>
+  </method>
+  <method name="mtime" start="132" end="141" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Retrieve the last modified time for the cache"/>
+      <return description="Timestamp" type="int"/>
+    </docblock>
+  </method>
+  <method name="touch" start="148" end="161" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the last modified time to the current time"/>
+      <return description="Success status" type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="unlink" start="168" end="170" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Remove the cache"/>
+      <return description="Success status" type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+  </method>
+  <interface full="SimplePie_Cache_Base" namespace="" name="SimplePie_Cache_Base">
+    <constant type="{unknown}" name="TYPE_FEED" value="'spc'">
+      <docblock>
+        <description compact="Feed cache type"/>
+        <var type="string"/>
+      </docblock>
+    </constant>
+    <constant type="{unknown}" name="TYPE_IMAGE" value="'spi'">
+      <docblock>
+        <description compact="Image cache type"/>
+        <var type="string"/>
+      </docblock>
+    </constant>
+    <constructor name="__construct" start="76" end="76" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Create a new cache object"/>
+        <param description="Location string (from SimplePie::$cache_location)" type="string" variable="$location"/>
+        <param description="Unique ID for the cache" type="string" variable="$name"/>
+        <param description="Either TYPE_FEED for SimplePie data, or TYPE_IMAGE for image data" type="string" variable="$type"/>
+      </docblock>
+      <parameter name="location" byreference="false" type="{unknown}"/>
+      <parameter name="name" byreference="false" type="{unknown}"/>
+      <parameter name="type" byreference="false" type="{unknown}"/>
+    </constructor>
+    <method name="save" start="84" end="84" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Save data to the cache"/>
+        <param description="Data to store in the cache. If passed a SimplePie object, only cache the $data property" type="object" variable="$data">
+          <type full="array|SimplePie" namespace="" name="array|SimplePie"/>
+        </param>
+        <return description="Successfulness" type="object">
+          <type full="bool" namespace="" name="bool"/>
+        </return>
+      </docblock>
+      <parameter name="data" byreference="false" type="{unknown}"/>
+    </method>
+    <method name="load" start="91" end="91" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Retrieve the data saved to the cache"/>
+        <return description="Data for SimplePie::$data" type="array"/>
+      </docblock>
+    </method>
+    <method name="mtime" start="98" end="98" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Retrieve the last modified time for the cache"/>
+        <return description="Timestamp" type="int"/>
+      </docblock>
+    </method>
+    <method name="touch" start="105" end="105" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Set the last modified time to the current time"/>
+        <return description="Success status" type="object">
+          <type full="bool" namespace="" name="bool"/>
+        </return>
+      </docblock>
+    </method>
+    <method name="unlink" start="112" end="112" abstract="false" final="false" static="false" visibility="public">
+      <docblock>
+        <description compact="Remove the cache"/>
+        <return description="Success status" type="object">
+          <type full="bool" namespace="" name="bool"/>
+        </return>
+      </docblock>
+    </method>
+  </interface>
+</class>

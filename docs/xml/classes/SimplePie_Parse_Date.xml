@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SimplePie_Parse_Date" namespace="" name="SimplePie_Parse_Date" abstract="false" final="false" start="51" end="972">
+  <file path="../project/vendor/simplepie/simplepie/library/SimplePie/Parse" file="Date.php" realpath="C:/xampp/htdocs/bac3/project/vendor/simplepie/simplepie/library/SimplePie/Parse/Date.php" size="19631" time="2019-06-14T21:21:47+02:00" unixtime="1560540107" sha1="e0345e768fcdf30e23f84fd4055df94eabf8b9c5" relative="vendor/simplepie/simplepie/library/SimplePie/Parse/Date.php"/>
+  <docblock>
+    <description compact="Date Parser"/>
+    <package value="SimplePie"/>
+    <subpackage value="Parsing"/>
+  </docblock>
+  <member name="date" visibility="public" static="false" line="59">
+    <docblock>
+      <description compact="Input data"/>
+      <access value="protected"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="day" default="" type="array" visibility="public" static="false" line="67">
+    <docblock>
+      <description compact="List of days, calendar day name =&gt; ordinal day number in the week"/>
+      <access value="protected"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="month" default="" type="array" visibility="public" static="false" line="156">
+    <docblock>
+      <description compact="List of months, calendar month name =&gt; calendar month number"/>
+      <access value="protected"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="timezone" default="" type="array" visibility="public" static="false" line="301">
+    <docblock>
+      <description compact="List of timezones, abbreviation =&gt; offset from UTC"/>
+      <access value="protected"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="day_pcre" visibility="public" static="false" line="510">
+    <docblock>
+      <description compact="Cached PCRE for SimplePie_Parse_Date::$day"/>
+      <access value="protected"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="month_pcre" visibility="public" static="false" line="518">
+    <docblock>
+      <description compact="Cached PCRE for SimplePie_Parse_Date::$month"/>
+      <access value="protected"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="built_in" default="" type="array" visibility="public" static="false" line="526">
+    <docblock>
+      <description compact="Array of user-added callback methods"/>
+      <access value="private"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <member name="user" default="" type="array" visibility="public" static="false" line="534">
+    <docblock>
+      <description compact="Array of user-added callback methods"/>
+      <access value="private"/>
+      <var type="array"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="542" end="565" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Create new SimplePie_Parse_Date object, and set self::day_pcre, self::month_pcre, and self::built_in"/>
+      <access value="private"/>
+    </docblock>
+  </constructor>
+  <method name="get" start="572" end="580" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Get the object"/>
+      <access value="public"/>
+    </docblock>
+  </method>
+  <method name="parse" start="590" end="609" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Parse a date"/>
+      <final/>
+      <access value="public"/>
+      <param description="Date to parse" type="string" variable="$date"/>
+      <return description="Timestamp corresponding to date string, or false on failure" type="int"/>
+    </docblock>
+    <parameter name="date" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="add_callback" start="618" end="628" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Add a callback method to parse a date"/>
+      <final/>
+      <access value="public"/>
+      <param type="object" variable="$callback">
+        <type full="callback" namespace="" name="callback"/>
+      </param>
+    </docblock>
+    <parameter name="callback" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="date_w3cdtf" start="638" end="699" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Parse a superset of W3C-DTF (allows hyphens and colons to be omitted, as well as allowing any of upper or lower case &quot;T&quot;, horizontal tabs, or spaces to be used as the time separator (including more than one))"/>
+      <access value="protected"/>
+      <return description="Timestamp" type="int"/>
+    </docblock>
+    <parameter name="date" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="remove_rfc2822_comments" start="708" end="760" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Remove RFC822 comments"/>
+      <access value="protected"/>
+      <param description="Data to strip comments from" type="string" variable="$data"/>
+      <return description="Comment stripped string" type="string"/>
+    </docblock>
+    <parameter name="string" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="date_rfc2822" start="768" end="851" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Parse RFC2822's date format"/>
+      <access value="protected"/>
+      <return description="Timestamp" type="int"/>
+    </docblock>
+    <parameter name="date" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="date_rfc850" start="859" end="914" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Parse RFC850's date format"/>
+      <access value="protected"/>
+      <return description="Timestamp" type="int"/>
+    </docblock>
+    <parameter name="date" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="date_asctime" start="922" end="954" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Parse C99's asctime()'s date format"/>
+      <access value="protected"/>
+      <return description="Timestamp" type="int"/>
+    </docblock>
+    <parameter name="date" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="date_strtotime" start="962" end="971" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Parse dates using strtotime()"/>
+      <access value="protected"/>
+      <return description="Timestamp" type="int"/>
+    </docblock>
+    <parameter name="date" byreference="false" type="{unknown}"/>
+  </method>
+</class>

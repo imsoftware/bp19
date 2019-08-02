@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="simple_html_dom_node" namespace="" name="simple_html_dom_node" abstract="false" final="false" start="126" end="1379">
+  <file path="../project/simplehtmldom_1_9" file="simple_html_dom.php" realpath="C:/xampp/htdocs/bac3/project/simplehtmldom_1_9/simple_html_dom.php" size="59066" time="2019-06-05T16:05:46+02:00" unixtime="1559743546" sha1="40ae1f41cd53cfdeb2bfde0f7f70767542fbaa64" relative="simplehtmldom_1_9/simple_html_dom.php"/>
+  <member name="nodetype" default="" type="{unknown}" constant="HDOM_TYPE_TEXT" visibility="public" static="false" line="128"/>
+  <member name="tag" default="'text'" type="string" visibility="public" static="false" line="129"/>
+  <member name="attr" default="" type="array" visibility="public" static="false" line="130"/>
+  <member name="children" default="" type="array" visibility="public" static="false" line="131"/>
+  <member name="nodes" default="" type="array" visibility="public" static="false" line="132"/>
+  <member name="parent" default="NULL" visibility="public" static="false" line="133"/>
+  <member name="_" default="" type="array" visibility="public" static="false" line="134"/>
+  <member name="tag_start" default="0" type="integer" visibility="public" static="false" line="135"/>
+  <member name="dom" default="NULL" visibility="private" static="false" line="136"/>
+  <constructor name="__construct" start="138" end="142" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="dom" byreference="false" type="{unknown}"/>
+  </constructor>
+  <destructor name="__destruct" start="144" end="147" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="__toString" start="149" end="152" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="clear" start="154" end="160" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="dump" start="162" end="181" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="show_attr" byreference="false" type="boolean" default="true"/>
+    <parameter name="depth" byreference="false" type="integer" default="0"/>
+  </method>
+  <method name="dump_node" start="183" end="234" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="echo" byreference="false" type="boolean" default="true"/>
+  </method>
+  <method name="parent" start="236" end="248" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="parent" byreference="false" type="{unknown}" default="NULL"/>
+    <inline>
+      <comment value="I am SURE that this doesn't work properly." line="238"/>
+      <comment value="It fails to unset the current node from it's current parents nodes or" line="239"/>
+      <comment value="children list first." line="240"/>
+    </inline>
+  </method>
+  <method name="has_child" start="250" end="253" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="children" start="255" end="266" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="idx" byreference="false" type="integer" default="1"/>
+  </method>
+  <method name="first_child" start="268" end="274" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="last_child" start="276" end="282" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="next_sibling" start="284" end="297" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="prev_sibling" start="299" end="312" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="find_ancestor_tag" start="314" end="338" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="tag" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="innertext" start="340" end="357" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="outertext" start="359" end="414" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <todo value="What is the use of this callback? Remove?" line="379"/>
+    </inline>
+  </method>
+  <method name="text" start="416" end="456" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="In rare cases, (always node type 1 or HDOM_TYPE_ELEMENT - observed" line="433"/>
+      <comment value="for some span tags, and some p tags) $this-&gt;nodes is set to NULL." line="434"/>
+      <comment value="NOTE: This indicates that there is a problem where it's set to NULL" line="435"/>
+      <comment value="without a clear happening." line="436"/>
+      <comment value="WHY is this happening?" line="437"/>
+    </inline>
+  </method>
+  <method name="xmltext" start="458" end="464" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="makeup" start="466" end="507" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="text, comment, unknown" line="468"/>
+    </inline>
+  </method>
+  <method name="find" start="509" end="559" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="selector" byreference="false" type="{unknown}"/>
+    <parameter name="idx" byreference="false" type="{unknown}" default="NULL"/>
+    <parameter name="lowercase" byreference="false" type="boolean" default="false"/>
+    <inline>
+      <comment value="find each selector" line="515"/>
+      <comment value="sort keys" line="547"/>
+      <comment value="return nth-element or array" line="555"/>
+    </inline>
+  </method>
+  <method name="seek" start="561" end="774" abstract="false" final="false" static="false" visibility="protected">
+    <parameter name="selector" byreference="false" type="{unknown}"/>
+    <parameter name="ret" byreference="true" type="{unknown}"/>
+    <parameter name="parent_cmd" byreference="false" type="{unknown}"/>
+    <parameter name="lowercase" byreference="false" type="boolean" default="false"/>
+    <inline>
+      <comment value="Go throgh each element starting at this element until the end tag" line="601"/>
+      <comment value="Note: If this element is a void tag, any previous void element is" line="602"/>
+      <comment value="skipped." line="603"/>
+      <comment value="It's passed by reference so this is actually what this function returns." line="770"/>
+    </inline>
+  </method>
+  <method name="match" start="776" end="819" abstract="false" final="false" static="false" visibility="protected">
+    <parameter name="exp" byreference="false" type="{unknown}"/>
+    <parameter name="pattern" byreference="false" type="{unknown}"/>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+    <parameter name="case_sensitivity" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="parse_selector" start="821" end="958" abstract="false" final="false" static="false" visibility="protected">
+    <parameter name="selector_string" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="Pattern of CSS selectors, modified from mootools (https://mootools.net/)" line="826"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Paperg: Add the colon to the attribute, so that it properly finds" line="827"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="&lt;tag attr:ibute=&quot;something&quot; &gt; like google does." line="828"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Note: if you try to look at this attribute, you MUST use getAttribute" line="829"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="since $dom-&gt;x:y will fail the php syntax check." line="830"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Notice the \[ starting the attribute? and the @? following? This" line="831"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="implies that an attribute can begin with an @ sign that is not" line="832"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="captured. This implies that an html attribute specifier may start" line="833"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="with an @ sign that is NOT captured by the expression. Farther study" line="834"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="is required to determine of this should be documented or removed." line="835"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Matches selectors in this order:" line="836"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[0] - full match" line="837"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[1] - tag name" line="838"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="([\w:\*-]*)" line="839"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Matches the tag name consisting of zero or more words, colons," line="840"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="asterisks and hyphens." line="841"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[2] - id name" line="842"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="(?:\#([\w-]+))" line="843"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Optionally matches a id name, consisting of an &quot;#&quot; followed by" line="844"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="the id name (one or more words and hyphens)." line="845"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[3] - class names (including dots)" line="846"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="(?:\.([\w\.-]+))?" line="847"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Optionally matches a list of classs, consisting of an &quot;.&quot;" line="848"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="followed by the class name (one or more words and hyphens)" line="849"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="where multiple classes can be chained (i.e. &quot;.foo.bar.baz&quot;)" line="850"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[4] - attributes" line="851"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="((?:\[@?(?:!?[\w:-]+)(?:(?:[!*^$|~]?=)[\&quot;']?(?:.*?)[\&quot;']?)?(?:\s*?(?:[iIsS])?)?\])+)?" line="852"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Optionally matches the attributes list" line="853"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="[5] - separator" line="854"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="([\/, &gt;+~]+)" line="855"/>
+      <comment xmlns="http://xml.phpdox.net/src" value="Matches the selector list separator" line="856"/>
+      <comment value="phpcs:ignore Generic.Files.LineLength" line="869"/>
+    </inline>
+  </method>
+  <method name="__get" start="960" end="972" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="name" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="__set" start="974" end="994" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="name" byreference="false" type="{unknown}"/>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="__isset" start="996" end="1005" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="name" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="no value attr: nowrap, checked selected..." line="1003"/>
+    </inline>
+  </method>
+  <method name="__unset" start="1007" end="1010" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="name" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="convert_text" start="1012" end="1060" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="text" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="Lets make sure that we don't have that silly BOM issue with any of the utf-8 text we output." line="1048"/>
+    </inline>
+  </method>
+  <method name="is_utf8" start="1062" end="1087" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="str" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="get_display_size" start="1089" end="1172" abstract="false" final="false" static="false" visibility="public">
+    <inline>
+      <comment value="See if there is aheight or width attribute in the tag itself." line="1100"/>
+      <comment value="Now look for an inline style." line="1109"/>
+      <comment value="Future enhancement:" line="1151"/>
+      <comment value="Look in the tag to see if there is a class or id specified that has" line="1152"/>
+      <comment value="a height or width attribute to it." line="1153"/>
+      <comment value="Far future enhancement" line="1155"/>
+      <comment value="Look at all the parent tags of this image to see if they specify a" line="1156"/>
+      <comment value="class or id that has an img selector that specifies a height or width" line="1157"/>
+      <comment value="Note that in this case, the class or id will have the img subselector" line="1158"/>
+      <comment value="for it to apply to the image." line="1159"/>
+      <comment value="ridiculously far future development" line="1161"/>
+      <comment value="If the class or id is specified in a SEPARATE css file thats not on" line="1162"/>
+      <comment value="the page, go get it and do what we were just doing for the ones on" line="1163"/>
+      <comment value="the page." line="1164"/>
+    </inline>
+  </method>
+  <method name="save" start="1174" end="1183" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="filepath" byreference="false" type="string" default="''"/>
+  </method>
+  <method name="addClass" start="1185" end="1208" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="class" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="hasClass" start="1210" end="1223" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="class" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="removeClass" start="1225" end="1248" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="class" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+  <method name="getAllAttributes" start="1250" end="1253" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="getAttribute" start="1255" end="1258" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="name" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="setAttribute" start="1260" end="1263" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="name" byreference="false" type="{unknown}"/>
+    <parameter name="value" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="hasAttribute" start="1265" end="1268" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="name" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="removeAttribute" start="1270" end="1273" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="name" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="remove" start="1275" end="1280" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="removeChild" start="1282" end="1311" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="node" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getElementById" start="1313" end="1316" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="id" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getElementsById" start="1318" end="1321" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="id" byreference="false" type="{unknown}"/>
+    <parameter name="idx" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+  <method name="getElementByTagName" start="1323" end="1326" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="name" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="getElementsByTagName" start="1328" end="1331" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="name" byreference="false" type="{unknown}"/>
+    <parameter name="idx" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+  <method name="parentNode" start="1333" end="1336" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="childNodes" start="1338" end="1341" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="idx" byreference="false" type="integer" default="1"/>
+  </method>
+  <method name="firstChild" start="1343" end="1346" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="lastChild" start="1348" end="1351" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="nextSibling" start="1353" end="1356" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="previousSibling" start="1358" end="1361" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="hasChildNodes" start="1363" end="1366" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="nodeName" start="1368" end="1371" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="appendChild" start="1373" end="1377" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="node" byreference="false" type="{unknown}"/>
+  </method>
+</class>

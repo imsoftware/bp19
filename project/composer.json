@@ -1,0 +1,6 @@
+{
+    "require": {
+        "aheissenberger/sentimentanalyser": "dev-master",
+        "simplepie/simplepie": "^1.5",
+    }
+}

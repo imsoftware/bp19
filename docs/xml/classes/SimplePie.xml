@@ -1,0 +1,1223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SimplePie" namespace="" name="SimplePie" abstract="false" final="false" start="413" end="3243">
+  <file path="../project/vendor/simplepie/simplepie/library" file="SimplePie.php" realpath="C:/xampp/htdocs/bac3/project/vendor/simplepie/simplepie/library/SimplePie.php" size="95022" time="2019-06-14T21:21:47+02:00" unixtime="1560540107" sha1="8a66a8673d48da33628ca2d0743454e74f8d7a77" relative="vendor/simplepie/simplepie/library/SimplePie.php"/>
+  <docblock>
+    <description compact="SimplePie"/>
+    <package value="SimplePie"/>
+    <subpackage value="API"/>
+  </docblock>
+  <member name="data" default="" type="array" visibility="public" static="false" line="419">
+    <docblock>
+      <description/>
+      <var description="Raw data" type="array"/>
+      <access value="private"/>
+    </docblock>
+  </member>
+  <member name="error" visibility="public" static="false" line="425">
+    <docblock>
+      <description/>
+      <var description="Error string" type="mixed"/>
+      <access value="private"/>
+    </docblock>
+  </member>
+  <member name="sanitize" visibility="public" static="false" line="432">
+    <docblock>
+      <description/>
+      <var description="Instance of SimplePie_Sanitize (or other class)" type="object"/>
+      <see value="SimplePie::set_sanitize_class()"/>
+      <access value="private"/>
+    </docblock>
+  </member>
+  <member name="useragent" default="" type="{unknown}" constant="SIMPLEPIE_USERAGENT" visibility="public" static="false" line="439">
+    <docblock>
+      <description/>
+      <var description="SimplePie Useragent" type="string"/>
+      <see value="SimplePie::set_useragent()"/>
+      <access value="private"/>
+    </docblock>
+  </member>
+  <member name="feed_url" visibility="public" static="false" line="446">
+    <docblock>
+      <description/>
+      <var description="Feed URL" type="string"/>
+      <see value="SimplePie::set_feed_url()"/>
+      <access value="private"/>
+    </docblock>
+  </member>
+  <member name="permanent_url" default="NULL" visibility="public" static="false" line="453">
+    <docblock>
+      <description/>
+      <var description="Original feed URL, or new feed URL iff HTTP 301 Moved Permanently" type="string"/>
+      <see value="SimplePie::subscribe_url()"/>
+      <access value="private"/>
+    </docblock>
+  </member>
+  <member name="file" visibility="public" static="false" line="460">
+    <docblock>
+      <description/>
+      <var description="Instance of SimplePie_File to use as a feed" type="object"/>
+      <see value="SimplePie::set_file()"/>
+      <access value="private"/>
+    </docblock>
+  </member>
+  <member name="raw_data" visibility="public" static="false" line="467">
+    <docblock>
+      <description/>
+      <var description="Raw feed data" type="string"/>
+      <see value="SimplePie::set_raw_data()"/>
+      <access value="private"/>
+    </docblock>
+  </member>
+  <member name="timeout" default="10" type="integer" visibility="public" static="false" line="474">
+    <docblock>
+      <description/>
+      <var description="Timeout for fetching remote files" type="int"/>
+      <see value="SimplePie::set_timeout()"/>
+      <access value="private"/>
+    </docblock>
+  </member>
+  <member name="curl_options" default="" type="array" visibility="public" static="false" line="481">
+    <docblock>
+      <description/>
+      <var description="Custom curl options" type="array"/>
+      <see value="SimplePie::set_curl_options()"/>
+      <access value="private"/>
+    </docblock>
+  </member>
+  <member name="force_fsockopen" default="false" type="boolean" visibility="public" static="false" line="489">
+    <docblock>
+      <description/>
+      <var description="Forces fsockopen() to be used for remote files instead" type="object">of cURL, even if a new enough version is installed<type full="bool" namespace="" name="bool"/></var>
+      <see value="SimplePie::force_fsockopen()"/>
+      <access value="private"/>
+    </docblock>
+  </member>
+  <member name="force_feed" default="false" type="boolean" visibility="public" static="false" line="497">
+    <docblock>
+      <description/>
+      <var description="Force the given data/URL to be treated as a feed no matter what" type="object">it appears like<type full="bool" namespace="" name="bool"/></var>
+      <see value="SimplePie::force_feed()"/>
+      <access value="private"/>
+    </docblock>
+  </member>
+  <member name="cache" default="true" type="boolean" visibility="public" static="false" line="504">
+    <docblock>
+      <description/>
+      <var description="Enable/Disable Caching" type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </var>
+      <see value="SimplePie::enable_cache()"/>
+      <access value="private"/>
+    </docblock>
+  </member>
+  <member name="force_cache_fallback" default="false" type="boolean" visibility="public" static="false" line="512">
+    <docblock>
+      <description/>
+      <var description="Force SimplePie to fallback to expired cache, if enabled," type="object">when feed is unavailable.<type full="bool" namespace="" name="bool"/></var>
+      <see value="SimplePie::force_cache_fallback()"/>
+      <access value="private"/>
+    </docblock>
+  </member>
+  <member name="cache_duration" default="3600" type="integer" visibility="public" static="false" line="519">
+    <docblock>
+      <description/>
+      <var description="Cache duration (in seconds)" type="int"/>
+      <see value="SimplePie::set_cache_duration()"/>
+      <access value="private"/>
+    </docblock>
+  </member>
+  <member name="autodiscovery_cache_duration" default="604800" type="integer" visibility="public" static="false" line="526">
+    <docblock>
+      <description/>
+      <var description="Auto-discovery cache duration (in seconds)" type="int"/>
+      <see value="SimplePie::set_autodiscovery_cache_duration()"/>
+      <access value="private"/>
+    </docblock>
+  </member>
+  <member name="cache_location" default="'./cache'" type="string" visibility="public" static="false" line="533">
+    <docblock>
+      <description/>
+      <var description="Cache location (relative to executing script)" type="string"/>
+      <see value="SimplePie::set_cache_location()"/>
+      <access value="private"/>
+    </docblock>
+  </member>
+  <member name="cache_name_function" default="'md5'" type="string" visibility="public" static="false" line="540">
+    <docblock>
+      <description/>
+      <var description="Function that creates the cache filename" type="string"/>
+      <see value="SimplePie::set_cache_name_function()"/>
+      <access value="private"/>
+    </docblock>
+  </member>
+  <member name="order_by_date" default="true" type="boolean" visibility="public" static="false" line="547">
+    <docblock>
+      <description/>
+      <var description="Reorder feed by date descending" type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </var>
+      <see value="SimplePie::enable_order_by_date()"/>
+      <access value="private"/>
+    </docblock>
+  </member>
+  <member name="input_encoding" default="false" type="boolean" visibility="public" static="false" line="555">
+    <docblock>
+      <description/>
+      <var description="Force input encoding to be set to the follow value" type="mixed">(false, or anything type-cast to false, disables this feature)</var>
+      <see value="SimplePie::set_input_encoding()"/>
+      <access value="private"/>
+    </docblock>
+  </member>
+  <member name="autodiscovery" default="" type="{unknown}" constant="SIMPLEPIE_LOCATOR_ALL" visibility="public" static="false" line="562">
+    <docblock>
+      <description/>
+      <var description="Feed Autodiscovery Level" type="int"/>
+      <see value="SimplePie::set_autodiscovery_level()"/>
+      <access value="private"/>
+    </docblock>
+  </member>
+  <member name="registry" visibility="public" static="false" line="569">
+    <docblock>
+      <description compact="Class registry object"/>
+      <var type="object">
+        <type full="SimplePie_Registry" namespace="" name="SimplePie_Registry"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="max_checked_feeds" default="10" type="integer" visibility="public" static="false" line="576">
+    <docblock>
+      <description/>
+      <var description="Maximum number of feeds to check with autodiscovery" type="int"/>
+      <see value="SimplePie::set_max_checked_feeds()"/>
+      <access value="private"/>
+    </docblock>
+  </member>
+  <member name="all_discovered_feeds" default="" type="array" visibility="public" static="false" line="583">
+    <docblock>
+      <description/>
+      <var description="All the feeds found during the autodiscovery process" type="array"/>
+      <see value="SimplePie::get_all_discovered_feeds()"/>
+      <access value="private"/>
+    </docblock>
+  </member>
+  <member name="image_handler" default="''" type="string" visibility="public" static="false" line="590">
+    <docblock>
+      <description/>
+      <var description="Web-accessible path to the handler_image.php file." type="string"/>
+      <see value="SimplePie::set_image_handler()"/>
+      <access value="private"/>
+    </docblock>
+  </member>
+  <member name="multifeed_url" default="" type="array" visibility="public" static="false" line="597">
+    <docblock>
+      <description/>
+      <var description="Stores the URLs when multiple feeds are being initialized." type="array"/>
+      <see value="SimplePie::set_feed_url()"/>
+      <access value="private"/>
+    </docblock>
+  </member>
+  <member name="multifeed_objects" default="" type="array" visibility="public" static="false" line="603">
+    <docblock>
+      <description/>
+      <var description="Stores SimplePie objects when multiple feeds initialized." type="array"/>
+      <access value="private"/>
+    </docblock>
+  </member>
+  <member name="config_settings" default="NULL" visibility="public" static="false" line="610">
+    <docblock>
+      <description/>
+      <var description="Stores the get_object_vars() array for use with multifeeds." type="array"/>
+      <see value="SimplePie::set_feed_url()"/>
+      <access value="private"/>
+    </docblock>
+  </member>
+  <member name="item_limit" default="0" type="integer" visibility="public" static="false" line="617">
+    <docblock>
+      <description/>
+      <var description="Stores the number of items to return per-feed with multifeeds." type="integer"/>
+      <see value="SimplePie::set_item_limit()"/>
+      <access value="private"/>
+    </docblock>
+  </member>
+  <member name="check_modified" default="false" type="boolean" visibility="public" static="false" line="623">
+    <docblock>
+      <description/>
+      <var description="Stores if last-modified and/or etag headers were sent with the" type="object">request when checking a feed.<type full="bool" namespace="" name="bool"/></var>
+    </docblock>
+  </member>
+  <member name="strip_attributes" default="" type="array" visibility="public" static="false" line="630">
+    <docblock>
+      <description/>
+      <var description="Stores the default attributes to be stripped by strip_attributes()." type="array"/>
+      <see value="SimplePie::strip_attributes()"/>
+      <access value="private"/>
+    </docblock>
+  </member>
+  <member name="add_attributes" default="" type="array" visibility="public" static="false" line="637">
+    <docblock>
+      <description/>
+      <var description="Stores the default attributes to add to different tags by add_attributes()." type="array"/>
+      <see value="SimplePie::add_attributes()"/>
+      <access value="private"/>
+    </docblock>
+  </member>
+  <member name="strip_htmltags" default="" type="array" visibility="public" static="false" line="644">
+    <docblock>
+      <description/>
+      <var description="Stores the default tags to be stripped by strip_htmltags()." type="array"/>
+      <see value="SimplePie::strip_htmltags()"/>
+      <access value="private"/>
+    </docblock>
+  </member>
+  <member name="enable_exceptions" default="false" type="boolean" visibility="public" static="false" line="650">
+    <docblock>
+      <description/>
+      <var description="Should we throw exceptions, or use the old-style error property?" type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </var>
+      <access value="private"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="666" end="694" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="The SimplePie class contains feed level data and options">To use SimplePie, create the SimplePie object with no parameters. You can
+then set configuration options using the provided methods. After setting
+them, you must initialise the feed using $feed-&gt;init(). At that point the
+object's methods and properties will be available to you.
+
+Previously, it was possible to pass in the feed URL along with cache
+options directly into the constructor. This has been removed as of 1.3 as
+it caused a lot of confusion.</description>
+      <since value="1.0 Preview Release"/>
+    </docblock>
+    <inline>
+      <comment value="Other objects, instances created here so we can set options on them" line="674"/>
+    </inline>
+  </constructor>
+  <method name="__toString" start="699" end="702" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Used for converting object to a string"/>
+    </docblock>
+  </method>
+  <destructor name="__destruct" start="707" end="728" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Remove items that link back to this before destroying this object"/>
+    </docblock>
+  </destructor>
+  <method name="force_feed" start="739" end="742" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Force the given data/URL to be treated as a feed">This tells SimplePie to ignore the content-type provided by the server.
+Be careful when using this option, as it will also disable autodiscovery.</description>
+      <since value="1.1"/>
+      <param description="Force the given data/URL to be treated as a feed" type="object" variable="$enable">
+        <type full="bool" namespace="" name="bool"/>
+      </param>
+    </docblock>
+    <parameter name="enable" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="set_feed_url" start="759" end="774" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the URL of the feed you want to parse">This allows you to enter the URL of the feed you want to parse, or the
+website you want to try to use auto-discovery on. This takes priority
+over any set raw data.
+
+You can set multiple feeds to mash together by passing an array instead
+of a string for the $url. Remember that with each additional feed comes
+additional processing and resources.</description>
+      <since value="1.0 Preview Release"/>
+      <see value="set_raw_data()"/>
+      <param description="This is the URL (or array of URLs) that you want to parse." type="object" variable="$url">
+        <type full="string|array" namespace="" name="string|array"/>
+      </param>
+    </docblock>
+    <parameter name="url" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="set_file" start="782" end="792" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set an instance of {@see SimplePie_File} to use as a feed"/>
+      <param type="object" variable="&amp;$file">
+        <type full="SimplePie_File" namespace="" name="SimplePie_File"/>
+      </param>
+      <return description="True on success, false on failure" type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+    <parameter name="file" byreference="true" type="{unknown}"/>
+  </method>
+  <method name="set_raw_data" start="807" end="810" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the raw XML data to parse">Allows you to use a string of RSS/Atom data instead of a remote feed.
+
+If you have a feed available as a string in PHP, you can tell SimplePie
+to parse that data string instead of a remote feed. Any set feed URL
+takes precedence.</description>
+      <since value="1.0 Beta 3"/>
+      <param description="RSS or Atom data as a string." type="string" variable="$data"/>
+      <see value="set_feed_url()"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="set_timeout" start="821" end="824" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the default timeout for fetching remote feeds">This allows you to change the maximum time the feed's server to respond
+and send the feed back.</description>
+      <since value="1.0 Beta 3"/>
+      <param description="The maximum number of seconds to spend waiting to retrieve a feed." type="int" variable="$timeout"/>
+    </docblock>
+    <parameter name="timeout" byreference="false" type="integer" default="10"/>
+  </method>
+  <method name="set_curl_options" start="834" end="837" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set custom curl options">This allows you to change default curl options</description>
+      <since value="1.0 Beta 3"/>
+      <param description="Curl options to add to default settings" type="array" variable="$curl_options"/>
+    </docblock>
+    <parameter name="curl_options" byreference="false" type="array" default=""/>
+  </method>
+  <method name="force_fsockopen" start="845" end="848" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Force SimplePie to use fsockopen() instead of cURL"/>
+      <since value="1.0 Beta 3"/>
+      <param description="Force fsockopen() to be used" type="object" variable="$enable">
+        <type full="bool" namespace="" name="bool"/>
+      </param>
+    </docblock>
+    <parameter name="enable" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="enable_cache" start="859" end="862" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Enable/disable caching in SimplePie.">This option allows you to disable caching all-together in SimplePie.
+However, disabling the cache can lead to longer load times.</description>
+      <since value="1.0 Preview Release"/>
+      <param description="Enable caching" type="object" variable="$enable">
+        <type full="bool" namespace="" name="bool"/>
+      </param>
+    </docblock>
+    <parameter name="enable" byreference="false" type="boolean" default="true"/>
+  </method>
+  <method name="force_cache_fallback" start="874" end="877" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="SimplePie to continue to fall back to expired cache, if enabled, when feed is unavailable.">This tells SimplePie to ignore any file errors and fall back to cache
+instead. This only works if caching is enabled and cached content
+still exists.</description>
+      <param description="Force use of cache on fail." type="object" variable="$enable">
+        <type full="bool" namespace="" name="bool"/>
+      </param>
+    </docblock>
+    <parameter name="enable" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="set_cache_duration" start="885" end="888" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the length of time (in seconds) that the contents of a feed will be cached"/>
+      <param description="The feed content cache duration" type="int" variable="$seconds"/>
+    </docblock>
+    <parameter name="seconds" byreference="false" type="integer" default="3600"/>
+  </method>
+  <method name="set_autodiscovery_cache_duration" start="896" end="899" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the length of time (in seconds) that the autodiscovered feed URL will be cached"/>
+      <param description="The autodiscovered feed URL cache duration." type="int" variable="$seconds"/>
+    </docblock>
+    <parameter name="seconds" byreference="false" type="integer" default="604800"/>
+  </method>
+  <method name="set_cache_location" start="906" end="909" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the file system location where the cached files should be stored"/>
+      <param description="The file system location." type="string" variable="$location"/>
+    </docblock>
+    <parameter name="location" byreference="false" type="string" default="'./cache'"/>
+  </method>
+  <method name="enable_order_by_date" start="916" end="919" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set whether feed items should be sorted into reverse chronological order"/>
+      <param description="Sort as reverse chronological order." type="object" variable="$enable">
+        <type full="bool" namespace="" name="bool"/>
+      </param>
+    </docblock>
+    <parameter name="enable" byreference="false" type="boolean" default="true"/>
+  </method>
+  <method name="set_input_encoding" start="929" end="939" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the character encoding used to parse the feed">This overrides the encoding reported by the feed, however it will fall
+back to the normal encoding detection if the override fails</description>
+      <param description="Character encoding" type="string" variable="$encoding"/>
+    </docblock>
+    <parameter name="encoding" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="set_autodiscovery_level" start="953" end="956" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set how much feed autodiscovery to do"/>
+      <see value="SIMPLEPIE_LOCATOR_NONE"/>
+      <see value="SIMPLEPIE_LOCATOR_AUTODISCOVERY"/>
+      <see value="SIMPLEPIE_LOCATOR_LOCAL_EXTENSION"/>
+      <see value="SIMPLEPIE_LOCATOR_LOCAL_BODY"/>
+      <see value="SIMPLEPIE_LOCATOR_REMOTE_EXTENSION"/>
+      <see value="SIMPLEPIE_LOCATOR_REMOTE_BODY"/>
+      <see value="SIMPLEPIE_LOCATOR_ALL"/>
+      <param description="Feed Autodiscovery Level (level can be a combination of the above constants, see bitwise OR operator)" type="int" variable="$level"/>
+    </docblock>
+    <parameter name="level" byreference="false" type="{unknown}" default="" constant="SIMPLEPIE_LOCATOR_ALL"/>
+  </method>
+  <method name="get_registry" start="965" end="968" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the class registry">Use this to override SimplePie's default classes</description>
+      <see value="SimplePie_Registry"/>
+      <return type="object">
+        <type full="SimplePie_Registry" namespace="" name="SimplePie_Registry"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="set_cache_class" start="981" end="984" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set which class SimplePie uses for caching"/>
+    </docblock>
+    <parameter name="class" byreference="false" type="string" default="'SimplePie_Cache'"/>
+  </method>
+  <method name="set_locator_class" start="989" end="992" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set which class SimplePie uses for auto-discovery"/>
+    </docblock>
+    <parameter name="class" byreference="false" type="string" default="'SimplePie_Locator'"/>
+  </method>
+  <method name="set_parser_class" start="997" end="1000" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set which class SimplePie uses for XML parsing"/>
+    </docblock>
+    <parameter name="class" byreference="false" type="string" default="'SimplePie_Parser'"/>
+  </method>
+  <method name="set_file_class" start="1005" end="1008" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set which class SimplePie uses for remote file fetching"/>
+    </docblock>
+    <parameter name="class" byreference="false" type="string" default="'SimplePie_File'"/>
+  </method>
+  <method name="set_sanitize_class" start="1013" end="1016" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set which class SimplePie uses for data sanitization"/>
+    </docblock>
+    <parameter name="class" byreference="false" type="string" default="'SimplePie_Sanitize'"/>
+  </method>
+  <method name="set_item_class" start="1021" end="1024" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set which class SimplePie uses for handling feed items"/>
+    </docblock>
+    <parameter name="class" byreference="false" type="string" default="'SimplePie_Item'"/>
+  </method>
+  <method name="set_author_class" start="1029" end="1032" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set which class SimplePie uses for handling author data"/>
+    </docblock>
+    <parameter name="class" byreference="false" type="string" default="'SimplePie_Author'"/>
+  </method>
+  <method name="set_category_class" start="1037" end="1040" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set which class SimplePie uses for handling category data"/>
+    </docblock>
+    <parameter name="class" byreference="false" type="string" default="'SimplePie_Category'"/>
+  </method>
+  <method name="set_enclosure_class" start="1045" end="1048" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set which class SimplePie uses for feed enclosures"/>
+    </docblock>
+    <parameter name="class" byreference="false" type="string" default="'SimplePie_Enclosure'"/>
+  </method>
+  <method name="set_caption_class" start="1053" end="1056" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set which class SimplePie uses for `&lt;media:text&gt;` captions"/>
+    </docblock>
+    <parameter name="class" byreference="false" type="string" default="'SimplePie_Caption'"/>
+  </method>
+  <method name="set_copyright_class" start="1061" end="1064" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set which class SimplePie uses for `&lt;media:copyright&gt;`"/>
+    </docblock>
+    <parameter name="class" byreference="false" type="string" default="'SimplePie_Copyright'"/>
+  </method>
+  <method name="set_credit_class" start="1069" end="1072" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set which class SimplePie uses for `&lt;media:credit&gt;`"/>
+    </docblock>
+    <parameter name="class" byreference="false" type="string" default="'SimplePie_Credit'"/>
+  </method>
+  <method name="set_rating_class" start="1077" end="1080" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set which class SimplePie uses for `&lt;media:rating&gt;`"/>
+    </docblock>
+    <parameter name="class" byreference="false" type="string" default="'SimplePie_Rating'"/>
+  </method>
+  <method name="set_restriction_class" start="1085" end="1088" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set which class SimplePie uses for `&lt;media:restriction&gt;`"/>
+    </docblock>
+    <parameter name="class" byreference="false" type="string" default="'SimplePie_Restriction'"/>
+  </method>
+  <method name="set_content_type_sniffer_class" start="1093" end="1096" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set which class SimplePie uses for content-type sniffing"/>
+    </docblock>
+    <parameter name="class" byreference="false" type="string" default="'SimplePie_Content_Type_Sniffer'"/>
+  </method>
+  <method name="set_source_class" start="1101" end="1104" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set which class SimplePie uses item sources"/>
+    </docblock>
+    <parameter name="class" byreference="false" type="string" default="'SimplePie_Source'"/>
+  </method>
+  <method name="set_useragent" start="1112" end="1115" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the user agent string"/>
+      <param description="New user agent string." type="string" variable="$ua"/>
+    </docblock>
+    <parameter name="ua" byreference="false" type="{unknown}" default="" constant="SIMPLEPIE_USERAGENT"/>
+  </method>
+  <method name="set_cache_name_function" start="1122" end="1128" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set callback function to create cache filename with"/>
+      <param description="Callback function" type="mixed" variable="$function"/>
+    </docblock>
+    <parameter name="function" byreference="false" type="string" default="'md5'"/>
+  </method>
+  <method name="set_stupidly_fast" start="1138" end="1150" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set options to make SP as fast as possible">Forgoes a substantial amount of data sanitization in favor of speed. This
+turns SimplePie into a dumb parser of feeds.</description>
+      <param description="Whether to set them or not" type="object" variable="$set">
+        <type full="bool" namespace="" name="bool"/>
+      </param>
+    </docblock>
+    <parameter name="set" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="set_max_checked_feeds" start="1157" end="1160" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set maximum number of feeds to check with autodiscovery"/>
+      <param description="Maximum number of feeds to check" type="int" variable="$max"/>
+    </docblock>
+    <parameter name="max" byreference="false" type="integer" default="10"/>
+  </method>
+  <method name="remove_div" start="1162" end="1165" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="enable" byreference="false" type="boolean" default="true"/>
+  </method>
+  <method name="strip_htmltags" start="1167" end="1178" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="tags" byreference="false" type="string" default="''"/>
+    <parameter name="encode" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+  <method name="encode_instead_of_strip" start="1180" end="1183" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="enable" byreference="false" type="boolean" default="true"/>
+  </method>
+  <method name="strip_attributes" start="1185" end="1192" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="attribs" byreference="false" type="string" default="''"/>
+  </method>
+  <method name="add_attributes" start="1194" end="1201" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="attribs" byreference="false" type="string" default="''"/>
+  </method>
+  <method name="set_output_encoding" start="1225" end="1228" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the output encoding">Allows you to override SimplePie's output to match that of your webpage.
+This is useful for times when your webpages are not being served as
+UTF-8. This setting will be obeyed by <see xmlns="http://xml.phpdox.net/src" value="handle_content_type()"/>, and
+is similar to <see xmlns="http://xml.phpdox.net/src" value="set_input_encoding()"/>.
+It should be noted, however, that not all character encodings can support
+all characters. If your page is being served as ISO-8859-1 and you try
+to display a Japanese feed, you'll likely see garbled characters.
+Because of this, it is highly recommended to ensure that your webpages
+are served as UTF-8.
+The number of supported character encodings depends on whether your web
+host supports <link xmlns="http://xml.phpdox.net/src" value="http://php.net/mbstring mbstring"/>,
+<link xmlns="http://xml.phpdox.net/src" value="http://php.net/iconv iconv"/>, or both. See
+<link xmlns="http://xml.phpdox.net/src" value="http://simplepie.org/wiki/faq/Supported_Character_Encodings"/> for
+more information.
+</description>
+      <param type="string" variable="$encoding"/>
+    </docblock>
+    <parameter name="encoding" byreference="false" type="string" default="'UTF-8'"/>
+  </method>
+  <method name="strip_comments" start="1230" end="1233" abstract="false" final="false" static="false" visibility="public">
+    <parameter name="strip" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="set_url_replacements" start="1246" end="1249" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set element/attribute key/value pairs of HTML attributes containing URLs that need to be resolved relative to the feed">Defaults to |a|@href, |area|@href, |blockquote|@cite, |del|@cite,
+|form|@action, |img|@longdesc, |img|@src, |input|@src, |ins|@cite,
+|q|@cite</description>
+      <since value="1.0"/>
+      <param description="Element/attribute key/value pairs, null for default" type="object" variable="$element_attribute">
+        <type full="array|null" namespace="" name="array|null"/>
+      </param>
+    </docblock>
+    <parameter name="element_attribute" byreference="false" type="{unknown}" default="NULL"/>
+  </method>
+  <method name="set_image_handler" start="1257" end="1267" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the handler to enable the display of cached images."/>
+      <param description="Web-accessible path to the handler_image.php file." type="object" variable="$page">
+        <type full="str" namespace="" name="str"/>
+      </param>
+      <param description="The query string that the value should be passed to." type="object" variable="$qs">
+        <type full="str" namespace="" name="str"/>
+      </param>
+    </docblock>
+    <parameter name="page" byreference="false" type="boolean" default="false"/>
+    <parameter name="qs" byreference="false" type="string" default="'i'"/>
+  </method>
+  <method name="set_item_limit" start="1274" end="1277" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the limit for items returned per-feed with multifeeds"/>
+      <param description="The maximum number of items to return." type="integer" variable="$limit"/>
+    </docblock>
+    <parameter name="limit" byreference="false" type="integer" default="0"/>
+  </method>
+  <method name="enable_exceptions" start="1284" end="1287" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Enable throwing exceptions"/>
+      <param description="Should we throw exceptions, or use the old-style error property?" type="boolean" variable="$enable"/>
+    </docblock>
+    <parameter name="enable" byreference="false" type="boolean" default="true"/>
+  </method>
+  <method name="init" start="1298" end="1510" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Initialize the feed object">This is what makes everything happen. Period. This is where all of the
+configuration options get processed, feeds are fetched, cached, and
+parsed, and all of that other good stuff.</description>
+      <return description="True if successful, false otherwise" type="boolean"/>
+    </docblock>
+    <inline>
+      <comment value="Check absolute bare minimum requirements." line="1300"/>
+      <comment value="The default sanitize class gets set in the constructor, check if it has" line="1323"/>
+      <comment value="changed." line="1324"/>
+      <comment value="Pass whatever was set with config options over to the sanitizer." line="1333"/>
+      <comment value="Pass the classes in for legacy support; new classes should use the registry instead" line="1334"/>
+      <comment value="Empty response check" line="1391"/>
+      <comment value="Set up array of possible encodings" line="1398"/>
+      <comment value="First check to see if input has been overridden." line="1401"/>
+      <comment value="RFC 3023 (only applies to sniffed content)" line="1410"/>
+      <comment value="Fallback to XML 1.0 Appendix F.1/UTF-8/ISO-8859-1" line="1437"/>
+      <comment value="There's no point in trying an encoding twice" line="1442"/>
+      <comment value="Loop through each possible encoding, till we return something, or run out of possibilities" line="1445"/>
+    </inline>
+  </method>
+  <method name="fetch_data" start="1519" end="1727" abstract="false" final="false" static="false" visibility="protected">
+    <docblock>
+      <description compact="Fetch the data via SimplePie_File">If the data is already cached, attempt to fetch it from there instead</description>
+      <param description="Cache handler, or false to not load from the cache" type="object" variable="$cache">
+        <type full="SimplePie_Cache|false" namespace="" name="SimplePie_Cache|false"/>
+      </param>
+      <return description="Returns true if the data was loaded from the cache, or an array of HTTP headers and sniffed type" type="object">
+        <type full="array|true" namespace="" name="array|true"/>
+      </return>
+    </docblock>
+    <parameter name="cache" byreference="true" type="{unknown}"/>
+    <inline>
+      <comment value="If it's enabled, use the cache" line="1521"/>
+      <comment value="If we don't already have the file (it'll only exist if we've opened it to check if the cache has been modified), open it." line="1618"/>
+      <comment value="If the file connection has an error, set SimplePie::error to that and quit" line="1633"/>
+    </inline>
+  </method>
+  <method name="error" start="1734" end="1737" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the error message for the occured error"/>
+      <return description="Error message, or array of messages for multifeeds" type="object">
+        <type full="string|array" namespace="" name="string|array"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_raw_data" start="1747" end="1750" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the raw XML">This is the same as the old `$feed-&gt;enable_xml_dump(true)`, but returns
+the data instead of printing it.</description>
+      <return description="Raw XML data, false if the cache is used" type="object">
+        <type full="string|boolean" namespace="" name="string|boolean"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_encoding" start="1758" end="1761" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the character encoding used for output"/>
+      <since value="Preview Release"/>
+      <return type="string"/>
+    </docblock>
+  </method>
+  <method name="handle_content_type" start="1782" end="1797" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Send the content-type header with correct encoding">This method ensures that the SimplePie-enabled page is being served with
+the correct <link xmlns="http://xml.phpdox.net/src" value="http://www.iana.org/assignments/media-types/ mime-type"/>and character encoding HTTP headers (character encoding determined by the
+<see xmlns="http://xml.phpdox.net/src" value="set_output_encoding"/> config option).
+This won't work properly if any content or whitespace has already been
+sent to the browser, because it relies on PHP's
+<link xmlns="http://xml.phpdox.net/src" value="http://php.net/header header()"/> function, and these are the
+circumstances under which the function works.
+Because it's setting these settings for the entire page (as is the nature
+of HTTP headers), this should only be used once per page (again, at the
+top).
+</description>
+      <param description="MIME type to serve the page as" type="string" variable="$mime"/>
+    </docblock>
+    <parameter name="mime" byreference="false" type="string" default="'text/html'"/>
+  </method>
+  <method name="get_type" start="1825" end="1903" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the type of the feed">This returns a SIMPLEPIE_TYPE_* constant, which can be tested against
+using <link xmlns="http://xml.phpdox.net/src" value="http://php.net/language.operators.bitwise bitwise operators"/></description>
+      <since value="0.8 (usage changed to using constants in 1.0)"/>
+      <see value="SIMPLEPIE_TYPE_NONE Unknown."/>
+      <see value="SIMPLEPIE_TYPE_RSS_090 RSS 0.90."/>
+      <see value="SIMPLEPIE_TYPE_RSS_091_NETSCAPE RSS 0.91 (Netscape)."/>
+      <see value="SIMPLEPIE_TYPE_RSS_091_USERLAND RSS 0.91 (Userland)."/>
+      <see value="SIMPLEPIE_TYPE_RSS_091 RSS 0.91."/>
+      <see value="SIMPLEPIE_TYPE_RSS_092 RSS 0.92."/>
+      <see value="SIMPLEPIE_TYPE_RSS_093 RSS 0.93."/>
+      <see value="SIMPLEPIE_TYPE_RSS_094 RSS 0.94."/>
+      <see value="SIMPLEPIE_TYPE_RSS_10 RSS 1.0."/>
+      <see value="SIMPLEPIE_TYPE_RSS_20 RSS 2.0.x."/>
+      <see value="SIMPLEPIE_TYPE_RSS_RDF RDF-based RSS."/>
+      <see value="SIMPLEPIE_TYPE_RSS_SYNDICATION Non-RDF-based RSS (truly intended as syndication format)."/>
+      <see value="SIMPLEPIE_TYPE_RSS_ALL Any version of RSS."/>
+      <see value="SIMPLEPIE_TYPE_ATOM_03 Atom 0.3."/>
+      <see value="SIMPLEPIE_TYPE_ATOM_10 Atom 1.0."/>
+      <see value="SIMPLEPIE_TYPE_ATOM_ALL Any version of Atom."/>
+      <see value="SIMPLEPIE_TYPE_ALL Any known/supported feed type."/>
+      <return description="SIMPLEPIE_TYPE_* constant" type="int"/>
+    </docblock>
+  </method>
+  <method name="subscribe_url" start="1923" end="1945" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the URL for the feed">When the 'permanent' mode is enabled, returns the original feed URL,
+except in the case of an `HTTP 301 Moved Permanently` status response,
+in which case the location of the first redirection is returned.
+When the 'permanent' mode is disabled (default),
+may or may not be different from the URL passed to <see xmlns="http://xml.phpdox.net/src" value="set_feed_url()"/>,
+depending on whether auto-discovery was used.
+</description>
+      <since value="Preview Release (previously called `get_feed_url()` since SimplePie 0.8.)"/>
+      <todo value="Support &lt;itunes:new-feed-url&gt;"/>
+      <todo value="Also, |atom:link|@rel=self"/>
+      <param description="Permanent mode to return only the original URL or the first redirection" type="object" variable="$permanent">iff it is a 301 redirection<type full="bool" namespace="" name="bool"/></param>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+    <parameter name="permanent" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="get_feed_tags" start="1978" end="2010" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get data for an feed-level element">This method allows you to get access to ANY element/attribute that is a
+sub-element of the opening feed tag.
+
+The return value is an indexed array of elements matching the given
+namespace and tag name. Each element has `attribs`, `data` and `child`
+subkeys. For `attribs` and `child`, these contain namespace subkeys.
+`attribs` then has one level of associative name =&gt; value data (where
+`value` is a string) after the namespace. `child` has tag-indexed keys
+after the namespace, each member of which is an indexed array matching
+this same format.
+
+For example:
+&lt;pre&gt;
+// This is probably a bad example because we already support
+// &lt;media:content&gt; natively, but it shows you how to parse through
+// the nodes.
+$group = $item-&gt;get_item_tags(SIMPLEPIE_NAMESPACE_MEDIARSS, 'group');
+$content = $group[0]['child'][SIMPLEPIE_NAMESPACE_MEDIARSS]['content'];
+$file = $content[0]['attribs']['']['url'];
+echo $file;
+&lt;/pre&gt;</description>
+      <since value="1.0"/>
+      <see value="http://simplepie.org/wiki/faq/supported_xml_namespaces"/>
+      <param description="The URL of the XML namespace of the elements you're trying to access" type="string" variable="$namespace"/>
+      <param description="Tag name" type="string" variable="$tag"/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="namespace" byreference="false" type="{unknown}"/>
+    <parameter name="tag" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="get_channel_tags" start="2026" end="2067" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get data for an channel-level element">This method allows you to get access to ANY element/attribute in the
+channel/header section of the feed.
+See <see xmlns="http://xml.phpdox.net/src" value="SimplePie::get_feed_tags()"/> for a description of the return value
+</description>
+      <since value="1.0"/>
+      <see value="http://simplepie.org/wiki/faq/supported_xml_namespaces"/>
+      <param description="The URL of the XML namespace of the elements you're trying to access" type="string" variable="$namespace"/>
+      <param description="Tag name" type="string" variable="$tag"/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="namespace" byreference="false" type="{unknown}"/>
+    <parameter name="tag" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="get_image_tags" start="2083" end="2117" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get data for an channel-level element">This method allows you to get access to ANY element/attribute in the
+image/logo section of the feed.
+See <see xmlns="http://xml.phpdox.net/src" value="SimplePie::get_feed_tags()"/> for a description of the return value
+</description>
+      <since value="1.0"/>
+      <see value="http://simplepie.org/wiki/faq/supported_xml_namespaces"/>
+      <param description="The URL of the XML namespace of the elements you're trying to access" type="string" variable="$namespace"/>
+      <param description="Tag name" type="string" variable="$tag"/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="namespace" byreference="false" type="{unknown}"/>
+    <parameter name="tag" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="get_base" start="2131" end="2143" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the base URL value from the feed">Uses `&lt;xml:base&gt;` if available, otherwise uses the first link in the
+feed, or failing that, the URL of the feed itself.</description>
+      <see value="get_link"/>
+      <see value="subscribe_url"/>
+      <param type="array" variable="$element"/>
+      <return type="string"/>
+    </docblock>
+    <parameter name="element" byreference="false" type="array" default=""/>
+  </method>
+  <method name="sanitize" start="2155" end="2172" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Sanitize feed data"/>
+      <access value="private"/>
+      <see value="SimplePie_Sanitize::sanitize()"/>
+      <param description="Data to sanitize" type="string" variable="$data"/>
+      <param description="One of the SIMPLEPIE_CONSTRUCT_* constants" type="int" variable="$type"/>
+      <param description="Base URL to resolve URLs against" type="string" variable="$base"/>
+      <return description="Sanitized data" type="string"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="type" byreference="false" type="{unknown}"/>
+    <parameter name="base" byreference="false" type="string" default="''"/>
+  </method>
+  <method name="get_title" start="2182" end="2214" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the title of the feed">Uses `&lt;atom:title&gt;`, `&lt;title&gt;` or `&lt;dc:title&gt;`</description>
+      <since value="1.0 (previously called `get_feed_title` since 0.8)"/>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_category" start="2223" end="2232" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get a category for the feed"/>
+      <since value="Unknown"/>
+      <param description="The category that you want to return. Remember that arrays begin with 0, not 1" type="int" variable="$key"/>
+      <return type="object">
+        <type full="SimplePie_Category|null" namespace="" name="SimplePie_Category|null"/>
+      </return>
+    </docblock>
+    <parameter name="key" byreference="false" type="integer" default="0"/>
+  </method>
+  <method name="get_categories" start="2242" end="2295" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get all categories for the feed">Uses `&lt;atom:category&gt;`, `&lt;category&gt;` or `&lt;dc:subject&gt;`</description>
+      <since value="Unknown"/>
+      <return description="List of {@see SimplePie_Category} objects" type="object">
+        <type full="array|null" namespace="" name="array|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_author" start="2304" end="2313" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get an author for the feed"/>
+      <since value="1.1"/>
+      <param description="The author that you want to return. Remember that arrays begin with 0, not 1" type="int" variable="$key"/>
+      <return type="object">
+        <type full="SimplePie_Author|null" namespace="" name="SimplePie_Author|null"/>
+      </return>
+    </docblock>
+    <parameter name="key" byreference="false" type="integer" default="0"/>
+  </method>
+  <method name="get_authors" start="2323" end="2389" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get all authors for the feed">Uses `&lt;atom:author&gt;`, `&lt;author&gt;`, `&lt;dc:creator&gt;` or `&lt;itunes:author&gt;`</description>
+      <since value="1.1"/>
+      <return description="List of {@see SimplePie_Author} objects" type="object">
+        <type full="array|null" namespace="" name="array|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_contributor" start="2398" end="2407" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get a contributor for the feed"/>
+      <since value="1.1"/>
+      <param description="The contrbutor that you want to return. Remember that arrays begin with 0, not 1" type="int" variable="$key"/>
+      <return type="object">
+        <type full="SimplePie_Author|null" namespace="" name="SimplePie_Author|null"/>
+      </return>
+    </docblock>
+    <parameter name="key" byreference="false" type="integer" default="0"/>
+  </method>
+  <method name="get_contributors" start="2417" end="2471" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get all contributors for the feed">Uses `&lt;atom:contributor&gt;`</description>
+      <since value="1.1"/>
+      <return description="List of {@see SimplePie_Author} objects" type="object">
+        <type full="array|null" namespace="" name="array|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_link" start="2481" end="2490" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get a single link for the feed"/>
+      <since value="1.0 (previously called `get_feed_link` since Preview Release, `get_feed_permalink()` since 0.8)"/>
+      <param description="The link that you want to return. Remember that arrays begin with 0, not 1" type="int" variable="$key"/>
+      <param description="The relationship of the link to return" type="string" variable="$rel"/>
+      <return description="Link URL" type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+    <parameter name="key" byreference="false" type="integer" default="0"/>
+    <parameter name="rel" byreference="false" type="string" default="'alternate'"/>
+  </method>
+  <method name="get_permalink" start="2503" end="2506" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the permalink for the item">Returns the first link available with a relationship of "alternate".
+Identical to <see xmlns="http://xml.phpdox.net/src" value="get_link()"/> with key 0
+</description>
+      <see value="get_link"/>
+      <since value="1.0 (previously called `get_feed_link` since Preview Release, `get_feed_permalink()` since 0.8)"/>
+      <internal>Added for parity between the parent-level and the item/entry-level.</internal>
+      <return description="Link URL" type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_links" start="2517" end="2593" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get all links for the feed">Uses `&lt;atom:link&gt;` or `&lt;link&gt;`</description>
+      <since value="Beta 2"/>
+      <param description="The relationship of links to return" type="string" variable="$rel"/>
+      <return description="Links found for the feed (strings)" type="object">
+        <type full="array|null" namespace="" name="array|null"/>
+      </return>
+    </docblock>
+    <parameter name="rel" byreference="false" type="string" default="'alternate'"/>
+  </method>
+  <method name="get_all_discovered_feeds" start="2595" end="2598" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="get_description" start="2609" end="2649" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the content for the item">Uses `&lt;atom:subtitle&gt;`, `&lt;atom:tagline&gt;`, `&lt;description&gt;`,
+`&lt;dc:description&gt;`, `&lt;itunes:summary&gt;` or `&lt;itunes:subtitle&gt;`</description>
+      <since value="1.0 (previously called `get_feed_description()` since 0.8)"/>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_copyright" start="2659" end="2683" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the copyright info for the feed">Uses `&lt;atom:rights&gt;`, `&lt;atom:copyright&gt;` or `&lt;dc:rights&gt;`</description>
+      <since value="1.0 (previously called `get_feed_copyright()` since 0.8)"/>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_language" start="2693" end="2725" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the language for the feed">Uses `&lt;language&gt;`, `&lt;dc:language&gt;`, or @xml_lang</description>
+      <since value="1.0 (previously called `get_feed_language()` since 0.8)"/>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_latitude" start="2739" end="2752" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the latitude coordinates for the item">Compatible with the W3C WGS84 Basic Geo and GeoRSS specifications
+
+Uses `&lt;geo:lat&gt;` or `&lt;georss:point&gt;`</description>
+      <since value="1.0"/>
+      <link value="http://www.w3.org/2003/01/geo/ W3C WGS84 Basic Geo"/>
+      <link value="http://www.georss.org/ GeoRSS"/>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_longitude" start="2766" end="2782" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the longitude coordinates for the feed">Compatible with the W3C WGS84 Basic Geo and GeoRSS specifications
+
+Uses `&lt;geo:long&gt;`, `&lt;geo:lon&gt;` or `&lt;georss:point&gt;`</description>
+      <since value="1.0"/>
+      <link value="http://www.w3.org/2003/01/geo/ W3C WGS84 Basic Geo"/>
+      <link value="http://www.georss.org/ GeoRSS"/>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_image_title" start="2793" end="2817" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the feed logo's title">RSS 0.9.0, 1.0 and 2.0 feeds are allowed to have a "feed logo" title.
+
+Uses `&lt;image&gt;&lt;title&gt;` or `&lt;image&gt;&lt;dc:title&gt;`</description>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_image_url" start="2830" end="2858" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the feed logo's URL">RSS 0.9.0, 2.0, Atom 1.0, and feeds with iTunes RSS tags are allowed to
+have a "feed logo" URL. This points directly to the image itself.
+
+Uses `&lt;itunes:image&gt;`, `&lt;atom:logo&gt;`, `&lt;atom:icon&gt;`,
+`&lt;image&gt;&lt;title&gt;` or `&lt;image&gt;&lt;dc:title&gt;`</description>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_image_link" start="2872" end="2888" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the feed logo's link">RSS 0.9.0, 1.0 and 2.0 feeds are allowed to have a "feed logo" link. This
+points to a human-readable page that the image should link to.
+
+Uses `&lt;itunes:image&gt;`, `&lt;atom:logo&gt;`, `&lt;atom:icon&gt;`,
+`&lt;image&gt;&lt;title&gt;` or `&lt;image&gt;&lt;dc:title&gt;`</description>
+      <return type="object">
+        <type full="string|null" namespace="" name="string|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_image_width" start="2900" end="2912" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the feed logo's link">RSS 2.0 feeds are allowed to have a "feed logo" width.
+
+Uses `&lt;image&gt;&lt;width&gt;` or defaults to 88.0 if no width is specified and
+the feed is an RSS 2.0 feed.</description>
+      <return type="object">
+        <type full="int|float|null" namespace="" name="int|float|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_image_height" start="2924" end="2936" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the feed logo's height">RSS 2.0 feeds are allowed to have a "feed logo" height.
+
+Uses `&lt;image&gt;&lt;height&gt;` or defaults to 31.0 if no height is specified and
+the feed is an RSS 2.0 feed.</description>
+      <return type="object">
+        <type full="int|float|null" namespace="" name="int|float|null"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="get_item_quantity" start="2947" end="2957" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the number of items in the feed">This is well-suited for <link xmlns="http://xml.phpdox.net/src" value="http://php.net/for for()"/> loops with
+<see xmlns="http://xml.phpdox.net/src" value="get_item()"/></description>
+      <param description="Maximum value to return. 0 for no limit" type="int" variable="$max"/>
+      <return description="Number of items in the feed" type="int"/>
+    </docblock>
+    <parameter name="max" byreference="false" type="integer" default="0"/>
+  </method>
+  <method name="get_item" start="2971" end="2980" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get a single item from the feed">This is better suited for <link xmlns="http://xml.phpdox.net/src" value="http://php.net/for for()"/> loops, whereas
+<see xmlns="http://xml.phpdox.net/src" value="get_items()"/> is better suited for
+<link xmlns="http://xml.phpdox.net/src" value="http://php.net/foreach foreach()"/> loops.
+</description>
+      <see value="get_item_quantity()"/>
+      <since value="Beta 2"/>
+      <param description="The item that you want to return. Remember that arrays begin with 0, not 1" type="int" variable="$key"/>
+      <return type="object">
+        <type full="SimplePie_Item|null" namespace="" name="SimplePie_Item|null"/>
+      </return>
+    </docblock>
+    <parameter name="key" byreference="false" type="integer" default="0"/>
+  </method>
+  <method name="get_items" start="2995" end="3076" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get all items from the feed">This is better suited for <link xmlns="http://xml.phpdox.net/src" value="http://php.net/for for()"/> loops, whereas
+<see xmlns="http://xml.phpdox.net/src" value="get_items()"/> is better suited for
+<link xmlns="http://xml.phpdox.net/src" value="http://php.net/foreach foreach()"/> loops.
+</description>
+      <see value="get_item_quantity"/>
+      <since value="Beta 2"/>
+      <param description="Index to start at" type="int" variable="$start"/>
+      <param description="Number of items to return. 0 for all items after `$start`" type="int" variable="$end"/>
+      <return description="List of {@see SimplePie_Item} objects" type="array" of="object">
+        <type full="SimplePie_Item[]|nu" namespace="" name="SimplePie_Item[]|nu"/>
+      </return>
+    </docblock>
+    <parameter name="start" byreference="false" type="integer" default="0"/>
+    <parameter name="end" byreference="false" type="integer" default="0"/>
+    <inline>
+      <comment value="Slice the data as desired" line="3069"/>
+    </inline>
+  </method>
+  <method name="set_favicon_handler" start="3083" end="3088" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Set the favicon handler"/>
+      <deprecated value="Use your own favicon handling instead"/>
+    </docblock>
+    <parameter name="page" byreference="false" type="boolean" default="false"/>
+    <parameter name="qs" byreference="false" type="string" default="'i'"/>
+  </method>
+  <method name="get_favicon" start="3095" end="3106" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Get the favicon for the current feed"/>
+      <deprecated value="Use your own favicon handling instead"/>
+    </docblock>
+  </method>
+  <method name="__call" start="3115" end="3135" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Magic method handler"/>
+      <param description="Method name" type="string" variable="$method"/>
+      <param description="Arguments to the method" type="array" variable="$args"/>
+      <return type="mixed"/>
+    </docblock>
+    <parameter name="method" byreference="false" type="{unknown}"/>
+    <parameter name="args" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="sort_items" start="3145" end="3160" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Sorting callback for items"/>
+      <access value="private"/>
+      <param type="object" variable="$a">
+        <type full="SimplePie" namespace="" name="SimplePie"/>
+      </param>
+      <param type="object" variable="$b">
+        <type full="SimplePie" namespace="" name="SimplePie"/>
+      </param>
+      <return type="boolean"/>
+    </docblock>
+    <parameter name="a" byreference="false" type="{unknown}"/>
+    <parameter name="b" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="Sort items without dates to the top." line="3152"/>
+    </inline>
+  </method>
+  <method name="merge_items" start="3175" end="3204" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Merge items from several feeds into one">If you're merging multiple feeds together, they need to all have dates
+for the items or else SimplePie will refuse to sort them.</description>
+      <link value="http://simplepie.org/wiki/tutorial/sort_multiple_feeds_by_time_and_date#if_feeds_require_separate_per-feed_settings"/>
+      <param description="List of SimplePie feed objects to merge" type="array" variable="$urls"/>
+      <param description="Starting item" type="int" variable="$start"/>
+      <param description="Number of items to return" type="int" variable="$end"/>
+      <param description="Maximum number of items per feed" type="int" variable="$limit"/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="urls" byreference="false" type="{unknown}"/>
+    <parameter name="start" byreference="false" type="integer" default="0"/>
+    <parameter name="end" byreference="false" type="integer" default="0"/>
+    <parameter name="limit" byreference="false" type="integer" default="0"/>
+  </method>
+  <method name="store_links" start="3215" end="3242" abstract="false" final="false" static="false" visibility="private">
+    <docblock>
+      <description compact="Store PubSubHubbub links as headers">There is no way to find PuSH links in the body of a microformats feed,
+so they are added to the headers when found, to be used later by get_links.</description>
+      <param type="object" variable="$file">
+        <type full="SimplePie_File" namespace="" name="SimplePie_File"/>
+      </param>
+      <param type="string" variable="$hub"/>
+      <param type="string" variable="$self"/>
+    </docblock>
+    <parameter name="file" byreference="true" type="{unknown}"/>
+    <parameter name="hub" byreference="false" type="{unknown}"/>
+    <parameter name="self" byreference="false" type="{unknown}"/>
+  </method>
+  <extenders>
+    <extender full="SimplePie_Core" namespace="" name="SimplePie_Core"/>
+  </extenders>
+</class>

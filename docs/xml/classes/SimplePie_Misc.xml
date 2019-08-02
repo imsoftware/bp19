@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SimplePie_Misc" namespace="" name="SimplePie_Misc" abstract="false" final="false" start="49" end="2262">
+  <file path="../project/vendor/simplepie/simplepie/library/SimplePie" file="Misc.php" realpath="C:/xampp/htdocs/bac3/project/vendor/simplepie/simplepie/library/SimplePie/Misc.php" size="52212" time="2019-06-14T21:21:47+02:00" unixtime="1560540107" sha1="c555f6b5f0e525b86ad20fa9d55354681c03c9aa" relative="vendor/simplepie/simplepie/library/SimplePie/Misc.php"/>
+  <docblock>
+    <description compact="Miscellanous utilities"/>
+    <package value="SimplePie"/>
+  </docblock>
+  <method name="time_hms" start="51" end="77" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="seconds" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="absolutize_url" start="79" end="87" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="relative" byreference="false" type="{unknown}"/>
+    <parameter name="base" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="get_element" start="97" end="132" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Get a HTML/XML element from a HTML string"/>
+      <deprecated value="Use DOMDocument instead (parsing HTML with regex is bad!)"/>
+      <param description="Element name (including namespace prefix if applicable)" type="string" variable="$realname"/>
+      <param description="HTML document" type="string" variable="$string"/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="realname" byreference="false" type="{unknown}"/>
+    <parameter name="string" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="element_implode" start="134" end="151" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="element" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="error" start="153" end="192" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="message" byreference="false" type="{unknown}"/>
+    <parameter name="level" byreference="false" type="{unknown}"/>
+    <parameter name="file" byreference="false" type="{unknown}"/>
+    <parameter name="line" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="fix_protocol" start="194" end="222" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="url" byreference="false" type="{unknown}"/>
+    <parameter name="http" byreference="false" type="integer" default="1"/>
+  </method>
+  <method name="array_merge_recursive" start="224" end="239" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="array1" byreference="false" type="{unknown}"/>
+    <parameter name="array2" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="parse_url" start="241" end="251" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="url" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="compress_parse_url" start="253" end="262" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="scheme" byreference="false" type="string" default="''"/>
+    <parameter name="authority" byreference="false" type="string" default="''"/>
+    <parameter name="path" byreference="false" type="string" default="''"/>
+    <parameter name="query" byreference="false" type="string" default="''"/>
+    <parameter name="fragment" byreference="false" type="string" default="''"/>
+  </method>
+  <method name="normalize_url" start="264" end="268" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="url" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="percent_encoding_normalization" start="270" end="279" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="match" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="windows_1252_to_utf8" start="288" end="293" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Converts a Windows-1252 encoded string to a UTF-8 encoded string"/>
+      <static/>
+      <param description="Windows-1252 encoded string" type="string" variable="$string"/>
+      <return description="UTF-8 encoded string" type="string"/>
+    </docblock>
+    <parameter name="string" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="change_encoding" start="303" end="345" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Change a string from one encoding to another"/>
+      <param description="Raw data in $input encoding" type="string" variable="$data"/>
+      <param description="Encoding of $data" type="string" variable="$input"/>
+      <param description="Encoding you want" type="string" variable="$output"/>
+      <return description="False if we can't convert it" type="object">
+        <type full="string|boolean" namespace="" name="string|boolean"/>
+      </return>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="input" byreference="false" type="{unknown}"/>
+    <parameter name="output" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="We fail to fail on non US-ASCII bytes" line="308"/>
+      <comment value="This is first, as behaviour of this is completely predictable" line="322"/>
+      <comment value="If we can't do anything, just fail" line="343"/>
+    </inline>
+  </method>
+  <method name="change_encoding_mbstring" start="347" end="383" abstract="false" final="false" static="true" visibility="protected">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="input" byreference="false" type="{unknown}"/>
+    <parameter name="output" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="Check that the encoding is supported" line="366"/>
+      <comment value="Let's do some conversion" line="376"/>
+    </inline>
+  </method>
+  <method name="change_encoding_iconv" start="385" end="388" abstract="false" final="false" static="true" visibility="protected">
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="input" byreference="false" type="{unknown}"/>
+    <parameter name="output" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="change_encoding_uconverter" start="396" end="399" abstract="false" final="false" static="true" visibility="protected">
+    <docblock>
+      <description/>
+      <param type="string" variable="$data"/>
+      <param type="string" variable="$input"/>
+      <param type="string" variable="$output"/>
+      <return type="object">
+        <type full="string|false" namespace="" name="string|false"/>
+      </return>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="input" byreference="false" type="{unknown}"/>
+    <parameter name="output" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="encoding" start="412" end="1723" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Normalize an encoding name">This is automatically generated by create.php
+
+To generate it, run `php create.php` on the command line, and copy the
+output to replace this function.</description>
+      <param description="Character set to standardise" type="string" variable="$charset"/>
+      <return description="Standardised name" type="string"/>
+    </docblock>
+    <parameter name="charset" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="Normalization from UTS #22" line="414"/>
+    </inline>
+  </method>
+  <method name="get_curl_version" start="1725" end="1744" abstract="false" final="false" static="true" visibility="public"/>
+  <method name="strip_comments" start="1752" end="1768" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Strip HTML comments"/>
+      <param description="Data to strip comments from" type="string" variable="$data"/>
+      <return description="Comment stripped string" type="string"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="parse_date" start="1770" end="1774" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="dt" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="entities_decode" start="1783" end="1787" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Decode HTML entities"/>
+      <deprecated value="Use DOMDocument instead"/>
+      <param description="Input data" type="string" variable="$data"/>
+      <return description="Output data" type="string"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="uncomment_rfc822" start="1795" end="1847" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Remove RFC822 comments"/>
+      <param description="Data to strip comments from" type="string" variable="$data"/>
+      <return description="Comment stripped string" type="string"/>
+    </docblock>
+    <parameter name="string" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="parse_mime" start="1849" end="1857" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="mime" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="atom_03_construct_type" start="1859" end="1891" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="attribs" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="atom_10_construct_type" start="1893" end="1913" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="attribs" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="atom_10_content_construct_type" start="1915" end="1942" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="attribs" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="is_isegment_nz_nc" start="1944" end="1947" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="string" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="space_separated_tokens" start="1949" end="1966" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="string" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="codepoint_to_utf8" start="1975" end="2001" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Converts a unicode codepoint to a UTF-8 character"/>
+      <static/>
+      <param description="Unicode codepoint" type="int" variable="$codepoint"/>
+      <return description="UTF-8 character" type="string"/>
+    </docblock>
+    <parameter name="codepoint" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="U+FFFD REPLACEMENT CHARACTER" line="1999"/>
+    </inline>
+  </method>
+  <method name="parse_str" start="2013" end="2032" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Similar to parse_str()">Returns an associative array of name/value pairs, where the value is an
+array of values that have used the same name</description>
+      <static/>
+      <param description="The input string." type="string" variable="$str"/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="str" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="xml_encoding" start="2042" end="2140" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Detect XML encoding, as per XML 1.0 Appendix F.1"/>
+      <todo value="Add support for EBCDIC"/>
+      <param description="XML data" type="string" variable="$data"/>
+      <param description="Class registry" type="object" variable="$registry">
+        <type full="SimplePie_Registry" namespace="" name="SimplePie_Registry"/>
+      </param>
+      <return description="Possible encodings" type="array"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+    <parameter name="registry" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="UTF-32 Big Endian BOM" line="2044"/>
+    </inline>
+  </method>
+  <method name="output_javascript" start="2142" end="2173" abstract="false" final="false" static="true" visibility="public">
+    <inline>
+      <comment value="7 days" line="2150"/>
+    </inline>
+  </method>
+  <method name="get_build" start="2181" end="2206" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Get the SimplePie build timestamp">Uses the git index if it exists, otherwise uses the modification time
+of the newest file.</description>
+    </docblock>
+  </method>
+  <method name="debug" start="2211" end="2256" abstract="false" final="false" static="true" visibility="public">
+    <docblock>
+      <description compact="Format debugging information"/>
+    </docblock>
+    <parameter name="sp" byreference="true" type="{unknown}"/>
+  </method>
+  <method name="silence_errors" start="2258" end="2261" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="num" byreference="false" type="{unknown}"/>
+    <parameter name="str" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="No-op" line="2260"/>
+    </inline>
+  </method>
+</class>

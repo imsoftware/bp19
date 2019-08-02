@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="BacLib" namespace="" name="BacLib" abstract="false" final="false" start="18" end="454">
+  <file path="../project" file="baclib.php" realpath="C:/xampp/htdocs/bac3/project/baclib.php" size="13900" time="2019-08-01T02:00:31+02:00" unixtime="1564617631" sha1="bb1064fd3119b9179583b4c27e20f7f8911e3d92" relative="baclib.php"/>
+  <docblock>
+    <description compact="bac3 My lib &lt;3"/>
+    <package value="bac3"/>
+    <version value="v1.0"/>
+    <author value="Marius Müller &lt;mm@imsoftware.de&gt;"/>
+    <license name="Creative Commons BY-NC-SA"/>
+    <copyright value="2019 Marius Müller Contains libraries and code from other sources. Consider individual licenses included."/>
+  </docblock>
+  <method name="cdxFileName" start="27" end="30" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="cdxFileName Build the filename"/>
+      <param type="string" variable="$url"/>
+      <return description="$cdxfilename" type="string"/>
+    </docblock>
+    <parameter name="url" byreference="false" type="string"/>
+  </method>
+  <method name="saveWbCdx" start="39" end="54" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="saveWbCdx Request wayback cdx file and save file"/>
+      <param type="string" variable="$url"/>
+      <return type="object">
+        <type full="void" namespace="" name="void"/>
+      </return>
+    </docblock>
+    <parameter name="url" byreference="false" type="string"/>
+  </method>
+  <method name="genWbFeedUrls" start="63" end="75" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="genWbFeedUrls Generate WbFeedUrls from wb savepoints"/>
+      <param type="string" variable="$feedurl"/>
+      <return description="$wbfeedurls" type="string"/>
+    </docblock>
+    <parameter name="feedurl" byreference="false" type="string"/>
+  </method>
+  <method name="readCsv" start="84" end="91" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="readCsv CSV to array"/>
+      <param type="string" variable="$csvfile"/>
+      <return description="$rows" type="string"/>
+    </docblock>
+    <parameter name="csvfile" byreference="false" type="string"/>
+  </method>
+  <method name="calcTime" start="100" end="108" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="calcTime German time unit to sql timestamp (for youtube)"/>
+      <param type="string" variable="$timestr"/>
+      <return description="$timestr" type="string"/>
+    </docblock>
+    <parameter name="timestr" byreference="false" type="{unknown}"/>
+    <parameter name="timeref" byreference="false" type="{unknown}"/>
+    <inline>
+      <comment value="Replace units, add minus, remove streams" line="104"/>
+    </inline>
+  </method>
+  <method name="youtubeCrawl" start="117" end="140" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="youtubeCrawl Crawl youtube with scraper"/>
+      <param type="string" variable="$feedurl"/>
+      <return description="$videos" type="array"/>
+    </docblock>
+    <parameter name="feedurl" byreference="false" type="string"/>
+  </method>
+  <method name="genTimeUnits" start="152" end="168" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="genTimeUnits Generate timeunits array for x-axis of charts"/>
+      <param type="string" variable="$start"/>
+      <param type="string" variable="$end"/>
+      <param type="string" variable="$timeunit"/>
+      <param type="string" variable="$timeformat"/>
+      <return description="$timeunits" type="array"/>
+    </docblock>
+    <parameter name="start" byreference="false" type="{unknown}"/>
+    <parameter name="end" byreference="false" type="{unknown}"/>
+    <parameter name="timeunit" byreference="false" type="{unknown}"/>
+    <parameter name="timeformat" byreference="false" type="string" default="'Y-m-d'"/>
+  </method>
+  <method name="formatBytes" start="178" end="185" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="formatBytes Format bytes for e.g. memory."/>
+      <param type="object" variable="$bytes">
+        <type full="[type]" namespace="" name="[type]"/>
+      </param>
+      <param type="integer" variable="$precision"/>
+      <return type="object">
+        <type full="void" namespace="" name="void"/>
+      </return>
+    </docblock>
+    <parameter name="bytes" byreference="false" type="{unknown}"/>
+    <parameter name="precision" byreference="false" type="integer" default="2"/>
+  </method>
+  <method name="throwError" start="193" end="197" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="throwError Set http status code, throw error and die."/>
+      <param description="e.g. 400 Bad Request, 500 etc." type="integer" variable="$errorcode"/>
+    </docblock>
+    <parameter name="errorcode" byreference="false" type="integer" default="500"/>
+    <parameter name="desc" byreference="false" type="string" default="''"/>
+  </method>
+  <method name="calcMedian" start="206" end="219" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="calcMedian Calc Median"/>
+      <param type="array" variable="$numbers"/>
+      <return description="$median" type="string"/>
+    </docblock>
+    <parameter name="numbers" byreference="false" type="array"/>
+    <inline>
+      <comment value="cache the count" line="209"/>
+      <comment value="cache the index" line="210"/>
+    </inline>
+  </method>
+  <method name="formatTimeunit" start="229" end="255" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="formatTimeunit Format Y / M / D / W for SQL etc."/>
+      <param type="string" variable="$timeunit"/>
+      <param type="string" variable="$errors"/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="timeunit" byreference="false" type="string"/>
+    <parameter name="errors" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="calcPercentage" start="265" end="277" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="calcPercentage Calculates a third array with percentage value from two arrays"/>
+      <param type="array" variable="$prozentwert"/>
+      <param type="array" variable="$grundwert"/>
+      <return description="$percentage" type="array"/>
+    </docblock>
+    <parameter name="prozentwert" byreference="false" type="array"/>
+    <parameter name="grundwert" byreference="false" type="array"/>
+  </method>
+  <method name="calcRelSenti" start="287" end="299" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="calcRelSenti Calculates relative sentiment based on arrays"/>
+      <param type="array" variable="$count_array"/>
+      <param type="array" variable="$senti_array"/>
+      <return description="$relSenti" type="array"/>
+    </docblock>
+    <parameter name="senti_array" byreference="false" type="array"/>
+    <parameter name="count_array" byreference="false" type="array"/>
+  </method>
+  <method name="calcSentiRel" start="309" end="318" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="calcSentiRel Calculates relative sentiment based on floats (not arrays)"/>
+      <param type="float" variable="$senti_array"/>
+      <param variable="$count_array"/>
+      <return description="$senti_mean_array" type="float"/>
+    </docblock>
+    <parameter name="senti_array" byreference="false" type="float"/>
+    <parameter name="count_array" byreference="false" type="{unknown}"/>
+  </method>
+  <method name="filterGetTime" start="328" end="360" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="filterGetTime Filter $_GET['start'] for security reasons"/>
+      <param type="array" variable="$gets"/>
+      <param type="string" variable="$errors"/>
+      <return type="array"/>
+    </docblock>
+    <parameter name="gets" byreference="false" type="array"/>
+    <parameter name="errors" byreference="false" type="boolean" default="false"/>
+  </method>
+  <method name="mergeArraysOnTime" start="370" end="396" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="mergeArraysOnTime Merges two arrays on a timeline, defined by timeunits"/>
+      <param type="array" variable="$result_events"/>
+      <param type="array" variable="$timeunits"/>
+      <return description="$xyarray" type="array"/>
+    </docblock>
+    <parameter name="result_events" byreference="false" type="array"/>
+    <parameter name="timeunits" byreference="false" type="array"/>
+    <inline>
+      <comment value="Declare all arrays new to clear" line="372"/>
+      <comment value="Compare arrays to get indexes" line="379"/>
+      <comment value="Create mixed array" line="383"/>
+    </inline>
+  </method>
+  <method name="calcVariance" start="405" end="415" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="calcVariance Calculates variance of an array"/>
+      <param type="array" variable="$arrayOfNumbers"/>
+      <return type="float"/>
+    </docblock>
+    <parameter name="arrayOfNumbers" byreference="false" type="array"/>
+  </method>
+  <method name="calcBVariance" start="424" end="440" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="calcBVariance Calculates Bessel-variance of an array"/>
+      <param type="array" variable="$arrayOfNumbers"/>
+      <return type="float"/>
+    </docblock>
+    <parameter name="arrayOfNumbers" byreference="false" type="array"/>
+  </method>
+  <method name="calcDeviation" start="449" end="452" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="calcDeviation Calculates standard devitation from variance"/>
+      <param type="float" variable="$variance"/>
+      <return type="float"/>
+    </docblock>
+    <parameter name="variance" byreference="false" type="{unknown}"/>
+  </method>
+</class>

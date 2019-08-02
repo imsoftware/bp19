@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="Composer\Autoload\ComposerStaticInit180d64ee6d8ac16603ea71aba6abbc72" namespace="Composer\Autoload" name="ComposerStaticInit180d64ee6d8ac16603ea71aba6abbc72" abstract="false" final="false" start="7" end="42">
+  <file path="../project/vendor/composer" file="autoload_static.php" realpath="C:/xampp/htdocs/bac3/project/vendor/composer/autoload_static.php" size="1227" time="2019-06-14T21:21:48+02:00" unixtime="1560540108" sha1="e017ed6f1d8ef8d595d77f501a6531340d61be81" relative="vendor/composer/autoload_static.php"/>
+  <member name="prefixLengthsPsr4" default="" type="array" visibility="public" static="true" line="9"/>
+  <member name="prefixDirsPsr4" default="" type="array" visibility="public" static="true" line="16"/>
+  <member name="prefixesPsr0" default="" type="array" visibility="public" static="true" line="23"/>
+  <method name="getInitializer" start="33" end="41" abstract="false" final="false" static="true" visibility="public">
+    <parameter name="loader" byreference="false" type="object">
+      <type full="Composer\Autoload\ClassLoader" namespace="Composer\Autoload" name="ClassLoader"/>
+    </parameter>
+  </method>
+</class>

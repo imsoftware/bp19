@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - idna_convert::_utf8_to_ucs4</title>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">
+            <a href="../../classes.xhtml#"/>
+          </li>
+          <li class="separator">
+            <a title="idna_convert" href="../../classes/idna_convert.xhtml">idna_convert</a>
+          </li>
+          <li class="separator">_utf8_to_ucs4</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#parameter">Parameter</a>
+          </li>
+          <li>
+            <a href="../../source/vendor/simplepie/simplepie/idn/idna_convert.class.php.xhtml#line788">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1><small>idna_convert::</small>_utf8_to_ucs4</h1>
+        <h4>This converts an UTF-8 encoded string to its UCS-4 representation By talking about UCS-4 "strings" we mean arrays of 32bit integers representing each of the "chars". This is due to PHP not being able to handle strings with bit depth different from 8. This apllies to the reverse method _ucs4_to_utf8(), too.</h4>
+        <p>The following UTF-8 encodings are supported:
+bytes bits  representation
+1        7  0xxxxxxx
+2       11  110xxxxx 10xxxxxx
+3       16  1110xxxx 10xxxxxx 10xxxxxx
+4       21  11110xxx 10xxxxxx 10xxxxxx 10xxxxxx
+5       26  111110xx 10xxxxxx 10xxxxxx 10xxxxxx 10xxxxxx
+6       31  1111110x 10xxxxxx 10xxxxxx 10xxxxxx 10xxxxxx 10xxxxxx
+Each x represents a bit that can be used to store character data.
+The five and six byte sequences are part of Annex D of ISO/IEC 10646-1:2000</p>
+        <ul/>
+        <h2 id="signature">Signature</h2>
+        <div class="styled synopsis">
+          <code>public function _utf8_to_ucs4(
+        $input )
+            </code>
+        </div>
+        <h2 id="parameterlist">Parameters</h2>
+        <dl class="styled">
+          <dt><code>$input</code>
+                —
+                </dt>
+          <dd/>
+        </dl>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0-dev - Copyright (C) 2010 - 2019 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - SimplePie_Cache_Memcached</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">SimplePie_Cache_Memcached</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#hierarchy">Hierarchy</a>
+          </li>
+          <li>
+            <a href="#constants">Constants</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/vendor/simplepie/simplepie/library/SimplePie/Cache/Memcached.php.xhtml#line58">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>\</small>SimplePie_Cache_Memcached</h1>
+        <h4>Caches data to memcached</h4>
+        <p>Registered for URLs with the "memcached" protocol<br/><br/>For example, `memcached://localhost:11211/?timeout=3600&amp;prefix=sp_` will<br/>connect to memcached on `localhost` on port 11211. All tables will be<br/>prefixed with `sp_` and data will expire after 3600 seconds</p>
+        <ul>
+          <li>Author: Paul L. McNeely</li>
+        </ul>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class SimplePie_Cache_Memcached
+                implements
+                <a title="SimplePie_Cache_Base" href="../interfaces/SimplePie_Cache_Base.xhtml">SimplePie_Cache_Base</a>
+            {<br/><ul class="none"><li>// members</li><li>protected <span title="Memcached">Memcached</span> <a href="#members">$cache</a>;
+                    </li><li>protected  <a href="#members">$options</a>;
+                    </li><li>protected  <a href="#members">$name</a>;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="SimplePie_Cache_Memcached" href="../classes/SimplePie_Cache_Memcached/__construct.xhtml">__construct</a>()
+                    </li><li>public bool <a title="SimplePie_Cache_Memcached" href="../classes/SimplePie_Cache_Memcached/save.xhtml">save</a>()
+                    </li><li>public array <a title="SimplePie_Cache_Memcached" href="../classes/SimplePie_Cache_Memcached/load.xhtml">load</a>()
+                    </li><li>public int <a title="SimplePie_Cache_Memcached" href="../classes/SimplePie_Cache_Memcached/mtime.xhtml">mtime</a>()
+                    </li><li>public bool <a title="SimplePie_Cache_Memcached" href="../classes/SimplePie_Cache_Memcached/touch.xhtml">touch</a>()
+                    </li><li>public bool <a title="SimplePie_Cache_Memcached" href="../classes/SimplePie_Cache_Memcached/unlink.xhtml">unlink</a>()
+                    </li><li>private bool <a title="SimplePie_Cache_Memcached" href="../classes/SimplePie_Cache_Memcached/setData.xhtml">setData</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="hierarchy">Hierarchy</h2>
+        <div class="styled">
+          <h4>Implements</h4>
+          <ul>
+            <li>
+              <a title="SimplePie_Cache_Base" href="../interfaces/SimplePie_Cache_Base.xhtml">SimplePie_Cache_Base</a>
+            </li>
+          </ul>
+        </div>
+        <h2 id="constants">Constants</h2>
+        <table class="styled">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="TYPE_FEED">TYPE_FEED</td>
+              <td>'spc'</td>
+            </tr>
+            <tr>
+              <td id="TYPE_IMAGE">TYPE_IMAGE</td>
+              <td>'spi'</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>protected</h4>
+          <ul class="members">
+            <li id="cache"><strong>$cache</strong>
+                —
+                <a title="Memcached" href="../classes/Memcached.xhtml">Memcached</a><br/><span class="indent">Memcached instance</span></li>
+            <li id="name"><strong>$name</strong>
+                —
+                string<br/><span class="indent">Cache name</span></li>
+            <li id="options"><strong>$options</strong>
+                —
+                array<br/><span class="indent">Options</span></li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>private</h4>
+          <ul>
+            <li id="setData"><a title="SimplePie_Cache_Memcached" href="../classes/SimplePie_Cache_Memcached/setData.xhtml">setData()</a>
+                — Set the last modified time and data to Memcached</li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="SimplePie_Cache_Memcached" href="../classes/SimplePie_Cache_Memcached/__construct.xhtml">__construct()</a>
+                — Create a new cache object</li>
+            <li id="load"><a title="SimplePie_Cache_Memcached" href="../classes/SimplePie_Cache_Memcached/load.xhtml">load()</a>
+                — Retrieve the data saved to the cache</li>
+            <li id="mtime"><a title="SimplePie_Cache_Memcached" href="../classes/SimplePie_Cache_Memcached/mtime.xhtml">mtime()</a>
+                — Retrieve the last modified time for the cache</li>
+            <li id="save"><a title="SimplePie_Cache_Memcached" href="../classes/SimplePie_Cache_Memcached/save.xhtml">save()</a>
+                — Save data to the cache</li>
+            <li id="touch"><a title="SimplePie_Cache_Memcached" href="../classes/SimplePie_Cache_Memcached/touch.xhtml">touch()</a>
+                — Set the last modified time to the current time</li>
+            <li id="unlink"><a title="SimplePie_Cache_Memcached" href="../classes/SimplePie_Cache_Memcached/unlink.xhtml">unlink()</a>
+                — Remove the cache</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0-dev - Copyright (C) 2010 - 2019 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

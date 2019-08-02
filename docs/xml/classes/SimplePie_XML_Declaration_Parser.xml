@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class xmlns="http://xml.phpdox.net/src" full="SimplePie_XML_Declaration_Parser" namespace="" name="SimplePie_XML_Declaration_Parser" abstract="false" final="false" start="51" end="359">
+  <file path="../project/vendor/simplepie/simplepie/library/SimplePie/XML/Declaration" file="Parser.php" realpath="C:/xampp/htdocs/bac3/project/vendor/simplepie/simplepie/library/SimplePie/XML/Declaration/Parser.php" size="7113" time="2019-06-14T21:21:47+02:00" unixtime="1560540107" sha1="1ccc00e51ba3820b53aca0cd1ebefe52f5f627af" relative="vendor/simplepie/simplepie/library/SimplePie/XML/Declaration/Parser.php"/>
+  <docblock>
+    <description compact="Parses the XML Declaration"/>
+    <package value="SimplePie"/>
+    <subpackage value="Parsing"/>
+  </docblock>
+  <member name="version" default="'1.0'" type="string" visibility="public" static="false" line="59">
+    <docblock>
+      <description compact="XML Version"/>
+      <access value="public"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="encoding" default="'UTF-8'" type="string" visibility="public" static="false" line="67">
+    <docblock>
+      <description compact="Encoding"/>
+      <access value="public"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="standalone" default="false" type="boolean" visibility="public" static="false" line="75">
+    <docblock>
+      <description compact="Standalone"/>
+      <access value="public"/>
+      <var type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </var>
+    </docblock>
+  </member>
+  <member name="state" default="'before_version_name'" type="string" visibility="public" static="false" line="83">
+    <docblock>
+      <description compact="Current state of the state machine"/>
+      <access value="private"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="data" default="''" type="string" visibility="public" static="false" line="91">
+    <docblock>
+      <description compact="Input data"/>
+      <access value="private"/>
+      <var type="string"/>
+    </docblock>
+  </member>
+  <member name="data_length" default="0" type="integer" visibility="public" static="false" line="99">
+    <docblock>
+      <description compact="Input data length (to avoid calling strlen() everytime this is needed)"/>
+      <access value="private"/>
+      <var type="int"/>
+    </docblock>
+  </member>
+  <member name="position" default="0" type="integer" visibility="public" static="false" line="107">
+    <docblock>
+      <description compact="Current position of the pointer"/>
+      <var type="int"/>
+      <access value="private"/>
+    </docblock>
+  </member>
+  <constructor name="__construct" start="115" end="119" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Create an instance of the class with the input data"/>
+      <access value="public"/>
+      <param description="Input data" type="string" variable="$data"/>
+    </docblock>
+    <parameter name="data" byreference="false" type="{unknown}"/>
+  </constructor>
+  <method name="parse" start="127" end="144" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Parse the input data"/>
+      <access value="public"/>
+      <return description="true on success, false on failure" type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="has_data" start="152" end="155" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Check whether there is data beyond the pointer"/>
+      <access value="private"/>
+      <return description="true if there is further data, false if not" type="object">
+        <type full="bool" namespace="" name="bool"/>
+      </return>
+    </docblock>
+  </method>
+  <method name="skip_whitespace" start="162" end="167" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Advance past any whitespace"/>
+      <return description="Number of whitespace characters passed" type="int"/>
+    </docblock>
+  </method>
+  <method name="get_value" start="172" end="187" abstract="false" final="false" static="false" visibility="public">
+    <docblock>
+      <description compact="Read value"/>
+    </docblock>
+  </method>
+  <method name="before_version_name" start="189" end="199" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="version_name" start="201" end="213" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="version_equals" start="215" end="227" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="version_value" start="229" end="247" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="encoding_name" start="249" end="261" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="encoding_equals" start="263" end="275" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="encoding_value" start="277" end="295" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="standalone_name" start="297" end="309" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="standalone_equals" start="311" end="323" abstract="false" final="false" static="false" visibility="public"/>
+  <method name="standalone_value" start="325" end="358" abstract="false" final="false" static="false" visibility="public"/>
+</class>

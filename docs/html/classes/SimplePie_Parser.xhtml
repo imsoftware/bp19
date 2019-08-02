@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - SimplePie_Parser</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">SimplePie_Parser</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/vendor/simplepie/simplepie/library/SimplePie/Parser.php.xhtml#line53">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>\</small>SimplePie_Parser</h1>
+        <h4>Parses XML into something sane</h4>
+        <p>This class can be overloaded with </p>
+        <ul/>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class SimplePie_Parser
+            {<br/><ul class="none"><li>// members</li><li>public  <a href="#members">$error_code</a>;
+                    </li><li>public  <a href="#members">$error_string</a>;
+                    </li><li>public  <a href="#members">$current_line</a>;
+                    </li><li>public  <a href="#members">$current_column</a>;
+                    </li><li>public  <a href="#members">$current_byte</a>;
+                    </li><li>public string <a href="#members">$separator</a> =
+                        ' ';
+                    </li><li>public array <a href="#members">$namespace</a> =
+                        ;
+                    </li><li>public array <a href="#members">$element</a> =
+                        ;
+                    </li><li>public array <a href="#members">$xml_base</a> =
+                        ;
+                    </li><li>public array <a href="#members">$xml_base_explicit</a> =
+                        ;
+                    </li><li>public array <a href="#members">$xml_lang</a> =
+                        ;
+                    </li><li>public array <a href="#members">$data</a> =
+                        ;
+                    </li><li>public array <a href="#members">$datas</a> =
+                        ;
+                    </li><li>public integer <a href="#members">$current_xhtml_construct</a> =
+                        1;
+                    </li><li>public  <a href="#members">$encoding</a>;
+                    </li><li>protected  <a href="#members">$registry</a>;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="SimplePie_Parser" href="../classes/SimplePie_Parser/set_registry.xhtml">set_registry</a>()
+                    </li><li>public void <a title="SimplePie_Parser" href="../classes/SimplePie_Parser/parse.xhtml">parse</a>()
+                    </li><li>public void <a title="SimplePie_Parser" href="../classes/SimplePie_Parser/get_error_code.xhtml">get_error_code</a>()
+                    </li><li>public void <a title="SimplePie_Parser" href="../classes/SimplePie_Parser/get_error_string.xhtml">get_error_string</a>()
+                    </li><li>public void <a title="SimplePie_Parser" href="../classes/SimplePie_Parser/get_current_line.xhtml">get_current_line</a>()
+                    </li><li>public void <a title="SimplePie_Parser" href="../classes/SimplePie_Parser/get_current_column.xhtml">get_current_column</a>()
+                    </li><li>public void <a title="SimplePie_Parser" href="../classes/SimplePie_Parser/get_current_byte.xhtml">get_current_byte</a>()
+                    </li><li>public void <a title="SimplePie_Parser" href="../classes/SimplePie_Parser/get_data.xhtml">get_data</a>()
+                    </li><li>public void <a title="SimplePie_Parser" href="../classes/SimplePie_Parser/tag_open.xhtml">tag_open</a>()
+                    </li><li>public void <a title="SimplePie_Parser" href="../classes/SimplePie_Parser/cdata.xhtml">cdata</a>()
+                    </li><li>public void <a title="SimplePie_Parser" href="../classes/SimplePie_Parser/tag_close.xhtml">tag_close</a>()
+                    </li><li>public void <a title="SimplePie_Parser" href="../classes/SimplePie_Parser/split_ns.xhtml">split_ns</a>()
+                    </li><li>private void <a title="SimplePie_Parser" href="../classes/SimplePie_Parser/parse_hcard.xhtml">parse_hcard</a>()
+                    </li><li>private void <a title="SimplePie_Parser" href="../classes/SimplePie_Parser/parse_microformats.xhtml">parse_microformats</a>()
+                    </li><li>private void <a title="SimplePie_Parser" href="../classes/SimplePie_Parser/declare_html_entities.xhtml">declare_html_entities</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>protected</h4>
+          <ul class="members">
+            <li id="registry">
+              <strong>$registry</strong>
+            </li>
+          </ul>
+          <h4>public</h4>
+          <ul class="members">
+            <li id="current_byte">
+              <strong>$current_byte</strong>
+            </li>
+            <li id="current_column">
+              <strong>$current_column</strong>
+            </li>
+            <li id="current_line">
+              <strong>$current_line</strong>
+            </li>
+            <li id="current_xhtml_construct">
+              <strong>$current_xhtml_construct</strong>
+            </li>
+            <li id="data">
+              <strong>$data</strong>
+            </li>
+            <li id="datas">
+              <strong>$datas</strong>
+            </li>
+            <li id="element">
+              <strong>$element</strong>
+            </li>
+            <li id="encoding">
+              <strong>$encoding</strong>
+            </li>
+            <li id="error_code">
+              <strong>$error_code</strong>
+            </li>
+            <li id="error_string">
+              <strong>$error_string</strong>
+            </li>
+            <li id="namespace">
+              <strong>$namespace</strong>
+            </li>
+            <li id="separator">
+              <strong>$separator</strong>
+            </li>
+            <li id="xml_base">
+              <strong>$xml_base</strong>
+            </li>
+            <li id="xml_base_explicit">
+              <strong>$xml_base_explicit</strong>
+            </li>
+            <li id="xml_lang">
+              <strong>$xml_lang</strong>
+            </li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>private</h4>
+          <ul>
+            <li id="declare_html_entities">
+              <a title="SimplePie_Parser" href="../classes/SimplePie_Parser/declare_html_entities.xhtml">declare_html_entities()</a>
+            </li>
+            <li id="parse_hcard">
+              <a title="SimplePie_Parser" href="../classes/SimplePie_Parser/parse_hcard.xhtml">parse_hcard()</a>
+            </li>
+            <li id="parse_microformats">
+              <a title="SimplePie_Parser" href="../classes/SimplePie_Parser/parse_microformats.xhtml">parse_microformats()</a>
+            </li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="cdata">
+              <a title="SimplePie_Parser" href="../classes/SimplePie_Parser/cdata.xhtml">cdata()</a>
+            </li>
+            <li id="get_current_byte">
+              <a title="SimplePie_Parser" href="../classes/SimplePie_Parser/get_current_byte.xhtml">get_current_byte()</a>
+            </li>
+            <li id="get_current_column">
+              <a title="SimplePie_Parser" href="../classes/SimplePie_Parser/get_current_column.xhtml">get_current_column()</a>
+            </li>
+            <li id="get_current_line">
+              <a title="SimplePie_Parser" href="../classes/SimplePie_Parser/get_current_line.xhtml">get_current_line()</a>
+            </li>
+            <li id="get_data">
+              <a title="SimplePie_Parser" href="../classes/SimplePie_Parser/get_data.xhtml">get_data()</a>
+            </li>
+            <li id="get_error_code">
+              <a title="SimplePie_Parser" href="../classes/SimplePie_Parser/get_error_code.xhtml">get_error_code()</a>
+            </li>
+            <li id="get_error_string">
+              <a title="SimplePie_Parser" href="../classes/SimplePie_Parser/get_error_string.xhtml">get_error_string()</a>
+            </li>
+            <li id="parse">
+              <a title="SimplePie_Parser" href="../classes/SimplePie_Parser/parse.xhtml">parse()</a>
+            </li>
+            <li id="set_registry">
+              <a title="SimplePie_Parser" href="../classes/SimplePie_Parser/set_registry.xhtml">set_registry()</a>
+            </li>
+            <li id="split_ns">
+              <a title="SimplePie_Parser" href="../classes/SimplePie_Parser/split_ns.xhtml">split_ns()</a>
+            </li>
+            <li id="tag_close">
+              <a title="SimplePie_Parser" href="../classes/SimplePie_Parser/tag_close.xhtml">tag_close()</a>
+            </li>
+            <li id="tag_open">
+              <a title="SimplePie_Parser" href="../classes/SimplePie_Parser/tag_open.xhtml">tag_open()</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0-dev - Copyright (C) 2010 - 2019 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>

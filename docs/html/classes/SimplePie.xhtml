@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <title>phpDox - SimplePie</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  </head>
+  <body>
+    <nav class="topnav">
+      <ul>
+        <li>
+          <div class="logo"><span>/**</span>phpDox</div>
+        </li>
+        <li class="separator">
+          <a href="../index.xhtml">Overview</a>
+        </li>
+        <li class="separator">
+          <a href="../namespaces.xhtml">Namespaces</a>
+        </li>
+        <li>
+          <a href="../interfaces.xhtml">Interfaces</a>
+        </li>
+        <li>
+          <a href="../classes.xhtml">Classes</a>
+        </li>
+        <li class="separator">
+          <a href="../source/index.xhtml">Source</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mainstage">
+      <div class="box">
+        <ul class="breadcrumb">
+          <li>
+            <a href="../index.xhtml">Overview</a>
+          </li>
+          <li class="separator">
+            <a href="../classes.xhtml">Classes</a>
+          </li>
+          <li class="separator">SimplePie</li>
+        </ul>
+      </div>
+      <nav class="box">
+        <ul>
+          <li>
+            <a href="#introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#synopsis">Synopsis</a>
+          </li>
+          <li>
+            <a href="#tasks">Tasks</a>
+          </li>
+          <li>
+            <a href="#members">Members</a>
+          </li>
+          <li>
+            <a href="#methods">Methods</a>
+          </li>
+          <li>
+            <a href="../source/vendor/simplepie/simplepie/library/SimplePie.php.xhtml#line413">Source</a>
+          </li>
+        </ul>
+      </nav>
+      <section>
+        <h1 id="introduction"><small>\</small>SimplePie</h1>
+        <h4>SimplePie</h4>
+        <p/>
+        <ul/>
+        <h2 id="synopsis">Synopsis</h2>
+        <div class="synopsis">class SimplePie
+            {<br/><ul class="none"><li>// members</li><li>public array <a href="#members">$data</a> =
+                        ;
+                    </li><li>public  <a href="#members">$error</a>;
+                    </li><li>public <span title=""/> <a href="#members">$sanitize</a>;
+                    </li><li>public string <a href="#members">$useragent</a> =
+                        SIMPLEPIE_USERAGENT;
+                    </li><li>public  <a href="#members">$feed_url</a>;
+                    </li><li>public  <a href="#members">$permanent_url</a> =
+                        NULL;
+                    </li><li>public <span title=""/> <a href="#members">$file</a>;
+                    </li><li>public  <a href="#members">$raw_data</a>;
+                    </li><li>public integer <a href="#members">$timeout</a> =
+                        10;
+                    </li><li>public array <a href="#members">$curl_options</a> =
+                        ;
+                    </li><li>public <span title="bool">bool</span> <a href="#members">$force_fsockopen</a> =
+                        false;
+                    </li><li>public <span title="bool">bool</span> <a href="#members">$force_feed</a> =
+                        false;
+                    </li><li>public <span title="bool">bool</span> <a href="#members">$cache</a> =
+                        true;
+                    </li><li>public <span title="bool">bool</span> <a href="#members">$force_cache_fallback</a> =
+                        false;
+                    </li><li>public integer <a href="#members">$cache_duration</a> =
+                        3600;
+                    </li><li>public integer <a href="#members">$autodiscovery_cache_duration</a> =
+                        604800;
+                    </li><li>public string <a href="#members">$cache_location</a> =
+                        './cache';
+                    </li><li>public string <a href="#members">$cache_name_function</a> =
+                        'md5';
+                    </li><li>public <span title="bool">bool</span> <a href="#members">$order_by_date</a> =
+                        true;
+                    </li><li>public boolean <a href="#members">$input_encoding</a> =
+                        false;
+                    </li><li>public int <a href="#members">$autodiscovery</a> =
+                        SIMPLEPIE_LOCATOR_ALL;
+                    </li><li>public <span title="SimplePie_Registry">SimplePie_Registry</span> <a href="#members">$registry</a>;
+                    </li><li>public integer <a href="#members">$max_checked_feeds</a> =
+                        10;
+                    </li><li>public array <a href="#members">$all_discovered_feeds</a> =
+                        ;
+                    </li><li>public string <a href="#members">$image_handler</a> =
+                        '';
+                    </li><li>public array <a href="#members">$multifeed_url</a> =
+                        ;
+                    </li><li>public array <a href="#members">$multifeed_objects</a> =
+                        ;
+                    </li><li>public  <a href="#members">$config_settings</a> =
+                        NULL;
+                    </li><li>public integer <a href="#members">$item_limit</a> =
+                        0;
+                    </li><li>public <span title="bool">bool</span> <a href="#members">$check_modified</a> =
+                        false;
+                    </li><li>public array <a href="#members">$strip_attributes</a> =
+                        ;
+                    </li><li>public array <a href="#members">$add_attributes</a> =
+                        ;
+                    </li><li>public array <a href="#members">$strip_htmltags</a> =
+                        ;
+                    </li><li>public <span title="bool">bool</span> <a href="#members">$enable_exceptions</a> =
+                        false;
+                    </li></ul><ul class="none"><li>// methods</li><li>public void <a title="SimplePie" href="../classes/SimplePie/__construct.xhtml">__construct</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/__toString.xhtml">__toString</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/__destruct.xhtml">__destruct</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/force_feed.xhtml">force_feed</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_feed_url.xhtml">set_feed_url</a>()
+                    </li><li>public bool <a title="SimplePie" href="../classes/SimplePie/set_file.xhtml">set_file</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_raw_data.xhtml">set_raw_data</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_timeout.xhtml">set_timeout</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_curl_options.xhtml">set_curl_options</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/force_fsockopen.xhtml">force_fsockopen</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/enable_cache.xhtml">enable_cache</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/force_cache_fallback.xhtml">force_cache_fallback</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_cache_duration.xhtml">set_cache_duration</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_autodiscovery_cache_duration.xhtml">set_autodiscovery_cache_duration</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_cache_location.xhtml">set_cache_location</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/enable_order_by_date.xhtml">enable_order_by_date</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_input_encoding.xhtml">set_input_encoding</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_autodiscovery_level.xhtml">set_autodiscovery_level</a>()
+                    </li><li>public SimplePie_Registry <a title="SimplePie" href="../classes/SimplePie/get_registry.xhtml">get_registry</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_cache_class.xhtml">set_cache_class</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_locator_class.xhtml">set_locator_class</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_parser_class.xhtml">set_parser_class</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_file_class.xhtml">set_file_class</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_sanitize_class.xhtml">set_sanitize_class</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_item_class.xhtml">set_item_class</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_author_class.xhtml">set_author_class</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_category_class.xhtml">set_category_class</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_enclosure_class.xhtml">set_enclosure_class</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_caption_class.xhtml">set_caption_class</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_copyright_class.xhtml">set_copyright_class</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_credit_class.xhtml">set_credit_class</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_rating_class.xhtml">set_rating_class</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_restriction_class.xhtml">set_restriction_class</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_content_type_sniffer_class.xhtml">set_content_type_sniffer_class</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_source_class.xhtml">set_source_class</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_useragent.xhtml">set_useragent</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_cache_name_function.xhtml">set_cache_name_function</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_stupidly_fast.xhtml">set_stupidly_fast</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_max_checked_feeds.xhtml">set_max_checked_feeds</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/remove_div.xhtml">remove_div</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/strip_htmltags.xhtml">strip_htmltags</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/encode_instead_of_strip.xhtml">encode_instead_of_strip</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/strip_attributes.xhtml">strip_attributes</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/add_attributes.xhtml">add_attributes</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_output_encoding.xhtml">set_output_encoding</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/strip_comments.xhtml">strip_comments</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_url_replacements.xhtml">set_url_replacements</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_image_handler.xhtml">set_image_handler</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_item_limit.xhtml">set_item_limit</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/enable_exceptions.xhtml">enable_exceptions</a>()
+                    </li><li>public boolean <a title="SimplePie" href="../classes/SimplePie/init.xhtml">init</a>()
+                    </li><li>protected array|true <a title="SimplePie" href="../classes/SimplePie/fetch_data.xhtml">fetch_data</a>()
+                    </li><li>public string|array <a title="SimplePie" href="../classes/SimplePie/error.xhtml">error</a>()
+                    </li><li>public string|boolean <a title="SimplePie" href="../classes/SimplePie/get_raw_data.xhtml">get_raw_data</a>()
+                    </li><li>public string <a title="SimplePie" href="../classes/SimplePie/get_encoding.xhtml">get_encoding</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/handle_content_type.xhtml">handle_content_type</a>()
+                    </li><li>public int <a title="SimplePie" href="../classes/SimplePie/get_type.xhtml">get_type</a>()
+                    </li><li>public string|null <a title="SimplePie" href="../classes/SimplePie/subscribe_url.xhtml">subscribe_url</a>()
+                    </li><li>public array <a title="SimplePie" href="../classes/SimplePie/get_feed_tags.xhtml">get_feed_tags</a>()
+                    </li><li>public array <a title="SimplePie" href="../classes/SimplePie/get_channel_tags.xhtml">get_channel_tags</a>()
+                    </li><li>public array <a title="SimplePie" href="../classes/SimplePie/get_image_tags.xhtml">get_image_tags</a>()
+                    </li><li>public string <a title="SimplePie" href="../classes/SimplePie/get_base.xhtml">get_base</a>()
+                    </li><li>public string <a title="SimplePie" href="../classes/SimplePie/sanitize.xhtml">sanitize</a>()
+                    </li><li>public string|null <a title="SimplePie" href="../classes/SimplePie/get_title.xhtml">get_title</a>()
+                    </li><li>public SimplePie_Category|null <a title="SimplePie" href="../classes/SimplePie/get_category.xhtml">get_category</a>()
+                    </li><li>public array|null <a title="SimplePie" href="../classes/SimplePie/get_categories.xhtml">get_categories</a>()
+                    </li><li>public SimplePie_Author|null <a title="SimplePie" href="../classes/SimplePie/get_author.xhtml">get_author</a>()
+                    </li><li>public array|null <a title="SimplePie" href="../classes/SimplePie/get_authors.xhtml">get_authors</a>()
+                    </li><li>public SimplePie_Author|null <a title="SimplePie" href="../classes/SimplePie/get_contributor.xhtml">get_contributor</a>()
+                    </li><li>public array|null <a title="SimplePie" href="../classes/SimplePie/get_contributors.xhtml">get_contributors</a>()
+                    </li><li>public string|null <a title="SimplePie" href="../classes/SimplePie/get_link.xhtml">get_link</a>()
+                    </li><li>public string|null <a title="SimplePie" href="../classes/SimplePie/get_permalink.xhtml">get_permalink</a>()
+                    </li><li>public array|null <a title="SimplePie" href="../classes/SimplePie/get_links.xhtml">get_links</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/get_all_discovered_feeds.xhtml">get_all_discovered_feeds</a>()
+                    </li><li>public string|null <a title="SimplePie" href="../classes/SimplePie/get_description.xhtml">get_description</a>()
+                    </li><li>public string|null <a title="SimplePie" href="../classes/SimplePie/get_copyright.xhtml">get_copyright</a>()
+                    </li><li>public string|null <a title="SimplePie" href="../classes/SimplePie/get_language.xhtml">get_language</a>()
+                    </li><li>public string|null <a title="SimplePie" href="../classes/SimplePie/get_latitude.xhtml">get_latitude</a>()
+                    </li><li>public string|null <a title="SimplePie" href="../classes/SimplePie/get_longitude.xhtml">get_longitude</a>()
+                    </li><li>public string|null <a title="SimplePie" href="../classes/SimplePie/get_image_title.xhtml">get_image_title</a>()
+                    </li><li>public string|null <a title="SimplePie" href="../classes/SimplePie/get_image_url.xhtml">get_image_url</a>()
+                    </li><li>public string|null <a title="SimplePie" href="../classes/SimplePie/get_image_link.xhtml">get_image_link</a>()
+                    </li><li>public int|float|null <a title="SimplePie" href="../classes/SimplePie/get_image_width.xhtml">get_image_width</a>()
+                    </li><li>public int|float|null <a title="SimplePie" href="../classes/SimplePie/get_image_height.xhtml">get_image_height</a>()
+                    </li><li>public int <a title="SimplePie" href="../classes/SimplePie/get_item_quantity.xhtml">get_item_quantity</a>()
+                    </li><li>public SimplePie_Item|null <a title="SimplePie" href="../classes/SimplePie/get_item.xhtml">get_item</a>()
+                    </li><li>public array <a title="SimplePie" href="../classes/SimplePie/get_items.xhtml">get_items</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/set_favicon_handler.xhtml">set_favicon_handler</a>()
+                    </li><li>public void <a title="SimplePie" href="../classes/SimplePie/get_favicon.xhtml">get_favicon</a>()
+                    </li><li>public mixed <a title="SimplePie" href="../classes/SimplePie/__call.xhtml">__call</a>()
+                    </li><li>public static boolean <a title="SimplePie" href="../classes/SimplePie/sort_items.xhtml">sort_items</a>()
+                    </li><li>public static array <a title="SimplePie" href="../classes/SimplePie/merge_items.xhtml">merge_items</a>()
+                    </li><li>private void <a title="SimplePie" href="../classes/SimplePie/store_links.xhtml">store_links</a>()
+                    </li></ul>
+
+            }<br/></div>
+        <h2 id="tasks">Tasks</h2>
+        <table class="styled">
+          <thead>
+            <tr>
+              <th style="width:3em;">Line</th>
+              <th>Task</th>
+            </tr>
+          </thead>
+          <tr>
+            <td class="nummeric">1923+</td>
+            <td>Support &lt;itunes:new-feed-url&gt;</td>
+          </tr>
+          <tr>
+            <td class="nummeric">1923+</td>
+            <td>Also, |atom:link|@rel=self</td>
+          </tr>
+        </table>
+        <h2 id="members">Members</h2>
+        <div class="styled members">
+          <h4>public</h4>
+          <ul class="members">
+            <li id="add_attributes"><strong>$add_attributes</strong>
+                —
+                array</li>
+            <li id="all_discovered_feeds"><strong>$all_discovered_feeds</strong>
+                —
+                array</li>
+            <li id="autodiscovery"><strong>$autodiscovery</strong>
+                —
+                int</li>
+            <li id="autodiscovery_cache_duration"><strong>$autodiscovery_cache_duration</strong>
+                —
+                int</li>
+            <li id="cache"><strong>$cache</strong>
+                —
+                <a title="bool" href="../classes/bool.xhtml">bool</a></li>
+            <li id="cache_duration"><strong>$cache_duration</strong>
+                —
+                int</li>
+            <li id="cache_location"><strong>$cache_location</strong>
+                —
+                string</li>
+            <li id="cache_name_function"><strong>$cache_name_function</strong>
+                —
+                string</li>
+            <li id="check_modified"><strong>$check_modified</strong>
+                —
+                <a title="bool" href="../classes/bool.xhtml">bool</a></li>
+            <li id="config_settings"><strong>$config_settings</strong>
+                —
+                array</li>
+            <li id="curl_options"><strong>$curl_options</strong>
+                —
+                array</li>
+            <li id="data"><strong>$data</strong>
+                —
+                array</li>
+            <li id="enable_exceptions"><strong>$enable_exceptions</strong>
+                —
+                <a title="bool" href="../classes/bool.xhtml">bool</a></li>
+            <li id="error"><strong>$error</strong>
+                —
+                mixed</li>
+            <li id="feed_url"><strong>$feed_url</strong>
+                —
+                string</li>
+            <li id="file"><strong>$file</strong>
+                —
+                <a title="" href="../classes/.xhtml"/></li>
+            <li id="force_cache_fallback"><strong>$force_cache_fallback</strong>
+                —
+                <a title="bool" href="../classes/bool.xhtml">bool</a></li>
+            <li id="force_feed"><strong>$force_feed</strong>
+                —
+                <a title="bool" href="../classes/bool.xhtml">bool</a></li>
+            <li id="force_fsockopen"><strong>$force_fsockopen</strong>
+                —
+                <a title="bool" href="../classes/bool.xhtml">bool</a></li>
+            <li id="image_handler"><strong>$image_handler</strong>
+                —
+                string</li>
+            <li id="input_encoding"><strong>$input_encoding</strong>
+                —
+                mixed</li>
+            <li id="item_limit"><strong>$item_limit</strong>
+                —
+                integer</li>
+            <li id="max_checked_feeds"><strong>$max_checked_feeds</strong>
+                —
+                int</li>
+            <li id="multifeed_objects"><strong>$multifeed_objects</strong>
+                —
+                array</li>
+            <li id="multifeed_url"><strong>$multifeed_url</strong>
+                —
+                array</li>
+            <li id="order_by_date"><strong>$order_by_date</strong>
+                —
+                <a title="bool" href="../classes/bool.xhtml">bool</a></li>
+            <li id="permanent_url"><strong>$permanent_url</strong>
+                —
+                string</li>
+            <li id="raw_data"><strong>$raw_data</strong>
+                —
+                string</li>
+            <li id="registry"><strong>$registry</strong>
+                —
+                <a title="SimplePie_Registry" href="../classes/SimplePie_Registry.xhtml">SimplePie_Registry</a><br/><span class="indent">Class registry object</span></li>
+            <li id="sanitize"><strong>$sanitize</strong>
+                —
+                <a title="" href="../classes/.xhtml"/></li>
+            <li id="strip_attributes"><strong>$strip_attributes</strong>
+                —
+                array</li>
+            <li id="strip_htmltags"><strong>$strip_htmltags</strong>
+                —
+                array</li>
+            <li id="timeout"><strong>$timeout</strong>
+                —
+                int</li>
+            <li id="useragent"><strong>$useragent</strong>
+                —
+                string</li>
+          </ul>
+        </div>
+        <h2 id="methods">Methods</h2>
+        <div class="styled">
+          <h4>private</h4>
+          <ul>
+            <li id="store_links"><a title="SimplePie" href="../classes/SimplePie/store_links.xhtml">store_links()</a>
+                — Store PubSubHubbub links as headers</li>
+          </ul>
+          <h4>protected</h4>
+          <ul>
+            <li id="fetch_data"><a title="SimplePie" href="../classes/SimplePie/fetch_data.xhtml">fetch_data()</a>
+                — Fetch the data via SimplePie_File</li>
+          </ul>
+          <h4>public</h4>
+          <ul>
+            <li id="__construct"><a title="SimplePie" href="../classes/SimplePie/__construct.xhtml">__construct()</a>
+                — The SimplePie class contains feed level data and options</li>
+            <li id="__destruct"><a title="SimplePie" href="../classes/SimplePie/__destruct.xhtml">__destruct()</a>
+                — Remove items that link back to this before destroying this object</li>
+            <li id="__call"><a title="SimplePie" href="../classes/SimplePie/__call.xhtml">__call()</a>
+                — Magic method handler</li>
+            <li id="__toString"><a title="SimplePie" href="../classes/SimplePie/__toString.xhtml">__toString()</a>
+                — Used for converting object to a string</li>
+            <li id="add_attributes">
+              <a title="SimplePie" href="../classes/SimplePie/add_attributes.xhtml">add_attributes()</a>
+            </li>
+            <li id="enable_cache"><a title="SimplePie" href="../classes/SimplePie/enable_cache.xhtml">enable_cache()</a>
+                — Enable/disable caching in SimplePie.</li>
+            <li id="enable_exceptions"><a title="SimplePie" href="../classes/SimplePie/enable_exceptions.xhtml">enable_exceptions()</a>
+                — Enable throwing exceptions</li>
+            <li id="enable_order_by_date"><a title="SimplePie" href="../classes/SimplePie/enable_order_by_date.xhtml">enable_order_by_date()</a>
+                — Set whether feed items should be sorted into reverse chronological order</li>
+            <li id="encode_instead_of_strip">
+              <a title="SimplePie" href="../classes/SimplePie/encode_instead_of_strip.xhtml">encode_instead_of_strip()</a>
+            </li>
+            <li id="error"><a title="SimplePie" href="../classes/SimplePie/error.xhtml">error()</a>
+                — Get the error message for the occured error</li>
+            <li id="force_cache_fallback"><a title="SimplePie" href="../classes/SimplePie/force_cache_fallback.xhtml">force_cache_fallback()</a>
+                — SimplePie to continue to fall back to expired cache, if enabled, when feed is unavailable.</li>
+            <li id="force_feed"><a title="SimplePie" href="../classes/SimplePie/force_feed.xhtml">force_feed()</a>
+                — Force the given data/URL to be treated as a feed</li>
+            <li id="force_fsockopen"><a title="SimplePie" href="../classes/SimplePie/force_fsockopen.xhtml">force_fsockopen()</a>
+                — Force SimplePie to use fsockopen() instead of cURL</li>
+            <li id="get_all_discovered_feeds">
+              <a title="SimplePie" href="../classes/SimplePie/get_all_discovered_feeds.xhtml">get_all_discovered_feeds()</a>
+            </li>
+            <li id="get_author"><a title="SimplePie" href="../classes/SimplePie/get_author.xhtml">get_author()</a>
+                — Get an author for the feed</li>
+            <li id="get_authors"><a title="SimplePie" href="../classes/SimplePie/get_authors.xhtml">get_authors()</a>
+                — Get all authors for the feed</li>
+            <li id="get_base"><a title="SimplePie" href="../classes/SimplePie/get_base.xhtml">get_base()</a>
+                — Get the base URL value from the feed</li>
+            <li id="get_categories"><a title="SimplePie" href="../classes/SimplePie/get_categories.xhtml">get_categories()</a>
+                — Get all categories for the feed</li>
+            <li id="get_category"><a title="SimplePie" href="../classes/SimplePie/get_category.xhtml">get_category()</a>
+                — Get a category for the feed</li>
+            <li id="get_channel_tags"><a title="SimplePie" href="../classes/SimplePie/get_channel_tags.xhtml">get_channel_tags()</a>
+                — Get data for an channel-level element</li>
+            <li id="get_contributor"><a title="SimplePie" href="../classes/SimplePie/get_contributor.xhtml">get_contributor()</a>
+                — Get a contributor for the feed</li>
+            <li id="get_contributors"><a title="SimplePie" href="../classes/SimplePie/get_contributors.xhtml">get_contributors()</a>
+                — Get all contributors for the feed</li>
+            <li id="get_copyright"><a title="SimplePie" href="../classes/SimplePie/get_copyright.xhtml">get_copyright()</a>
+                — Get the copyright info for the feed</li>
+            <li id="get_description"><a title="SimplePie" href="../classes/SimplePie/get_description.xhtml">get_description()</a>
+                — Get the content for the item</li>
+            <li id="get_encoding"><a title="SimplePie" href="../classes/SimplePie/get_encoding.xhtml">get_encoding()</a>
+                — Get the character encoding used for output</li>
+            <li id="get_favicon"><a title="SimplePie" href="../classes/SimplePie/get_favicon.xhtml">get_favicon()</a>
+                — Get the favicon for the current feed</li>
+            <li id="get_feed_tags"><a title="SimplePie" href="../classes/SimplePie/get_feed_tags.xhtml">get_feed_tags()</a>
+                — Get data for an feed-level element</li>
+            <li id="get_image_height"><a title="SimplePie" href="../classes/SimplePie/get_image_height.xhtml">get_image_height()</a>
+                — Get the feed logo's height</li>
+            <li id="get_image_link"><a title="SimplePie" href="../classes/SimplePie/get_image_link.xhtml">get_image_link()</a>
+                — Get the feed logo's link</li>
+            <li id="get_image_tags"><a title="SimplePie" href="../classes/SimplePie/get_image_tags.xhtml">get_image_tags()</a>
+                — Get data for an channel-level element</li>
+            <li id="get_image_title"><a title="SimplePie" href="../classes/SimplePie/get_image_title.xhtml">get_image_title()</a>
+                — Get the feed logo's title</li>
+            <li id="get_image_url"><a title="SimplePie" href="../classes/SimplePie/get_image_url.xhtml">get_image_url()</a>
+                — Get the feed logo's URL</li>
+            <li id="get_image_width"><a title="SimplePie" href="../classes/SimplePie/get_image_width.xhtml">get_image_width()</a>
+                — Get the feed logo's link</li>
+            <li id="get_item"><a title="SimplePie" href="../classes/SimplePie/get_item.xhtml">get_item()</a>
+                — Get a single item from the feed</li>
+            <li id="get_item_quantity"><a title="SimplePie" href="../classes/SimplePie/get_item_quantity.xhtml">get_item_quantity()</a>
+                — Get the number of items in the feed</li>
+            <li id="get_items"><a title="SimplePie" href="../classes/SimplePie/get_items.xhtml">get_items()</a>
+                — Get all items from the feed</li>
+            <li id="get_language"><a title="SimplePie" href="../classes/SimplePie/get_language.xhtml">get_language()</a>
+                — Get the language for the feed</li>
+            <li id="get_latitude"><a title="SimplePie" href="../classes/SimplePie/get_latitude.xhtml">get_latitude()</a>
+                — Get the latitude coordinates for the item</li>
+            <li id="get_link"><a title="SimplePie" href="../classes/SimplePie/get_link.xhtml">get_link()</a>
+                — Get a single link for the feed</li>
+            <li id="get_links"><a title="SimplePie" href="../classes/SimplePie/get_links.xhtml">get_links()</a>
+                — Get all links for the feed</li>
+            <li id="get_longitude"><a title="SimplePie" href="../classes/SimplePie/get_longitude.xhtml">get_longitude()</a>
+                — Get the longitude coordinates for the feed</li>
+            <li id="get_permalink"><a title="SimplePie" href="../classes/SimplePie/get_permalink.xhtml">get_permalink()</a>
+                — Get the permalink for the item</li>
+            <li id="get_raw_data"><a title="SimplePie" href="../classes/SimplePie/get_raw_data.xhtml">get_raw_data()</a>
+                — Get the raw XML</li>
+            <li id="get_registry"><a title="SimplePie" href="../classes/SimplePie/get_registry.xhtml">get_registry()</a>
+                — Get the class registry</li>
+            <li id="get_title"><a title="SimplePie" href="../classes/SimplePie/get_title.xhtml">get_title()</a>
+                — Get the title of the feed</li>
+            <li id="get_type"><a title="SimplePie" href="../classes/SimplePie/get_type.xhtml">get_type()</a>
+                — Get the type of the feed</li>
+            <li id="handle_content_type"><a title="SimplePie" href="../classes/SimplePie/handle_content_type.xhtml">handle_content_type()</a>
+                — Send the content-type header with correct encoding</li>
+            <li id="init"><a title="SimplePie" href="../classes/SimplePie/init.xhtml">init()</a>
+                — Initialize the feed object</li>
+            <li id="merge_items"><a title="SimplePie" href="../classes/SimplePie/merge_items.xhtml">merge_items()</a>
+                — Merge items from several feeds into one</li>
+            <li id="remove_div">
+              <a title="SimplePie" href="../classes/SimplePie/remove_div.xhtml">remove_div()</a>
+            </li>
+            <li id="sanitize"><a title="SimplePie" href="../classes/SimplePie/sanitize.xhtml">sanitize()</a>
+                — Sanitize feed data</li>
+            <li id="set_author_class"><a title="SimplePie" href="../classes/SimplePie/set_author_class.xhtml">set_author_class()</a>
+                — Set which class SimplePie uses for handling author data</li>
+            <li id="set_autodiscovery_cache_duration"><a title="SimplePie" href="../classes/SimplePie/set_autodiscovery_cache_duration.xhtml">set_autodiscovery_cache_duration()</a>
+                — Set the length of time (in seconds) that the autodiscovered feed URL will be cached</li>
+            <li id="set_autodiscovery_level"><a title="SimplePie" href="../classes/SimplePie/set_autodiscovery_level.xhtml">set_autodiscovery_level()</a>
+                — Set how much feed autodiscovery to do</li>
+            <li id="set_cache_class"><a title="SimplePie" href="../classes/SimplePie/set_cache_class.xhtml">set_cache_class()</a>
+                — Set which class SimplePie uses for caching</li>
+            <li id="set_cache_duration"><a title="SimplePie" href="../classes/SimplePie/set_cache_duration.xhtml">set_cache_duration()</a>
+                — Set the length of time (in seconds) that the contents of a feed will be cached</li>
+            <li id="set_cache_location"><a title="SimplePie" href="../classes/SimplePie/set_cache_location.xhtml">set_cache_location()</a>
+                — Set the file system location where the cached files should be stored</li>
+            <li id="set_cache_name_function"><a title="SimplePie" href="../classes/SimplePie/set_cache_name_function.xhtml">set_cache_name_function()</a>
+                — Set callback function to create cache filename with</li>
+            <li id="set_caption_class"><a title="SimplePie" href="../classes/SimplePie/set_caption_class.xhtml">set_caption_class()</a>
+                — Set which class SimplePie uses for `&lt;media:text&gt;` captions</li>
+            <li id="set_category_class"><a title="SimplePie" href="../classes/SimplePie/set_category_class.xhtml">set_category_class()</a>
+                — Set which class SimplePie uses for handling category data</li>
+            <li id="set_content_type_sniffer_class"><a title="SimplePie" href="../classes/SimplePie/set_content_type_sniffer_class.xhtml">set_content_type_sniffer_class()</a>
+                — Set which class SimplePie uses for content-type sniffing</li>
+            <li id="set_copyright_class"><a title="SimplePie" href="../classes/SimplePie/set_copyright_class.xhtml">set_copyright_class()</a>
+                — Set which class SimplePie uses for `&lt;media:copyright&gt;`</li>
+            <li id="set_credit_class"><a title="SimplePie" href="../classes/SimplePie/set_credit_class.xhtml">set_credit_class()</a>
+                — Set which class SimplePie uses for `&lt;media:credit&gt;`</li>
+            <li id="set_curl_options"><a title="SimplePie" href="../classes/SimplePie/set_curl_options.xhtml">set_curl_options()</a>
+                — Set custom curl options</li>
+            <li id="set_enclosure_class"><a title="SimplePie" href="../classes/SimplePie/set_enclosure_class.xhtml">set_enclosure_class()</a>
+                — Set which class SimplePie uses for feed enclosures</li>
+            <li id="set_favicon_handler"><a title="SimplePie" href="../classes/SimplePie/set_favicon_handler.xhtml">set_favicon_handler()</a>
+                — Set the favicon handler</li>
+            <li id="set_feed_url"><a title="SimplePie" href="../classes/SimplePie/set_feed_url.xhtml">set_feed_url()</a>
+                — Set the URL of the feed you want to parse</li>
+            <li id="set_file"><a title="SimplePie" href="../classes/SimplePie/set_file.xhtml">set_file()</a>
+                — Set an instance of {@see SimplePie_File} to use as a feed</li>
+            <li id="set_file_class"><a title="SimplePie" href="../classes/SimplePie/set_file_class.xhtml">set_file_class()</a>
+                — Set which class SimplePie uses for remote file fetching</li>
+            <li id="set_image_handler"><a title="SimplePie" href="../classes/SimplePie/set_image_handler.xhtml">set_image_handler()</a>
+                — Set the handler to enable the display of cached images.</li>
+            <li id="set_input_encoding"><a title="SimplePie" href="../classes/SimplePie/set_input_encoding.xhtml">set_input_encoding()</a>
+                — Set the character encoding used to parse the feed</li>
+            <li id="set_item_class"><a title="SimplePie" href="../classes/SimplePie/set_item_class.xhtml">set_item_class()</a>
+                — Set which class SimplePie uses for handling feed items</li>
+            <li id="set_item_limit"><a title="SimplePie" href="../classes/SimplePie/set_item_limit.xhtml">set_item_limit()</a>
+                — Set the limit for items returned per-feed with multifeeds</li>
+            <li id="set_locator_class"><a title="SimplePie" href="../classes/SimplePie/set_locator_class.xhtml">set_locator_class()</a>
+                — Set which class SimplePie uses for auto-discovery</li>
+            <li id="set_max_checked_feeds"><a title="SimplePie" href="../classes/SimplePie/set_max_checked_feeds.xhtml">set_max_checked_feeds()</a>
+                — Set maximum number of feeds to check with autodiscovery</li>
+            <li id="set_output_encoding"><a title="SimplePie" href="../classes/SimplePie/set_output_encoding.xhtml">set_output_encoding()</a>
+                — Set the output encoding</li>
+            <li id="set_parser_class"><a title="SimplePie" href="../classes/SimplePie/set_parser_class.xhtml">set_parser_class()</a>
+                — Set which class SimplePie uses for XML parsing</li>
+            <li id="set_rating_class"><a title="SimplePie" href="../classes/SimplePie/set_rating_class.xhtml">set_rating_class()</a>
+                — Set which class SimplePie uses for `&lt;media:rating&gt;`</li>
+            <li id="set_raw_data"><a title="SimplePie" href="../classes/SimplePie/set_raw_data.xhtml">set_raw_data()</a>
+                — Set the raw XML data to parse</li>
+            <li id="set_restriction_class"><a title="SimplePie" href="../classes/SimplePie/set_restriction_class.xhtml">set_restriction_class()</a>
+                — Set which class SimplePie uses for `&lt;media:restriction&gt;`</li>
+            <li id="set_sanitize_class"><a title="SimplePie" href="../classes/SimplePie/set_sanitize_class.xhtml">set_sanitize_class()</a>
+                — Set which class SimplePie uses for data sanitization</li>
+            <li id="set_source_class"><a title="SimplePie" href="../classes/SimplePie/set_source_class.xhtml">set_source_class()</a>
+                — Set which class SimplePie uses item sources</li>
+            <li id="set_stupidly_fast"><a title="SimplePie" href="../classes/SimplePie/set_stupidly_fast.xhtml">set_stupidly_fast()</a>
+                — Set options to make SP as fast as possible</li>
+            <li id="set_timeout"><a title="SimplePie" href="../classes/SimplePie/set_timeout.xhtml">set_timeout()</a>
+                — Set the default timeout for fetching remote feeds</li>
+            <li id="set_url_replacements"><a title="SimplePie" href="../classes/SimplePie/set_url_replacements.xhtml">set_url_replacements()</a>
+                — Set element/attribute key/value pairs of HTML attributes containing URLs that need to be resolved relative to the feed</li>
+            <li id="set_useragent"><a title="SimplePie" href="../classes/SimplePie/set_useragent.xhtml">set_useragent()</a>
+                — Set the user agent string</li>
+            <li id="sort_items"><a title="SimplePie" href="../classes/SimplePie/sort_items.xhtml">sort_items()</a>
+                — Sorting callback for items</li>
+            <li id="strip_attributes">
+              <a title="SimplePie" href="../classes/SimplePie/strip_attributes.xhtml">strip_attributes()</a>
+            </li>
+            <li id="strip_comments">
+              <a title="SimplePie" href="../classes/SimplePie/strip_comments.xhtml">strip_comments()</a>
+            </li>
+            <li id="strip_htmltags">
+              <a title="SimplePie" href="../classes/SimplePie/strip_htmltags.xhtml">strip_htmltags()</a>
+            </li>
+            <li id="subscribe_url"><a title="SimplePie" href="../classes/SimplePie/subscribe_url.xhtml">subscribe_url()</a>
+                — Get the URL for the feed</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <span>Generated using phpDox 0.12.0-dev - Copyright (C) 2010 - 2019 by Arne Blankerts and Contributors</span>
+    </footer>
+  </body>
+</html>
